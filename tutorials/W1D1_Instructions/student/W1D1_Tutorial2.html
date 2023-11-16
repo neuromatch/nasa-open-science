@@ -863,12 +863,12 @@ const thebe_selector_output = ".output, .cell_output"
 <p align="center"><img alt="restart kernel gif" src="https://github.com/neuromatch/course-content-template/blob/main/tutorials/static/restart-kernel.gif?raw=True"/></p>
 <div class="section" id="section-2-1-creating-a-pr">
 <h2>Section 2.1: Creating a PR<a class="headerlink" href="#section-2-1-creating-a-pr" title="Permalink to this headline">¶</a></h2>
-<p>Once you have push the work on your new branch, you can create a PR onto the main branch. <strong>NOTE</strong>: This will trigger the processing workflow for the course content.</p>
+<p>Once you have pushed the work on your new branch, you can create a PR onto the main branch. <strong>NOTE</strong>: This will trigger the processing workflow for the course content.</p>
 <p>Create a pull request:</p>
 <p align="center"><img alt="pull request gif" src="https://github.com/neuromatch/course-content-template/blob/main/tutorials/static/pull-request.gif?raw=True"/></p>
 <p>Process Notebook workflow:</p>
 <p align="center"><img alt="process notebook gif" src="https://github.com/neuromatch/course-content-template/blob/main/tutorials/static/process-notebook.gif?raw=True"/></p>
-<p>The process notebook workflow will automatically get triggered once a pull request is made to the main branch. It will create the student, instructor and solutions directories, verify the exercises, and prepare the content for the publish workflow. You do <strong>not</strong> need to create or touch the aforementioned folders. All your work should be done on the jupyter notebooks. Remember to restart the kernel and clear your output, if you do not, the process notebooks workflow will throw and error.</p>
+<p>The process notebook workflow will automatically get triggered once a pull request is made to the main branch. It will create the student, instructor and solutions directories, verify the exercises, and prepare the content for the publish workflow. You do <strong>not</strong> need to create or touch the aforementioned folders. All your work should be done on the jupyter notebooks. Remember to restart the kernel and clear your output, if you do not, the process notebooks workflow will throw an error.</p>
 </div>
 </div>
 <div class="section" id="section-3-folder-structure-and-naming-conventions">
@@ -901,7 +901,7 @@ const thebe_selector_output = ".output, .cell_output"
 <div class="section" id="section-3-1-cell-tags-markings-at-the-top-of-the-cell">
 <h2>Section 3.1: Cell Tags (markings at the top of the cell)<a class="headerlink" href="#section-3-1-cell-tags-markings-at-the-top-of-the-cell" title="Permalink to this headline">¶</a></h2>
 <p>The workflows and processing scripts actively make use of predefined tags to determine how to process the cell. There are tags for video embeddeing, slide embedding, titles, exercises and solutions, etc. It is very important these instructions are followed <strong>exactly</strong>! Any deviations will break the pipeline. More details about the tags and how to use them can be found in W1D2_Tutorial1.ipynb of the template notebook.</p>
-<p><strong>NOTE</strong>: Please read the details found in the template very carefully. Specifically the section on exercises and solutions. You need to be precises. We have a verify exercises script that will fail if you deviate from the instructions. For example, the comments in the cells for the exercises and solutions grouping need to be <strong>EXACT</strong>. See below:</p>
+<p><strong>NOTE</strong>: Please read the details found in the template very carefully. Specifically the section on exercises and solutions. You need to be precise. We have a script to verify exercises that will fail if you deviate from the instructions. For example, the comments in the cells for the exercises and solutions grouping need to be <strong>EXACT</strong>. See below:</p>
 <p>Exercise:</p>
 <p>def func(ex):</p>
 <p>  # comments describing the exercises</p>
@@ -913,6 +913,7 @@ const thebe_selector_output = ".output, .cell_output"
 <p>  x = …</p>
 <p>  return x</p>
 <p>This will fail because “comments” is singular in the comments of the solution cell. These checks are in place to ensure the exercise and corresponding solution cells are appropriately matched and coupled. This comment rule applies to <strong>all</strong> comments in the exercise/solution cells.</p>
+<p>The above is not an exhaustive list of the cell tags, it is simply a highlight of something that can go wrong that is easy to miss. Please find the details of all tags <a class="reference external" href="https://neuromatch.github.io/course-content-template/tutorials/W1D2_Template/student/W1D2_Tutorial1.html">here</a>.</p>
 </div>
 <div class="section" id="section-3-2-add-images">
 <h2>Section 3.2: Add Images<a class="headerlink" href="#section-3-2-add-images" title="Permalink to this headline">¶</a></h2>
@@ -921,15 +922,15 @@ const thebe_selector_output = ".output, .cell_output"
 <p>Ex:</p>
 <p>&lt;p align=’center’&gt;&lt;img src=’https://github.com/neuromatch/course-content-template/blob/main/tutorials/static/folder-structure.png?raw=True’ alt=’folder structure image’/&gt;&lt;/p&gt;</p>
 <p>We recommend using .png or .gif file extensions.</p>
-<p><strong>NOTE</strong>: This will not show up in your local development environment until the images are add to the main branch on github. As you can see from the above URL, it is pointing to the main branch of a github repository. If you would like to test it locally, you can use this:</p>
+<p><strong>NOTE</strong>: This will not show up in your local development environment until the images are added to the main branch on github. As you can see from the above URL, it is pointing to the main branch of a github repository. If you would like to test it locally, you can use this:</p>
 <p>&lt;p align=’center’&gt;&lt;img src=’../static/your_file_name.png’ alt=’image desctiption’/&gt;&lt;/p&gt;</p>
-<p>Remember to change the source back to the github url before push your changes!</p>
+<p>Remember to change the source back to the github url before pushing your changes!</p>
 </div>
 </div>
 <hr class="docutils"/>
 <div class="section" id="section-4-add-content-to-the-materials-yml-file">
 <h1>Section 4: Add Content to the materials.yml File<a class="headerlink" href="#section-4-add-content-to-the-materials-yml-file" title="Permalink to this headline">¶</a></h1>
-<p>The materials.yml file is used in our scripts to help very links, populate the books, and create our table of contents. Be sure to <strong>precisely</strong> follow the structure outlined in the file. If you look at the materials.yml file for this template notebook, you will see the structure laid out in order for this book to properly build. There are comments in the file to further explain all the fields you will need to use. Here is an overview of the structure:</p>
+<p>The materials.yml file is used in our scripts to help verify links, populate the books, and create our table of contents. Be sure to <strong>precisely</strong> follow the structure outlined in the file. If you look at the materials.yml file for this template notebook, you will see the structure laid out in order for this book to properly build. There are comments in the file to further explain all the fields you will need to use. Here is an overview of the structure:</p>
 <ul class="simple">
 <li><p>day: W1D1</p>
 <ul>
@@ -980,7 +981,7 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 </li>
 </ul>
-<p>Remember to create one grouping of the above content per day and be sure to make the number of tutorials.</p>
+<p>Remember to create one grouping of the above content per day and be sure to set the number of tutorials.</p>
 </div>
 <div class="section" id="section-5-workflows">
 <h1>Section 5: Workflows<a class="headerlink" href="#section-5-workflows" title="Permalink to this headline">¶</a></h1>
@@ -989,7 +990,7 @@ const thebe_selector_output = ".output, .cell_output"
 <ul class="simple">
 <li><p>notebook-pr (automatically triggered when a PR is made onto the main repo)</p></li>
 <li><p>publish-book (this needs to be manually triggered by navigating to the github actions tab. See Below)
-Each workflow involves building python environments and running python scripts on github’s servers, and then automatically creating the appropriate commits and pushes on github. The scripts handle notbeook processing, verification and html generation. After the publish-book workflow is complete, it pushes the generated html files into the gh-pages branch (it creates one if it does not exist). This branch is not to be touched and is automatically taken care of for us. All we need to do is change our pages settings in github settings to use the gh-pages branch instead of mean. See Below.</p></li>
+Each workflow involves building python environments and running python scripts on github’s servers, and then automatically creating the appropriate commits and pushes on github. The scripts handle notbeook processing, verification and html generation. After the publish-book workflow is complete, it pushes the generated html files into the gh-pages branch (it creates one if it does not exist). This branch is not to be touched and is automatically taken care of for us. All we need to do is change our pages settings under github settings to use the gh-pages branch instead of main. See Below.</p></li>
 </ul>
 <p>Trigger publish-book:</p>
 <p align="center"><img alt="publish book gif" src="https://github.com/neuromatch/course-content-template/blob/main/tutorials/static/publish-book.gif?raw=True"/></p>
@@ -999,7 +1000,7 @@ Each workflow involves building python environments and running python scripts o
 <hr class="docutils"/>
 <div class="section" id="summary">
 <h1>Summary<a class="headerlink" href="#summary" title="Permalink to this headline">¶</a></h1>
-<p>Congrats! You have now know:</p>
+<p>Congrats! You now know:</p>
 <ol class="simple">
 <li><p>how and where to create new content</p></li>
 <li><p>how to follow our naming convention</p></li>
@@ -1007,7 +1008,7 @@ Each workflow involves building python environments and running python scripts o
 <li><p>how to create branches and pull requests</p></li>
 <li><p>the basics of our workflows using github actions</p></li>
 </ol>
-<p>Happy creating!</p>
+<p>Happy content creating!</p>
 </div>
 <script type="text/x-thebe-config">
     {
