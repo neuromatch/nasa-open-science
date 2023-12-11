@@ -5,7 +5,7 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Tutorial 4: Model Discussions — Insert your title here. e.g. Neuromatch Academy: Computational Neuroscience</title>
+<title>Tutorial 4: Notebook Sections — Insert your title here. e.g. Neuromatch Academy: Computational Neuroscience</title>
 <!-- Loaded before other Sphinx assets -->
 <link href="../../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet"/>
 <link href="../../../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet"/>
@@ -423,7 +423,7 @@ const thebe_selector_output = ".output, .cell_output"
 </li>
 <li class="toctree-l2 current active">
 <a class="current reference internal" href="#">
-     Tutorial 4: Model Discussions
+     Tutorial 4: Notebook Sections
     </a>
 </li>
 <li class="toctree-l2">
@@ -674,44 +674,69 @@ const thebe_selector_output = ".output, .cell_output"
 <ul class="visible nav section-nav flex-column">
 <li class="toc-h1 nav-item toc-entry">
 <a class="reference internal nav-link" href="#">
-   Tutorial 4: Model Discussions
+   Tutorial 4: Notebook Sections
   </a>
-</li>
-<li class="toc-h1 nav-item toc-entry">
+<ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry">
 <a class="reference internal nav-link" href="#tutorial-objectives">
-   Tutorial Objectives
-  </a>
+     Tutorial Objectives
+    </a>
 </li>
-<li class="toc-h1 nav-item toc-entry">
-<a class="reference internal nav-link" href="#setup">
-   Setup
-  </a>
-<ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry">
-<a class="reference internal nav-link" href="#install-and-import-feedback-gadget">
-     Install and import feedback gadget
+<a class="reference internal nav-link" href="#setup-maybe-remove">
+     Setup (maybe remove?)
+    </a>
+</li>
+<li class="toc-h2 nav-item toc-entry">
+<a class="reference internal nav-link" href="#section-1-how-to-enable-github-action">
+     Section 1: How to enable github action
     </a>
 </li>
 </ul>
 </li>
 <li class="toc-h1 nav-item toc-entry">
-<a class="reference internal nav-link" href="#section-1-model-discussions">
-   Section 1: Model discussions
+<a class="reference internal nav-link" href="#section-2-how-to-create-a-pr">
+   Section 2: How to create a PR
   </a>
 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry">
-<a class="reference internal nav-link" href="#think-1-model-discussions">
-     Think! 1: Model discussions
+<a class="reference internal nav-link" href="#section-2-1-creating-a-pr">
+     Section 2.1: Creating a PR
     </a>
-<ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry">
-<a class="reference internal nav-link" href="#submit-your-feedback">
-       Submit your feedback
-      </a>
 </li>
 </ul>
 </li>
+<li class="toc-h1 nav-item toc-entry">
+<a class="reference internal nav-link" href="#section-3-folder-structure-and-naming-conventions">
+   Section 3: Folder Structure and Naming Conventions
+  </a>
+<ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry">
+<a class="reference internal nav-link" href="#section-3-1-cell-tags-markings-at-the-top-of-the-cell">
+     Section 3.1: Cell Tags (markings at the top of the cell)
+    </a>
+</li>
+<li class="toc-h2 nav-item toc-entry">
+<a class="reference internal nav-link" href="#section-3-2-add-images">
+     Section 3.2: Add Images
+    </a>
+</li>
 </ul>
+</li>
+<li class="toc-h1 nav-item toc-entry">
+<a class="reference internal nav-link" href="#section-4-add-content-to-the-materials-yml-file">
+   Section 4: Add Content to the materials.yml File
+  </a>
+</li>
+<li class="toc-h1 nav-item toc-entry">
+<a class="reference internal nav-link" href="#section-5-workflows">
+   Section 5: Workflows
+  </a>
+</li>
+<li class="toc-h1 nav-item toc-entry">
+<a class="reference internal nav-link" href="#summary">
+   Summary
+  </a>
 </li>
 </ul>
 </nav>
@@ -721,7 +746,7 @@ const thebe_selector_output = ".output, .cell_output"
 <div class="col pl-md-3 pl-lg-5 content-container">
 <!-- Table of contents that is only displayed when printing the page -->
 <div class="onlyprint" id="jb-print-docs-body">
-<h1>Tutorial 4: Model Discussions</h1>
+<h1>Tutorial 4: Notebook Sections</h1>
 <!-- Table of contents -->
 <div id="print-main-content">
 <div id="jb-print-toc">
@@ -732,44 +757,69 @@ const thebe_selector_output = ".output, .cell_output"
 <ul class="visible nav section-nav flex-column">
 <li class="toc-h1 nav-item toc-entry">
 <a class="reference internal nav-link" href="#">
-   Tutorial 4: Model Discussions
+   Tutorial 4: Notebook Sections
   </a>
-</li>
-<li class="toc-h1 nav-item toc-entry">
+<ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry">
 <a class="reference internal nav-link" href="#tutorial-objectives">
-   Tutorial Objectives
-  </a>
+     Tutorial Objectives
+    </a>
 </li>
-<li class="toc-h1 nav-item toc-entry">
-<a class="reference internal nav-link" href="#setup">
-   Setup
-  </a>
-<ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry">
-<a class="reference internal nav-link" href="#install-and-import-feedback-gadget">
-     Install and import feedback gadget
+<a class="reference internal nav-link" href="#setup-maybe-remove">
+     Setup (maybe remove?)
+    </a>
+</li>
+<li class="toc-h2 nav-item toc-entry">
+<a class="reference internal nav-link" href="#section-1-how-to-enable-github-action">
+     Section 1: How to enable github action
     </a>
 </li>
 </ul>
 </li>
 <li class="toc-h1 nav-item toc-entry">
-<a class="reference internal nav-link" href="#section-1-model-discussions">
-   Section 1: Model discussions
+<a class="reference internal nav-link" href="#section-2-how-to-create-a-pr">
+   Section 2: How to create a PR
   </a>
 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry">
-<a class="reference internal nav-link" href="#think-1-model-discussions">
-     Think! 1: Model discussions
+<a class="reference internal nav-link" href="#section-2-1-creating-a-pr">
+     Section 2.1: Creating a PR
     </a>
-<ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry">
-<a class="reference internal nav-link" href="#submit-your-feedback">
-       Submit your feedback
-      </a>
 </li>
 </ul>
 </li>
+<li class="toc-h1 nav-item toc-entry">
+<a class="reference internal nav-link" href="#section-3-folder-structure-and-naming-conventions">
+   Section 3: Folder Structure and Naming Conventions
+  </a>
+<ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry">
+<a class="reference internal nav-link" href="#section-3-1-cell-tags-markings-at-the-top-of-the-cell">
+     Section 3.1: Cell Tags (markings at the top of the cell)
+    </a>
+</li>
+<li class="toc-h2 nav-item toc-entry">
+<a class="reference internal nav-link" href="#section-3-2-add-images">
+     Section 3.2: Add Images
+    </a>
+</li>
 </ul>
+</li>
+<li class="toc-h1 nav-item toc-entry">
+<a class="reference internal nav-link" href="#section-4-add-content-to-the-materials-yml-file">
+   Section 4: Add Content to the materials.yml File
+  </a>
+</li>
+<li class="toc-h1 nav-item toc-entry">
+<a class="reference internal nav-link" href="#section-5-workflows">
+   Section 5: Workflows
+  </a>
+</li>
+<li class="toc-h1 nav-item toc-entry">
+<a class="reference internal nav-link" href="#summary">
+   Summary
+  </a>
 </li>
 </ul>
 </nav>
@@ -778,103 +828,213 @@ const thebe_selector_output = ".output, .cell_output"
 </div>
 <main id="main-content" role="main">
 <div>
-<p><a href="https://colab.research.google.com/github/NeuromatchAcademy/course-content/blob/main/tutorials/W1D1_ModelTypes/student/W1D1_Tutorial4.ipynb" target="_blank"><img alt="Open In Colab" src="https://colab.research.google.com/assets/colab-badge.svg"/></a>   <a href="https://kaggle.com/kernels/welcome?src=https://raw.githubusercontent.com/NeuromatchAcademy/course-content/main/tutorials/W1D1_ModelTypes/student/W1D1_Tutorial4.ipynb" target="_blank"><img alt="Open in Kaggle" src="https://kaggle.com/static/images/open-in-kaggle.svg"/></a></p>
-<div class="section" id="tutorial-4-model-discussions">
-<h1>Tutorial 4: Model Discussions<a class="headerlink" href="#tutorial-4-model-discussions" title="Permalink to this headline">¶</a></h1>
-<p><strong>Week 1, Day 1: Model Types</strong></p>
-<p><strong>By Neuromatch Academy</strong></p>
-<p><strong>Content creators:</strong> Matt Laporte, Byron Galbraith, Konrad Kording</p>
-<p><strong>Post-production team:</strong> Gagana B, Spiros Chavlis</p>
-</div>
+<p><a href="https://colab.research.google.com/github/neuromatch/course-content-template/blob/main/tutorials/W1D1_Template/student/W1D1_Tutorial4.ipynb" target="_blank"><img alt="Open In Colab" src="https://colab.research.google.com/assets/colab-badge.svg"/></a>   <a href="https://kaggle.com/kernels/welcome?src=https://raw.githubusercontent.com/neuromatch/course-content-template/main/tutorials/W1D1_Template/student/W1D1_Tutorial4.ipynb" target="_blank"><img alt="Open in Kaggle" src="https://kaggle.com/static/images/open-in-kaggle.svg"/></a></p>
+<div class="section" id="tutorial-4-notebook-sections">
+<h1>Tutorial 4: Notebook Sections<a class="headerlink" href="#tutorial-4-notebook-sections" title="Permalink to this headline">¶</a></h1>
+<p><strong>Week 1, Day 1: Instructions</strong></p>
+<p><strong>By Neuromatch</strong></p>
+<p><strong>Content creators:</strong> Konstantine Tsafatinos</p>
+<p><strong>Content reviewers:</strong> Konstantine Tsafatinos</p>
+<p><strong>Production editors:</strong> Konstantine Tsafatinos</p>
+<br/>
+<p>Acknowledgments: [Ella Batty, Spiros Chavlis and neuromatch]</p>
 <hr class="docutils"/>
 <div class="section" id="tutorial-objectives">
-<h1>Tutorial Objectives<a class="headerlink" href="#tutorial-objectives" title="Permalink to this headline">¶</a></h1>
-<p><em>Estimated timing of tutorial: 45 minutes</em></p>
-<p>In this tutorial, you will reflect on what/how/why models in a group discussion and discuss your preferences and thoughts on modeling.</p>
-<div class="cell tag_remove-input docutils container">
-<div class="cell_output docutils container">
-<script type="application/vnd.jupyter.widget-view+json">
-{"version_major": 2, "version_minor": 0, "model_id": "2bd628365e2e415d9139a494238a91c2"}
-</script></div>
-</div>
-</div>
-<hr class="docutils"/>
-<div class="section" id="setup">
-<h1>Setup<a class="headerlink" href="#setup" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="install-and-import-feedback-gadget">
-<h2>Install and import feedback gadget<a class="headerlink" href="#install-and-import-feedback-gadget" title="Permalink to this headline">¶</a></h2>
-<div class="cell tag_hide-input docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># @title Install and import feedback gadget</span>
-
-<span class="o">!</span>pip3<span class="w"> </span>install<span class="w"> </span>vibecheck<span class="w"> </span>datatops<span class="w"> </span>--quiet
-
-<span class="kn">from</span> <span class="nn">vibecheck</span> <span class="kn">import</span> <span class="n">DatatopsContentReviewContainer</span>
-<span class="k">def</span> <span class="nf">content_review</span><span class="p">(</span><span class="n">notebook_section</span><span class="p">:</span> <span class="nb">str</span><span class="p">):</span>
-    <span class="k">return</span> <span class="n">DatatopsContentReviewContainer</span><span class="p">(</span>
-        <span class="s2">""</span><span class="p">,</span>  <span class="c1"># No text prompt</span>
-        <span class="n">notebook_section</span><span class="p">,</span>
-        <span class="p">{</span>
-            <span class="s2">"url"</span><span class="p">:</span> <span class="s2">"https://pmyvdlilci.execute-api.us-east-1.amazonaws.com/klab"</span><span class="p">,</span>
-            <span class="s2">"name"</span><span class="p">:</span> <span class="s2">"neuromatch_cn"</span><span class="p">,</span>
-            <span class="s2">"user_key"</span><span class="p">:</span> <span class="s2">"y1x3mpx5"</span><span class="p">,</span>
-        <span class="p">},</span>
-    <span class="p">)</span><span class="o">.</span><span class="n">render</span><span class="p">()</span>
-
-
-<span class="n">feedback_prefix</span> <span class="o">=</span> <span class="s2">"W1D1_T4"</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<hr class="docutils"/>
-<div class="section" id="section-1-model-discussions">
-<h1>Section 1: Model discussions<a class="headerlink" href="#section-1-model-discussions" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="think-1-model-discussions">
-<h2>Think! 1: Model discussions<a class="headerlink" href="#think-1-model-discussions" title="Permalink to this headline">¶</a></h2>
-<p>Please spend the next <strong>45 minutes</strong> or so discussing the following questions.</p>
+<h2>Tutorial Objectives<a class="headerlink" href="#tutorial-objectives" title="Permalink to this headline">¶</a></h2>
+<p><em>Estimated timing of tutorial: [15 mins]</em></p>
+<p>In this tutorial, you will learn about the different sections and folder heirarchies in the course notebook, and how to use them.</p>
+<p>You will:</p>
 <ul class="simple">
-<li><p>What is your favorite model ever</p>
+<li><p>learn how to add Art for the landing page of a tutorial day</p></li>
+<li><p>learn how to create Wrap Ups for a given module (category)</p></li>
+<li><p>learn how to add Bonus Tutorials</p></li>
+<li><p>learn how to add/update the course schedule</p></li>
+</ul>
+<p>It is recommended that you read through all of tutorials 1 through 3 as this tutorial builds upon that knowledge.</p>
+</div>
+<hr class="docutils"/>
+<div class="section" id="setup-maybe-remove">
+<h2>Setup (maybe remove?)<a class="headerlink" href="#setup-maybe-remove" title="Permalink to this headline">¶</a></h2>
+<p>In this section, we have:</p>
+<ol class="simple">
+<li><p><strong>Github Actions</strong>: Enable github actions to allow for triggered workflows.</p></li>
+<li><p><strong>Branches and PRs</strong>: Create local branches, push to github, and create a pull request.</p></li>
+<li><p><strong>Folder Structure and Naming Convention</strong>: Guidelines to follow so that the processing and build steps work correctly.</p></li>
+<li><p><strong>Materials.yml</strong>: Add days and tutorials to the materials.yml file.</p></li>
+<li><p><strong>Workflows</strong>: Trigger the workflows.</p></li>
+</ol>
+</div>
+<hr class="docutils"/>
+<div class="section" id="section-1-how-to-enable-github-action">
+<h2>Section 1: How to enable github action<a class="headerlink" href="#section-1-how-to-enable-github-action" title="Permalink to this headline">¶</a></h2>
+<p>Steps:</p>
+<ul class="simple">
+<li><p>click on the settings tab in your newly created repo</p></li>
+<li><p>click on the actions dropdown -&gt; general</p></li>
+<li><p>click on <em>allow all action and reusable workflows</em></p></li>
+<li><p>click save</p></li>
+</ul>
+<p align="center"><img alt="github actions gif" src="https://github.com/neuromatch/course-content-template/blob/main/tutorials/static/github-actions.gif?raw=True"/></p>
+</div>
+</div>
+<hr class="docutils"/>
+<div class="section" id="section-2-how-to-create-a-pr">
+<h1>Section 2: How to create a PR<a class="headerlink" href="#section-2-how-to-create-a-pr" title="Permalink to this headline">¶</a></h1>
+<p>When creating content you want to add to the course book, you will need to have python and git installed. Afterwards, you will need to create a local python environment with all requirements for your code installed; including jyputer. Before starting to add content, you will need to create a new branch. Instructions <a class="reference external" href="https://www.w3schools.com/git/git_branch.asp">here</a>.</p>
+<p>Once you have created your working branch, you can then start to work on your notebook. Before saving your notebook and committing the changes to your branch, restart the kernel and clear all cells. Then you can save it, <a class="reference external" href="https://www.w3schools.com/git/git_staging_environment.asp?remote=github">add</a> the changes, <a class="reference external" href="https://www.w3schools.com/git/git_commit.asp?remote=github">commit</a> them, and <a class="reference external" href="https://www.w3schools.com/git/git_push_to_remote.asp?remote=github">push</a> to github.</p>
+<p><strong>NOTE</strong>: It is vital that you restart the kernel and clear all outputs. The processing scripts will throw an error if you do not, and the workflow will <strong>not</strong> complete successfully.</p>
+<p><strong>Be Careful</strong>: Remeber to pull the lastest changes from github before you commit your work! This is important, a successful workflow execution will create new commits, and if you do not pull the those changes before your commit your local ones, there will be a commit history conflict; i.e you will not be able to push your changes.</p>
+<p>How to restart kernel and clear all outputs:</p>
+<p align="center"><img alt="restart kernel gif" src="https://github.com/neuromatch/course-content-template/blob/main/tutorials/static/restart-kernel.gif?raw=True"/></p>
+<div class="section" id="section-2-1-creating-a-pr">
+<h2>Section 2.1: Creating a PR<a class="headerlink" href="#section-2-1-creating-a-pr" title="Permalink to this headline">¶</a></h2>
+<p>Once you have pushed the work on your new branch, you can create a PR onto the main branch. <strong>NOTE</strong>: This will trigger the processing workflow for the course content.</p>
+<p>Create a pull request:</p>
+<p align="center"><img alt="pull request gif" src="https://github.com/neuromatch/course-content-template/blob/main/tutorials/static/pull-request.gif?raw=True"/></p>
+<p>Process Notebook workflow:</p>
+<p align="center"><img alt="process notebook gif" src="https://github.com/neuromatch/course-content-template/blob/main/tutorials/static/process-notebook.gif?raw=True"/></p>
+<p>The process notebook workflow will automatically get triggered once a pull request is made to the main branch. It will create the student, instructor and solutions directories, verify the exercises, and prepare the content for the publish workflow. You do <strong>not</strong> need to create or touch the aforementioned folders. All your work should be done on the jupyter notebooks. Remember to restart the kernel and clear your output, if you do not, the process notebooks workflow will throw an error.</p>
+</div>
+</div>
+<div class="section" id="section-3-folder-structure-and-naming-conventions">
+<h1>Section 3: Folder Structure and Naming Conventions<a class="headerlink" href="#section-3-folder-structure-and-naming-conventions" title="Permalink to this headline">¶</a></h1>
+<p>In order for the workflows and scripts to work correctly, and for your book to properly build, you will need to <strong>strictly</strong> follow our folder heirarchy and naming conventions. This is what the scripts are expecting, and you will not be able to successfully build your course book if you deviate from the conventions.</p>
+<ul class="simple">
+<li><p>book/ (do not touch, this get automatically created/population in the publish workflow)</p></li>
+<li><p>projects/ (TODO: explain this in more depth)</p></li>
+<li><p>tutorials/</p>
 <ul>
-<li><p>Every student contributes one. Can not reuse the same</p></li>
+<li><p>W#D#_DayName/ -&gt; (ie. W1D1_InstructionsTemplate; This is strict! You must have the W#D#_ prefix followed by the name of the content for that day. The name <strong>cannot</strong> include special characters (i.e -, _) and must follow the format shown.</p>
+<ul>
+<li><p>static/</p></li>
+<li><p>README.md -&gt; (This needs to match exactly!)</p></li>
+<li><p>W#D#_DaySummary.ipynb -&gt; (The name needs to match exactly!)</p></li>
+<li><p>W#D#_Intro.ipynb -&gt; (The name needs to match exactly!)</p></li>
+<li><p>W#D#_Outro.ipynb -&gt; (The name needs to match exactly!)</p></li>
+<li><p>W#D#_Tutorial#.ipynb -&gt; (The name needs to match exactly! You can have multiple tutorials for a day as long as you number them sequentially and add the number to the materials.yml file.)</p></li>
+<li><p>further_reading.md -&gt; (The name needs to match exactly!)</p></li>
 </ul>
 </li>
-<li><p>Which models when?</p>
-<ul>
-<li><p>For which questions do you prefer what models?</p></li>
-<li><p>How models?</p></li>
-<li><p>Why models?</p></li>
-</ul>
-</li>
-<li><p>Which model kinds do you like best?</p>
-<ul>
-<li><p>Why?</p></li>
-<li><p>Would you be missing something if the other models did not exist?</p></li>
+<li><p>static/</p></li>
+<li><p>materials.yml</p></li>
 </ul>
 </li>
 </ul>
-<div class="section" id="submit-your-feedback">
-<h3>Submit your feedback<a class="headerlink" href="#submit-your-feedback" title="Permalink to this headline">¶</a></h3>
-<div class="cell tag_hide-input docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># @title Submit your feedback</span>
-<span class="n">content_review</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">feedback_prefix</span><span class="si">}</span><span class="s2">_Model_discussions_Discussion"</span><span class="p">)</span>
-</pre></div>
+<p>See a working example below:</p>
+<p align="center"><img alt="folder structure image" src="https://github.com/neuromatch/course-content-template/blob/main/tutorials/static/folder-structure.png?raw=True"/></p>
+<p>To reiterate, you do not need to worry about the student, instructor, or solutions directories. Those are automatically taken care of.</p>
+<div class="section" id="section-3-1-cell-tags-markings-at-the-top-of-the-cell">
+<h2>Section 3.1: Cell Tags (markings at the top of the cell)<a class="headerlink" href="#section-3-1-cell-tags-markings-at-the-top-of-the-cell" title="Permalink to this headline">¶</a></h2>
+<p>The workflows and processing scripts actively make use of predefined tags to determine how to process the cell. There are tags for video embeddeing, slide embedding, titles, exercises and solutions, etc. It is very important these instructions are followed <strong>exactly</strong>! Any deviations will break the pipeline. More details about the tags and how to use them can be found in W1D2_Tutorial1.ipynb of the template notebook.</p>
+<p><strong>NOTE</strong>: Please read the details found in the template very carefully. Specifically the section on exercises and solutions. You need to be precise. We have a script to verify exercises that will fail if you deviate from the instructions. For example, the comments in the cells for the exercises and solutions grouping need to be <strong>EXACT</strong>. See below:</p>
+<p>Exercise:</p>
+<p>def func(ex):</p>
+<p>  # comments describing the exercises</p>
+<p>  x = …</p>
+<p>  return x</p>
+<p>Solution:</p>
+<p>def func(ex):</p>
+<p>  # comment describing the exercises</p>
+<p>  x = …</p>
+<p>  return x</p>
+<p>This will fail because “comments” is singular in the comments of the solution cell. These checks are in place to ensure the exercise and corresponding solution cells are appropriately matched and coupled. This comment rule applies to <strong>all</strong> comments in the exercise/solution cells.</p>
+<p>The above is not an exhaustive list of the cell tags, it is simply a highlight of something that can go wrong that is easy to miss. Please find the details of all tags <a class="reference external" href="https://neuromatch.github.io/course-content-template/tutorials/W1D2_Template/student/W1D2_Tutorial1.html">here</a>.</p>
+</div>
+<div class="section" id="section-3-2-add-images">
+<h2>Section 3.2: Add Images<a class="headerlink" href="#section-3-2-add-images" title="Permalink to this headline">¶</a></h2>
+<p>Your images should live in the static directories. They can be grouped into the a static directory per day, or can be inside the general static directory for all tutorials. The important thing here is that you correctly link to the proper URL. You can directly add the following html into your markdown cells in order to add images.</p>
+<p>&lt;p align=’center’&gt;&lt;img src=’https://github.com/your_org_name/your_repo_name/blob/main/tutorials/static/your_file_name.ext?raw=True’ alt=’image description’/&gt;&lt;/p&gt;</p>
+<p>Ex:</p>
+<p>&lt;p align=’center’&gt;&lt;img src=’https://github.com/neuromatch/course-content-template/blob/main/tutorials/static/folder-structure.png?raw=True’ alt=’folder structure image’/&gt;&lt;/p&gt;</p>
+<p>We recommend using .png or .gif file extensions.</p>
+<p><strong>NOTE</strong>: This will not show up in your local development environment until the images are added to the main branch on github. As you can see from the above URL, it is pointing to the main branch of a github repository. If you would like to test it locally, you can use this:</p>
+<p>&lt;p align=’center’&gt;&lt;img src=’../static/your_file_name.png’ alt=’image desctiption’/&gt;&lt;/p&gt;</p>
+<p>Remember to change the source back to the github url before pushing your changes!</p>
 </div>
 </div>
-<div class="cell_output docutils container">
-<script type="application/vnd.jupyter.widget-view+json">
-{"version_major": 2, "version_minor": 0, "model_id": "f69007bd2b7b40148c576b90ec383e19"}
-</script></div>
+<hr class="docutils"/>
+<div class="section" id="section-4-add-content-to-the-materials-yml-file">
+<h1>Section 4: Add Content to the materials.yml File<a class="headerlink" href="#section-4-add-content-to-the-materials-yml-file" title="Permalink to this headline">¶</a></h1>
+<p>The materials.yml file is used in our scripts to help verify links, populate the books, and create our table of contents. Be sure to <strong>precisely</strong> follow the structure outlined in the file. If you look at the materials.yml file for this template notebook, you will see the structure laid out in order for this book to properly build. There are comments in the file to further explain all the fields you will need to use. Here is an overview of the structure:</p>
+<ul class="simple">
+<li><p>day: W1D1</p>
+<ul>
+<li><p>category: Course Content Template Instructions</p></li>
+<li><p>intro: https://www.youtube.com/watch?v=KxldhMR5PxA</p></li>
+<li><p>intro_bilibili: https://www.bilibili.com/video/BV1HT4y1E7U4/</p></li>
+<li><p>name: Instructions</p></li>
+<li><p>outro:  https://www.youtube.com/watch?v=KZQXfQL1SH4</p></li>
+<li><p>outro_bilibili: https://www.bilibili.com/video/BV1vv411i7SG/</p></li>
+<li><p>playlist: https://www.youtube.com/playlist?list=PLkBQOLLbi18ObAiSOZ42YBwOQIKNvspeI</p></li>
+<li><p>qa: #insert as many as Q&amp;A video links as needed</p>
+<ul>
+<li><p>Insert Q&amp;A video link 1 here</p></li>
+</ul>
+</li>
+<li><p>slides: #insert as many as slides links and titles as needed</p>
+<ul>
+<li><p>link: https://mfr.ca-1.osf.io/render?url=https://osf.io/rbx2a/?direct%26mode=render%26action=download%26mode=render</p></li>
+</ul>
+</li>
+<li><p>title: Intro</p>
+<ul>
+<li><p>link: https://mfr.ca-1.osf.io/render?url=https://osf.io/6dxwe/?direct%26mode=render%26action=download%26mode=render</p></li>
+</ul>
+</li>
+<li><p>title: Tutorials</p>
+<ul>
+<li><p>link: https://mfr.ca-1.osf.io/render?url=https://osf.io/jdumz/?direct%26mode=render%26action=download%26mode=render</p></li>
+</ul>
+</li>
+<li><p>title: DaySummary</p>
+<ul>
+<li><p>link: https://mfr.ca-1.osf.io/render?url=https://osf.io/9hkg2/?direct%26mode=render%26action=download%26mode=render</p></li>
+</ul>
+</li>
+<li><p>title: Outro</p>
+<ul>
+<li><p>link: https://mfr.ca-1.osf.io/render?url=https://osf.io/2esh5/?direct%26mode=render%26action=download%26mode=render</p></li>
+</ul>
+</li>
+<li><p>title: Reading</p>
+<ul>
+<li><p>link: https://mfr.ca-1.osf.io/render?url=https://osf.io/5vj73/?direct%26mode=render%26action=download%26mode=render</p></li>
+</ul>
+</li>
+<li><p>title: TA</p></li>
+<li><p>tutorials: 1</p></li>
+</ul>
+</li>
+</ul>
+<p>Remember to create one grouping of the above content per day and be sure to set the number of tutorials.</p>
 </div>
+<div class="section" id="section-5-workflows">
+<h1>Section 5: Workflows<a class="headerlink" href="#section-5-workflows" title="Permalink to this headline">¶</a></h1>
+<p>TODO: look into other workflows, ask spiros and ella</p>
+<p>There are two main workflows used to build the notebooks:</p>
+<ul class="simple">
+<li><p>notebook-pr (automatically triggered when a PR is made onto the main repo)</p></li>
+<li><p>publish-book (this needs to be manually triggered by navigating to the github actions tab. See Below)
+Each workflow involves building python environments and running python scripts on github’s servers, and then automatically creating the appropriate commits and pushes on github. The scripts handle notbeook processing, verification and html generation. After the publish-book workflow is complete, it pushes the generated html files into the gh-pages branch (it creates one if it does not exist). This branch is not to be touched and is automatically taken care of for us. All we need to do is change our pages settings under github settings to use the gh-pages branch instead of main. See Below.</p></li>
+</ul>
+<p>Trigger publish-book:</p>
+<p align="center"><img alt="publish book gif" src="https://github.com/neuromatch/course-content-template/blob/main/tutorials/static/publish-book.gif?raw=True"/></p>
+<p>Point github pages to the gh-pages branch:</p>
+<p align="center"><img alt="github pages gif" src="https://github.com/neuromatch/course-content-template/blob/main/tutorials/static/gh-pages.gif?raw=True"/></p>
 </div>
+<hr class="docutils"/>
+<div class="section" id="summary">
+<h1>Summary<a class="headerlink" href="#summary" title="Permalink to this headline">¶</a></h1>
+<p>Congrats! You now know:</p>
+<ol class="simple">
+<li><p>how and where to create new content</p></li>
+<li><p>how to follow our naming convention</p></li>
+<li><p>how to prepare the notebooks for our pipeline</p></li>
+<li><p>how to create branches and pull requests</p></li>
+<li><p>the basics of our workflows using github actions</p></li>
+</ol>
+<p>Happy content creating!</p>
 </div>
-</div>
-<script type="application/vnd.jupyter.widget-state+json">
-{"state": {"9d7fc9dadebd4946adf48d796ea6ada7": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "2bd628365e2e415d9139a494238a91c2": {"model_name": "OutputModel", "model_module": "@jupyter-widgets/output", "model_module_version": "1.0.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/output", "_model_module_version": "1.0.0", "_model_name": "OutputModel", "_view_count": null, "_view_module": "@jupyter-widgets/output", "_view_module_version": "1.0.0", "_view_name": "OutputView", "layout": "IPY_MODEL_9d7fc9dadebd4946adf48d796ea6ada7", "msg_id": "", "outputs": [{"output_type": "stream", "name": "stdout", "text": "If you want to download the slides: https://osf.io/download//\n"}, {"output_type": "display_data", "metadata": {}, "data": {"text/plain": "<IPython.lib.display.IFrame at 0x7f1b5c3a02b0>", "text/html": "\n        <iframe\n            width=\"730\"\n            height=\"410\"\n            src=\"https://mfr.ca-1.osf.io/render?url=https://osf.io//?direct%26mode=render%26action=download%26mode=render\"\n            frameborder=\"0\"\n            allowfullscreen\n            \n        ></iframe>\n        "}}]}}, "7c3617d6bf794b508abbc487939ea18c": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": "auto", "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": "0.5em", "right": null, "top": null, "visibility": null, "width": "auto"}}, "eb1e2141fcad47639c893ff1a732f8c2": {"model_name": "ButtonStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "ButtonStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "button_color": "#aaffaa", "font_weight": ""}}, "07065d6be7f842ce9b8ce0f69c08e783": {"model_name": "ButtonModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": ["happy"], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "ButtonModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "ButtonView", "button_style": "", "description": "\ud83d\ude42", "disabled": false, "icon": "", "layout": "IPY_MODEL_7c3617d6bf794b508abbc487939ea18c", "style": "IPY_MODEL_eb1e2141fcad47639c893ff1a732f8c2", "tooltip": "happy"}}, "f6da7be5672b45978dd345404a6aaa8e": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": "auto", "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": "0.5em", "right": null, "top": null, "visibility": null, "width": "auto"}}, "789f4fa75b174f8eaf66a62df376f2d8": {"model_name": "ButtonStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "ButtonStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "button_color": "#dddd77", "font_weight": ""}}, "1c989012406c4510822239377f18dc3e": {"model_name": "ButtonModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": ["medium"], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "ButtonModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "ButtonView", "button_style": "", "description": "\ud83d\ude10", "disabled": false, "icon": "", "layout": "IPY_MODEL_f6da7be5672b45978dd345404a6aaa8e", "style": "IPY_MODEL_789f4fa75b174f8eaf66a62df376f2d8", "tooltip": "medium"}}, "594e5da7eb46453cbc41aef9c4a06012": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": "auto", "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": "0.5em", "right": null, "top": null, "visibility": null, "width": "auto"}}, "8de37ac47d07429eb3a2bd20ccc831f2": {"model_name": "ButtonStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "ButtonStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "button_color": "#ffaaaa", "font_weight": ""}}, "cfa65cc2c9c2489fadf35b1329bd5dfe": {"model_name": "ButtonModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": ["sad"], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "ButtonModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "ButtonView", "button_style": "", "description": "\ud83d\ude41", "disabled": false, "icon": "", "layout": "IPY_MODEL_594e5da7eb46453cbc41aef9c4a06012", "style": "IPY_MODEL_8de37ac47d07429eb3a2bd20ccc831f2", "tooltip": "sad"}}, "91a6488bcfb04759abe3e19358f5d823": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": "auto", "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": "auto"}}, "3eadd10c3e5e4142bffbfafbb4c40d51": {"model_name": "DescriptionStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "DescriptionStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": ""}}, "cab8a817fb0d4c7fb645150ed6582ec6": {"model_name": "TextareaModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "TextareaModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "TextareaView", "continuous_update": true, "description": "", "description_tooltip": null, "disabled": false, "layout": "IPY_MODEL_91a6488bcfb04759abe3e19358f5d823", "placeholder": "We want your feedback!", "rows": null, "style": "IPY_MODEL_3eadd10c3e5e4142bffbfafbb4c40d51", "value": ""}}, "8a30d9ab3ad041d2a8e4ba2e9edeba33": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": "auto", "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": "auto"}}, "b29690f9d61147b9b2861019fb263157": {"model_name": "ButtonStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "ButtonStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "button_color": null, "font_weight": ""}}, "a8f0ba52680e4a95a732d43203a8ccef": {"model_name": "ButtonModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "ButtonModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "ButtonView", "button_style": "", "description": "Submit", "disabled": false, "icon": "", "layout": "IPY_MODEL_8a30d9ab3ad041d2a8e4ba2e9edeba33", "style": "IPY_MODEL_b29690f9d61147b9b2861019fb263157", "tooltip": ""}}, "3d395c7afc754128a56ef14ab8e8c579": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": "none", "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "488ca6f79d3c42c48e07bacbaa45a144": {"model_name": "HBoxModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "HBoxModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "HBoxView", "box_style": "", "children": ["IPY_MODEL_cab8a817fb0d4c7fb645150ed6582ec6", "IPY_MODEL_a8f0ba52680e4a95a732d43203a8ccef"], "layout": "IPY_MODEL_3d395c7afc754128a56ef14ab8e8c579"}}, "12827721dd4240faaa260dac28d6ed0b": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": "none", "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "ac01e20124f14003a56760eab529b236": {"model_name": "DescriptionStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "DescriptionStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": ""}}, "589c1e328f2c466b8bdc1681bbba21e6": {"model_name": "LabelModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "LabelModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "LabelView", "description": "", "description_tooltip": null, "layout": "IPY_MODEL_12827721dd4240faaa260dac28d6ed0b", "placeholder": "\u200b", "style": "IPY_MODEL_ac01e20124f14003a56760eab529b236", "value": "Thanks for your feedback!"}}, "11bdc4ff400a470384626669f48433b6": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "2c3b14310d2742f7b5895cc2ef2e1a45": {"model_name": "HBoxModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "HBoxModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "HBoxView", "box_style": "", "children": ["IPY_MODEL_07065d6be7f842ce9b8ce0f69c08e783", "IPY_MODEL_1c989012406c4510822239377f18dc3e", "IPY_MODEL_cfa65cc2c9c2489fadf35b1329bd5dfe"], "layout": "IPY_MODEL_11bdc4ff400a470384626669f48433b6"}}, "cb8aee01d02247bca91806a9f1385ab4": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "d37d908225c34c029311311994561183": {"model_name": "VBoxModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "VBoxModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "VBoxView", "box_style": "", "children": ["IPY_MODEL_2c3b14310d2742f7b5895cc2ef2e1a45", "IPY_MODEL_488ca6f79d3c42c48e07bacbaa45a144", "IPY_MODEL_589c1e328f2c466b8bdc1681bbba21e6"], "layout": "IPY_MODEL_cb8aee01d02247bca91806a9f1385ab4"}}, "190f781663ce4503958f8240dda9ecc2": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "f69007bd2b7b40148c576b90ec383e19": {"model_name": "VBoxModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "VBoxModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "VBoxView", "box_style": "", "children": ["IPY_MODEL_d37d908225c34c029311311994561183"], "layout": "IPY_MODEL_190f781663ce4503958f8240dda9ecc2"}}}, "version_major": 2, "version_minor": 0}
-</script>
 <script type="text/x-thebe-config">
     {
         requestKernel: true,
@@ -920,7 +1080,7 @@ const thebe_selector_output = ".output, .cell_output"
 <div class="footer-content row">
 <footer class="col footer"><p>
   
-    By Neuromatch<br/>
+    By Neuromatch<br>
 <div class="extra_footer">
 <div>
 <a href="http://creativecommons.org/licenses/by/4.0/"><img src="https://i.creativecommons.org/l/by/4.0/88x31.png"/></a>
@@ -929,7 +1089,7 @@ The contents of this repository are shared under the <a href="http://creativecom
 Software elements are additionally licensed under the <a href="https://opensource.org/licenses/BSD-3-Clause">BSD (3-Clause) License</a>.
 </div>
 </div>
-</p>
+</br></p>
 </footer>
 </div>
 </div>
