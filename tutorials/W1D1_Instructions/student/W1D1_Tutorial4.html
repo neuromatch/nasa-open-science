@@ -739,6 +739,11 @@ const thebe_selector_output = ".output, .cell_output"
      Section 4: Course Schedule
     </a>
 </li>
+<li class="toc-h2 nav-item toc-entry">
+<a class="reference internal nav-link" href="#section-5-course-prereqs">
+     Section 5: Course Prereqs
+    </a>
+</li>
 </ul>
 </li>
 <li class="toc-h1 nav-item toc-entry">
@@ -793,6 +798,11 @@ const thebe_selector_output = ".output, .cell_output"
      Section 4: Course Schedule
     </a>
 </li>
+<li class="toc-h2 nav-item toc-entry">
+<a class="reference internal nav-link" href="#section-5-course-prereqs">
+     Section 5: Course Prereqs
+    </a>
+</li>
 </ul>
 </li>
 <li class="toc-h1 nav-item toc-entry">
@@ -828,6 +838,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li><p>learn how to create Wrap Ups for a given module (category)</p></li>
 <li><p>learn how to add Bonus Tutorials</p></li>
 <li><p>learn how to add/update the course schedule</p></li>
+<li><p>learn how to add prereqs for your course</p></li>
 </ul>
 <p>It is recommended that you read through all of tutorials 1 through 3 as this tutorial builds upon that knowledge.</p>
 </div>
@@ -838,10 +849,10 @@ const thebe_selector_output = ".output, .cell_output"
 <p>Steps:</p>
 <ul class="simple">
 <li><p>Choose the image you want to use. This can come from the Art contests during the course, or from somewhere on the web.</p></li>
-<li><p>Add the image to the directory tutorials/Art/</p></li>
+<li><p>Add the image to the directory <strong>tutorials/Art/</strong></p></li>
 <li><p>Name the image with the follow format: W#D#_DayName-Artist_Name.(jpg or png)</p></li>
 </ul>
-<p>You <strong>must</strong> follow the above format exactly! This includes the underscores and dashes. Here is an example: W2D4_DynamicNetworks-Ekaterina_Morozova.jpg
+<p>You <strong>must</strong> follow the above format exactly! This includes the underscores and dashes. Here is an example: <strong>W2D4_DynamicNetworks-Ekaterina_Morozova.jpg</strong>
 The beginning of the file name (ie. W2D4_) is used to place the image on the landing page for the right day, and the end (ie. -Ekaterina_Morozova) is used to credit the artist. You can find examples <a class="reference external" href="https://github.com/neuromatch/course-content-template/tree/main/tutorials/Art">here</a>.</p>
 </div>
 <hr class="docutils"/>
@@ -851,16 +862,16 @@ The beginning of the file name (ie. W2D4_) is used to place the image on the lan
 <p>Steps:</p>
 <ul class="simple">
 <li><p>Decide on the format for your wrap up</p></li>
-<li><p>Add the notebook file to the directory tutorials/Module_WrapUps</p></li>
+<li><p>Add the notebook file to the directory <strong>tutorials/Module_WrapUps</strong></p></li>
 <li><p>Give the file the same name as the module (category) with the file extension .ipynb
-Here is an example of the naming convention: CourseContentTemplateInstructions.ipynb</p></li>
+Here is an example of the naming convention: <strong>CourseContentTemplateInstructions.ipynb</strong></p></li>
 </ul>
 <p><strong>Note</strong>: the category name defined in the materials.yml file may have spaces, but the file name for the wrap up must <em>not</em>. Simply remove the spaces and concatenate all the word in the category title together, exactly how they are written in the materials file.</p>
 </div>
 <hr class="docutils"/>
 <div class="section" id="section-3-bonus-tutorials">
 <h2>Section 3: Bonus Tutorials<a class="headerlink" href="#section-3-bonus-tutorials" title="Permalink to this headline">¶</a></h2>
-<p>You have to option to add bonus tutorials for a given module/category. The process is similar to adding regular tutorials, only the prefix for the folder will be Bonus, instead of the week number and day number. For example, a bonus tutorial within the tutorials directoty would look as follows: tutorials/Bonus_ContentName.</p>
+<p>You have to option to add bonus tutorials for a given module/category. The process is similar to adding regular tutorials, only the prefix for the folder will be Bonus, instead of the week number and day number. For example, a bonus tutorial within the tutorials directoty would look as follows: <strong>tutorials/Bonus_ContentName</strong>.</p>
 <p>The Bonus directory should follow a similar structure to the regular tutorials directory by including the follow files within the bonus directory:</p>
 <ul class="simple">
 <li><p>Bonus_Intro.ipynb</p></li>
@@ -870,14 +881,55 @@ Here is an example of the naming convention: CourseContentTemplateInstructions.i
 </ul>
 <p><strong>NOTE</strong>: You should add the bonus to the materials file using the following structure:</p>
 <p>- day: Bonus</p>
-<p>category: Name of the module you want to include a bonus for</p>
-<p>name: Bonus Content Name</p>
-<p>tutorials: N -&gt; The number of tutorials in the bonus.</p>
-<p>You should follow all the same conventions described for regular tutorial creation. This template includes a bonus tutorial in the Intructions section that you can use as a template. See the materials.yml file for how to add a bonus to a module.</p>
+<p>    category: Name of the module you want to include a bonus for</p>
+<p>    name: Bonus Content Name</p>
+<p>    tutorials: N -&gt; The number of tutorials in the bonus.</p>
+<p>You should follow all the same conventions described for regular tutorial creation. This template includes a bonus tutorial in the Intructions section that you can use as a template. See the <strong>materials.yml</strong> file for how to add a bonus to a module.</p>
 </div>
 <hr class="docutils"/>
 <div class="section" id="section-4-course-schedule">
 <h2>Section 4: Course Schedule<a class="headerlink" href="#section-4-course-schedule" title="Permalink to this headline">¶</a></h2>
+<p>We include a daily schedule and links to shared calendars in the course books for reference for the students and TAs. This section will briefly describe where this content lives, and which files to change for your new course.</p>
+<p>Within the tutorials directory, you’ll find a schedule directory (ie. tutorials/Schedule). In this directory, you’ll see the following 4 files:</p>
+<ul class="simple">
+<li><p>daily_schedules.md</p></li>
+<li><p>schedule_intro.md</p></li>
+<li><p>shared_calendars.md</p></li>
+<li><p>timezone_widget.md</p></li>
+</ul>
+<p>The time zone widget is managed in another repo and is simply linked to this book; you won’t need to really edit that here. The files you want to pay attention to are the <strong>daily_schedules.md</strong> and <strong>shared_calendars.md</strong> files. You should edit them reflect the actual schedules and shared calendars for your newly created course.</p>
+<p><strong>NOTE</strong>: You will need to replace the day names in the daily_schedules.md file to match the name for your course. You will also need to replace the links to the shared calendars (in UTC) to point to the calendars for your course.</p>
+<p>We have included examples from our comp neuro course. Please feel free to use them as a template and edit them to your needs.</p>
+</div>
+<hr class="docutils"/>
+<div class="section" id="section-5-course-prereqs">
+<h2>Section 5: Course Prereqs<a class="headerlink" href="#section-5-course-prereqs" title="Permalink to this headline">¶</a></h2>
+<p>This section briefly describes how to include precourse work for your new course. Generally, the precourse tutorials live in a separate repo. We suggest importing the precourse repo under the neuromatch organization (similar to what you did for this course book), and then naming it something like <strong>yourcourse-precourse</strong> under the neuromatch organization. You can then edit the tutorials for the prereqs directly and decide what to keep and what to change.</p>
+<p><strong>NOTE</strong>: You should follow the structure <strong>exactly</strong> as it is laid out from the imported repo. It is very similar to the structure of the tutorials for the regular book.</p>
+<p>You will need to:</p>
+<ul class="simple">
+<li><p>write all your tutorials in the tutorials directory of the precourse repo</p></li>
+<li><p>use the prefix W0D# for your days of precourse work</p></li>
+<li><p>edit the materials.yml file in the tutorials directory to reflect the names of your days as well as the number of tutorials for each day</p></li>
+<li><p>write an intro for the course/precourse and save it as a .md file in the prereqs directory of the precourse repo</p></li>
+</ul>
+<p>After all that is done, you should then edit the <strong>publish-book.yml</strong> workflow file in your course book repo under the .github/workflows directory and change <strong>ONLY</strong> the following env vars to match your new course and precourse repos.</p>
+<p>env:</p>
+<p>    NB_KERNEL: python</p>
+<p>    ORG: neuromatch</p>
+<p>    NMA_REPO: new-course-content</p>
+<p>    NMA_MAIN_BRANCH: main</p>
+<p>    PREREQ_REPO: yourcourse-precourse</p>
+<p>    PREREQ_INTRO: MyNewCourse</p>
+<p>Below is an example of the vars set for this template:</p>
+<p>env:</p>
+<p>    NB_KERNEL: python</p>
+<p>    ORG: neuromatch</p>
+<p>    NMA_REPO: course-content-template</p>
+<p>    NMA_MAIN_BRANCH: main</p>
+<p>    PREREQ_REPO: precourse</p>
+<p>    PREREQ_INTRO: ComputationalNeuroscience</p>
+<p>We have included the precourse materials from our comp neuro course in the template to demonstrate how it would look. Feel free to use it as a template for your precourse materials.</p>
 </div>
 </div>
 <hr class="docutils"/>
@@ -885,11 +937,11 @@ Here is an example of the naming convention: CourseContentTemplateInstructions.i
 <h1>Summary<a class="headerlink" href="#summary" title="Permalink to this headline">¶</a></h1>
 <p>Congrats! You now know:</p>
 <ol class="simple">
-<li><p>how and where to create new content</p></li>
-<li><p>how to follow our naming convention</p></li>
-<li><p>how to prepare the notebooks for our pipeline</p></li>
-<li><p>how to create branches and pull requests</p></li>
-<li><p>the basics of our workflows using github actions</p></li>
+<li><p>how and where to add artwork/images to your day landing page</p></li>
+<li><p>how and where to add module Wrap Ups</p></li>
+<li><p>how to include bonus tutorials for a module</p></li>
+<li><p>how to create/update your course schedules</p></li>
+<li><p>the basics of adding prereqs to your course notebook</p></li>
 </ol>
 <p>Happy content creating!</p>
 </div>
