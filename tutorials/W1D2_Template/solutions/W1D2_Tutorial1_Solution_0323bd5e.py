@@ -24,8 +24,8 @@ x = np.array([4, 5, 6])
 
 # We usually define the plotting function in the hidden Helper Functions
 # so students don't have to see a bunch of boilerplate matplotlib code
+
 ## Uncomment the code below to test your function
 
 # z = generic_function(x, seed=2021)
-# with plt.xkcd():
-#   plotting_z(z)
+# plotting_z(z)
