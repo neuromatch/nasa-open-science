@@ -1,85 +1,439 @@
 
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
 <head>
 <meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="Docutils 0.18.1: http://docutils.sourceforge.net/" name="generator"/>
 <title>Tutorial 2: Github Workflow — Insert your title here. e.g. Neuromatch Academy: Computational Neuroscience</title>
+<script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
 <!-- Loaded before other Sphinx assets -->
-<link href="../../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet"/>
-<link href="../../../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet"/>
-<link href="../../../_static/vendor/fontawesome/5.13.0/css/all.min.css" rel="stylesheet"/>
-<link as="font" crossorigin="" href="../../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2" rel="preload" type="font/woff2"/>
-<link as="font" crossorigin="" href="../../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2" rel="preload" type="font/woff2"/>
+<link href="../../../_static/styles/theme.css?digest=796348d33e8b1d947c94" rel="stylesheet"/>
+<link href="../../../_static/styles/bootstrap.css?digest=796348d33e8b1d947c94" rel="stylesheet"/>
+<link href="../../../_static/styles/pydata-sphinx-theme.css?digest=796348d33e8b1d947c94" rel="stylesheet"/>
+<link href="../../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=796348d33e8b1d947c94" rel="stylesheet"/>
+<link as="font" crossorigin="" href="../../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" rel="preload" type="font/woff2"/>
+<link as="font" crossorigin="" href="../../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" rel="preload" type="font/woff2"/>
+<link as="font" crossorigin="" href="../../../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" rel="preload" type="font/woff2"/>
 <link href="../../../_static/pygments.css" rel="stylesheet" type="text/css">
-<link href="../../../_static/styles/sphinx-book-theme.css" rel="stylesheet" type="text/css">
+<link href="../../../_static/styles/sphinx-book-theme.css?digest=4ec06e9971c5264fbd345897d5258098f11cc577" rel="stylesheet" type="text/css">
 <link href="../../../_static/togglebutton.css" rel="stylesheet" type="text/css">
 <link href="../../../_static/copybutton.css" rel="stylesheet" type="text/css">
-<link href="../../../_static/mystnb.css" rel="stylesheet" type="text/css">
-<link href="../../../_static/sphinx-thebe.css" rel="stylesheet" type="text/css"/>
-<link href="../../../_static/custom.css" rel="stylesheet" type="text/css"/>
-<link href="../../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" rel="stylesheet" type="text/css"/>
-<link href="../../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" rel="stylesheet" type="text/css">
+<link href="../../../_static/sphinx-thebe.css" rel="stylesheet" type="text/css">
+<link href="../../../_static/custom.css" rel="stylesheet" type="text/css">
+<link href="../../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" rel="stylesheet" type="text/css"/>
 <!-- Pre-loaded scripts that we'll load fully later -->
-<link as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf" rel="preload"/>
+<link as="script" href="../../../_static/scripts/bootstrap.js?digest=796348d33e8b1d947c94" rel="preload"/>
+<link as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=796348d33e8b1d947c94" rel="preload"/>
 <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
 <script src="../../../_static/jquery.js"></script>
 <script src="../../../_static/underscore.js"></script>
+<script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
 <script src="../../../_static/doctools.js"></script>
-<script src="../../../_static/togglebutton.js"></script>
 <script src="../../../_static/clipboard.min.js"></script>
 <script src="../../../_static/copybutton.js"></script>
-<script src="../../../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
-<script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+<script src="../../../_static/scripts/sphinx-book-theme.js?digest=8bf782fb4ee92b3d3646425e50f299c4e1fd152d"></script>
+<script>let toggleHintShow = 'Click to show';</script>
+<script>let toggleHintHide = 'Click to hide';</script>
+<script>let toggleOpenOnPrint = 'true';</script>
+<script src="../../../_static/togglebutton.js"></script>
+<script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+<script src="../../../_static/design-tabs.js"></script>
 <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
 const thebe_selector = ".thebe,.cell"
 const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
 <script async="async" src="../../../_static/sphinx-thebe.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
-<script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.1/dist/embed-amd.js"></script>
+<script>DOCUMENTATION_OPTIONS.pagename = 'tutorials/W1D1_Instructions/student/W1D1_Tutorial2';</script>
 <link href="../../../_static/nma-logo-square-4xp.png" rel="shortcut icon">
-<link href="../../../genindex.html" rel="index" title="Index"/>
+<link href="../../../genindex.html" rel="index" title="Index">
 <link href="../../../search.html" rel="search" title="Search"/>
 <link href="W1D1_Tutorial3.html" rel="next" title="Tutorial 3: Content Enhancements"/>
 <link href="W1D1_Tutorial1.html" rel="prev" title="Tutorial 1: Importing the Template"/>
 <meta content="width=device-width, initial-scale=1" name="viewport"/>
-<meta content="None" name="docsearch:language"/>
-<!-- Google Analytics -->
-</link></link></link></link></link></link></head>
-<body data-offset="60" data-spy="scroll" data-target="#bd-toc-nav">
-<!-- Checkboxes to toggle the left sidebar -->
-<input aria-label="Toggle navigation sidebar" class="sidebar-toggle" id="__navigation" name="__navigation" type="checkbox"/>
-<label class="overlay overlay-navbar" for="__navigation">
-<div class="visually-hidden">Toggle navigation sidebar</div>
+<meta content="en" name="docsearch:language"/>
+</link></link></link></link></link></link></link></link></link></head>
+<body data-default-mode="" data-offset="180" data-spy="scroll" data-target="#bd-toc-nav">
+<a class="skip-link" href="#main-content">Skip to main content</a>
+<input class="sidebar-toggle" id="__primary" name="__primary" type="checkbox"/>
+<label class="overlay overlay-primary" for="__primary"></label>
+<input class="sidebar-toggle" id="__secondary" name="__secondary" type="checkbox"/>
+<label class="overlay overlay-secondary" for="__secondary"></label>
+<div class="search-button__wrapper">
+<div class="search-button__overlay"></div>
+<div class="search-button__search-container">
+<form action="../../../search.html" class="bd-search d-flex align-items-center" method="get">
+<i class="fa-solid fa-magnifying-glass"></i>
+<input aria-label="Search this book..." autocapitalize="off" autocomplete="off" autocorrect="off" class="form-control" id="search-input" name="q" placeholder="Search this book..." spellcheck="false" type="search"/>
+<span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+</div>
+</div>
+<nav class="bd-header navbar navbar-expand-lg bd-navbar" id="navbar-main"><div class="bd-header__inner bd-page-width">
+<label class="sidebar-toggle primary-toggle" for="__primary">
+<span class="fa-solid fa-bars"></span>
 </label>
-<!-- Checkboxes to toggle the in-page toc -->
-<input aria-label="Toggle in-page Table of Contents" class="sidebar-toggle" id="__page-toc" name="__page-toc" type="checkbox"/>
-<label class="overlay overlay-pagetoc" for="__page-toc">
-<div class="visually-hidden">Toggle in-page Table of Contents</div>
-</label>
-<!-- Headers at the top -->
-<div class="announcement header-item noprint"></div>
-<div class="header header-item noprint"></div>
-<div class="container-fluid" id="banner"></div>
-<div class="container-xl">
-<div class="row">
-<!-- Sidebar -->
-<div class="bd-sidebar noprint" id="site-navigation">
-<div class="bd-sidebar__content">
-<div class="bd-sidebar__top"><div class="navbar-brand-box">
-<a class="navbar-brand text-wrap" href="../../../index.html">
-<!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
-<img alt="logo" class="logo" src="../../../_static/nma-logo-square-4xp.png"/>
-<h1 class="site-logo" id="site-title">Insert your title here. e.g. Neuromatch Academy: Computational Neuroscience</h1>
+<div id="navbar-start">
+<a class="navbar-brand logo" href="../../intro.html">
+<img alt="Logo image" class="logo__image only-light" src="../../../_static/nma-logo-square-4xp.png"/>
+<img alt="Logo image" class="logo__image only-dark" src="../../../_static/nma-logo-square-4xp.png"/>
 </a>
-</div><form action="../../../search.html" class="bd-search d-flex align-items-center" method="get">
-<i class="icon fas fa-search"></i>
-<input aria-label="Search this book..." autocomplete="off" class="form-control" id="search-input" name="q" placeholder="Search this book..." type="search"/>
-</form><nav aria-label="Main" class="bd-links" id="bd-docs-nav">
-<div class="bd-toc-item active">
+</div>
+<div class="col-lg-9 navbar-header-items">
+<div class="mr-auto" id="navbar-center">
+<div class="navbar-center-item">
+<nav class="navbar-nav">
+<p aria-label="Site Navigation" aria-level="1" class="sidebar-header-items__title" role="heading">
+        Site Navigation
+    </p>
+<ul class="navbar-nav" id="navbar-main-elements">
+<li class="nav-item">
+<a class="nav-link nav-internal" href="../../Schedule/schedule_intro.html">
+                        Schedule
+                      </a>
+</li>
+<li class="nav-item">
+<a class="nav-link nav-internal" href="../../TechnicalHelp/tech_intro.html">
+                        Technical Help
+                      </a>
+</li>
+<li class="nav-item">
+<a class="nav-link nav-internal" href="../../TechnicalHelp/Links_Policy.html">
+                        Quick links and policies
+                      </a>
+</li>
+<li class="nav-item">
+<a class="nav-link nav-internal" href="../../../prereqs/ComputationalNeuroscience.html">
+                        Prerequisites and preparatory materials for NMA Computational Neuroscience
+                      </a>
+</li>
+<li class="nav-item">
+<a class="nav-link nav-internal" href="../../W0D0_NeuroVideoSeries/chapter_title.html">
+                        Neuro Video Series (W0D0)
+                      </a>
+</li>
+<div class="nav-item dropdown">
+<button aria-expanded="false" aria-haspopup="true" class="btn dropdown-toggle nav-item" data-toggle="dropdown" type="button">
+                    More
+                </button>
+<div class="dropdown-menu">
+<li class="nav-item">
+<a class="nav-link nav-internal" href="../../W0D1_PythonWorkshop1/chapter_title.html">
+                        Python Workshop 1 (W0D1)
+                      </a>
+</li>
+<li class="nav-item">
+<a class="nav-link nav-internal" href="../../W0D2_PythonWorkshop2/chapter_title.html">
+                        Python Workshop 2 (W0D2)
+                      </a>
+</li>
+<li class="nav-item">
+<a class="nav-link nav-internal" href="../../W0D3_LinearAlgebra/chapter_title.html">
+                        Linear Algebra (W0D3)
+                      </a>
+</li>
+<li class="nav-item">
+<a class="nav-link nav-internal" href="../../W0D4_Calculus/chapter_title.html">
+                        Calculus (W0D4)
+                      </a>
+</li>
+<li class="nav-item">
+<a class="nav-link nav-internal" href="../../W0D5_Statistics/chapter_title.html">
+                        Statistics (W0D5)
+                      </a>
+</li>
+<li class="nav-item current active">
+<a class="nav-link nav-internal" href="../chapter_title.html">
+                        Instructions (W1D1)
+                      </a>
+</li>
+<li class="nav-item">
+<a class="nav-link nav-internal" href="../../Bonus_BonusContent/chapter_title.html">
+                        Bonus Content (Bonus)
+                      </a>
+</li>
+<li class="nav-item">
+<a class="nav-link nav-internal" href="../../Module_WrapUps/CourseContentTemplateInstructions.html">
+                        Course Content Template Instructions Wrap-Up
+                      </a>
+</li>
+<li class="nav-item">
+<a class="nav-link nav-internal" href="../../W1D2_Template/chapter_title.html">
+                        Template (W1D2)
+                      </a>
+</li>
+<li class="nav-item">
+<a class="nav-link nav-internal" href="../../Module_WrapUps/InsertCategoryNameHere.html">
+                        Insert Category Name Here Wrap-Up
+                      </a>
+</li>
+<li class="nav-item">
+<a class="nav-link nav-internal" href="../../../projects/README.html">
+                        Introduction
+                      </a>
+</li>
+<li class="nav-item">
+<a class="nav-link nav-internal" href="../../../projects/keynote.html">
+                        Project Day keynote (W2D2)
+                      </a>
+</li>
+<li class="nav-item">
+<a class="nav-link nav-internal" href="../../../projects/docs/project_guidance.html">
+                        Daily guide for projects
+                      </a>
+</li>
+<li class="nav-item">
+<a class="nav-link nav-internal" href="../../../projects/docs/datasets_overview.html">
+                        Project materials
+                      </a>
+</li>
+<li class="nav-item">
+<a class="nav-link nav-internal" href="../../../projects/docs/continuing_your_project_after_the_course.html">
+                        Continuing your project after the course
+                      </a>
+</li>
+<li class="nav-item">
+<a class="nav-link nav-internal" href="../../../projects/docs/past_projects_overview.html">
+                        Past projects
+                      </a>
+</li>
+<li class="nav-item">
+<a class="nav-link nav-internal" href="../../../projects/professional_development/README.html">
+                        Introduction
+                      </a>
+</li>
+<li class="nav-item">
+<a class="nav-link nav-internal" href="../../../projects/professional_development/impact_talks.html">
+                        Impact Talks
+                      </a>
+</li>
+<li class="nav-item">
+<a class="nav-link nav-internal" href="../../../projects/professional_development/career_features.html">
+                        Career Features
+                      </a>
+</li>
+<li class="nav-item">
+<a class="nav-link nav-internal" href="../../../projects/professional_development/career_panels.html">
+                        Career Panels
+                      </a>
+</li>
+</div>
+</div>
+</ul>
+</nav>
+</div>
+</div>
+<div id="navbar-end">
+<div class="navbar-end-item navbar-persistent--container">
+<button aria-label="Search" class="btn btn-sm navbar-btn search-button search-button__button" data-toggle="tooltip" title="Search">
+<i class="fa-solid fa-magnifying-glass"></i>
+</button>
+</div>
+<div class="navbar-end-item">
+<button aria-label="light/dark" class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" data-toggle="tooltip" title="light/dark">
+<span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+<span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+<span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+</button>
+</div>
+<div class="navbar-end-item">
+<ul aria-label="Icon Links" class="navbar-nav" id="navbar-icon-links">
+</ul>
+</div>
+</div>
+</div>
+<div class="navbar-persistent--mobile">
+<button aria-label="Search" class="btn btn-sm navbar-btn search-button search-button__button" data-toggle="tooltip" title="Search">
+<i class="fa-solid fa-magnifying-glass"></i>
+</button>
+</div>
+<label class="sidebar-toggle secondary-toggle" for="__secondary">
+<span class="fa-solid fa-outdent"></span>
+</label>
+</div>
+</nav>
+<div class="bd-container">
+<div class="bd-container__inner bd-page-width">
+<div class="bd-sidebar-primary bd-sidebar">
+<div class="sidebar-header-items sidebar-primary__section">
+<div class="sidebar-header-items__center">
+<div class="navbar-center-item">
+<nav class="navbar-nav">
+<p aria-label="Site Navigation" aria-level="1" class="sidebar-header-items__title" role="heading">
+        Site Navigation
+    </p>
+<ul class="navbar-nav" id="navbar-main-elements">
+<li class="nav-item">
+<a class="nav-link nav-internal" href="../../Schedule/schedule_intro.html">
+                        Schedule
+                      </a>
+</li>
+<li class="nav-item">
+<a class="nav-link nav-internal" href="../../TechnicalHelp/tech_intro.html">
+                        Technical Help
+                      </a>
+</li>
+<li class="nav-item">
+<a class="nav-link nav-internal" href="../../TechnicalHelp/Links_Policy.html">
+                        Quick links and policies
+                      </a>
+</li>
+<li class="nav-item">
+<a class="nav-link nav-internal" href="../../../prereqs/ComputationalNeuroscience.html">
+                        Prerequisites and preparatory materials for NMA Computational Neuroscience
+                      </a>
+</li>
+<li class="nav-item">
+<a class="nav-link nav-internal" href="../../W0D0_NeuroVideoSeries/chapter_title.html">
+                        Neuro Video Series (W0D0)
+                      </a>
+</li>
+<div class="nav-item dropdown">
+<button aria-expanded="false" aria-haspopup="true" class="btn dropdown-toggle nav-item" data-toggle="dropdown" type="button">
+                    More
+                </button>
+<div class="dropdown-menu">
+<li class="nav-item">
+<a class="nav-link nav-internal" href="../../W0D1_PythonWorkshop1/chapter_title.html">
+                        Python Workshop 1 (W0D1)
+                      </a>
+</li>
+<li class="nav-item">
+<a class="nav-link nav-internal" href="../../W0D2_PythonWorkshop2/chapter_title.html">
+                        Python Workshop 2 (W0D2)
+                      </a>
+</li>
+<li class="nav-item">
+<a class="nav-link nav-internal" href="../../W0D3_LinearAlgebra/chapter_title.html">
+                        Linear Algebra (W0D3)
+                      </a>
+</li>
+<li class="nav-item">
+<a class="nav-link nav-internal" href="../../W0D4_Calculus/chapter_title.html">
+                        Calculus (W0D4)
+                      </a>
+</li>
+<li class="nav-item">
+<a class="nav-link nav-internal" href="../../W0D5_Statistics/chapter_title.html">
+                        Statistics (W0D5)
+                      </a>
+</li>
+<li class="nav-item current active">
+<a class="nav-link nav-internal" href="../chapter_title.html">
+                        Instructions (W1D1)
+                      </a>
+</li>
+<li class="nav-item">
+<a class="nav-link nav-internal" href="../../Bonus_BonusContent/chapter_title.html">
+                        Bonus Content (Bonus)
+                      </a>
+</li>
+<li class="nav-item">
+<a class="nav-link nav-internal" href="../../Module_WrapUps/CourseContentTemplateInstructions.html">
+                        Course Content Template Instructions Wrap-Up
+                      </a>
+</li>
+<li class="nav-item">
+<a class="nav-link nav-internal" href="../../W1D2_Template/chapter_title.html">
+                        Template (W1D2)
+                      </a>
+</li>
+<li class="nav-item">
+<a class="nav-link nav-internal" href="../../Module_WrapUps/InsertCategoryNameHere.html">
+                        Insert Category Name Here Wrap-Up
+                      </a>
+</li>
+<li class="nav-item">
+<a class="nav-link nav-internal" href="../../../projects/README.html">
+                        Introduction
+                      </a>
+</li>
+<li class="nav-item">
+<a class="nav-link nav-internal" href="../../../projects/keynote.html">
+                        Project Day keynote (W2D2)
+                      </a>
+</li>
+<li class="nav-item">
+<a class="nav-link nav-internal" href="../../../projects/docs/project_guidance.html">
+                        Daily guide for projects
+                      </a>
+</li>
+<li class="nav-item">
+<a class="nav-link nav-internal" href="../../../projects/docs/datasets_overview.html">
+                        Project materials
+                      </a>
+</li>
+<li class="nav-item">
+<a class="nav-link nav-internal" href="../../../projects/docs/continuing_your_project_after_the_course.html">
+                        Continuing your project after the course
+                      </a>
+</li>
+<li class="nav-item">
+<a class="nav-link nav-internal" href="../../../projects/docs/past_projects_overview.html">
+                        Past projects
+                      </a>
+</li>
+<li class="nav-item">
+<a class="nav-link nav-internal" href="../../../projects/professional_development/README.html">
+                        Introduction
+                      </a>
+</li>
+<li class="nav-item">
+<a class="nav-link nav-internal" href="../../../projects/professional_development/impact_talks.html">
+                        Impact Talks
+                      </a>
+</li>
+<li class="nav-item">
+<a class="nav-link nav-internal" href="../../../projects/professional_development/career_features.html">
+                        Career Features
+                      </a>
+</li>
+<li class="nav-item">
+<a class="nav-link nav-internal" href="../../../projects/professional_development/career_panels.html">
+                        Career Panels
+                      </a>
+</li>
+</div>
+</div>
+</ul>
+</nav>
+</div>
+</div>
+<div class="sidebar-header-items__end">
+<div class="navbar-end-item">
+<button aria-label="light/dark" class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" data-toggle="tooltip" title="light/dark">
+<span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+<span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+<span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+</button>
+</div>
+<div class="navbar-end-item">
+<ul aria-label="Icon Links" class="navbar-nav" id="navbar-icon-links">
+</ul>
+</div>
+</div>
+</div>
+<div class="sidebar-start-items sidebar-primary__section">
+<div class="sidebar-start-items__item">
+<a class="navbar-brand logo" href="../../intro.html">
+<img alt="Logo image" class="logo__image only-light" src="../../../_static/nma-logo-square-4xp.png"/>
+<img alt="Logo image" class="logo__image only-dark" src="../../../_static/nma-logo-square-4xp.png"/>
+</a>
+</div>
+<div class="sidebar-start-items__item">
+<form action="../../../search.html" class="bd-search d-flex align-items-center" method="get">
+<i class="fa-solid fa-magnifying-glass"></i>
+<input aria-label="Search this book..." autocapitalize="off" autocomplete="off" autocorrect="off" class="form-control" id="search-input" name="q" placeholder="Search this book..." spellcheck="false" type="search"/>
+<span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+</div>
+<div class="sidebar-start-items__item"><nav aria-label="Main" class="bd-links" id="bd-docs-nav">
+<div class="bd-toc-item navbar-nav active">
 <ul class="nav bd-sidenav bd-sidenav__home-link">
 <li class="toctree-l1">
 <a class="reference internal" href="../../intro.html">
@@ -88,720 +442,220 @@ const thebe_selector_output = ".output, .cell_output"
 </li>
 </ul>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1 has-children">
-<a class="reference internal" href="../../Schedule/schedule_intro.html">
-   Schedule
-  </a>
-<input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox">
-<label for="toctree-checkbox-1">
-<i class="fas fa-chevron-down">
-</i>
-</label>
-<ul>
-<li class="toctree-l2">
-<a class="reference internal" href="../../Schedule/daily_schedules.html">
-     General schedule
-    </a>
-</li>
-<li class="toctree-l2">
-<a class="reference internal" href="../../Schedule/shared_calendars.html">
-     Shared calendars
-    </a>
-</li>
-<li class="toctree-l2">
-<a class="reference internal" href="../../Schedule/timezone_widget.html">
-     Timezone widget
-    </a>
-</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Schedule/schedule_intro.html">Schedule</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../Schedule/daily_schedules.html">General schedule</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Schedule/shared_calendars.html">Shared calendars</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Schedule/timezone_widget.html">Timezone widget</a></li>
 </ul>
 </input></li>
 </ul>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1 has-children">
-<a class="reference internal" href="../../TechnicalHelp/tech_intro.html">
-   Technical Help
-  </a>
-<input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox">
-<label for="toctree-checkbox-2">
-<i class="fas fa-chevron-down">
-</i>
-</label>
-<ul>
-<li class="toctree-l2 has-children">
-<a class="reference internal" href="../../TechnicalHelp/Jupyterbook.html">
-     Using jupyterbook
-    </a>
-<input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox">
-<label for="toctree-checkbox-3">
-<i class="fas fa-chevron-down">
-</i>
-</label>
-<ul>
-<li class="toctree-l3">
-<a class="reference internal" href="../../TechnicalHelp/Tutorial_colab.html">
-       Using Google Colab
-      </a>
-</li>
-<li class="toctree-l3">
-<a class="reference internal" href="../../TechnicalHelp/Tutorial_kaggle.html">
-       Using Kaggle
-      </a>
-</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../TechnicalHelp/tech_intro.html">Technical Help</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../TechnicalHelp/Jupyterbook.html">Using jupyterbook</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../TechnicalHelp/Tutorial_colab.html">Using Google Colab</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../TechnicalHelp/Tutorial_kaggle.html">Using Kaggle</a></li>
 </ul>
 </input></li>
-<li class="toctree-l2">
-<a class="reference internal" href="../../TechnicalHelp/Discord.html">
-     Using discord
-    </a>
-</li>
+<li class="toctree-l2"><a class="reference internal" href="../../TechnicalHelp/Discord.html">Using discord</a></li>
 </ul>
 </input></li>
 </ul>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1">
-<a class="reference internal" href="../../TechnicalHelp/Links_Policy.html">
-   Quick links and policies
-  </a>
-</li>
+<li class="toctree-l1"><a class="reference internal" href="../../TechnicalHelp/Links_Policy.html">Quick links and policies</a></li>
 </ul>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1">
-<a class="reference internal" href="../../../prereqs/ComputationalNeuroscience.html">
-   Prerequisites and preparatory materials for NMA Computational Neuroscience
-  </a>
-</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../prereqs/ComputationalNeuroscience.html">Prerequisites and preparatory materials for NMA Computational Neuroscience</a></li>
 </ul>
-<p class="caption">
-<span class="caption-text">
-  Pre-reqs Refresher
- </span>
-</p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Pre-reqs Refresher</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1 has-children">
-<a class="reference internal" href="../../W0D0_NeuroVideoSeries/chapter_title.html">
-   Neuro Video Series (W0D0)
-  </a>
-<input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
-<label for="toctree-checkbox-4">
-<i class="fas fa-chevron-down">
-</i>
-</label>
-<ul>
-<li class="toctree-l2">
-<a class="reference internal" href="../../W0D0_NeuroVideoSeries/student/W0D0_Tutorial1.html">
-     Intro
-    </a>
-</li>
-<li class="toctree-l2">
-<a class="reference internal" href="../../W0D0_NeuroVideoSeries/student/W0D0_Tutorial2.html">
-     Human Psychophysics
-    </a>
-</li>
-<li class="toctree-l2">
-<a class="reference internal" href="../../W0D0_NeuroVideoSeries/student/W0D0_Tutorial3.html">
-     Behavioral Readout
-    </a>
-</li>
-<li class="toctree-l2">
-<a class="reference internal" href="../../W0D0_NeuroVideoSeries/student/W0D0_Tutorial4.html">
-     Live in Lab
-    </a>
-</li>
-<li class="toctree-l2">
-<a class="reference internal" href="../../W0D0_NeuroVideoSeries/student/W0D0_Tutorial5.html">
-     Brain Signals: Spiking Activity
-    </a>
-</li>
-<li class="toctree-l2">
-<a class="reference internal" href="../../W0D0_NeuroVideoSeries/student/W0D0_Tutorial6.html">
-     Brain Signals: LFP
-    </a>
-</li>
-<li class="toctree-l2">
-<a class="reference internal" href="../../W0D0_NeuroVideoSeries/student/W0D0_Tutorial7.html">
-     Brain Signals: EEG &amp; MEG
-    </a>
-</li>
-<li class="toctree-l2">
-<a class="reference internal" href="../../W0D0_NeuroVideoSeries/student/W0D0_Tutorial8.html">
-     Brain Signals: fMRI
-    </a>
-</li>
-<li class="toctree-l2">
-<a class="reference internal" href="../../W0D0_NeuroVideoSeries/student/W0D0_Tutorial9.html">
-     Brain Signals: Calcium Imaging
-    </a>
-</li>
-<li class="toctree-l2">
-<a class="reference internal" href="../../W0D0_NeuroVideoSeries/student/W0D0_Tutorial10.html">
-     Stimulus Representation
-    </a>
-</li>
-<li class="toctree-l2">
-<a class="reference internal" href="../../W0D0_NeuroVideoSeries/student/W0D0_Tutorial11.html">
-     Neurotransmitters
-    </a>
-</li>
-<li class="toctree-l2">
-<a class="reference internal" href="../../W0D0_NeuroVideoSeries/student/W0D0_Tutorial12.html">
-     Neurons to Consciousness
-    </a>
-</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../W0D0_NeuroVideoSeries/chapter_title.html">Neuro Video Series (W0D0)</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../W0D0_NeuroVideoSeries/student/W0D0_Tutorial1.html">Intro</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../W0D0_NeuroVideoSeries/student/W0D0_Tutorial2.html">Human Psychophysics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../W0D0_NeuroVideoSeries/student/W0D0_Tutorial3.html">Behavioral Readout</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../W0D0_NeuroVideoSeries/student/W0D0_Tutorial4.html">Live in Lab</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../W0D0_NeuroVideoSeries/student/W0D0_Tutorial5.html">Brain Signals: Spiking Activity</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../W0D0_NeuroVideoSeries/student/W0D0_Tutorial6.html">Brain Signals: LFP</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../W0D0_NeuroVideoSeries/student/W0D0_Tutorial7.html">Brain Signals: EEG &amp; MEG</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../W0D0_NeuroVideoSeries/student/W0D0_Tutorial8.html">Brain Signals: fMRI</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../W0D0_NeuroVideoSeries/student/W0D0_Tutorial9.html">Brain Signals: Calcium Imaging</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../W0D0_NeuroVideoSeries/student/W0D0_Tutorial10.html">Stimulus Representation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../W0D0_NeuroVideoSeries/student/W0D0_Tutorial11.html">Neurotransmitters</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../W0D0_NeuroVideoSeries/student/W0D0_Tutorial12.html">Neurons to Consciousness</a></li>
+</ul>
+</input></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../W0D1_PythonWorkshop1/chapter_title.html">Python Workshop 1 (W0D1)</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../W0D1_PythonWorkshop1/student/W0D1_Tutorial1.html">Tutorial: LIF Neuron Part I</a></li>
 </ul>
 </li>
-<li class="toctree-l1 has-children">
-<a class="reference internal" href="../../W0D1_PythonWorkshop1/chapter_title.html">
-   Python Workshop 1 (W0D1)
-  </a>
-<input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
-<label for="toctree-checkbox-5">
-<i class="fas fa-chevron-down">
-</i>
-</label>
-<ul>
-<li class="toctree-l2">
-<a class="reference internal" href="../../W0D1_PythonWorkshop1/student/W0D1_Tutorial1.html">
-     Tutorial: LIF Neuron Part I
-    </a>
-</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../W0D2_PythonWorkshop2/chapter_title.html">Python Workshop 2 (W0D2)</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../W0D2_PythonWorkshop2/student/W0D2_Tutorial1.html">Tutorial 1: LIF Neuron Part II</a></li>
 </ul>
 </li>
-<li class="toctree-l1 has-children">
-<a class="reference internal" href="../../W0D2_PythonWorkshop2/chapter_title.html">
-   Python Workshop 2 (W0D2)
-  </a>
-<input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
-<label for="toctree-checkbox-6">
-<i class="fas fa-chevron-down">
-</i>
-</label>
-<ul>
-<li class="toctree-l2">
-<a class="reference internal" href="../../W0D2_PythonWorkshop2/student/W0D2_Tutorial1.html">
-     Tutorial 1: LIF Neuron Part II
-    </a>
-</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../W0D3_LinearAlgebra/chapter_title.html">Linear Algebra (W0D3)</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../W0D3_LinearAlgebra/student/W0D3_Tutorial1.html">Tutorial 1: Vectors</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../W0D3_LinearAlgebra/student/W0D3_Tutorial2.html">Tutorial 2: Matrices</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../W0D3_LinearAlgebra/student/W0D3_Tutorial3.html">Bonus Tutorial: Discrete Dynamical Systems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../W0D3_LinearAlgebra/student/W0D3_Outro.html">Outro</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../W0D3_LinearAlgebra/student/W0D3_DaySummary.html">Day Summary</a></li>
 </ul>
 </li>
-<li class="toctree-l1 has-children">
-<a class="reference internal" href="../../W0D3_LinearAlgebra/chapter_title.html">
-   Linear Algebra (W0D3)
-  </a>
-<input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/>
-<label for="toctree-checkbox-7">
-<i class="fas fa-chevron-down">
-</i>
-</label>
-<ul>
-<li class="toctree-l2">
-<a class="reference internal" href="../../W0D3_LinearAlgebra/student/W0D3_Tutorial1.html">
-     Tutorial 1: Vectors
-    </a>
-</li>
-<li class="toctree-l2">
-<a class="reference internal" href="../../W0D3_LinearAlgebra/student/W0D3_Tutorial2.html">
-     Tutorial 2: Matrices
-    </a>
-</li>
-<li class="toctree-l2">
-<a class="reference internal" href="../../W0D3_LinearAlgebra/student/W0D3_Tutorial3.html">
-     Bonus Tutorial: Discrete Dynamical Systems
-    </a>
-</li>
-<li class="toctree-l2">
-<a class="reference internal" href="../../W0D3_LinearAlgebra/student/W0D3_Outro.html">
-     Outro
-    </a>
-</li>
-<li class="toctree-l2">
-<a class="reference internal" href="../../W0D3_LinearAlgebra/student/W0D3_DaySummary.html">
-     Day Summary
-    </a>
-</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../W0D4_Calculus/chapter_title.html">Calculus (W0D4)</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-8"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../W0D4_Calculus/student/W0D4_Tutorial1.html">Tutorial 1: Differentiation and Integration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../W0D4_Calculus/student/W0D4_Tutorial2.html">Tutorial 2: Differential Equations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../W0D4_Calculus/student/W0D4_Tutorial3.html">Tutorial 3: Numerical Methods</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../W0D4_Calculus/student/W0D4_DaySummary.html">Day Summary</a></li>
 </ul>
 </li>
-<li class="toctree-l1 has-children">
-<a class="reference internal" href="../../W0D4_Calculus/chapter_title.html">
-   Calculus (W0D4)
-  </a>
-<input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/>
-<label for="toctree-checkbox-8">
-<i class="fas fa-chevron-down">
-</i>
-</label>
-<ul>
-<li class="toctree-l2">
-<a class="reference internal" href="../../W0D4_Calculus/student/W0D4_Tutorial1.html">
-     Tutorial 1: Differentiation and Integration
-    </a>
-</li>
-<li class="toctree-l2">
-<a class="reference internal" href="../../W0D4_Calculus/student/W0D4_Tutorial2.html">
-     Tutorial 2: Differential Equations
-    </a>
-</li>
-<li class="toctree-l2">
-<a class="reference internal" href="../../W0D4_Calculus/student/W0D4_Tutorial3.html">
-     Tutorial 3: Numerical Methods
-    </a>
-</li>
-<li class="toctree-l2">
-<a class="reference internal" href="../../W0D4_Calculus/student/W0D4_DaySummary.html">
-     Day Summary
-    </a>
-</li>
-</ul>
-</li>
-<li class="toctree-l1 has-children">
-<a class="reference internal" href="../../W0D5_Statistics/chapter_title.html">
-   Statistics (W0D5)
-  </a>
-<input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/>
-<label for="toctree-checkbox-9">
-<i class="fas fa-chevron-down">
-</i>
-</label>
-<ul>
-<li class="toctree-l2">
-<a class="reference internal" href="../../W0D5_Statistics/student/W0D5_Tutorial1.html">
-     Tutorial 1: Probability Distributions
-    </a>
-</li>
-<li class="toctree-l2">
-<a class="reference internal" href="../../W0D5_Statistics/student/W0D5_Tutorial2.html">
-     Tutorial 2: Statistical Inference
-    </a>
-</li>
-<li class="toctree-l2">
-<a class="reference internal" href="../../W0D5_Statistics/student/W0D5_Outro.html">
-     Outro
-    </a>
-</li>
-<li class="toctree-l2">
-<a class="reference internal" href="../../W0D5_Statistics/student/W0D5_DaySummary.html">
-     Day Summary
-    </a>
-</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../W0D5_Statistics/chapter_title.html">Statistics (W0D5)</a><input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-9"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../W0D5_Statistics/student/W0D5_Tutorial1.html">Tutorial 1: Probability Distributions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../W0D5_Statistics/student/W0D5_Tutorial2.html">Tutorial 2: Statistical Inference</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../W0D5_Statistics/student/W0D5_Outro.html">Outro</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../W0D5_Statistics/student/W0D5_DaySummary.html">Day Summary</a></li>
 </ul>
 </li>
 </ul>
-<p class="caption">
-<span class="caption-text">
-  Course Content Template Instructions
- </span>
-</p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Course Content Template Instructions</span></p>
 <ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active has-children">
-<a class="reference internal" href="../chapter_title.html">
-   Instructions (W1D1)
-  </a>
-<input checked="" class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/>
-<label for="toctree-checkbox-10">
-<i class="fas fa-chevron-down">
-</i>
-</label>
-<ul class="current">
-<li class="toctree-l2">
-<a class="reference internal" href="W1D1_Intro.html">
-     Intro
-    </a>
-</li>
-<li class="toctree-l2">
-<a class="reference internal" href="W1D1_Tutorial1.html">
-     Tutorial 1: Importing the Template
-    </a>
-</li>
-<li class="toctree-l2 current active">
-<a class="current reference internal" href="#">
-     Tutorial 2: Github Workflow
-    </a>
-</li>
-<li class="toctree-l2">
-<a class="reference internal" href="W1D1_Tutorial3.html">
-     Tutorial 3: Content Enhancements
-    </a>
-</li>
-<li class="toctree-l2">
-<a class="reference internal" href="W1D1_Tutorial4.html">
-     Tutorial 4: Extra Notebook Sections
-    </a>
-</li>
-<li class="toctree-l2">
-<a class="reference internal" href="W1D1_Tutorial5.html">
-     Tutorial 5: Projects
-    </a>
-</li>
-<li class="toctree-l2">
-<a class="reference internal" href="W1D1_Tutorial6.html">
-     Tutorial 6: Professional Development
-    </a>
-</li>
-<li class="toctree-l2">
-<a class="reference internal" href="W1D1_Outro.html">
-     Outro
-    </a>
-</li>
-<li class="toctree-l2">
-<a class="reference internal" href="../further_reading.html">
-     Suggested further readings
-    </a>
-</li>
-<li class="toctree-l2">
-<a class="reference internal" href="W1D1_DaySummary.html">
-     Day Summary
-    </a>
-</li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="../chapter_title.html">Instructions (W1D1)</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-10"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="W1D1_Intro.html">Intro</a></li>
+<li class="toctree-l2"><a class="reference internal" href="W1D1_Tutorial1.html">Tutorial 1: Importing the Template</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Tutorial 2: Github Workflow</a></li>
+<li class="toctree-l2"><a class="reference internal" href="W1D1_Tutorial3.html">Tutorial 3: Content Enhancements</a></li>
+<li class="toctree-l2"><a class="reference internal" href="W1D1_Tutorial4.html">Tutorial 4: Extra Notebook Sections</a></li>
+<li class="toctree-l2"><a class="reference internal" href="W1D1_Tutorial5.html">Tutorial 5: Projects</a></li>
+<li class="toctree-l2"><a class="reference internal" href="W1D1_Tutorial6.html">Tutorial 6: Professional Development</a></li>
+<li class="toctree-l2"><a class="reference internal" href="W1D1_Outro.html">Outro</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../further_reading.html">Suggested further readings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="W1D1_DaySummary.html">Day Summary</a></li>
 </ul>
 </li>
-<li class="toctree-l1 has-children">
-<a class="reference internal" href="../../Bonus_BonusContent/chapter_title.html">
-   Bonus Content (Bonus)
-  </a>
-<input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" type="checkbox"/>
-<label for="toctree-checkbox-11">
-<i class="fas fa-chevron-down">
-</i>
-</label>
-<ul>
-<li class="toctree-l2">
-<a class="reference internal" href="../../Bonus_BonusContent/student/Bonus_Intro.html">
-     Intro
-    </a>
-</li>
-<li class="toctree-l2">
-<a class="reference internal" href="../../Bonus_BonusContent/student/Bonus_Tutorial1.html">
-     Tutorial 1: Intro to Autoencoders
-    </a>
-</li>
-<li class="toctree-l2">
-<a class="reference internal" href="../../Bonus_BonusContent/student/Bonus_Tutorial2.html">
-     Tutorial 2: Autoencoder extensions
-    </a>
-</li>
-<li class="toctree-l2">
-<a class="reference internal" href="../../Bonus_BonusContent/student/Bonus_Tutorial3.html">
-     Tutorial 3: Autoencoders applications
-    </a>
-</li>
-<li class="toctree-l2">
-<a class="reference internal" href="../../Bonus_BonusContent/student/Bonus_Outro.html">
-     Outro
-    </a>
-</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Bonus_BonusContent/chapter_title.html">Bonus Content (Bonus)</a><input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-11"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../Bonus_BonusContent/student/Bonus_Intro.html">Intro</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Bonus_BonusContent/student/Bonus_Tutorial1.html">Tutorial 1: Intro to Autoencoders</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Bonus_BonusContent/student/Bonus_Tutorial2.html">Tutorial 2: Autoencoder extensions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Bonus_BonusContent/student/Bonus_Tutorial3.html">Tutorial 3: Autoencoders applications</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Bonus_BonusContent/student/Bonus_Outro.html">Outro</a></li>
 </ul>
 </li>
-<li class="toctree-l1">
-<a class="reference internal" href="../../Module_WrapUps/CourseContentTemplateInstructions.html">
-   Course Content Template Instructions Wrap-Up
-  </a>
-</li>
+<li class="toctree-l1"><a class="reference internal" href="../../Module_WrapUps/CourseContentTemplateInstructions.html">Course Content Template Instructions Wrap-Up</a></li>
 </ul>
-<p class="caption">
-<span class="caption-text">
-  Insert Category Name Here
- </span>
-</p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Insert Category Name Here</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1 has-children">
-<a class="reference internal" href="../../W1D2_Template/chapter_title.html">
-   Template (W1D2)
-  </a>
-<input class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" type="checkbox"/>
-<label for="toctree-checkbox-12">
-<i class="fas fa-chevron-down">
-</i>
-</label>
-<ul>
-<li class="toctree-l2">
-<a class="reference internal" href="../../W1D2_Template/student/W1D2_Intro.html">
-     Intro
-    </a>
-</li>
-<li class="toctree-l2">
-<a class="reference internal" href="../../W1D2_Template/student/W1D2_Tutorial1.html">
-     Tutorial [NUMBER]: Tutorial’s name
-    </a>
-</li>
-<li class="toctree-l2">
-<a class="reference internal" href="../../W1D2_Template/student/W1D2_Outro.html">
-     Outro
-    </a>
-</li>
-<li class="toctree-l2">
-<a class="reference internal" href="../../W1D2_Template/further_reading.html">
-     Suggested further readings
-    </a>
-</li>
-<li class="toctree-l2">
-<a class="reference internal" href="../../W1D2_Template/student/W1D2_DaySummary.html">
-     Day Summary
-    </a>
-</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../W1D2_Template/chapter_title.html">Template (W1D2)</a><input class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-12"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../W1D2_Template/student/W1D2_Intro.html">Intro</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../W1D2_Template/student/W1D2_Tutorial1.html">Tutorial [NUMBER]: Tutorial’s name</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../W1D2_Template/student/W1D2_Outro.html">Outro</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../W1D2_Template/further_reading.html">Suggested further readings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../W1D2_Template/student/W1D2_DaySummary.html">Day Summary</a></li>
 </ul>
 </li>
-<li class="toctree-l1">
-<a class="reference internal" href="../../Module_WrapUps/InsertCategoryNameHere.html">
-   Insert Category Name Here Wrap-Up
-  </a>
-</li>
+<li class="toctree-l1"><a class="reference internal" href="../../Module_WrapUps/InsertCategoryNameHere.html">Insert Category Name Here Wrap-Up</a></li>
 </ul>
-<p class="caption">
-<span class="caption-text">
-  Project Booklet
- </span>
-</p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Project Booklet</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1">
-<a class="reference internal" href="../../../projects/README.html">
-   Introduction
-  </a>
-</li>
-<li class="toctree-l1">
-<a class="reference internal" href="../../../projects/keynote.html">
-   Project Day keynote (W2D2)
-  </a>
-</li>
-<li class="toctree-l1">
-<a class="reference internal" href="../../../projects/docs/project_guidance.html">
-   Daily guide for projects
-  </a>
-</li>
-<li class="toctree-l1 has-children">
-<a class="reference internal" href="../../../projects/docs/datasets_overview.html">
-   Project materials
-  </a>
-<input class="toctree-checkbox" id="toctree-checkbox-13" name="toctree-checkbox-13" type="checkbox"/>
-<label for="toctree-checkbox-13">
-<i class="fas fa-chevron-down">
-</i>
-</label>
-<ul>
-<li class="toctree-l2">
-<a class="reference internal" href="../../../projects/project-notebooks/Example_project.html">
-     Project Template
-    </a>
-</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../projects/README.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../projects/keynote.html">Project Day keynote (W2D2)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../projects/docs/project_guidance.html">Daily guide for projects</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../projects/docs/datasets_overview.html">Project materials</a><input class="toctree-checkbox" id="toctree-checkbox-13" name="toctree-checkbox-13" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-13"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../projects/project-notebooks/Example_project.html">Project Template</a></li>
 </ul>
 </li>
-<li class="toctree-l1">
-<a class="reference internal" href="../../../projects/docs/continuing_your_project_after_the_course.html">
-   Continuing your project after the course
-  </a>
-</li>
-<li class="toctree-l1 has-children">
-<a class="reference internal" href="../../../projects/docs/past_projects_overview.html">
-   Past projects
-  </a>
-<input class="toctree-checkbox" id="toctree-checkbox-14" name="toctree-checkbox-14" type="checkbox"/>
-<label for="toctree-checkbox-14">
-<i class="fas fa-chevron-down">
-</i>
-</label>
-<ul>
-<li class="toctree-l2">
-<a class="reference internal" href="../../../projects/past-projects/example_past_project.html">
-     Example Past Project
-    </a>
-</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../projects/docs/continuing_your_project_after_the_course.html">Continuing your project after the course</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../projects/docs/past_projects_overview.html">Past projects</a><input class="toctree-checkbox" id="toctree-checkbox-14" name="toctree-checkbox-14" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-14"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../projects/past-projects/example_past_project.html">Example Past Project</a></li>
 </ul>
 </li>
 </ul>
-<p class="caption">
-<span class="caption-text">
-  Professional Development
- </span>
-</p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Professional Development</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1">
-<a class="reference internal" href="../../../projects/professional_development/README.html">
-   Introduction
-  </a>
-</li>
-<li class="toctree-l1">
-<a class="reference internal" href="../../../projects/professional_development/impact_talks.html">
-   Impact Talks
-  </a>
-</li>
-<li class="toctree-l1">
-<a class="reference internal" href="../../../projects/professional_development/career_features.html">
-   Career Features
-  </a>
-</li>
-<li class="toctree-l1">
-<a class="reference internal" href="../../../projects/professional_development/career_panels.html">
-   Career Panels
-  </a>
-</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../projects/professional_development/README.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../projects/professional_development/impact_talks.html">Impact Talks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../projects/professional_development/career_features.html">Career Features</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../projects/professional_development/career_panels.html">Career Panels</a></li>
 </ul>
 </div>
-</nav></div>
-<div class="bd-sidebar__bottom">
-<!-- To handle the deprecated key -->
-<div class="navbar_extra_footer">
-            Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</nav>
 </div>
+</div>
+<div class="sidebar-end-items sidebar-primary__section">
+<div class="sidebar-end-items__item">
 </div>
 </div>
 <div id="rtd-footer-container"></div>
 </div>
-<!-- A tiny helper pixel to detect if we've scrolled -->
+<main class="bd-main" id="main-content">
 <div class="sbt-scroll-pixel-helper"></div>
-<!-- Main content -->
-<div class="col py-0 content-container">
-<div class="header-article row sticky-top noprint">
+<div class="bd-content">
+<div class="bd-article-container">
+<div class="bd-header-article">
 <div class="col py-1 d-flex header-article-main">
 <div class="header-article__left">
-<label class="headerbtn" data-placement="right" data-toggle="tooltip" for="__navigation" title="Toggle navigation">
-<span class="headerbtn__icon-container">
-<i class="fas fa-bars"></i>
-</span>
+<label class="sidebar-toggle primary-toggle btn btn-sm" data-placement="right" data-toggle="tooltip" for="__primary" title="Toggle primary sidebar">
+<span class="fa-solid fa-bars"></span>
 </label>
 </div>
 <div class="header-article__right">
-<div class="menu-dropdown menu-dropdown-launch-buttons">
-<button aria-label="Launch interactive content" class="headerbtn menu-dropdown__trigger">
+<div class="dropdown dropdown-launch-buttons">
+<button aria-expanded="false" aria-label="Launch interactive content" class="btn dropdown-toggle" data-bs-toggle="dropdown" type="button">
 <i class="fas fa-rocket"></i>
 </button>
-<div class="menu-dropdown__content">
-<ul>
+<ul class="dropdown-menu">
 </ul>
 </div>
-</div>
-<button class="headerbtn" data-placement="bottom" data-toggle="tooltip" onclick="toggleFullScreen()" title="Fullscreen mode">
-<span class="headerbtn__icon-container">
+<button class="btn btn-sm" data-placement="bottom" data-toggle="tooltip" onclick="toggleFullScreen()" title="Fullscreen mode">
+<span class="btn__icon-container">
 <i class="fas fa-expand"></i>
 </span>
 </button>
-<div class="menu-dropdown menu-dropdown-repository-buttons">
-<button aria-label="Source repositories" class="headerbtn menu-dropdown__trigger">
+<div class="dropdown dropdown-repository-buttons">
+<button aria-expanded="false" aria-label="Source repositories" class="btn dropdown-toggle" data-bs-toggle="dropdown" type="button">
 <i class="fab fa-github"></i>
 </button>
-<div class="menu-dropdown__content">
-<ul>
-<li>
-<a class="headerbtn" data-placement="left" data-toggle="tooltip" href="https://github.com/neuromatch/course-content-template" title="Source repository">
-<span class="headerbtn__icon-container">
+<ul class="dropdown-menu">
+<li><a class="btn btn-sm dropdown-item" data-placement="left" data-toggle="tooltip" href="https://github.com/neuromatch/course-content-template" target="_blank" title="Source repository">
+<span class="btn__icon-container">
 <i class="fab fa-github"></i>
 </span>
-<span class="headerbtn__text-container">repository</span>
+<span class="btn__text-container">repository</span>
 </a>
-</li>
-<li>
-<a class="headerbtn" data-placement="left" data-toggle="tooltip" href="https://github.com/neuromatch/course-content-template/issues/new?title=Issue%20on%20page%20%2Ftutorials/W1D1_Instructions/student/W1D1_Tutorial2.html&amp;body=Your%20issue%20content%20here." title="Open an issue">
-<span class="headerbtn__icon-container">
+
+<li><a class="btn btn-sm dropdown-item" data-placement="left" data-toggle="tooltip" href="https://github.com/neuromatch/course-content-template/issues/new?title=Issue%20on%20page%20%2Ftutorials/W1D1_Instructions/student/W1D1_Tutorial2.html&amp;body=Your%20issue%20content%20here." target="_blank" title="Open an issue">
+<span class="btn__icon-container">
 <i class="fas fa-lightbulb"></i>
 </span>
-<span class="headerbtn__text-container">open issue</span>
+<span class="btn__text-container">open issue</span>
 </a>
-</li>
-</ul>
+
+</li></li></ul>
 </div>
-</div>
-<div class="menu-dropdown menu-dropdown-download-buttons">
-<button aria-label="Download this page" class="headerbtn menu-dropdown__trigger">
+<div class="dropdown dropdown-download-buttons">
+<button aria-expanded="false" aria-label="Download this page" class="btn dropdown-toggle" data-bs-toggle="dropdown" type="button">
 <i class="fas fa-download"></i>
 </button>
-<div class="menu-dropdown__content">
-<ul>
-<li>
-<a class="headerbtn" data-placement="left" data-toggle="tooltip" href="../../../_sources/tutorials/W1D1_Instructions/student/W1D1_Tutorial2.ipynb" title="Download source file">
-<span class="headerbtn__icon-container">
+<ul class="dropdown-menu">
+<li><a class="btn btn-sm dropdown-item" data-placement="left" data-toggle="tooltip" href="../../../_sources/tutorials/W1D1_Instructions/student/W1D1_Tutorial2.ipynb" target="_blank" title="Download source file">
+<span class="btn__icon-container">
 <i class="fas fa-file"></i>
 </span>
-<span class="headerbtn__text-container">.ipynb</span>
+<span class="btn__text-container">.ipynb</span>
 </a>
-</li>
+
 <li>
-<button class="headerbtn" data-placement="left" data-toggle="tooltip" onclick="printPdf(this)" title="Print to PDF">
-<span class="headerbtn__icon-container">
+<button class="btn btn-sm dropdown-item" data-placement="left" data-toggle="tooltip" onclick="printPdf(this)" title="Print to PDF">
+<span class="btn__icon-container">
 <i class="fas fa-file-pdf"></i>
 </span>
-<span class="headerbtn__text-container">.pdf</span>
+<span class="btn__text-container">.pdf</span>
 </button>
-</li>
-</ul>
+
+</li></li></ul>
 </div>
-</div>
-<label class="headerbtn headerbtn-page-toc" for="__page-toc">
-<span class="headerbtn__icon-container">
-<i class="fas fa-list"></i>
-</span>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" data-placement="left" data-toggle="tooltip" for="__secondary" title="Toggle secondary sidebar">
+<span class="fa-solid fa-list"></span>
 </label>
 </div>
 </div>
-<!-- Table of contents -->
-<div class="col-md-3 bd-toc show noprint">
-<div class="tocsection onthispage pt-5 pb-3">
-<i class="fas fa-list"></i> Contents
-    </div>
-<nav aria-label="Page" id="bd-toc-nav">
-<ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry">
-<a class="reference internal nav-link" href="#tutorial-objectives">
-   Tutorial Objectives
-  </a>
-</li>
-<li class="toc-h2 nav-item toc-entry">
-<a class="reference internal nav-link" href="#setup">
-   Setup
-  </a>
-</li>
-<li class="toc-h2 nav-item toc-entry">
-<a class="reference internal nav-link" href="#section-1-how-to-enable-github-action">
-   Section 1: How to enable github action
-  </a>
-</li>
-<li class="toc-h2 nav-item toc-entry">
-<a class="reference internal nav-link" href="#section-2-how-to-create-a-pr">
-   Section 2: How to create a PR
-  </a>
-<ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry">
-<a class="reference internal nav-link" href="#section-2-1-creating-a-pr">
-     Section 2.1: Creating a PR
-    </a>
-</li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry">
-<a class="reference internal nav-link" href="#section-3-folder-structure-and-naming-conventions">
-   Section 3: Folder Structure and Naming Conventions
-  </a>
-<ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry">
-<a class="reference internal nav-link" href="#section-3-1-cell-tags-markings-at-the-top-of-the-cell">
-     Section 3.1: Cell Tags (markings at the top of the cell)
-    </a>
-</li>
-<li class="toc-h3 nav-item toc-entry">
-<a class="reference internal nav-link" href="#section-3-2-add-images">
-     Section 3.2: Add Images
-    </a>
-</li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry">
-<a class="reference internal nav-link" href="#section-4-add-content-to-the-materials-yml-file">
-   Section 4: Add Content to the materials.yml File
-  </a>
-</li>
-<li class="toc-h2 nav-item toc-entry">
-<a class="reference internal nav-link" href="#section-5-workflows">
-   Section 5: Workflows
-  </a>
-</li>
-<li class="toc-h2 nav-item toc-entry">
-<a class="reference internal nav-link" href="#summary">
-   Summary
-  </a>
-</li>
-</ul>
-</nav>
 </div>
-</div>
-<div class="article row">
-<div class="col pl-md-3 pl-lg-5 content-container">
-<!-- Table of contents that is only displayed when printing the page -->
 <div class="onlyprint" id="jb-print-docs-body">
 <h1>Tutorial 2: Github Workflow</h1>
 <!-- Table of contents -->
@@ -876,11 +730,10 @@ const thebe_selector_output = ".output, .cell_output"
 </div>
 </div>
 </div>
-<main id="main-content" role="main">
-<div>
+<article class="bd-article" role="main">
 <p><a href="https://colab.research.google.com/github/neuromatch/course-content-template/blob/main/tutorials/W1D1_Template/student/W1D1_Tutorial2.ipynb" target="_blank"><img alt="Open In Colab" src="https://colab.research.google.com/assets/colab-badge.svg"/></a>   <a href="https://kaggle.com/kernels/welcome?src=https://raw.githubusercontent.com/neuromatch/course-content-template/main/tutorials/W1D1_Template/student/W1D1_Tutorial2.ipynb" target="_blank"><img alt="Open in Kaggle" src="https://kaggle.com/static/images/open-in-kaggle.svg"/></a></p>
-<div class="section" id="tutorial-2-github-workflow">
-<h1>Tutorial 2: Github Workflow<a class="headerlink" href="#tutorial-2-github-workflow" title="Permalink to this headline">¶</a></h1>
+<section class="tex2jax_ignore mathjax_ignore" id="tutorial-2-github-workflow">
+<h1>Tutorial 2: Github Workflow<a class="headerlink" href="#tutorial-2-github-workflow" title="Permalink to this heading">#</a></h1>
 <p><strong>Week 1, Day 1: Instructions</strong></p>
 <p><strong>By Neuromatch</strong></p>
 <p><strong>Content creators:</strong> Konstantine Tsafatinos</p>
@@ -889,8 +742,8 @@ const thebe_selector_output = ".output, .cell_output"
 <br/>
 <p>Acknowledgments: [Ella Batty, Spiros Chavlis and neuromatch]</p>
 <hr class="docutils"/>
-<div class="section" id="tutorial-objectives">
-<h2>Tutorial Objectives<a class="headerlink" href="#tutorial-objectives" title="Permalink to this headline">¶</a></h2>
+<section id="tutorial-objectives">
+<h2>Tutorial Objectives<a class="headerlink" href="#tutorial-objectives" title="Permalink to this heading">#</a></h2>
 <p><em>Estimated timing of tutorial: [15 mins]</em></p>
 <p>In this tutorial, you will learn the workflow for adding content and updating the repository with your new content.</p>
 <p>You will:</p>
@@ -902,22 +755,22 @@ const thebe_selector_output = ".output, .cell_output"
 <li><p>learn the basic workflows</p></li>
 </ul>
 <p>It is recommended that you read through all of this tutorial before starting to make changes, as all the topics are related to each other for a successful build of the notebooks.</p>
-</div>
+</section>
 <hr class="docutils"/>
-<div class="section" id="setup">
-<h2>Setup<a class="headerlink" href="#setup" title="Permalink to this headline">¶</a></h2>
+<section id="setup">
+<h2>Setup<a class="headerlink" href="#setup" title="Permalink to this heading">#</a></h2>
 <p>In this section, we have:</p>
-<ol class="simple">
+<ol class="arabic simple">
 <li><p><strong>Github Actions</strong>: Enable github actions to allow for triggered workflows.</p></li>
 <li><p><strong>Branches and PRs</strong>: Create local branches, push to github, and create a pull request.</p></li>
 <li><p><strong>Folder Structure and Naming Convention</strong>: Guidelines to follow so that the processing and build steps work correctly.</p></li>
 <li><p><strong>Materials.yml</strong>: Add days and tutorials to the materials.yml file.</p></li>
 <li><p><strong>Workflows</strong>: Trigger the workflows.</p></li>
 </ol>
-</div>
+</section>
 <hr class="docutils"/>
-<div class="section" id="section-1-how-to-enable-github-action">
-<h2>Section 1: How to enable github action<a class="headerlink" href="#section-1-how-to-enable-github-action" title="Permalink to this headline">¶</a></h2>
+<section id="section-1-how-to-enable-github-action">
+<h2>Section 1: How to enable github action<a class="headerlink" href="#section-1-how-to-enable-github-action" title="Permalink to this heading">#</a></h2>
 <p>Steps:</p>
 <ul class="simple">
 <li><p>click on the settings tab in your newly created repo</p></li>
@@ -926,28 +779,28 @@ const thebe_selector_output = ".output, .cell_output"
 <li><p>click save</p></li>
 </ul>
 <p align="center"><img alt="github actions gif" src="https://github.com/neuromatch/course-content-template/blob/main/tutorials/static/github-actions.gif?raw=True"/></p>
-</div>
+</section>
 <hr class="docutils"/>
-<div class="section" id="section-2-how-to-create-a-pr">
-<h2>Section 2: How to create a PR<a class="headerlink" href="#section-2-how-to-create-a-pr" title="Permalink to this headline">¶</a></h2>
+<section id="section-2-how-to-create-a-pr">
+<h2>Section 2: How to create a PR<a class="headerlink" href="#section-2-how-to-create-a-pr" title="Permalink to this heading">#</a></h2>
 <p>When creating content you want to add to the course book, you will need to have python and git installed. Afterwards, you will need to create a local python environment with all requirements for your code installed; including jyputer. Before starting to add content, you will need to create a new branch. Instructions <a class="reference external" href="https://www.w3schools.com/git/git_branch.asp">here</a>.</p>
 <p>Once you have created your working branch, you can then start to work on your notebook. Before saving your notebook and committing the changes to your branch, restart the kernel and clear all cells. Then you can save it, <a class="reference external" href="https://www.w3schools.com/git/git_staging_environment.asp?remote=github">add</a> the changes, <a class="reference external" href="https://www.w3schools.com/git/git_commit.asp?remote=github">commit</a> them, and <a class="reference external" href="https://www.w3schools.com/git/git_push_to_remote.asp?remote=github">push</a> to github.</p>
 <p><strong>NOTE</strong>: It is vital that you restart the kernel and clear all outputs. The processing scripts will throw an error if you do not, and the workflow will <strong>not</strong> complete successfully.</p>
 <p><strong>Be Careful</strong>: Remeber to pull the lastest changes from github before you commit your work! This is important, a successful workflow execution will create new commits, and if you do not pull the those changes before your commit your local ones, there will be a commit history conflict; i.e you will not be able to push your changes.</p>
 <p>How to restart kernel and clear all outputs:</p>
 <p align="center"><img alt="restart kernel gif" src="https://github.com/neuromatch/course-content-template/blob/main/tutorials/static/restart-kernel.gif?raw=True"/></p>
-<div class="section" id="section-2-1-creating-a-pr">
-<h3>Section 2.1: Creating a PR<a class="headerlink" href="#section-2-1-creating-a-pr" title="Permalink to this headline">¶</a></h3>
+<section id="section-2-1-creating-a-pr">
+<h3>Section 2.1: Creating a PR<a class="headerlink" href="#section-2-1-creating-a-pr" title="Permalink to this heading">#</a></h3>
 <p>Once you have pushed the work on your new branch, you can create a PR onto the main branch. <strong>NOTE</strong>: This will trigger the processing workflow for the course content.</p>
 <p>Create a pull request:</p>
 <p align="center"><img alt="pull request gif" src="https://github.com/neuromatch/course-content-template/blob/main/tutorials/static/pull-request.gif?raw=True"/></p>
 <p>Process Notebook workflow:</p>
 <p align="center"><img alt="process notebook gif" src="https://github.com/neuromatch/course-content-template/blob/main/tutorials/static/process-notebook.gif?raw=True"/></p>
 <p>The process notebook workflow will automatically get triggered once a pull request is made to the main branch. It will create the student, instructor and solutions directories, verify the exercises, and prepare the content for the publish workflow. You do <strong>not</strong> need to create or touch the aforementioned folders. All your work should be done on the jupyter notebooks. Remember to restart the kernel and clear your output, if you do not, the process notebooks workflow will throw an error.</p>
-</div>
-</div>
-<div class="section" id="section-3-folder-structure-and-naming-conventions">
-<h2>Section 3: Folder Structure and Naming Conventions<a class="headerlink" href="#section-3-folder-structure-and-naming-conventions" title="Permalink to this headline">¶</a></h2>
+</section>
+</section>
+<section id="section-3-folder-structure-and-naming-conventions">
+<h2>Section 3: Folder Structure and Naming Conventions<a class="headerlink" href="#section-3-folder-structure-and-naming-conventions" title="Permalink to this heading">#</a></h2>
 <p>In order for the workflows and scripts to work correctly, and for your book to properly build, you will need to <strong>strictly</strong> follow our folder heirarchy and naming conventions. This is what the scripts are expecting, and you will not be able to successfully build your course book if you deviate from the conventions.</p>
 <ul class="simple">
 <li><p>book/ (<strong>do not touch</strong>, this get automatically created/population in the publish workflow)</p></li>
@@ -974,8 +827,8 @@ const thebe_selector_output = ".output, .cell_output"
 <p align="center"><img alt="folder structure image" src="https://github.com/neuromatch/course-content-template/blob/main/tutorials/static/folder-structure.png?raw=True"/></p>
 <p>To reiterate, you do not need to worry about the student, instructor, or solutions directories. Those are automatically taken care of.</p>
 <p><strong>NOTE</strong>: W1D2 contains templates for tutorial creation. Where templates were not included, we provided examples from previous courses.</p>
-<div class="section" id="section-3-1-cell-tags-markings-at-the-top-of-the-cell">
-<h3>Section 3.1: Cell Tags (markings at the top of the cell)<a class="headerlink" href="#section-3-1-cell-tags-markings-at-the-top-of-the-cell" title="Permalink to this headline">¶</a></h3>
+<section id="section-3-1-cell-tags-markings-at-the-top-of-the-cell">
+<h3>Section 3.1: Cell Tags (markings at the top of the cell)<a class="headerlink" href="#section-3-1-cell-tags-markings-at-the-top-of-the-cell" title="Permalink to this heading">#</a></h3>
 <p>The workflows and processing scripts actively make use of predefined tags to determine how to process the cell. There are tags for video embeddeing, slide embedding, titles, exercises and solutions, etc. It is very important these instructions are followed <strong>exactly</strong>! Any deviations will break the pipeline. More details about the tags and how to use them can be found in W1D2_Tutorial1.ipynb of the template notebook.</p>
 <p><strong>NOTE</strong>: Please read the details found in the template very carefully. Specifically the section on exercises and solutions. You need to be precise. We have a script to verify exercises that will fail if you deviate from the instructions. For example, the comments in the cells for the exercises and solutions grouping need to be <strong>EXACT</strong>. See below:</p>
 <p>Exercise:</p>
@@ -990,9 +843,9 @@ const thebe_selector_output = ".output, .cell_output"
 <p>  return x</p>
 <p>This will fail because “comments” is singular in the comments of the solution cell. These checks are in place to ensure the exercise and corresponding solution cells are appropriately matched and coupled. This comment rule applies to <strong>all</strong> comments in the exercise/solution cells.</p>
 <p>The above is not an exhaustive list of the cell tags, it is simply a highlight of something that can go wrong that is easy to miss. Please find the details of all tags <a class="reference external" href="https://neuromatch.github.io/course-content-template/tutorials/W1D2_Template/student/W1D2_Tutorial1.html">here</a>.</p>
-</div>
-<div class="section" id="section-3-2-add-images">
-<h3>Section 3.2: Add Images<a class="headerlink" href="#section-3-2-add-images" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="section-3-2-add-images">
+<h3>Section 3.2: Add Images<a class="headerlink" href="#section-3-2-add-images" title="Permalink to this heading">#</a></h3>
 <p>Your images should live in the static directories. They can be grouped into the a static directory per day, or can be inside the general static directory for all tutorials. The important thing here is that you correctly link to the proper URL. You can directly add the following html into your markdown cells in order to add images.</p>
 <p>&lt;p align=’center’&gt;&lt;img src=’https://github.com/your_org_name/your_repo_name/blob/main/tutorials/static/your_file_name.ext?raw=True’ alt=’image description’/&gt;&lt;/p&gt;</p>
 <p>Ex:</p>
@@ -1001,11 +854,11 @@ const thebe_selector_output = ".output, .cell_output"
 <p><strong>NOTE</strong>: This will not show up in your local development environment until the images are added to the main branch on github. As you can see from the above URL, it is pointing to the main branch of a github repository. If you would like to test it locally, you can use this:</p>
 <p>&lt;p align=’center’&gt;&lt;img src=’../static/your_file_name.png’ alt=’image desctiption’/&gt;&lt;/p&gt;</p>
 <p>Remember to change the source back to the github url before pushing your changes!</p>
-</div>
-</div>
+</section>
+</section>
 <hr class="docutils"/>
-<div class="section" id="section-4-add-content-to-the-materials-yml-file">
-<h2>Section 4: Add Content to the materials.yml File<a class="headerlink" href="#section-4-add-content-to-the-materials-yml-file" title="Permalink to this headline">¶</a></h2>
+<section id="section-4-add-content-to-the-materials-yml-file">
+<h2>Section 4: Add Content to the materials.yml File<a class="headerlink" href="#section-4-add-content-to-the-materials-yml-file" title="Permalink to this heading">#</a></h2>
 <p>The materials.yml file is used in our scripts to help verify links, populate the books, and create our table of contents. Be sure to <strong>precisely</strong> follow the structure outlined in the file. If you look at the materials.yml file for this template notebook, you will see the structure laid out in order for this book to properly build. There are comments in the file to further explain all the fields you will need to use. Here is an overview of the structure:</p>
 <ul class="simple">
 <li><p>day: W1D1</p>
@@ -1058,9 +911,9 @@ const thebe_selector_output = ".output, .cell_output"
 </li>
 </ul>
 <p>Remember to create one grouping of the above content per day and be sure to set the number of tutorials.</p>
-</div>
-<div class="section" id="section-5-workflows">
-<h2>Section 5: Workflows<a class="headerlink" href="#section-5-workflows" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="section-5-workflows">
+<h2>Section 5: Workflows<a class="headerlink" href="#section-5-workflows" title="Permalink to this heading">#</a></h2>
 <p>There are two main workflows used to build the notebooks:</p>
 <ul class="simple">
 <li><p>notebook-pr (automatically triggered when a PR is made onto the main repo)</p></li>
@@ -1079,12 +932,12 @@ Each workflow involves building python environments and running python scripts o
 <li><p><a class="reference external" href="https://comptools.climatematch.io">comptools.climatematch.io</a></p></li>
 </ul>
 <p>Enjoy! :)</p>
-</div>
+</section>
 <hr class="docutils"/>
-<div class="section" id="summary">
-<h2>Summary<a class="headerlink" href="#summary" title="Permalink to this headline">¶</a></h2>
+<section id="summary">
+<h2>Summary<a class="headerlink" href="#summary" title="Permalink to this heading">#</a></h2>
 <p>Congrats! You now know:</p>
-<ol class="simple">
+<ol class="arabic simple">
 <li><p>how and where to create new content</p></li>
 <li><p>how to follow our naming convention</p></li>
 <li><p>how to prepare the notebooks for our pipeline</p></li>
@@ -1092,8 +945,8 @@ Each workflow involves building python environments and running python scripts o
 <li><p>the basics of our workflows using github actions</p></li>
 </ol>
 <p>Happy content creating!</p>
-</div>
-</div>
+</section>
+</section>
 <script type="text/x-thebe-config">
     {
         requestKernel: true,
@@ -1106,20 +959,19 @@ Each workflow involves building python environments and running python scripts o
             mode: "python"
         },
         kernelOptions: {
-            kernelName: "python3",
+            name: "python3",
             path: "./tutorials/W1D1_Instructions/student"
         },
         predefinedOutput: true
     }
     </script>
 <script>kernelName = 'python3'</script>
-</div>
-</main>
-<footer class="footer-article noprint">
+</article>
+<footer class="bd-footer-article">
 <!-- Previous / next buttons -->
 <div class="prev-next-area">
 <a class="left-prev" href="W1D1_Tutorial1.html" id="prev-link" title="previous page">
-<i class="fas fa-angle-left"></i>
+<i class="fa-solid fa-angle-left"></i>
 <div class="prev-next-info">
 <p class="prev-next-subtitle">previous</p>
 <p class="prev-next-title">Tutorial 1: Importing the Template</p>
@@ -1130,16 +982,98 @@ Each workflow involves building python environments and running python scripts o
 <p class="prev-next-subtitle">next</p>
 <p class="prev-next-title">Tutorial 3: Content Enhancements</p>
 </div>
-<i class="fas fa-angle-right"></i>
+<i class="fa-solid fa-angle-right"></i>
 </a>
 </div>
 </footer>
 </div>
+<div class="bd-sidebar-secondary bd-toc">
+<div class="toc-item">
+<div class="tocsection onthispage">
+<i class="fa-solid fa-list"></i> On this page
 </div>
-<div class="footer-content row">
-<footer class="col footer"><p>
-  
-    By Neuromatch<br>
+<nav class="page-toc" id="bd-toc-nav">
+<ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry">
+<a class="reference internal nav-link" href="#tutorial-objectives">
+   Tutorial Objectives
+  </a>
+</li>
+<li class="toc-h2 nav-item toc-entry">
+<a class="reference internal nav-link" href="#setup">
+   Setup
+  </a>
+</li>
+<li class="toc-h2 nav-item toc-entry">
+<a class="reference internal nav-link" href="#section-1-how-to-enable-github-action">
+   Section 1: How to enable github action
+  </a>
+</li>
+<li class="toc-h2 nav-item toc-entry">
+<a class="reference internal nav-link" href="#section-2-how-to-create-a-pr">
+   Section 2: How to create a PR
+  </a>
+<ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry">
+<a class="reference internal nav-link" href="#section-2-1-creating-a-pr">
+     Section 2.1: Creating a PR
+    </a>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry">
+<a class="reference internal nav-link" href="#section-3-folder-structure-and-naming-conventions">
+   Section 3: Folder Structure and Naming Conventions
+  </a>
+<ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry">
+<a class="reference internal nav-link" href="#section-3-1-cell-tags-markings-at-the-top-of-the-cell">
+     Section 3.1: Cell Tags (markings at the top of the cell)
+    </a>
+</li>
+<li class="toc-h3 nav-item toc-entry">
+<a class="reference internal nav-link" href="#section-3-2-add-images">
+     Section 3.2: Add Images
+    </a>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry">
+<a class="reference internal nav-link" href="#section-4-add-content-to-the-materials-yml-file">
+   Section 4: Add Content to the materials.yml File
+  </a>
+</li>
+<li class="toc-h2 nav-item toc-entry">
+<a class="reference internal nav-link" href="#section-5-workflows">
+   Section 5: Workflows
+  </a>
+</li>
+<li class="toc-h2 nav-item toc-entry">
+<a class="reference internal nav-link" href="#summary">
+   Summary
+  </a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<footer class="bd-footer-content">
+<div class="bd-footer-content__inner">
+<div class="bd-footer-content__inner container">
+<div class="footer-item">
+<p class="component-author">
+By Neuromatch
+</p>
+</div>
+<div class="footer-item">
+</div>
+<div class="footer-item">
+<p class="last-updated">
+Last updated on None.<br/>
+</p>
+</div>
+<div class="footer-item">
 <div class="extra_footer">
 <div>
 <a href="http://creativecommons.org/licenses/by/4.0/"><img src="https://i.creativecommons.org/l/by/4.0/88x31.png"/></a>
@@ -1148,13 +1082,15 @@ The contents of this repository are shared under the <a href="http://creativecom
 Software elements are additionally licensed under the <a href="https://opensource.org/licenses/BSD-3-Clause">BSD (3-Clause) License</a>.
 </div>
 </div>
-</br></p>
+</div>
+</div>
+</div>
 </footer>
-</div>
-</div>
+</main>
 </div>
 </div>
 <!-- Scripts loaded after <body> so the DOM is not blocked -->
-<script src="../../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+<script src="../../../_static/scripts/bootstrap.js?digest=796348d33e8b1d947c94"></script>
+<script src="../../../_static/scripts/pydata-sphinx-theme.js?digest=796348d33e8b1d947c94"></script>
 </body>
 </html>

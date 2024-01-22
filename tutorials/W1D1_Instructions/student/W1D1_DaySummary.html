@@ -1,110 +1,640 @@
 
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
     <title>Day Summary &#8212; Insert your title here. e.g. Neuromatch Academy: Computational Neuroscience</title>
-    
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
   <!-- Loaded before other Sphinx assets -->
-  <link href="../../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
-<link href="../../../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+  <link href="../../../_static/styles/theme.css?digest=796348d33e8b1d947c94" rel="stylesheet">
+<link href="../../../_static/styles/bootstrap.css?digest=796348d33e8b1d947c94" rel="stylesheet">
+<link href="../../../_static/styles/pydata-sphinx-theme.css?digest=796348d33e8b1d947c94" rel="stylesheet">
 
-    
-  <link rel="stylesheet"
-    href="../../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
-  <link rel="preload" as="font" type="font/woff2" crossorigin
-    href="../../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
-  <link rel="preload" as="font" type="font/woff2" crossorigin
-    href="../../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+  
+  <link href="../../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=796348d33e8b1d947c94" rel="stylesheet">
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2">
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2">
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2">
 
-    <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="../../../_static/styles/sphinx-book-theme.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css" />
+    <link rel="stylesheet" href="../../../_static/styles/sphinx-book-theme.css?digest=4ec06e9971c5264fbd345897d5258098f11cc577" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-thebe.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/custom.css" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
-    
+    <link rel="stylesheet" type="text/css" href="../../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+  <link rel="preload" as="script" href="../../../_static/scripts/bootstrap.js?digest=796348d33e8b1d947c94">
+<link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=796348d33e8b1d947c94">
 
-    <script id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+    <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
     <script src="../../../_static/jquery.js"></script>
     <script src="../../../_static/underscore.js"></script>
+    <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../../../_static/doctools.js"></script>
-    <script src="../../../_static/togglebutton.js"></script>
     <script src="../../../_static/clipboard.min.js"></script>
     <script src="../../../_static/copybutton.js"></script>
-    <script src="../../../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
-    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
-    <script >const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+    <script src="../../../_static/scripts/sphinx-book-theme.js?digest=8bf782fb4ee92b3d3646425e50f299c4e1fd152d"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
 const thebe_selector = ".thebe,.cell"
 const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../../../_static/sphinx-thebe.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
-    <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.1/dist/embed-amd.js"></script>
+    <script type="application/vnd.jupyter.widget-state+json">{"state": {"2959a54ef78e4e51b1058554a124d509": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "2.0.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "2.0.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "2.0.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border_bottom": null, "border_left": null, "border_right": null, "border_top": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "1ce9da2d1c3648ec8daf67eb6f6e88c6": {"model_name": "OutputModel", "model_module": "@jupyter-widgets/output", "model_module_version": "1.0.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/output", "_model_module_version": "1.0.0", "_model_name": "OutputModel", "_view_count": null, "_view_module": "@jupyter-widgets/output", "_view_module_version": "1.0.0", "_view_name": "OutputView", "layout": "IPY_MODEL_2959a54ef78e4e51b1058554a124d509", "msg_id": "", "outputs": [{"output_type": "stream", "name": "stdout", "text": "If you want to download the slides: https://osf.io/download//\n"}, {"output_type": "display_data", "metadata": {}, "data": {"text/plain": "<IPython.lib.display.IFrame at 0x7f38860aae50>", "text/html": "\n        <iframe\n            width=\"730\"\n            height=\"410\"\n            src=\"https://mfr.ca-1.osf.io/render?url=https://osf.io//?direct%26mode=render%26action=download%26mode=render\"\n            frameborder=\"0\"\n            allowfullscreen\n            \n        ></iframe>\n        "}}], "tabbable": null, "tooltip": null}}, "97fa14a1853c47cfa8d32844285d800d": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "2.0.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "2.0.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "2.0.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border_bottom": null, "border_left": null, "border_right": null, "border_top": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": "auto", "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "padding": "0.5em", "right": null, "top": null, "visibility": null, "width": "auto"}}, "f91cfc05e84e44c7bcbce0964902e0f9": {"model_name": "ButtonStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "2.0.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "2.0.0", "_model_name": "ButtonStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "2.0.0", "_view_name": "StyleView", "button_color": "#aaffaa", "font_family": null, "font_size": "2em", "font_style": null, "font_variant": null, "font_weight": null, "text_color": null, "text_decoration": null}}, "30c03f5a96dd41e48f34d1123e5829e0": {"model_name": "ButtonModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "2.0.0", "state": {"_dom_classes": ["happy"], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "2.0.0", "_model_name": "ButtonModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "2.0.0", "_view_name": "ButtonView", "button_style": "", "description": "\ud83d\ude42", "disabled": false, "icon": "", "layout": "IPY_MODEL_97fa14a1853c47cfa8d32844285d800d", "style": "IPY_MODEL_f91cfc05e84e44c7bcbce0964902e0f9", "tabbable": null, "tooltip": "happy"}}, "a98bd1cca5c544b58f68bfbf77dac446": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "2.0.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "2.0.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "2.0.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border_bottom": null, "border_left": null, "border_right": null, "border_top": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": "auto", "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "padding": "0.5em", "right": null, "top": null, "visibility": null, "width": "auto"}}, "ca7b241d1c58423dbce524b1b46c3827": {"model_name": "ButtonStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "2.0.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "2.0.0", "_model_name": "ButtonStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "2.0.0", "_view_name": "StyleView", "button_color": "#dddd77", "font_family": null, "font_size": "2em", "font_style": null, "font_variant": null, "font_weight": null, "text_color": null, "text_decoration": null}}, "e37803691aba41fab8581922cdf63849": {"model_name": "ButtonModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "2.0.0", "state": {"_dom_classes": ["medium"], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "2.0.0", "_model_name": "ButtonModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "2.0.0", "_view_name": "ButtonView", "button_style": "", "description": "\ud83d\ude10", "disabled": false, "icon": "", "layout": "IPY_MODEL_a98bd1cca5c544b58f68bfbf77dac446", "style": "IPY_MODEL_ca7b241d1c58423dbce524b1b46c3827", "tabbable": null, "tooltip": "medium"}}, "bc2a9669ca694d63a73a14206349f9ea": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "2.0.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "2.0.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "2.0.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border_bottom": null, "border_left": null, "border_right": null, "border_top": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": "auto", "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "padding": "0.5em", "right": null, "top": null, "visibility": null, "width": "auto"}}, "23e2c439a9594782bd554bd001ab9da9": {"model_name": "ButtonStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "2.0.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "2.0.0", "_model_name": "ButtonStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "2.0.0", "_view_name": "StyleView", "button_color": "#ffaaaa", "font_family": null, "font_size": "2em", "font_style": null, "font_variant": null, "font_weight": null, "text_color": null, "text_decoration": null}}, "ca3966d295764b5f86c3827f36b04c2a": {"model_name": "ButtonModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "2.0.0", "state": {"_dom_classes": ["sad"], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "2.0.0", "_model_name": "ButtonModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "2.0.0", "_view_name": "ButtonView", "button_style": "", "description": "\ud83d\ude41", "disabled": false, "icon": "", "layout": "IPY_MODEL_bc2a9669ca694d63a73a14206349f9ea", "style": "IPY_MODEL_23e2c439a9594782bd554bd001ab9da9", "tabbable": null, "tooltip": "sad"}}, "51e773a09eed4df29c1159e3827e71e0": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "2.0.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "2.0.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "2.0.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border_bottom": null, "border_left": null, "border_right": null, "border_top": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": "auto", "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "padding": null, "right": null, "top": null, "visibility": null, "width": "auto"}}, "2508ef599dbc4a6e9e31784e3afc176d": {"model_name": "TextStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "2.0.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "2.0.0", "_model_name": "TextStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "2.0.0", "_view_name": "StyleView", "background": null, "description_width": "", "font_size": null, "text_color": null}}, "c7e84533fe154a44833041d39c8497aa": {"model_name": "TextareaModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "2.0.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "2.0.0", "_model_name": "TextareaModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "2.0.0", "_view_name": "TextareaView", "continuous_update": true, "description": "", "description_allow_html": false, "disabled": false, "layout": "IPY_MODEL_51e773a09eed4df29c1159e3827e71e0", "placeholder": "We want your feedback!", "rows": null, "style": "IPY_MODEL_2508ef599dbc4a6e9e31784e3afc176d", "tabbable": null, "tooltip": null, "value": ""}}, "b022e9eec3c9447ea898e48bb0c6e3a3": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "2.0.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "2.0.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "2.0.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border_bottom": null, "border_left": null, "border_right": null, "border_top": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": "auto", "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "padding": null, "right": null, "top": null, "visibility": null, "width": "auto"}}, "1028fcf7a1344da0a71f3a265f087c54": {"model_name": "ButtonStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "2.0.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "2.0.0", "_model_name": "ButtonStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "2.0.0", "_view_name": "StyleView", "button_color": null, "font_family": null, "font_size": null, "font_style": null, "font_variant": null, "font_weight": null, "text_color": null, "text_decoration": null}}, "a512a5a499e8496f8f1c809b0640484e": {"model_name": "ButtonModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "2.0.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "2.0.0", "_model_name": "ButtonModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "2.0.0", "_view_name": "ButtonView", "button_style": "", "description": "Submit", "disabled": false, "icon": "", "layout": "IPY_MODEL_b022e9eec3c9447ea898e48bb0c6e3a3", "style": "IPY_MODEL_1028fcf7a1344da0a71f3a265f087c54", "tabbable": null, "tooltip": null}}, "1d2bb5c2c0c64ca5bb099c4da6e2ae79": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "2.0.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "2.0.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "2.0.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border_bottom": null, "border_left": null, "border_right": null, "border_top": null, "bottom": null, "display": "none", "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "cf7222a236ad495da1294c95a26b2e29": {"model_name": "HBoxModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "2.0.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "2.0.0", "_model_name": "HBoxModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "2.0.0", "_view_name": "HBoxView", "box_style": "", "children": ["IPY_MODEL_c7e84533fe154a44833041d39c8497aa", "IPY_MODEL_a512a5a499e8496f8f1c809b0640484e"], "layout": "IPY_MODEL_1d2bb5c2c0c64ca5bb099c4da6e2ae79", "tabbable": null, "tooltip": null}}, "7ef33dd8fd884e8c9bad9ea4bc08eb08": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "2.0.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "2.0.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "2.0.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border_bottom": null, "border_left": null, "border_right": null, "border_top": null, "bottom": null, "display": "none", "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "e701c02265ca4dccbbb18bd6c2751b13": {"model_name": "LabelStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "2.0.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "2.0.0", "_model_name": "LabelStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "2.0.0", "_view_name": "StyleView", "background": null, "description_width": "", "font_family": null, "font_size": null, "font_style": null, "font_variant": null, "font_weight": null, "text_color": null, "text_decoration": null}}, "12fdc4e3e0dc4db1beccad15c44f4d0b": {"model_name": "LabelModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "2.0.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "2.0.0", "_model_name": "LabelModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "2.0.0", "_view_name": "LabelView", "description": "", "description_allow_html": false, "layout": "IPY_MODEL_7ef33dd8fd884e8c9bad9ea4bc08eb08", "placeholder": "\u200b", "style": "IPY_MODEL_e701c02265ca4dccbbb18bd6c2751b13", "tabbable": null, "tooltip": null, "value": "Thanks for your feedback!"}}, "dbb49be140ae495eb0f4a350a663a885": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "2.0.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "2.0.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "2.0.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border_bottom": null, "border_left": null, "border_right": null, "border_top": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "0aef8963a5a44d45b21696de09115b80": {"model_name": "HBoxModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "2.0.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "2.0.0", "_model_name": "HBoxModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "2.0.0", "_view_name": "HBoxView", "box_style": "", "children": ["IPY_MODEL_30c03f5a96dd41e48f34d1123e5829e0", "IPY_MODEL_e37803691aba41fab8581922cdf63849", "IPY_MODEL_ca3966d295764b5f86c3827f36b04c2a"], "layout": "IPY_MODEL_dbb49be140ae495eb0f4a350a663a885", "tabbable": null, "tooltip": null}}, "d123955d1f4e4992a201f070b4816fbe": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "2.0.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "2.0.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "2.0.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border_bottom": null, "border_left": null, "border_right": null, "border_top": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "53a87a6198e94fd1bec7fb62c5805340": {"model_name": "VBoxModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "2.0.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "2.0.0", "_model_name": "VBoxModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "2.0.0", "_view_name": "VBoxView", "box_style": "", "children": ["IPY_MODEL_0aef8963a5a44d45b21696de09115b80", "IPY_MODEL_cf7222a236ad495da1294c95a26b2e29", "IPY_MODEL_12fdc4e3e0dc4db1beccad15c44f4d0b"], "layout": "IPY_MODEL_d123955d1f4e4992a201f070b4816fbe", "tabbable": null, "tooltip": null}}, "3f40b396576946b8a08dba34fe15aa0b": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "2.0.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "2.0.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "2.0.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border_bottom": null, "border_left": null, "border_right": null, "border_top": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "1d04d39e0b53406587ec180c9882c571": {"model_name": "VBoxModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "2.0.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "2.0.0", "_model_name": "VBoxModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "2.0.0", "_view_name": "VBoxView", "box_style": "", "children": ["IPY_MODEL_53a87a6198e94fd1bec7fb62c5805340"], "layout": "IPY_MODEL_3f40b396576946b8a08dba34fe15aa0b", "tabbable": null, "tooltip": null}}}, "version_major": 2, "version_minor": 0}</script>
+    <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script crossorigin="anonymous" data-jupyter-widgets-cdn="https://cdn.jsdelivr.net/npm/" src="https://cdn.jsdelivr.net/npm/@jupyter-widgets/html-manager@1.0.6/dist/embed-amd.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'tutorials/W1D1_Instructions/student/W1D1_DaySummary';</script>
     <link rel="shortcut icon" href="../../../_static/nma-logo-square-4xp.png"/>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
     <link rel="next" title="Bonus Content" href="../../Bonus_BonusContent/chapter_title.html" />
     <link rel="prev" title="Suggested further readings" href="../further_reading.html" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="None">
-    
-
-    <!-- Google Analytics -->
-    
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="docsearch:language" content="en">
   </head>
-  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
-<!-- Checkboxes to toggle the left sidebar -->
-<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
-<label class="overlay overlay-navbar" for="__navigation">
-    <div class="visually-hidden">Toggle navigation sidebar</div>
-</label>
-<!-- Checkboxes to toggle the in-page toc -->
-<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
-<label class="overlay overlay-pagetoc" for="__page-toc">
-    <div class="visually-hidden">Toggle in-page Table of Contents</div>
-</label>
-<!-- Headers at the top -->
-<div class="announcement header-item noprint"></div>
-<div class="header header-item noprint"></div>
+  
+  
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="180" data-default-mode="">
 
-    
-    <div class="container-fluid" id="banner"></div>
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
 
-    
+  
+  <input type="checkbox" class="sidebar-toggle" name="__primary" id="__primary">
+  <label class="overlay overlay-primary" for="__primary"></label>
 
-    <div class="container-xl">
-      <div class="row">
-          
-<!-- Sidebar -->
-<div class="bd-sidebar noprint" id="site-navigation">
-    <div class="bd-sidebar__content">
-        <div class="bd-sidebar__top"><div class="navbar-brand-box">
-    <a class="navbar-brand text-wrap" href="../../../index.html">
+  
+  <input type="checkbox" class="sidebar-toggle" name="__secondary" id="__secondary">
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
       
-        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+<form class="bd-search d-flex align-items-center" action="../../../search.html" method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+    </div>
+  </div>
+
+  
+  <nav class="bd-header navbar navbar-expand-lg bd-navbar" id="navbar-main"><div class="bd-header__inner bd-page-width">
+  <label class="sidebar-toggle primary-toggle" for="__primary">
+      <span class="fa-solid fa-bars"></span>
+  </label>
+  <div id="navbar-start">
+    
+    
+  
+
+
+<a class="navbar-brand logo" href="../../intro.html">
+
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <img src="../../../_static/nma-logo-square-4xp.png" class="logo__image only-light" alt="Logo image">
+    <img src="../../../_static/nma-logo-square-4xp.png" class="logo__image only-dark" alt="Logo image">
+  
+  
+</a>
+    
+  </div>
+
+  
+  <div class="col-lg-9 navbar-header-items">
+    <div id="navbar-center" class="mr-auto">
+      
+      <div class="navbar-center-item">
+        <nav class="navbar-nav">
+    <p class="sidebar-header-items__title" role="heading" aria-level="1" aria-label="Site Navigation">
+        Site Navigation
+    </p>
+    <ul id="navbar-main-elements" class="navbar-nav">
         
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../Schedule/schedule_intro.html">
+                        Schedule
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../TechnicalHelp/tech_intro.html">
+                        Technical Help
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../TechnicalHelp/Links_Policy.html">
+                        Quick links and policies
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../../prereqs/ComputationalNeuroscience.html">
+                        Prerequisites and preparatory materials for NMA Computational Neuroscience
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../W0D0_NeuroVideoSeries/chapter_title.html">
+                        Neuro Video Series (W0D0)
+                      </a>
+                    </li>
+                
+            <div class="nav-item dropdown">
+                <button class="btn dropdown-toggle nav-item" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    More
+                </button>
+                <div class="dropdown-menu">
+                    
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../W0D1_PythonWorkshop1/chapter_title.html">
+                        Python Workshop 1 (W0D1)
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../W0D2_PythonWorkshop2/chapter_title.html">
+                        Python Workshop 2 (W0D2)
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../W0D3_LinearAlgebra/chapter_title.html">
+                        Linear Algebra (W0D3)
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../W0D4_Calculus/chapter_title.html">
+                        Calculus (W0D4)
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../W0D5_Statistics/chapter_title.html">
+                        Statistics (W0D5)
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item current active">
+                      <a class="nav-link nav-internal" href="../chapter_title.html">
+                        Instructions (W1D1)
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../Bonus_BonusContent/chapter_title.html">
+                        Bonus Content (Bonus)
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../Module_WrapUps/CourseContentTemplateInstructions.html">
+                        Course Content Template Instructions Wrap-Up
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../W1D2_Template/chapter_title.html">
+                        Template (W1D2)
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../Module_WrapUps/InsertCategoryNameHere.html">
+                        Insert Category Name Here Wrap-Up
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../../projects/README.html">
+                        Introduction
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../../projects/keynote.html">
+                        Project Day keynote (W2D2)
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../../projects/docs/project_guidance.html">
+                        Daily guide for projects
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../../projects/docs/datasets_overview.html">
+                        Project materials
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../../projects/docs/continuing_your_project_after_the_course.html">
+                        Continuing your project after the course
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../../projects/docs/past_projects_overview.html">
+                        Past projects
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../../projects/professional_development/README.html">
+                        Introduction
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../../projects/professional_development/impact_talks.html">
+                        Impact Talks
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../../projects/professional_development/career_features.html">
+                        Career Features
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../../projects/professional_development/career_panels.html">
+                        Career Panels
+                      </a>
+                    </li>
+                
+                </div>
+            </div>
+            
+    </ul>
+</nav>
+      </div>
+      
+    </div>
+
+    <div id="navbar-end">
+      
+        <div class="navbar-end-item navbar-persistent--container">
+          
+<button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-toggle="tooltip">
+  <i class="fa-solid fa-magnifying-glass"></i>
+</button>
+        </div>
       
       
-      <img src="../../../_static/nma-logo-square-4xp.png" class="logo" alt="logo">
+      <div class="navbar-end-item">
+        <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+</button>
+      </div>
       
+      <div class="navbar-end-item">
+        <ul id="navbar-icon-links" class="navbar-nav" aria-label="Icon Links">
+      </ul>
+      </div>
       
-      <h1 class="site-logo" id="site-title">Insert your title here. e.g. Neuromatch Academy: Computational Neuroscience</h1>
+    </div>
+  </div>
+
+
+  
+  
+    <div class="navbar-persistent--mobile">
+<button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-toggle="tooltip">
+  <i class="fa-solid fa-magnifying-glass"></i>
+</button>
+    </div>
+  
+
+  
+  <label class="sidebar-toggle secondary-toggle" for="__secondary">
+      <span class="fa-solid fa-outdent"></span>
+  </label>
+  
+
+</div>
+  </nav>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
       
-    </a>
-</div><form class="bd-search d-flex align-items-center" action="../../../search.html" method="get">
-  <i class="icon fas fa-search"></i>
-  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
-</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
-    <div class="bd-toc-item active">
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+      <div class="sidebar-header-items__center">
+      
+      <div class="navbar-center-item">
+        <nav class="navbar-nav">
+    <p class="sidebar-header-items__title" role="heading" aria-level="1" aria-label="Site Navigation">
+        Site Navigation
+    </p>
+    <ul id="navbar-main-elements" class="navbar-nav">
+        
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../Schedule/schedule_intro.html">
+                        Schedule
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../TechnicalHelp/tech_intro.html">
+                        Technical Help
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../TechnicalHelp/Links_Policy.html">
+                        Quick links and policies
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../../prereqs/ComputationalNeuroscience.html">
+                        Prerequisites and preparatory materials for NMA Computational Neuroscience
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../W0D0_NeuroVideoSeries/chapter_title.html">
+                        Neuro Video Series (W0D0)
+                      </a>
+                    </li>
+                
+            <div class="nav-item dropdown">
+                <button class="btn dropdown-toggle nav-item" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    More
+                </button>
+                <div class="dropdown-menu">
+                    
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../W0D1_PythonWorkshop1/chapter_title.html">
+                        Python Workshop 1 (W0D1)
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../W0D2_PythonWorkshop2/chapter_title.html">
+                        Python Workshop 2 (W0D2)
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../W0D3_LinearAlgebra/chapter_title.html">
+                        Linear Algebra (W0D3)
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../W0D4_Calculus/chapter_title.html">
+                        Calculus (W0D4)
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../W0D5_Statistics/chapter_title.html">
+                        Statistics (W0D5)
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item current active">
+                      <a class="nav-link nav-internal" href="../chapter_title.html">
+                        Instructions (W1D1)
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../Bonus_BonusContent/chapter_title.html">
+                        Bonus Content (Bonus)
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../Module_WrapUps/CourseContentTemplateInstructions.html">
+                        Course Content Template Instructions Wrap-Up
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../W1D2_Template/chapter_title.html">
+                        Template (W1D2)
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../Module_WrapUps/InsertCategoryNameHere.html">
+                        Insert Category Name Here Wrap-Up
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../../projects/README.html">
+                        Introduction
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../../projects/keynote.html">
+                        Project Day keynote (W2D2)
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../../projects/docs/project_guidance.html">
+                        Daily guide for projects
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../../projects/docs/datasets_overview.html">
+                        Project materials
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../../projects/docs/continuing_your_project_after_the_course.html">
+                        Continuing your project after the course
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../../projects/docs/past_projects_overview.html">
+                        Past projects
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../../projects/professional_development/README.html">
+                        Introduction
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../../projects/professional_development/impact_talks.html">
+                        Impact Talks
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../../projects/professional_development/career_features.html">
+                        Career Features
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../../projects/professional_development/career_panels.html">
+                        Career Panels
+                      </a>
+                    </li>
+                
+                </div>
+            </div>
+            
+    </ul>
+</nav>
+      </div>
+      
+      </div>
+    
+
+    
+    
+    <div class="sidebar-header-items__end">
+      
+      <div class="navbar-end-item">
+        <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+</button>
+      </div>
+      
+      <div class="navbar-end-item">
+        <ul id="navbar-icon-links" class="navbar-nav" aria-label="Icon Links">
+      </ul>
+      </div>
+      
+    </div>
+    
+  </div>
+
+  
+  <div class="sidebar-start-items sidebar-primary__section">
+    <div class="sidebar-start-items__item">
+  
+
+
+<a class="navbar-brand logo" href="../../intro.html">
+
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <img src="../../../_static/nma-logo-square-4xp.png" class="logo__image only-light" alt="Logo image">
+    <img src="../../../_static/nma-logo-square-4xp.png" class="logo__image only-dark" alt="Logo image">
+  
+  
+</a>
+    </div>
+    <div class="sidebar-start-items__item">
+<form class="bd-search d-flex align-items-center" action="../../../search.html" method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+    </div>
+    <div class="sidebar-start-items__item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
@@ -114,799 +644,455 @@ const thebe_selector_output = ".output, .cell_output"
             </li>
         </ul>
         <ul class="nav bd-sidenav">
- <li class="toctree-l1 has-children">
-  <a class="reference internal" href="../../Schedule/schedule_intro.html">
-   Schedule
-  </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
-  <label for="toctree-checkbox-1">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../../Schedule/daily_schedules.html">
-     General schedule
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../../Schedule/shared_calendars.html">
-     Shared calendars
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../../Schedule/timezone_widget.html">
-     Timezone widget
-    </a>
-   </li>
-  </ul>
- </li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Schedule/schedule_intro.html">Schedule</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../Schedule/daily_schedules.html">General schedule</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Schedule/shared_calendars.html">Shared calendars</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Schedule/timezone_widget.html">Timezone widget</a></li>
+</ul>
+</li>
 </ul>
 <ul class="nav bd-sidenav">
- <li class="toctree-l1 has-children">
-  <a class="reference internal" href="../../TechnicalHelp/tech_intro.html">
-   Technical Help
-  </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
-  <label for="toctree-checkbox-2">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul>
-   <li class="toctree-l2 has-children">
-    <a class="reference internal" href="../../TechnicalHelp/Jupyterbook.html">
-     Using jupyterbook
-    </a>
-    <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
-    <label for="toctree-checkbox-3">
-     <i class="fas fa-chevron-down">
-     </i>
-    </label>
-    <ul>
-     <li class="toctree-l3">
-      <a class="reference internal" href="../../TechnicalHelp/Tutorial_colab.html">
-       Using Google Colab
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="../../TechnicalHelp/Tutorial_kaggle.html">
-       Using Kaggle
-      </a>
-     </li>
-    </ul>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../../TechnicalHelp/Discord.html">
-     Using discord
-    </a>
-   </li>
-  </ul>
- </li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../TechnicalHelp/tech_intro.html">Technical Help</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../TechnicalHelp/Jupyterbook.html">Using jupyterbook</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../TechnicalHelp/Tutorial_colab.html">Using Google Colab</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../TechnicalHelp/Tutorial_kaggle.html">Using Kaggle</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../TechnicalHelp/Discord.html">Using discord</a></li>
+</ul>
+</li>
 </ul>
 <ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="../../TechnicalHelp/Links_Policy.html">
-   Quick links and policies
-  </a>
- </li>
+<li class="toctree-l1"><a class="reference internal" href="../../TechnicalHelp/Links_Policy.html">Quick links and policies</a></li>
 </ul>
 <ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="../../../prereqs/ComputationalNeuroscience.html">
-   Prerequisites and preparatory materials for NMA Computational Neuroscience
-  </a>
- </li>
+<li class="toctree-l1"><a class="reference internal" href="../../../prereqs/ComputationalNeuroscience.html">Prerequisites and preparatory materials for NMA Computational Neuroscience</a></li>
 </ul>
-<p class="caption">
- <span class="caption-text">
-  Pre-reqs Refresher
- </span>
-</p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Pre-reqs Refresher</span></p>
 <ul class="nav bd-sidenav">
- <li class="toctree-l1 has-children">
-  <a class="reference internal" href="../../W0D0_NeuroVideoSeries/chapter_title.html">
-   Neuro Video Series (W0D0)
-  </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
-  <label for="toctree-checkbox-4">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../../W0D0_NeuroVideoSeries/student/W0D0_Tutorial1.html">
-     Intro
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../../W0D0_NeuroVideoSeries/student/W0D0_Tutorial2.html">
-     Human Psychophysics
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../../W0D0_NeuroVideoSeries/student/W0D0_Tutorial3.html">
-     Behavioral Readout
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../../W0D0_NeuroVideoSeries/student/W0D0_Tutorial4.html">
-     Live in Lab
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../../W0D0_NeuroVideoSeries/student/W0D0_Tutorial5.html">
-     Brain Signals: Spiking Activity
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../../W0D0_NeuroVideoSeries/student/W0D0_Tutorial6.html">
-     Brain Signals: LFP
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../../W0D0_NeuroVideoSeries/student/W0D0_Tutorial7.html">
-     Brain Signals: EEG &amp; MEG
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../../W0D0_NeuroVideoSeries/student/W0D0_Tutorial8.html">
-     Brain Signals: fMRI
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../../W0D0_NeuroVideoSeries/student/W0D0_Tutorial9.html">
-     Brain Signals: Calcium Imaging
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../../W0D0_NeuroVideoSeries/student/W0D0_Tutorial10.html">
-     Stimulus Representation
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../../W0D0_NeuroVideoSeries/student/W0D0_Tutorial11.html">
-     Neurotransmitters
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../../W0D0_NeuroVideoSeries/student/W0D0_Tutorial12.html">
-     Neurons to Consciousness
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toctree-l1 has-children">
-  <a class="reference internal" href="../../W0D1_PythonWorkshop1/chapter_title.html">
-   Python Workshop 1 (W0D1)
-  </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
-  <label for="toctree-checkbox-5">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../../W0D1_PythonWorkshop1/student/W0D1_Tutorial1.html">
-     Tutorial: LIF Neuron Part I
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toctree-l1 has-children">
-  <a class="reference internal" href="../../W0D2_PythonWorkshop2/chapter_title.html">
-   Python Workshop 2 (W0D2)
-  </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
-  <label for="toctree-checkbox-6">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../../W0D2_PythonWorkshop2/student/W0D2_Tutorial1.html">
-     Tutorial 1: LIF Neuron Part II
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toctree-l1 has-children">
-  <a class="reference internal" href="../../W0D3_LinearAlgebra/chapter_title.html">
-   Linear Algebra (W0D3)
-  </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/>
-  <label for="toctree-checkbox-7">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../../W0D3_LinearAlgebra/student/W0D3_Tutorial1.html">
-     Tutorial 1: Vectors
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../../W0D3_LinearAlgebra/student/W0D3_Tutorial2.html">
-     Tutorial 2: Matrices
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../../W0D3_LinearAlgebra/student/W0D3_Tutorial3.html">
-     Bonus Tutorial: Discrete Dynamical Systems
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../../W0D3_LinearAlgebra/student/W0D3_Outro.html">
-     Outro
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../../W0D3_LinearAlgebra/student/W0D3_DaySummary.html">
-     Day Summary
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toctree-l1 has-children">
-  <a class="reference internal" href="../../W0D4_Calculus/chapter_title.html">
-   Calculus (W0D4)
-  </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/>
-  <label for="toctree-checkbox-8">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../../W0D4_Calculus/student/W0D4_Tutorial1.html">
-     Tutorial 1: Differentiation and Integration
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../../W0D4_Calculus/student/W0D4_Tutorial2.html">
-     Tutorial 2: Differential Equations
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../../W0D4_Calculus/student/W0D4_Tutorial3.html">
-     Tutorial 3: Numerical Methods
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../../W0D4_Calculus/student/W0D4_DaySummary.html">
-     Day Summary
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toctree-l1 has-children">
-  <a class="reference internal" href="../../W0D5_Statistics/chapter_title.html">
-   Statistics (W0D5)
-  </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/>
-  <label for="toctree-checkbox-9">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../../W0D5_Statistics/student/W0D5_Tutorial1.html">
-     Tutorial 1: Probability Distributions
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../../W0D5_Statistics/student/W0D5_Tutorial2.html">
-     Tutorial 2: Statistical Inference
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../../W0D5_Statistics/student/W0D5_Outro.html">
-     Outro
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../../W0D5_Statistics/student/W0D5_DaySummary.html">
-     Day Summary
-    </a>
-   </li>
-  </ul>
- </li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../W0D0_NeuroVideoSeries/chapter_title.html">Neuro Video Series (W0D0)</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../W0D0_NeuroVideoSeries/student/W0D0_Tutorial1.html">Intro</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../W0D0_NeuroVideoSeries/student/W0D0_Tutorial2.html">Human Psychophysics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../W0D0_NeuroVideoSeries/student/W0D0_Tutorial3.html">Behavioral Readout</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../W0D0_NeuroVideoSeries/student/W0D0_Tutorial4.html">Live in Lab</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../W0D0_NeuroVideoSeries/student/W0D0_Tutorial5.html">Brain Signals: Spiking Activity</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../W0D0_NeuroVideoSeries/student/W0D0_Tutorial6.html">Brain Signals: LFP</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../W0D0_NeuroVideoSeries/student/W0D0_Tutorial7.html">Brain Signals: EEG &amp; MEG</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../W0D0_NeuroVideoSeries/student/W0D0_Tutorial8.html">Brain Signals: fMRI</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../W0D0_NeuroVideoSeries/student/W0D0_Tutorial9.html">Brain Signals: Calcium Imaging</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../W0D0_NeuroVideoSeries/student/W0D0_Tutorial10.html">Stimulus Representation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../W0D0_NeuroVideoSeries/student/W0D0_Tutorial11.html">Neurotransmitters</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../W0D0_NeuroVideoSeries/student/W0D0_Tutorial12.html">Neurons to Consciousness</a></li>
 </ul>
-<p class="caption">
- <span class="caption-text">
-  Course Content Template Instructions
- </span>
-</p>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../W0D1_PythonWorkshop1/chapter_title.html">Python Workshop 1 (W0D1)</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../W0D1_PythonWorkshop1/student/W0D1_Tutorial1.html">Tutorial: LIF Neuron Part I</a></li>
+
+
+
+
+
+
+
+
+
+
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../W0D2_PythonWorkshop2/chapter_title.html">Python Workshop 2 (W0D2)</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../W0D2_PythonWorkshop2/student/W0D2_Tutorial1.html">Tutorial 1: LIF Neuron Part II</a></li>
+
+
+
+
+
+
+
+
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../W0D3_LinearAlgebra/chapter_title.html">Linear Algebra (W0D3)</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../W0D3_LinearAlgebra/student/W0D3_Tutorial1.html">Tutorial 1: Vectors</a></li>
+
+
+
+
+
+
+
+
+<li class="toctree-l2"><a class="reference internal" href="../../W0D3_LinearAlgebra/student/W0D3_Tutorial2.html">Tutorial 2: Matrices</a></li>
+
+
+
+
+
+
+<li class="toctree-l2"><a class="reference internal" href="../../W0D3_LinearAlgebra/student/W0D3_Tutorial3.html">Bonus Tutorial: Discrete Dynamical Systems</a></li>
+
+
+
+
+
+<li class="toctree-l2"><a class="reference internal" href="../../W0D3_LinearAlgebra/student/W0D3_Outro.html">Outro</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../W0D3_LinearAlgebra/student/W0D3_DaySummary.html">Day Summary</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../W0D4_Calculus/chapter_title.html">Calculus (W0D4)</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-8"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../W0D4_Calculus/student/W0D4_Tutorial1.html">Tutorial 1: Differentiation and Integration</a></li>
+
+
+
+
+
+
+
+
+
+
+<li class="toctree-l2"><a class="reference internal" href="../../W0D4_Calculus/student/W0D4_Tutorial2.html">Tutorial 2: Differential Equations</a></li>
+
+
+
+
+
+
+<li class="toctree-l2"><a class="reference internal" href="../../W0D4_Calculus/student/W0D4_Tutorial3.html">Tutorial 3: Numerical Methods</a></li>
+
+
+
+
+
+
+
+<li class="toctree-l2"><a class="reference internal" href="../../W0D4_Calculus/student/W0D4_DaySummary.html">Day Summary</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../W0D5_Statistics/chapter_title.html">Statistics (W0D5)</a><input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-9"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../W0D5_Statistics/student/W0D5_Tutorial1.html">Tutorial 1: Probability Distributions</a></li>
+
+
+
+
+
+
+<li class="toctree-l2"><a class="reference internal" href="../../W0D5_Statistics/student/W0D5_Tutorial2.html">Tutorial 2: Statistical Inference</a></li>
+
+
+
+
+
+
+<li class="toctree-l2"><a class="reference internal" href="../../W0D5_Statistics/student/W0D5_Outro.html">Outro</a></li>
+
+<li class="toctree-l2"><a class="reference internal" href="../../W0D5_Statistics/student/W0D5_DaySummary.html">Day Summary</a></li>
+</ul>
+</li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Course Content Template Instructions</span></p>
 <ul class="current nav bd-sidenav">
- <li class="toctree-l1 current active has-children">
-  <a class="reference internal" href="../chapter_title.html">
-   Instructions (W1D1)
-  </a>
-  <input checked="" class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/>
-  <label for="toctree-checkbox-10">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul class="current">
-   <li class="toctree-l2">
-    <a class="reference internal" href="W1D1_Intro.html">
-     Intro
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="W1D1_Tutorial1.html">
-     Tutorial 1: Importing the Template
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="W1D1_Tutorial2.html">
-     Tutorial 2: Github Workflow
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="W1D1_Tutorial3.html">
-     Tutorial 3: Content Enhancements
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="W1D1_Tutorial4.html">
-     Tutorial 4: Extra Notebook Sections
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="W1D1_Tutorial5.html">
-     Tutorial 5: Projects
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="W1D1_Tutorial6.html">
-     Tutorial 6: Professional Development
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="W1D1_Outro.html">
-     Outro
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../further_reading.html">
-     Suggested further readings
-    </a>
-   </li>
-   <li class="toctree-l2 current active">
-    <a class="current reference internal" href="#">
-     Day Summary
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toctree-l1 has-children">
-  <a class="reference internal" href="../../Bonus_BonusContent/chapter_title.html">
-   Bonus Content (Bonus)
-  </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" type="checkbox"/>
-  <label for="toctree-checkbox-11">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../../Bonus_BonusContent/student/Bonus_Intro.html">
-     Intro
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../../Bonus_BonusContent/student/Bonus_Tutorial1.html">
-     Tutorial 1: Intro to Autoencoders
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../../Bonus_BonusContent/student/Bonus_Tutorial2.html">
-     Tutorial 2: Autoencoder extensions
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../../Bonus_BonusContent/student/Bonus_Tutorial3.html">
-     Tutorial 3: Autoencoders applications
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../../Bonus_BonusContent/student/Bonus_Outro.html">
-     Outro
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../../Module_WrapUps/CourseContentTemplateInstructions.html">
-   Course Content Template Instructions Wrap-Up
-  </a>
- </li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="../chapter_title.html">Instructions (W1D1)</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-10"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="W1D1_Intro.html">Intro</a></li>
+<li class="toctree-l2"><a class="reference internal" href="W1D1_Tutorial1.html">Tutorial 1: Importing the Template</a></li>
+
+
+
+
+
+<li class="toctree-l2"><a class="reference internal" href="W1D1_Tutorial2.html">Tutorial 2: Github Workflow</a></li>
+<li class="toctree-l2"><a class="reference internal" href="W1D1_Tutorial3.html">Tutorial 3: Content Enhancements</a></li>
+
+
+
+
+
+
+<li class="toctree-l2"><a class="reference internal" href="W1D1_Tutorial4.html">Tutorial 4: Extra Notebook Sections</a></li>
+
+<li class="toctree-l2"><a class="reference internal" href="W1D1_Tutorial5.html">Tutorial 5: Projects</a></li>
+
+<li class="toctree-l2"><a class="reference internal" href="W1D1_Tutorial6.html">Tutorial 6: Professional Development</a></li>
+
+<li class="toctree-l2"><a class="reference internal" href="W1D1_Outro.html">Outro</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../further_reading.html">Suggested further readings</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Day Summary</a></li>
 </ul>
-<p class="caption">
- <span class="caption-text">
-  Insert Category Name Here
- </span>
-</p>
-<ul class="nav bd-sidenav">
- <li class="toctree-l1 has-children">
-  <a class="reference internal" href="../../W1D2_Template/chapter_title.html">
-   Template (W1D2)
-  </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" type="checkbox"/>
-  <label for="toctree-checkbox-12">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../../W1D2_Template/student/W1D2_Intro.html">
-     Intro
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../../W1D2_Template/student/W1D2_Tutorial1.html">
-     Tutorial [NUMBER]: Tutorial’s name
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../../W1D2_Template/student/W1D2_Outro.html">
-     Outro
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../../W1D2_Template/further_reading.html">
-     Suggested further readings
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../../W1D2_Template/student/W1D2_DaySummary.html">
-     Day Summary
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../../Module_WrapUps/InsertCategoryNameHere.html">
-   Insert Category Name Here Wrap-Up
-  </a>
- </li>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Bonus_BonusContent/chapter_title.html">Bonus Content (Bonus)</a><input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-11"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../Bonus_BonusContent/student/Bonus_Intro.html">Intro</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Bonus_BonusContent/student/Bonus_Tutorial1.html">Tutorial 1: Intro to Autoencoders</a></li>
+
+
+
+
+
+
+
+
+
+<li class="toctree-l2"><a class="reference internal" href="../../Bonus_BonusContent/student/Bonus_Tutorial2.html">Tutorial 2: Autoencoder extensions</a></li>
+
+
+
+
+
+
+
+
+<li class="toctree-l2"><a class="reference internal" href="../../Bonus_BonusContent/student/Bonus_Tutorial3.html">Tutorial 3: Autoencoders applications</a></li>
+
+
+
+
+
+
+
+
+<li class="toctree-l2"><a class="reference internal" href="../../Bonus_BonusContent/student/Bonus_Outro.html">Outro</a></li>
 </ul>
-<p class="caption">
- <span class="caption-text">
-  Project Booklet
- </span>
-</p>
-<ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="../../../projects/README.html">
-   Introduction
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../../../projects/keynote.html">
-   Project Day keynote (W2D2)
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../../../projects/docs/project_guidance.html">
-   Daily guide for projects
-  </a>
- </li>
- <li class="toctree-l1 has-children">
-  <a class="reference internal" href="../../../projects/docs/datasets_overview.html">
-   Project materials
-  </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-13" name="toctree-checkbox-13" type="checkbox"/>
-  <label for="toctree-checkbox-13">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../../../projects/project-notebooks/Example_project.html">
-     Project Template
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../../../projects/docs/continuing_your_project_after_the_course.html">
-   Continuing your project after the course
-  </a>
- </li>
- <li class="toctree-l1 has-children">
-  <a class="reference internal" href="../../../projects/docs/past_projects_overview.html">
-   Past projects
-  </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-14" name="toctree-checkbox-14" type="checkbox"/>
-  <label for="toctree-checkbox-14">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../../../projects/past-projects/example_past_project.html">
-     Example Past Project
-    </a>
-   </li>
-  </ul>
- </li>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../Module_WrapUps/CourseContentTemplateInstructions.html">Course Content Template Instructions Wrap-Up</a></li>
 </ul>
-<p class="caption">
- <span class="caption-text">
-  Professional Development
- </span>
-</p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Insert Category Name Here</span></p>
 <ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="../../../projects/professional_development/README.html">
-   Introduction
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../../../projects/professional_development/impact_talks.html">
-   Impact Talks
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../../../projects/professional_development/career_features.html">
-   Career Features
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../../../projects/professional_development/career_panels.html">
-   Career Panels
-  </a>
- </li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../W1D2_Template/chapter_title.html">Template (W1D2)</a><input class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-12"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../W1D2_Template/student/W1D2_Intro.html">Intro</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../W1D2_Template/student/W1D2_Tutorial1.html">Tutorial [NUMBER]: Tutorial’s name</a></li>
+
+
+
+
+
+
+<li class="toctree-l2"><a class="reference internal" href="../../W1D2_Template/student/W1D2_Outro.html">Outro</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../W1D2_Template/further_reading.html">Suggested further readings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../W1D2_Template/student/W1D2_DaySummary.html">Day Summary</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../Module_WrapUps/InsertCategoryNameHere.html">Insert Category Name Here Wrap-Up</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Project Booklet</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../../projects/README.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../projects/keynote.html">Project Day keynote (W2D2)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../projects/docs/project_guidance.html">Daily guide for projects</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../projects/docs/datasets_overview.html">Project materials</a><input class="toctree-checkbox" id="toctree-checkbox-13" name="toctree-checkbox-13" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-13"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../projects/project-notebooks/Example_project.html">Project Template</a></li>
+
+
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../projects/docs/continuing_your_project_after_the_course.html">Continuing your project after the course</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../projects/docs/past_projects_overview.html">Past projects</a><input class="toctree-checkbox" id="toctree-checkbox-14" name="toctree-checkbox-14" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-14"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../projects/past-projects/example_past_project.html">Example Past Project</a></li>
+</ul>
+</li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Professional Development</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../../projects/professional_development/README.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../projects/professional_development/impact_talks.html">Impact Talks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../projects/professional_development/career_features.html">Career Features</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../projects/professional_development/career_panels.html">Career Panels</a></li>
 </ul>
 
     </div>
-</nav></div>
-        <div class="bd-sidebar__bottom">
-             <!-- To handle the deprecated key -->
-            
-            <div class="navbar_extra_footer">
-            Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
-            </div>
-            
-        </div>
+</nav>
     </div>
-    <div id="rtd-footer-container"></div>
-</div>
+  </div>
+  
 
+  
+  <div class="sidebar-end-items sidebar-primary__section">
+    <div class="sidebar-end-items__item">
+    </div>
+  </div>
 
-          
+  
+  <div id="rtd-footer-container"></div>
 
-
-          
-<!-- A tiny helper pixel to detect if we've scrolled -->
-<div class="sbt-scroll-pixel-helper"></div>
-<!-- Main content -->
-<div class="col py-0 content-container">
-    
-    <div class="header-article row sticky-top noprint">
+      </div>
+      <main id="main-content" class="bd-main">
         
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+        <div class="bd-content">
+          <div class="bd-article-container">
+            
+            <div class="bd-header-article">
+                
 
 
 
 <div class="col py-1 d-flex header-article-main">
     <div class="header-article__left">
-        
-        <label for="__navigation"
-  class="headerbtn"
-  data-toggle="tooltip"
-data-placement="right"
-title="Toggle navigation"
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-bars"></i>
-  </span>
-
-</label>
-
-        
+        <label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" data-toggle="tooltip" data-placement="right" title="Toggle primary sidebar">
+            <span class="fa-solid fa-bars"></span>
+        </label>
     </div>
     <div class="header-article__right">
-<div class="menu-dropdown menu-dropdown-launch-buttons">
-  <button class="headerbtn menu-dropdown__trigger"
-      aria-label="Launch interactive content">
-      <i class="fas fa-rocket"></i>
+
+
+<div class="dropdown dropdown-launch-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Launch interactive content">
+    <i class="fas fa-rocket"></i>
   </button>
-  <div class="menu-dropdown__content">
-    <ul>
-    </ul>
-  </div>
+  <ul class="dropdown-menu">
+  </ul>
 </div>
 
 <button onclick="toggleFullScreen()"
-  class="headerbtn"
+  class="btn btn-sm"
   data-toggle="tooltip"
 data-placement="bottom"
 title="Fullscreen mode"
 >
   
 
-<span class="headerbtn__icon-container">
+<span class="btn__icon-container">
   <i class="fas fa-expand"></i>
   </span>
 
 </button>
 
-<div class="menu-dropdown menu-dropdown-repository-buttons">
-  <button class="headerbtn menu-dropdown__trigger"
-      aria-label="Source repositories">
-      <i class="fab fa-github"></i>
+
+
+<div class="dropdown dropdown-repository-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
   </button>
-  <div class="menu-dropdown__content">
-    <ul>
-      <li>
-        <a href="https://github.com/neuromatch/course-content-template"
-   class="headerbtn"
+  <ul class="dropdown-menu">
+      <li><a href="https://github.com/neuromatch/course-content-template" target="_blank"
+   class="btn btn-sm dropdown-item"
    data-toggle="tooltip"
 data-placement="left"
 title="Source repository"
 >
   
 
-<span class="headerbtn__icon-container">
+<span class="btn__icon-container">
   <i class="fab fa-github"></i>
   </span>
-<span class="headerbtn__text-container">repository</span>
+<span class="btn__text-container">repository</span>
 </a>
-
-      </li>
+</a>
       
-      <li>
-        <a href="https://github.com/neuromatch/course-content-template/issues/new?title=Issue%20on%20page%20%2Ftutorials/W1D1_Instructions/student/W1D1_DaySummary.html&body=Your%20issue%20content%20here."
-   class="headerbtn"
+      <li><a href="https://github.com/neuromatch/course-content-template/issues/new?title=Issue%20on%20page%20%2Ftutorials/W1D1_Instructions/student/W1D1_DaySummary.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm dropdown-item"
    data-toggle="tooltip"
 data-placement="left"
 title="Open an issue"
 >
   
 
-<span class="headerbtn__icon-container">
+<span class="btn__icon-container">
   <i class="fas fa-lightbulb"></i>
   </span>
-<span class="headerbtn__text-container">open issue</span>
+<span class="btn__text-container">open issue</span>
 </a>
-
-      </li>
+</a>
       
-    </ul>
-  </div>
+  </ul>
 </div>
 
-<div class="menu-dropdown menu-dropdown-download-buttons">
-  <button class="headerbtn menu-dropdown__trigger"
-      aria-label="Download this page">
-      <i class="fas fa-download"></i>
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
   </button>
-  <div class="menu-dropdown__content">
-    <ul>
-      <li>
-        <a href="../../../_sources/tutorials/W1D1_Instructions/student/W1D1_DaySummary.ipynb"
-   class="headerbtn"
+  <ul class="dropdown-menu">
+      <li><a href="../../../_sources/tutorials/W1D1_Instructions/student/W1D1_DaySummary.ipynb" target="_blank"
+   class="btn btn-sm dropdown-item"
    data-toggle="tooltip"
 data-placement="left"
 title="Download source file"
 >
   
 
-<span class="headerbtn__icon-container">
+<span class="btn__icon-container">
   <i class="fas fa-file"></i>
   </span>
-<span class="headerbtn__text-container">.ipynb</span>
+<span class="btn__text-container">.ipynb</span>
 </a>
-
-      </li>
+</a>
       
       <li>
-        
 <button onclick="printPdf(this)"
-  class="headerbtn"
+  class="btn btn-sm dropdown-item"
   data-toggle="tooltip"
 data-placement="left"
 title="Print to PDF"
 >
   
 
-<span class="headerbtn__icon-container">
+<span class="btn__icon-container">
   <i class="fas fa-file-pdf"></i>
   </span>
-<span class="headerbtn__text-container">.pdf</span>
+<span class="btn__text-container">.pdf</span>
 </button>
-
-      </li>
+</a>
       
-    </ul>
-  </div>
+  </ul>
 </div>
-<label for="__page-toc"
-  class="headerbtn headerbtn-page-toc"
-  
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-list"></i>
-  </span>
-
-</label>
-
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary" data-toggle="tooltip" data-placement="left" title="Toggle secondary sidebar">
+            <span class="fa-solid fa-list"></span>
+        </label>
     </div>
 </div>
-
-<!-- Table of contents -->
-<div class="col-md-3 bd-toc show noprint">
-    <div class="tocsection onthispage pt-5 pb-3">
-        <i class="fas fa-list"></i> Contents
-    </div>
-    <nav id="bd-toc-nav" aria-label="Page">
-        <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#install-and-import-feedback-gadget">
-   Install and import feedback gadget
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#submit-your-feedback">
-   Submit your feedback
-  </a>
- </li>
-</ul>
-
-    </nav>
-</div>
-    </div>
-    <div class="article row">
-        <div class="col pl-md-3 pl-lg-5 content-container">
-            <!-- Table of contents that is only displayed when printing the page -->
-            <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Day Summary</h1>
-                <!-- Table of contents -->
-                <div id="print-main-content">
-                    <div id="jb-print-toc">
-                        
-                        <div>
-                            <h2> Contents </h2>
-                        </div>
-                        <nav aria-label="Page">
-                            <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#install-and-import-feedback-gadget">
-   Install and import feedback gadget
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#submit-your-feedback">
-   Submit your feedback
-  </a>
- </li>
-</ul>
-
-                        </nav>
-                    </div>
-                </div>
             </div>
-            <main id="main-content" role="main">
-                
-              <div>
-                
+            
+            
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Day Summary</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#install-and-import-feedback-gadget">
+   Install and import feedback gadget
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#submit-your-feedback">
+   Submit your feedback
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+
+            <article class="bd-article" role="main">
+              
   <p><a href="https://colab.research.google.com/github/neuromatch/course-content-template/blob/main/tutorials/W1D1_Template/student/W1D1_DaySummary.ipynb" target="_blank"><img alt="Open In Colab" src="https://colab.research.google.com/assets/colab-badge.svg" /></a>   <a href="https://kaggle.com/kernels/welcome?src=https://raw.githubusercontent.com/neuromatch/course-content-template/main/tutorials/W1D1_Template/student/W1D1_DaySummary.ipynb" target="_blank"><img alt="Open in Kaggle" src="https://kaggle.com/static/images/open-in-kaggle.svg" /></a></p>
-<div class="section" id="day-summary">
-<h1>Day Summary<a class="headerlink" href="#day-summary" title="Permalink to this headline">¶</a></h1>
+<section class="tex2jax_ignore mathjax_ignore" id="day-summary">
+<h1>Day Summary<a class="headerlink" href="#day-summary" title="Permalink to this heading">#</a></h1>
 <p><strong>Creator:</strong> Creator Full Name</p>
 <p>In this section, we have:</p>
 <ul class="simple">
 <li><p>Gadget: Install and import feedback gadget.</p></li>
 <li><p>Slides: Import slides</p></li>
 </ul>
-<div class="section" id="install-and-import-feedback-gadget">
-<h2>Install and import feedback gadget<a class="headerlink" href="#install-and-import-feedback-gadget" title="Permalink to this headline">¶</a></h2>
+<section id="install-and-import-feedback-gadget">
+<h2>Install and import feedback gadget<a class="headerlink" href="#install-and-import-feedback-gadget" title="Permalink to this heading">#</a></h2>
 <div class="cell tag_hide-input docutils container">
+<details class="hide above-input">
+<summary aria-label="Toggle hidden content">
+<span class="collapsed">Show code cell source</span>
+<span class="expanded">Hide code cell source</span>
+</summary>
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># @title Install and import feedback gadget</span>
 
@@ -931,36 +1117,33 @@ title="Print to PDF"
 </pre></div>
 </div>
 </div>
+</details>
 </div>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<script type="application/vnd.jupyter.widget-view+json">
-{"version_major": 2, "version_minor": 0, "model_id": "bdea87a0ea5d44859e792422f825776e"}
-</script></div>
+<script type="application/vnd.jupyter.widget-view+json">{"version_major": 2, "version_minor": 0, "model_id": "1ce9da2d1c3648ec8daf67eb6f6e88c6"}</script></div>
 </div>
-</div>
-<div class="section" id="submit-your-feedback">
-<h2>Submit your feedback<a class="headerlink" href="#submit-your-feedback" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="submit-your-feedback">
+<h2>Submit your feedback<a class="headerlink" href="#submit-your-feedback" title="Permalink to this heading">#</a></h2>
 <div class="cell tag_hide-input docutils container">
+<details class="hide above-input">
+<summary aria-label="Toggle hidden content">
+<span class="collapsed">Show code cell source</span>
+<span class="expanded">Hide code cell source</span>
+</summary>
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># @title Submit your feedback</span>
 <span class="n">content_review</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">feedback_prefix</span><span class="si">}</span><span class="s2">_DaySummary&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
+</details>
 <div class="cell_output docutils container">
-<script type="application/vnd.jupyter.widget-view+json">
-{"version_major": 2, "version_minor": 0, "model_id": "62ae3dc86b7b4250ace13dff91c7e18d"}
-</script></div>
+<script type="application/vnd.jupyter.widget-view+json">{"version_major": 2, "version_minor": 0, "model_id": "1d04d39e0b53406587ec180c9882c571"}</script></div>
 </div>
-</div>
-</div>
-
-
-<script type="application/vnd.jupyter.widget-state+json">
-{"state": {"ebd5e5b3c378406bbbebd73a9d8dd5dd": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "bdea87a0ea5d44859e792422f825776e": {"model_name": "OutputModel", "model_module": "@jupyter-widgets/output", "model_module_version": "1.0.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/output", "_model_module_version": "1.0.0", "_model_name": "OutputModel", "_view_count": null, "_view_module": "@jupyter-widgets/output", "_view_module_version": "1.0.0", "_view_name": "OutputView", "layout": "IPY_MODEL_ebd5e5b3c378406bbbebd73a9d8dd5dd", "msg_id": "", "outputs": [{"output_type": "stream", "name": "stdout", "text": "If you want to download the slides: https://osf.io/download//\n"}, {"output_type": "display_data", "metadata": {}, "data": {"text/plain": "<IPython.lib.display.IFrame at 0x7fc6dcee2190>", "text/html": "\n        <iframe\n            width=\"730\"\n            height=\"410\"\n            src=\"https://mfr.ca-1.osf.io/render?url=https://osf.io//?direct%26mode=render%26action=download%26mode=render\"\n            frameborder=\"0\"\n            allowfullscreen\n            \n        ></iframe>\n        "}}]}}, "78fe3c7e026141dea42a6561bdbb56c9": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": "auto", "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": "0.5em", "right": null, "top": null, "visibility": null, "width": "auto"}}, "017e57e2742f457c9ab5606e8f03b5b5": {"model_name": "ButtonStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "ButtonStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "button_color": "#aaffaa", "font_weight": ""}}, "ab98ae72b3a14576ada51457ef37ebec": {"model_name": "ButtonModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": ["happy"], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "ButtonModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "ButtonView", "button_style": "", "description": "\ud83d\ude42", "disabled": false, "icon": "", "layout": "IPY_MODEL_78fe3c7e026141dea42a6561bdbb56c9", "style": "IPY_MODEL_017e57e2742f457c9ab5606e8f03b5b5", "tooltip": "happy"}}, "948645d66e95430f97004cd59fae571a": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": "auto", "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": "0.5em", "right": null, "top": null, "visibility": null, "width": "auto"}}, "32649b44673d47f1aa6e2e0077512f68": {"model_name": "ButtonStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "ButtonStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "button_color": "#dddd77", "font_weight": ""}}, "8540bf09b6a8449d860851f441d0a9ac": {"model_name": "ButtonModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": ["medium"], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "ButtonModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "ButtonView", "button_style": "", "description": "\ud83d\ude10", "disabled": false, "icon": "", "layout": "IPY_MODEL_948645d66e95430f97004cd59fae571a", "style": "IPY_MODEL_32649b44673d47f1aa6e2e0077512f68", "tooltip": "medium"}}, "a22f71be4ec64d3bb0278c594bd9596c": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": "auto", "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": "0.5em", "right": null, "top": null, "visibility": null, "width": "auto"}}, "c27e0ae0b04e491093d35871ac93448e": {"model_name": "ButtonStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "ButtonStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "button_color": "#ffaaaa", "font_weight": ""}}, "f081ecb035ca43d79be00cf0b9addcb8": {"model_name": "ButtonModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": ["sad"], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "ButtonModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "ButtonView", "button_style": "", "description": "\ud83d\ude41", "disabled": false, "icon": "", "layout": "IPY_MODEL_a22f71be4ec64d3bb0278c594bd9596c", "style": "IPY_MODEL_c27e0ae0b04e491093d35871ac93448e", "tooltip": "sad"}}, "a9a848912bae45a690f069e8d236b64c": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": "auto", "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": "auto"}}, "b4bfef46516c423794a74d64bcd9ab42": {"model_name": "DescriptionStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "DescriptionStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": ""}}, "84bc4127a1b64ddc9158207762219b45": {"model_name": "TextareaModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "TextareaModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "TextareaView", "continuous_update": true, "description": "", "description_tooltip": null, "disabled": false, "layout": "IPY_MODEL_a9a848912bae45a690f069e8d236b64c", "placeholder": "We want your feedback!", "rows": null, "style": "IPY_MODEL_b4bfef46516c423794a74d64bcd9ab42", "value": ""}}, "d29ad427aa8d4bceb144f5802f97e42e": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": "auto", "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": "auto"}}, "597d70b359414a62a527a4c3423e7e42": {"model_name": "ButtonStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "ButtonStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "button_color": null, "font_weight": ""}}, "f3542ba59b9d40ad812426cf977817aa": {"model_name": "ButtonModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "ButtonModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "ButtonView", "button_style": "", "description": "Submit", "disabled": false, "icon": "", "layout": "IPY_MODEL_d29ad427aa8d4bceb144f5802f97e42e", "style": "IPY_MODEL_597d70b359414a62a527a4c3423e7e42", "tooltip": ""}}, "1e9fd3479a6d438990facaa7369ef2da": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": "none", "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "d87dc34cacf34e61abb40fb2494e4070": {"model_name": "HBoxModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "HBoxModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "HBoxView", "box_style": "", "children": ["IPY_MODEL_84bc4127a1b64ddc9158207762219b45", "IPY_MODEL_f3542ba59b9d40ad812426cf977817aa"], "layout": "IPY_MODEL_1e9fd3479a6d438990facaa7369ef2da"}}, "9a1b3200fda148cd9cefc0792b844d79": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": "none", "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "99ba62540db841979737d62e9853825a": {"model_name": "DescriptionStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "DescriptionStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": ""}}, "85955d95eb22436787f655829eb5ab34": {"model_name": "LabelModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "LabelModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "LabelView", "description": "", "description_tooltip": null, "layout": "IPY_MODEL_9a1b3200fda148cd9cefc0792b844d79", "placeholder": "\u200b", "style": "IPY_MODEL_99ba62540db841979737d62e9853825a", "value": "Thanks for your feedback!"}}, "99e2dcb7531e4e45b70fde3bda78c4b6": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "d533476cea014f2ea91c5c1bc500b373": {"model_name": "HBoxModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "HBoxModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "HBoxView", "box_style": "", "children": ["IPY_MODEL_ab98ae72b3a14576ada51457ef37ebec", "IPY_MODEL_8540bf09b6a8449d860851f441d0a9ac", "IPY_MODEL_f081ecb035ca43d79be00cf0b9addcb8"], "layout": "IPY_MODEL_99e2dcb7531e4e45b70fde3bda78c4b6"}}, "a3c993d061304f4ba5c4cacfa2dd8f18": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "26a5cfc2d9894436acad383b41ca6f9c": {"model_name": "VBoxModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "VBoxModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "VBoxView", "box_style": "", "children": ["IPY_MODEL_d533476cea014f2ea91c5c1bc500b373", "IPY_MODEL_d87dc34cacf34e61abb40fb2494e4070", "IPY_MODEL_85955d95eb22436787f655829eb5ab34"], "layout": "IPY_MODEL_a3c993d061304f4ba5c4cacfa2dd8f18"}}, "f945a0eaff1844e497b9f38e7d2efb2c": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "62ae3dc86b7b4250ace13dff91c7e18d": {"model_name": "VBoxModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "VBoxModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "VBoxView", "box_style": "", "children": ["IPY_MODEL_26a5cfc2d9894436acad383b41ca6f9c"], "layout": "IPY_MODEL_f945a0eaff1844e497b9f38e7d2efb2c"}}}, "version_major": 2, "version_minor": 0}
-</script>
-
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {
@@ -974,7 +1157,7 @@ title="Print to PDF"
             mode: "python"
         },
         kernelOptions: {
-            kernelName: "python3",
+            name: "python3",
             path: "./tutorials/W1D1_Instructions/student"
         },
         predefinedOutput: true
@@ -982,58 +1165,113 @@ title="Print to PDF"
     </script>
     <script>kernelName = 'python3'</script>
 
-              </div>
-              
-            </main>
-            <footer class="footer-article noprint">
-                
-    <!-- Previous / next buttons -->
+            </article>
+            
+
+            
+            
+            <footer class="bd-footer-article">
+                <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-    <a class='left-prev' id="prev-link" href="../further_reading.html" title="previous page">
-        <i class="fas fa-angle-left"></i>
-        <div class="prev-next-info">
-            <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Suggested further readings</p>
-        </div>
-    </a>
-    <a class='right-next' id="next-link" href="../../Bonus_BonusContent/chapter_title.html" title="next page">
-    <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Bonus Content</p>
-    </div>
-    <i class="fas fa-angle-right"></i>
-    </a>
+  <a class='left-prev' id="prev-link" href="../further_reading.html" title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+          <p class="prev-next-subtitle">previous</p>
+          <p class="prev-next-title">Suggested further readings</p>
+      </div>
+  </a>
+  <a class='right-next' id="next-link" href="../../Bonus_BonusContent/chapter_title.html" title="next page">
+  <div class="prev-next-info">
+      <p class="prev-next-subtitle">next</p>
+      <p class="prev-next-title">Bonus Content</p>
+  </div>
+  <i class="fa-solid fa-angle-right"></i>
+  </a>
 </div>
             </footer>
+            
+          </div>
+          
+          
+          
+            <div class="bd-sidebar-secondary bd-toc">
+              
+<div class="toc-item">
+  
+<div class="tocsection onthispage">
+    <i class="fa-solid fa-list"></i> On this page
+</div>
+<nav id="bd-toc-nav" class="page-toc">
+    <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#install-and-import-feedback-gadget">
+   Install and import feedback gadget
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#submit-your-feedback">
+   Submit your feedback
+  </a>
+ </li>
+</ul>
+
+</nav>
+</div>
+
+            </div>
+          
+          
         </div>
-    </div>
-    <div class="footer-content row">
-        <footer class="col footer"><p>
+        <footer class="bd-footer-content">
+          <div class="bd-footer-content__inner">
+            
+<div class="bd-footer-content__inner container">
   
-    By Neuromatch<br/>
+  <div class="footer-item">
+    
+<p class="component-author">
+By Neuromatch
+</p>
+
+  </div>
   
-    <div class="extra_footer">
-      <div>
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    <p class="last-updated">
+Last updated on None.<br>
+</p>
+  </div>
+  
+  <div class="footer-item">
+    
+<div class="extra_footer">
+  <div>
 <a href="http://creativecommons.org/licenses/by/4.0/"><img src="https://i.creativecommons.org/l/by/4.0/88x31.png"></a>
 <a href="https://opensource.org/licenses/BSD-3-Clause"><img src="https://camo.githubusercontent.com/9b9ea65d95c9ef878afa1987df65731d47681336/68747470733a2f2f696d672e736869656c64732e696f2f707970692f6c2f736561626f726e2e737667"></a>
 The contents of this repository are shared under the <a href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
 Software elements are additionally licensed under the <a href="https://opensource.org/licenses/BSD-3-Clause">BSD (3-Clause) License</a>.
 </div>
 
-    </div>
-</p>
-        </footer>
-    </div>
-    
 </div>
-
-
-      </div>
-    </div>
+  </div>
   
-  <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+</div>
+          </div>
+        </footer>
+        
 
+      </main>
+    </div>
+  </div>
+
+  
+    
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../../_static/scripts/bootstrap.js?digest=796348d33e8b1d947c94"></script>
+<script src="../../../_static/scripts/pydata-sphinx-theme.js?digest=796348d33e8b1d947c94"></script>
 
   </body>
 </html>
