@@ -10,4 +10,5 @@ tqdm
 pathlib
 pandas
 xkcd
+Sphinx>=5
 decorator==5.0.9
