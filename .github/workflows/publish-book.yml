@@ -78,6 +78,8 @@ jobs:
       - name: Build student book
         run: |
           python ci/generate_book.py student
+          # convert _toc to new format
+          jupyter-book toc migrate /home/runner/work/course-content-template/course-content-template/book/_toc.yml -o /home/runner/work/course-content-template/course-content-template/book/_toc.yml
           ln -s ../tutorials book/tutorials
           ln -s ../projects book/projects
           ln -s ../prereqs book/prereqs
