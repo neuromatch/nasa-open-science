@@ -1,6 +1,6 @@
 This is a template for Neuromatch & Climatematch Course Template
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 When creating a book for these courses, kindly adhere to the structure provided in this template.
@@ -84,6 +84,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
   <tbody>
     <tr>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/ViviNeuro"><img src="https://avatars.githubusercontent.com/u/135149038?v=4?s=100" width="100px;" alt="Viviana Greco"/><br /><sub><b>Viviana Greco</b></sub></a><br /><a href="#content-ViviNeuro" title="Content">🖋</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/iamzoltan"><img src="https://avatars.githubusercontent.com/u/21369773?v=4?s=100" width="100px;" alt="Zoltan"/><br /><sub><b>Zoltan</b></sub></a><br /><a href="#content-iamzoltan" title="Content">🖋</a> <a href="#maintenance-iamzoltan" title="Maintenance">🚧</a> <a href="https://github.com/neuromatch/course-content-template/commits?author=iamzoltan" title="Code">💻</a> <a href="https://github.com/neuromatch/course-content-template/commits?author=iamzoltan" title="Tests">⚠️</a></td>
     </tr>
   </tbody>
 </table>
