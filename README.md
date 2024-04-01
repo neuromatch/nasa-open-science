@@ -83,7 +83,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <table>
   <tbody>
     <tr>
-      <td align="center" valign="top" width="14.28%"><a href="https://github.com/ViviNeuro"><img src="https://avatars.githubusercontent.com/u/135149038?v=4?s=100" width="100px;" alt="Viviana Greco"/><br /><sub><b>Viviana Greco</b></sub></a><br /><a href="#content-ViviNeuro" title="Content">🖋</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/ViviNeuro"><img src="https://avatars.githubusercontent.com/u/135149038?v=4?s=100" width="100px;" alt="Viviana Greco"/><br /><sub><b>Viviana Greco</b></sub></a><br /><a href="#content-ViviNeuro" title="Content">🖋</a> <a href="https://github.com/neuromatch/course-content-template/commits?author=ViviNeuro" title="Tests">⚠️</a></td>
     </tr>
   </tbody>
 </table>
