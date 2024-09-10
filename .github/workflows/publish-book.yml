@@ -6,7 +6,7 @@ on:
 env:
   NB_KERNEL: python
   ORG: neuromatch
-  NMA_REPO: course-content-template
+  NMA_REPO: nasa-open-science
   NMA_MAIN_BRANCH: main
   PREREQ_REPO: precourse
   PREREQ_INTRO: ComputationalNeuroscience
@@ -79,7 +79,7 @@ jobs:
         run: |
           python ci/generate_book.py student
           # convert _toc to new format
-          jupyter-book toc migrate /home/runner/work/course-content-template/course-content-template/book/_toc.yml -o /home/runner/work/course-content-template/course-content-template/book/_toc.yml
+          jupyter-book toc migrate /home/runner/work/nasa-open-science/nasa-open-science/book/_toc.yml -o /home/runner/work/nasa-open-science/nasa-open-science/book/_toc.yml
           ln -s ../tutorials book/tutorials
           ln -s ../projects book/projects
           ln -s ../prereqs book/prereqs
@@ -90,7 +90,7 @@ jobs:
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          ghp-import -n -c "compneuro.neuromatch.io" -m "Update course book" book/_build/html
+          ghp-import -n -c "openscience.neuromatch.io" -m "Update course book" book/_build/html
           git checkout -f gh-pages
 
       - name: Publish to gh-pages
