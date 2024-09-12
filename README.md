@@ -6,7 +6,7 @@
 
 *October 21-25 (Asia/Oceania) & November 11-15 (Europe/Africa) & December 2-6 (America), 2024*
 
-**The content should primarily be accessed from our ebook: https://compneuro.neuromatch.io/ [under continuous development]**
+**The content should primarily be accessed from our ebook: https://openscience.neuromatch.io/ [under continuous development]**
 
 ---
 
