@@ -81,8 +81,8 @@ jobs:
           # convert _toc to new format
           jupyter-book toc migrate /home/runner/work/nasa-open-science/nasa-open-science/book/_toc.yml -o /home/runner/work/nasa-open-science/nasa-open-science/book/_toc.yml
           ln -s ../tutorials book/tutorials
-          ln -s ../projects book/projects
-          ln -s ../prereqs book/prereqs
+          # ln -s ../projects book/projects
+          # ln -s ../prereqs book/prereqs
           jupyter-book build book
           python ci/parse_html_for_errors.py student
 
