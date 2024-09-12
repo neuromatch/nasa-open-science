@@ -1,4 +1,4 @@
-name: Change name #e.g., nma-compneuro
+name: nma-nasa-open-science
 dependencies:
   - python=3.9
   - requests
