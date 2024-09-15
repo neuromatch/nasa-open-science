@@ -17,3 +17,6 @@ Slides: [Materials](https://mfr.ca-1.osf.io/render?url=https://osf.io/79523/?dir
 
 
 
+
+[Further Reading](https://github.com/neuromatch/nasa-open-science/blob/main/tutorials/W1D1_TheEthosOfOpenScience/further_reading.md)
+
