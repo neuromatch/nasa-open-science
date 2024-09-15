@@ -35,7 +35,7 @@ Derivative works may use the license that is more appropriate to the relevant co
 [cc-by-shield]: https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg
 
 [bsd-3]: https://opensource.org/licenses/BSD-3-Clause
-[bsd-3-shield]: https://camo.githubusercontent.com/9b9ea65d95c9ef878afa1987df65731d47681336/68747470733a2f2f696d672e736869656c64732e696f2f707970692f6c2f736561626f726e2e737667
+[bsd-3-shield]: https://img.shields.io/badge/License-BSD_3--Clause-blue.svg
 
 ## Contributors ✨
 
