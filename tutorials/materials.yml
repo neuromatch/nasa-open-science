@@ -6,13 +6,13 @@
     title: Materials
   tutorials: 1
 
-# - day: W1D2
-#   category: Open Science              
-#   name: Open Tools and Resources                         
-#   slides:
-#   - link: https://mfr.ca-1.osf.io/render?url=https://osf.io/79523/?direct%26mode=render%26action=download%26mode=render
-#     title: Materials
-#   tutorials: 1
+- day: W1D2
+  category: Open Science              
+  name: Open Tools And Resources                         
+  slides:
+  - link: https://mfr.ca-1.osf.io/render?url=https://osf.io/79523/?direct%26mode=render%26action=download%26mode=render
+    title: Materials
+  tutorials: 1
 
 # - day: W1D3
 #   category: Open Science              
