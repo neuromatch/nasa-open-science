@@ -1,0 +1,2702 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="Docutils 0.18.1: http://docutils.sourceforge.net/" name="generator"/>
+<title>Day 2: Open Tools and Resources — Open Science Course</title>
+<script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+<!-- Loaded before other Sphinx assets -->
+<link href="../../../_static/styles/theme.css?digest=796348d33e8b1d947c94" rel="stylesheet"/>
+<link href="../../../_static/styles/bootstrap.css?digest=796348d33e8b1d947c94" rel="stylesheet"/>
+<link href="../../../_static/styles/pydata-sphinx-theme.css?digest=796348d33e8b1d947c94" rel="stylesheet"/>
+<link href="../../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=796348d33e8b1d947c94" rel="stylesheet"/>
+<link as="font" crossorigin="" href="../../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" rel="preload" type="font/woff2"/>
+<link as="font" crossorigin="" href="../../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" rel="preload" type="font/woff2"/>
+<link as="font" crossorigin="" href="../../../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" rel="preload" type="font/woff2"/>
+<link href="../../../_static/pygments.css" rel="stylesheet" type="text/css">
+<link href="../../../_static/styles/sphinx-book-theme.css?digest=4ec06e9971c5264fbd345897d5258098f11cc577" rel="stylesheet" type="text/css">
+<link href="../../../_static/togglebutton.css" rel="stylesheet" type="text/css">
+<link href="../../../_static/copybutton.css" rel="stylesheet" type="text/css">
+<link href="../../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" rel="stylesheet" type="text/css">
+<link href="../../../_static/sphinx-thebe.css" rel="stylesheet" type="text/css">
+<link href="../../../_static/custom.css" rel="stylesheet" type="text/css">
+<link href="../../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" rel="stylesheet" type="text/css"/>
+<!-- Pre-loaded scripts that we'll load fully later -->
+<link as="script" href="../../../_static/scripts/bootstrap.js?digest=796348d33e8b1d947c94" rel="preload"/>
+<link as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=796348d33e8b1d947c94" rel="preload"/>
+<script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+<script src="../../../_static/jquery.js"></script>
+<script src="../../../_static/underscore.js"></script>
+<script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+<script src="../../../_static/doctools.js"></script>
+<script src="../../../_static/clipboard.min.js"></script>
+<script src="../../../_static/copybutton.js"></script>
+<script src="../../../_static/scripts/sphinx-book-theme.js?digest=8bf782fb4ee92b3d3646425e50f299c4e1fd152d"></script>
+<script>let toggleHintShow = 'Click to show';</script>
+<script>let toggleHintHide = 'Click to hide';</script>
+<script>let toggleOpenOnPrint = 'true';</script>
+<script src="../../../_static/togglebutton.js"></script>
+<script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+<script src="../../../_static/design-tabs.js"></script>
+<script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+<script async="async" src="../../../_static/sphinx-thebe.js"></script>
+<script type="application/vnd.jupyter.widget-state+json">{"state": {"31ca6843e65d4415bcdd69b98a2017dd": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "2.0.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "2.0.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "2.0.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border_bottom": null, "border_left": null, "border_right": null, "border_top": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "e9dc40e21702475ca244247add684f22": {"model_name": "OutputModel", "model_module": "@jupyter-widgets/output", "model_module_version": "1.0.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/output", "_model_module_version": "1.0.0", "_model_name": "OutputModel", "_view_count": null, "_view_module": "@jupyter-widgets/output", "_view_module_version": "1.0.0", "_view_name": "OutputView", "layout": "IPY_MODEL_31ca6843e65d4415bcdd69b98a2017dd", "msg_id": "", "outputs": [{"output_type": "stream", "name": "stdout", "text": "If you want to download the slides: https://osf.io/download//\n"}, {"output_type": "display_data", "metadata": {}, "data": {"text/plain": "<IPython.lib.display.IFrame at 0x7f15046faa90>", "text/html": "\n        <iframe\n            width=\"730\"\n            height=\"410\"\n            src=\"https://mfr.ca-1.osf.io/render?url=https://osf.io//?direct%26mode=render%26action=download%26mode=render\"\n            frameborder=\"0\"\n            allowfullscreen\n            \n        ></iframe>\n        "}}], "tabbable": null, "tooltip": null}}}, "version_major": 2, "version_minor": 0}</script>
+<script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+<script crossorigin="anonymous" data-jupyter-widgets-cdn="https://cdn.jsdelivr.net/npm/" src="https://cdn.jsdelivr.net/npm/@jupyter-widgets/html-manager@1.0.6/dist/embed-amd.js"></script>
+<script>DOCUMENTATION_OPTIONS.pagename = 'tutorials/W1D2_OpenToolsAndResources/student/W1D2_Tutorial1';</script>
+<link href="../../../_static/nma-logo-square-4xp.png" rel="shortcut icon">
+<link href="../../../genindex.html" rel="index" title="Index">
+<link href="../../../search.html" rel="search" title="Search"/>
+<link href="../further_reading.html" rel="next" title="Key terms"/>
+<link href="../chapter_title.html" rel="prev" title="Open Tools And Resources"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="en" name="docsearch:language"/>
+</link></link></link></link></link></link></link></link></link></head>
+<body data-default-mode="" data-offset="180" data-spy="scroll" data-target="#bd-toc-nav">
+<a class="skip-link" href="#main-content">Skip to main content</a>
+<input class="sidebar-toggle" id="__primary" name="__primary" type="checkbox"/>
+<label class="overlay overlay-primary" for="__primary"></label>
+<input class="sidebar-toggle" id="__secondary" name="__secondary" type="checkbox"/>
+<label class="overlay overlay-secondary" for="__secondary"></label>
+<div class="search-button__wrapper">
+<div class="search-button__overlay"></div>
+<div class="search-button__search-container">
+<form action="../../../search.html" class="bd-search d-flex align-items-center" method="get">
+<i class="fa-solid fa-magnifying-glass"></i>
+<input aria-label="Search this book..." autocapitalize="off" autocomplete="off" autocorrect="off" class="form-control" id="search-input" name="q" placeholder="Search this book..." spellcheck="false" type="search"/>
+<span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+</div>
+</div>
+<nav class="bd-header navbar navbar-expand-lg bd-navbar" id="navbar-main"><div class="bd-header__inner bd-page-width">
+<label class="sidebar-toggle primary-toggle" for="__primary">
+<span class="fa-solid fa-bars"></span>
+</label>
+<div id="navbar-start">
+<a class="navbar-brand logo" href="../../intro.html">
+<img alt="Logo image" class="logo__image only-light" src="../../../_static/tops.png"/>
+<img alt="Logo image" class="logo__image only-dark" src="../../../_static/tops.png"/>
+</a>
+</div>
+<div class="col-lg-9 navbar-header-items">
+<div class="mr-auto" id="navbar-center">
+<div class="navbar-center-item">
+<nav class="navbar-nav">
+<p aria-label="Site Navigation" aria-level="1" class="sidebar-header-items__title" role="heading">
+        Site Navigation
+    </p>
+<ul class="navbar-nav" id="navbar-main-elements">
+<li class="nav-item">
+<a class="nav-link nav-internal" href="../../Schedule/schedule_intro.html">
+                        Schedule
+                      </a>
+</li>
+<li class="nav-item">
+<a class="nav-link nav-internal" href="../../TechnicalHelp/tech_intro.html">
+                        Technical Help
+                      </a>
+</li>
+<li class="nav-item">
+<a class="nav-link nav-internal" href="../../TechnicalHelp/Links_Policy.html">
+                        Quick links and policies
+                      </a>
+</li>
+<li class="nav-item">
+<a class="nav-link nav-internal" href="../../W1D1_TheEthosOfOpenScience/chapter_title.html">
+                        The Ethos Of Open Science (W1D1)
+                      </a>
+</li>
+<li class="nav-item current active">
+<a class="nav-link nav-internal" href="../chapter_title.html">
+                        Open Tools And Resources (W1D2)
+                      </a>
+</li>
+<div class="nav-item dropdown">
+<button aria-expanded="false" aria-haspopup="true" class="btn dropdown-toggle nav-item" data-toggle="dropdown" type="button">
+                    More
+                </button>
+<div class="dropdown-menu">
+<li class="nav-item">
+<a class="nav-link nav-internal" href="../../../projects/README.html">
+                        Introduction
+                      </a>
+</li>
+<li class="nav-item">
+<a class="nav-link nav-internal" href="../../../projects/professional_development/mentorship_program.html">
+                        Mentorship Program
+                      </a>
+</li>
+</div>
+</div>
+</ul>
+</nav>
+</div>
+</div>
+<div id="navbar-end">
+<div class="navbar-end-item navbar-persistent--container">
+<button aria-label="Search" class="btn btn-sm navbar-btn search-button search-button__button" data-toggle="tooltip" title="Search">
+<i class="fa-solid fa-magnifying-glass"></i>
+</button>
+</div>
+<div class="navbar-end-item">
+<button aria-label="light/dark" class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" data-toggle="tooltip" title="light/dark">
+<span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+<span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+<span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+</button>
+</div>
+<div class="navbar-end-item">
+<ul aria-label="Icon Links" class="navbar-nav" id="navbar-icon-links">
+</ul>
+</div>
+</div>
+</div>
+<div class="navbar-persistent--mobile">
+<button aria-label="Search" class="btn btn-sm navbar-btn search-button search-button__button" data-toggle="tooltip" title="Search">
+<i class="fa-solid fa-magnifying-glass"></i>
+</button>
+</div>
+<label class="sidebar-toggle secondary-toggle" for="__secondary">
+<span class="fa-solid fa-outdent"></span>
+</label>
+</div>
+</nav>
+<div class="bd-container">
+<div class="bd-container__inner bd-page-width">
+<div class="bd-sidebar-primary bd-sidebar">
+<div class="sidebar-header-items sidebar-primary__section">
+<div class="sidebar-header-items__center">
+<div class="navbar-center-item">
+<nav class="navbar-nav">
+<p aria-label="Site Navigation" aria-level="1" class="sidebar-header-items__title" role="heading">
+        Site Navigation
+    </p>
+<ul class="navbar-nav" id="navbar-main-elements">
+<li class="nav-item">
+<a class="nav-link nav-internal" href="../../Schedule/schedule_intro.html">
+                        Schedule
+                      </a>
+</li>
+<li class="nav-item">
+<a class="nav-link nav-internal" href="../../TechnicalHelp/tech_intro.html">
+                        Technical Help
+                      </a>
+</li>
+<li class="nav-item">
+<a class="nav-link nav-internal" href="../../TechnicalHelp/Links_Policy.html">
+                        Quick links and policies
+                      </a>
+</li>
+<li class="nav-item">
+<a class="nav-link nav-internal" href="../../W1D1_TheEthosOfOpenScience/chapter_title.html">
+                        The Ethos Of Open Science (W1D1)
+                      </a>
+</li>
+<li class="nav-item current active">
+<a class="nav-link nav-internal" href="../chapter_title.html">
+                        Open Tools And Resources (W1D2)
+                      </a>
+</li>
+<div class="nav-item dropdown">
+<button aria-expanded="false" aria-haspopup="true" class="btn dropdown-toggle nav-item" data-toggle="dropdown" type="button">
+                    More
+                </button>
+<div class="dropdown-menu">
+<li class="nav-item">
+<a class="nav-link nav-internal" href="../../../projects/README.html">
+                        Introduction
+                      </a>
+</li>
+<li class="nav-item">
+<a class="nav-link nav-internal" href="../../../projects/professional_development/mentorship_program.html">
+                        Mentorship Program
+                      </a>
+</li>
+</div>
+</div>
+</ul>
+</nav>
+</div>
+</div>
+<div class="sidebar-header-items__end">
+<div class="navbar-end-item">
+<button aria-label="light/dark" class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" data-toggle="tooltip" title="light/dark">
+<span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+<span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+<span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+</button>
+</div>
+<div class="navbar-end-item">
+<ul aria-label="Icon Links" class="navbar-nav" id="navbar-icon-links">
+</ul>
+</div>
+</div>
+</div>
+<div class="sidebar-start-items sidebar-primary__section">
+<div class="sidebar-start-items__item">
+<a class="navbar-brand logo" href="../../intro.html">
+<img alt="Logo image" class="logo__image only-light" src="../../../_static/tops.png"/>
+<img alt="Logo image" class="logo__image only-dark" src="../../../_static/tops.png"/>
+</a>
+</div>
+<div class="sidebar-start-items__item">
+<form action="../../../search.html" class="bd-search d-flex align-items-center" method="get">
+<i class="fa-solid fa-magnifying-glass"></i>
+<input aria-label="Search this book..." autocapitalize="off" autocomplete="off" autocorrect="off" class="form-control" id="search-input" name="q" placeholder="Search this book..." spellcheck="false" type="search"/>
+<span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+</div>
+<div class="sidebar-start-items__item"><nav aria-label="Main" class="bd-links" id="bd-docs-nav">
+<div class="bd-toc-item navbar-nav active">
+<ul class="nav bd-sidenav bd-sidenav__home-link">
+<li class="toctree-l1">
+<a class="reference internal" href="../../intro.html">
+                    Introduction
+                </a>
+</li>
+</ul>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Schedule/schedule_intro.html">Schedule</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../Schedule/daily_schedules.html">General schedule</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Schedule/shared_calendars.html">Shared calendars</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Schedule/timezone_widget.html">Timezone widget</a></li>
+</ul>
+</input></li>
+</ul>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../TechnicalHelp/tech_intro.html">Technical Help</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../TechnicalHelp/Jupyterbook.html">Using jupyterbook</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../TechnicalHelp/Tutorial_colab.html">Using Google Colab</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../TechnicalHelp/Tutorial_kaggle.html">Using Kaggle</a></li>
+</ul>
+</input></li>
+<li class="toctree-l2"><a class="reference internal" href="../../TechnicalHelp/Discord.html">Using discord</a></li>
+</ul>
+</input></li>
+</ul>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../TechnicalHelp/Links_Policy.html">Quick links and policies</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Open Science</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../W1D1_TheEthosOfOpenScience/chapter_title.html">The Ethos Of Open Science (W1D1)</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../W1D1_TheEthosOfOpenScience/student/W1D1_Tutorial1.html">Day 1: The Ethos of Open Science</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../W1D1_TheEthosOfOpenScience/further_reading.html">Key terms</a></li>
+</ul>
+</input></li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="../chapter_title.html">Open Tools And Resources (W1D2)</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Day 2: Open Tools and Resources</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../further_reading.html">Key terms</a></li>
+</ul>
+</li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Project Booklet</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../../projects/README.html">Introduction</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Professional Development</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../../projects/professional_development/mentorship_program.html">Mentorship Program</a></li>
+</ul>
+</div>
+</nav>
+</div>
+</div>
+<div class="sidebar-end-items sidebar-primary__section">
+<div class="sidebar-end-items__item">
+</div>
+</div>
+<div id="rtd-footer-container"></div>
+</div>
+<main class="bd-main" id="main-content">
+<div class="sbt-scroll-pixel-helper"></div>
+<div class="bd-content">
+<div class="bd-article-container">
+<div class="bd-header-article">
+<div class="col py-1 d-flex header-article-main">
+<div class="header-article__left">
+<label class="sidebar-toggle primary-toggle btn btn-sm" data-placement="right" data-toggle="tooltip" for="__primary" title="Toggle primary sidebar">
+<span class="fa-solid fa-bars"></span>
+</label>
+</div>
+<div class="header-article__right">
+<div class="dropdown dropdown-launch-buttons">
+<button aria-expanded="false" aria-label="Launch interactive content" class="btn dropdown-toggle" data-bs-toggle="dropdown" type="button">
+<i class="fas fa-rocket"></i>
+</button>
+<ul class="dropdown-menu">
+</ul>
+</div>
+<button class="btn btn-sm" data-placement="bottom" data-toggle="tooltip" onclick="toggleFullScreen()" title="Fullscreen mode">
+<span class="btn__icon-container">
+<i class="fas fa-expand"></i>
+</span>
+</button>
+<div class="dropdown dropdown-repository-buttons">
+<button aria-expanded="false" aria-label="Source repositories" class="btn dropdown-toggle" data-bs-toggle="dropdown" type="button">
+<i class="fab fa-github"></i>
+</button>
+<ul class="dropdown-menu">
+<li><a class="btn btn-sm dropdown-item" data-placement="left" data-toggle="tooltip" href="https://github.com/neuromatch/nasa-open-science" target="_blank" title="Source repository">
+<span class="btn__icon-container">
+<i class="fab fa-github"></i>
+</span>
+<span class="btn__text-container">repository</span>
+</a>
+
+<li><a class="btn btn-sm dropdown-item" data-placement="left" data-toggle="tooltip" href="https://github.com/neuromatch/nasa-open-science/issues/new?title=Issue%20on%20page%20%2Ftutorials/W1D2_OpenToolsAndResources/student/W1D2_Tutorial1.html&amp;body=Your%20issue%20content%20here." target="_blank" title="Open an issue">
+<span class="btn__icon-container">
+<i class="fas fa-lightbulb"></i>
+</span>
+<span class="btn__text-container">open issue</span>
+</a>
+
+</li></li></ul>
+</div>
+<div class="dropdown dropdown-download-buttons">
+<button aria-expanded="false" aria-label="Download this page" class="btn dropdown-toggle" data-bs-toggle="dropdown" type="button">
+<i class="fas fa-download"></i>
+</button>
+<ul class="dropdown-menu">
+<li><a class="btn btn-sm dropdown-item" data-placement="left" data-toggle="tooltip" href="../../../_sources/tutorials/W1D2_OpenToolsAndResources/student/W1D2_Tutorial1.ipynb" target="_blank" title="Download source file">
+<span class="btn__icon-container">
+<i class="fas fa-file"></i>
+</span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+
+<li>
+<button class="btn btn-sm dropdown-item" data-placement="left" data-toggle="tooltip" onclick="printPdf(this)" title="Print to PDF">
+<span class="btn__icon-container">
+<i class="fas fa-file-pdf"></i>
+</span>
+<span class="btn__text-container">.pdf</span>
+</button>
+
+</li></li></ul>
+</div>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" data-placement="left" data-toggle="tooltip" for="__secondary" title="Toggle secondary sidebar">
+<span class="fa-solid fa-list"></span>
+</label>
+</div>
+</div>
+</div>
+<div class="onlyprint" id="jb-print-docs-body">
+<h1>Day 2: Open Tools and Resources</h1>
+<!-- Table of contents -->
+<div id="print-main-content">
+<div id="jb-print-toc">
+<div>
+<h2> Contents </h2>
+</div>
+<nav aria-label="Page">
+<ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry">
+<a class="reference internal nav-link" href="#">
+   Day 2: Open Tools and Resources
+  </a>
+<ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry">
+<a class="reference internal nav-link" href="#tutorial-objectives">
+     Tutorial Objectives
+    </a>
+</li>
+<li class="toc-h2 nav-item toc-entry">
+<a class="reference internal nav-link" href="#section-1-introduction-to-the-process-of-open-science">
+     Section 1: Introduction to the Process of Open Science
+    </a>
+<ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry">
+<a class="reference internal nav-link" href="#definition-of-research-products">
+       Definition of Research Products
+      </a>
+<ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry">
+<a class="reference internal nav-link" href="#what-is-data">
+         What is Data?
+        </a>
+</li>
+<li class="toc-h4 nav-item toc-entry">
+<a class="reference internal nav-link" href="#what-is-code">
+         What is Code?
+        </a>
+</li>
+<li class="toc-h4 nav-item toc-entry">
+<a class="reference internal nav-link" href="#what-are-results">
+         What are Results?
+        </a>
+</li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry">
+<a class="reference internal nav-link" href="#using-tools-for-open-science-in-practice">
+       Using Tools for Open Science in Practice
+      </a>
+<ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry">
+<a class="reference internal nav-link" href="#the-components-of-open-science">
+         The Components of Open Science
+        </a>
+</li>
+<li class="toc-h4 nav-item toc-entry">
+<a class="reference internal nav-link" href="#sharing-open-data">
+         Sharing Open Data
+        </a>
+</li>
+<li class="toc-h4 nav-item toc-entry">
+<a class="reference internal nav-link" href="#sharing-open-code">
+         Sharing Open Code
+        </a>
+</li>
+<li class="toc-h4 nav-item toc-entry">
+<a class="reference internal nav-link" href="#sharing-an-open-paper">
+         Sharing an Open Paper
+        </a>
+</li>
+<li class="toc-h4 nav-item toc-entry">
+<a class="reference internal nav-link" href="#sharing-open-results">
+         Sharing Open Results
+        </a>
+</li>
+<li class="toc-h4 nav-item toc-entry">
+<a class="reference internal nav-link" href="#an-open-science-project-example">
+         An Open Science Project Example
+        </a>
+</li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry">
+<a class="reference internal nav-link" href="#key-takeaways">
+       Key Takeaways
+      </a>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry">
+<a class="reference internal nav-link" href="#section-2-general-tools-for-open-science">
+     Section 2: General Tools for Open Science
+    </a>
+<ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry">
+<a class="reference internal nav-link" href="#introduction-to-open-science-tools">
+       Introduction to Open Science Tools
+      </a>
+</li>
+<li class="toc-h3 nav-item toc-entry">
+<a class="reference internal nav-link" href="#persistent-identifiers">
+       Persistent Identifiers
+      </a>
+<ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry">
+<a class="reference internal nav-link" href="#orcid">
+         ORCID
+        </a>
+</li>
+<li class="toc-h4 nav-item toc-entry">
+<a class="reference internal nav-link" href="#digital-object-identifiers-doi">
+         Digital Object Identifiers (DOI)
+        </a>
+</li>
+<li class="toc-h4 nav-item toc-entry">
+<a class="reference internal nav-link" href="#citations-using-dois">
+         Citations Using DOIs
+        </a>
+</li>
+<li class="toc-h4 nav-item toc-entry">
+<a class="reference internal nav-link" href="#span-style-color-green-activity-1-span-find-and-resolve-a-doi">
+<span style="color: green">
+          Activity 1:
+         </span>
+         Find and Resolve a DOI
+        </a>
+</li>
+<li class="toc-h4 nav-item toc-entry">
+<a class="reference internal nav-link" href="#examples-of-pids-in-action">
+         Examples of PIDs in Action
+        </a>
+</li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry">
+<a class="reference internal nav-link" href="#useful-open-science-tools">
+       Useful Open Science Tools
+      </a>
+<ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry">
+<a class="reference internal nav-link" href="#metadata">
+         Metadata
+        </a>
+</li>
+<li class="toc-h4 nav-item toc-entry">
+<a class="reference internal nav-link" href="#purpose-of-metadata">
+         Purpose of Metadata
+        </a>
+</li>
+<li class="toc-h4 nav-item toc-entry">
+<a class="reference internal nav-link" href="#types-of-metadata">
+         Types of Metadata
+        </a>
+</li>
+<li class="toc-h4 nav-item toc-entry">
+<a class="reference internal nav-link" href="#documentation">
+         Documentation
+        </a>
+</li>
+<li class="toc-h4 nav-item toc-entry">
+<a class="reference internal nav-link" href="#repositories">
+         Repositories
+        </a>
+</li>
+<li class="toc-h4 nav-item toc-entry">
+<a class="reference internal nav-link" href="#pre-registration">
+         Pre-registration
+        </a>
+</li>
+<li class="toc-h4 nav-item toc-entry">
+<a class="reference internal nav-link" href="#why-is-pre-registration-important">
+         Why is Pre-Registration Important?
+        </a>
+</li>
+<li class="toc-h4 nav-item toc-entry">
+<a class="reference internal nav-link" href="#when-can-should-one-pre-register-their-research">
+         When Can/Should One Pre-Register Their Research?
+        </a>
+</li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry">
+<a class="reference internal nav-link" href="#open-science-and-data-management-plans">
+       Open Science and Data Management Plans
+      </a>
+<ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry">
+<a class="reference internal nav-link" href="#design-your-science-to-be-open">
+         Design Your Science to be Open
+        </a>
+</li>
+<li class="toc-h4 nav-item toc-entry">
+<a class="reference internal nav-link" href="#data-management-plan">
+         Data Management Plan
+        </a>
+</li>
+<li class="toc-h4 nav-item toc-entry">
+<a class="reference internal nav-link" href="#software-management-plan">
+         Software Management Plan
+        </a>
+</li>
+<li class="toc-h4 nav-item toc-entry">
+<a class="reference internal nav-link" href="#open-science-plan">
+         Open Science Plan
+        </a>
+</li>
+<li class="toc-h4 nav-item toc-entry">
+<a class="reference internal nav-link" href="#publications-plan">
+         Publications Plan
+        </a>
+</li>
+<li class="toc-h4 nav-item toc-entry">
+<a class="reference internal nav-link" href="#examples-of-requirements-for-open-science-management-plans">
+         Examples of Requirements for Open Science Management Plans
+        </a>
+</li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry">
+<a class="reference internal nav-link" href="#id1">
+       Key Takeaways
+      </a>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry">
+<a class="reference internal nav-link" href="#section-3-tools-for-open-data">
+     Section 3: Tools for Open Data
+    </a>
+</li>
+<li class="toc-h2 nav-item toc-entry">
+<a class="reference internal nav-link" href="#introduction-to-open-data">
+     Introduction to Open Data
+    </a>
+</li>
+<li class="toc-h2 nav-item toc-entry">
+<a class="reference internal nav-link" href="#fair-principles">
+     FAIR Principles
+    </a>
+<ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry">
+<a class="reference internal nav-link" href="#tools-to-help-with-planning-for-open-data-creation">
+       Tools to Help with Planning For Open Data Creation
+      </a>
+<ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry">
+<a class="reference internal nav-link" href="#id2">
+         Data Management Plan
+        </a>
+</li>
+<li class="toc-h4 nav-item toc-entry">
+<a class="reference internal nav-link" href="#data-repositories">
+         Data Repositories
+        </a>
+</li>
+<li class="toc-h4 nav-item toc-entry">
+<a class="reference internal nav-link" href="#span-style-color-green-activity-2-span-explore-zenodo-and-sign-up">
+<span style="color:green">
+          Activity 2:
+         </span>
+         Explore Zenodo and Sign Up!
+        </a>
+</li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry">
+<a class="reference internal nav-link" href="#tools-to-help-with-using-and-making-open-data">
+       Tools to Help with Using and Making Open Data
+      </a>
+<ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry">
+<a class="reference internal nav-link" href="#data-formats">
+         Data Formats
+        </a>
+</li>
+<li class="toc-h4 nav-item toc-entry">
+<a class="reference internal nav-link" href="#inspecting-data">
+         Inspecting Data
+        </a>
+</li>
+<li class="toc-h4 nav-item toc-entry">
+<a class="reference internal nav-link" href="#fair-assessment">
+         FAIR Assessment
+        </a>
+</li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry">
+<a class="reference internal nav-link" href="#id3">
+       Key Takeaways
+      </a>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry">
+<a class="reference internal nav-link" href="#section-4-tools-for-open-code">
+     Section 4: Tools for Open Code
+    </a>
+<ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry">
+<a class="reference internal nav-link" href="#introduction-to-open-code">
+       Introduction to Open Code
+      </a>
+</li>
+<li class="toc-h3 nav-item toc-entry">
+<a class="reference internal nav-link" href="#tools-for-version-control">
+       Tools for Version Control
+      </a>
+<ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry">
+<a class="reference internal nav-link" href="#version-control">
+         Version Control
+        </a>
+</li>
+<li class="toc-h4 nav-item toc-entry">
+<a class="reference internal nav-link" href="#types-of-software-version-control">
+         Types of Software Version Control
+        </a>
+</li>
+<li class="toc-h4 nav-item toc-entry">
+<a class="reference internal nav-link" href="#example-git">
+         Example: Git
+        </a>
+</li>
+<li class="toc-h4 nav-item toc-entry">
+<a class="reference internal nav-link" href="#version-control-platforms">
+         Version Control Platforms
+        </a>
+</li>
+<li class="toc-h4 nav-item toc-entry">
+<a class="reference internal nav-link" href="#example-github">
+         Example: GitHub
+        </a>
+</li>
+<li class="toc-h4 nav-item toc-entry">
+<a class="reference internal nav-link" href="#summary-of-benefits-of-using-version-control-and-version-control-platforms">
+         Summary of Benefits of Using Version Control and Version Control Platforms
+        </a>
+</li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry">
+<a class="reference internal nav-link" href="#tools-for-editing-code">
+       Tools for Editing Code
+      </a>
+<ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry">
+<a class="reference internal nav-link" href="#integrated-development-environment-ides">
+         Integrated Development Environment (IDEs)
+        </a>
+</li>
+<li class="toc-h4 nav-item toc-entry">
+<a class="reference internal nav-link" href="#source-code-editing-kernels-the-value-of-ides-and-kernels">
+         Source-Code Editing &amp; Kernels – The Value of IDEs and Kernels
+        </a>
+</li>
+<li class="toc-h4 nav-item toc-entry">
+<a class="reference internal nav-link" href="#ide-example-visual-studio-code">
+         IDE Example: Visual Studio Code
+        </a>
+</li>
+<li class="toc-h4 nav-item toc-entry">
+<a class="reference internal nav-link" href="#ide-example-rstudio">
+         IDE Example: RStudio
+        </a>
+</li>
+<li class="toc-h4 nav-item toc-entry">
+<a class="reference internal nav-link" href="#plain-text-editors-for-coding">
+         Plain Text Editors for Coding
+        </a>
+</li>
+<li class="toc-h4 nav-item toc-entry">
+<a class="reference internal nav-link" href="#computational-notebooks">
+         Computational Notebooks
+        </a>
+</li>
+<li class="toc-h4 nav-item toc-entry">
+<a class="reference internal nav-link" href="#example-jupyter-notebook-and-jupyterlab">
+         Example: Jupyter Notebook and JupyterLab
+        </a>
+</li>
+<li class="toc-h4 nav-item toc-entry">
+<a class="reference internal nav-link" href="#span-style-color-green-activity-3-span-run-a-jupyter-notebook-yourself-from-the-browser">
+<span style="color:green">
+          Activity 3:
+         </span>
+         Run a Jupyter Notebook Yourself from the Browser
+        </a>
+</li>
+<li class="toc-h4 nav-item toc-entry">
+<a class="reference internal nav-link" href="#computing-platforms">
+         Computing Platforms
+        </a>
+</li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry">
+<a class="reference internal nav-link" href="#additional-tools">
+       Additional Tools
+      </a>
+<ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry">
+<a class="reference internal nav-link" href="#software-repository-vs-archive">
+         Software Repository vs Archive
+        </a>
+</li>
+<li class="toc-h4 nav-item toc-entry">
+<a class="reference internal nav-link" href="#containers">
+         Containers
+        </a>
+</li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry">
+<a class="reference internal nav-link" href="#id4">
+       Key Takeaways
+      </a>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry">
+<a class="reference internal nav-link" href="#section-5-planning-for-open-science-from-theory-to-practice">
+     Section 5: Planning for Open Science: From Theory to Practice
+    </a>
+<ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry">
+<a class="reference internal nav-link" href="#tools-for-open-publications">
+       Tools for Open Publications
+      </a>
+<ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry">
+<a class="reference internal nav-link" href="#pre-prints">
+         Pre-Prints
+        </a>
+</li>
+<li class="toc-h4 nav-item toc-entry">
+<a class="reference internal nav-link" href="#discover-an-open-access-journal-to-share-your-results">
+         Discover an Open Access Journal to Share Your Results
+        </a>
+</li>
+<li class="toc-h4 nav-item toc-entry">
+<a class="reference internal nav-link" href="#span-style-color-green-activity-4-span-identify-an-open-access-journal">
+<span style="color: green">
+          Activity 4:
+         </span>
+         Identify an Open-Access Journal
+        </a>
+</li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry">
+<a class="reference internal nav-link" href="#tools-for-reproducibility">
+       Tools for Reproducibility
+      </a>
+</li>
+<li class="toc-h3 nav-item toc-entry">
+<a class="reference internal nav-link" href="#additional-tools-for-open-results">
+       Additional Tools for Open Results
+      </a>
+<ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry">
+<a class="reference internal nav-link" href="#tools-for-open-project-management">
+         Tools for Open Project Management
+        </a>
+</li>
+<li class="toc-h4 nav-item toc-entry">
+<a class="reference internal nav-link" href="#best-practices-for-a-project-registry">
+         Best Practices for a Project Registry
+        </a>
+</li>
+<li class="toc-h4 nav-item toc-entry">
+<a class="reference internal nav-link" href="#managing-citations-using-reference-management-software">
+         Managing Citations Using Reference Management Software
+        </a>
+</li>
+<li class="toc-h4 nav-item toc-entry">
+<a class="reference internal nav-link" href="#open-highlight-zotero">
+         Open Highlight: Zotero
+        </a>
+</li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry">
+<a class="reference internal nav-link" href="#id5">
+       Key Takeaways
+      </a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry">
+<a class="reference internal nav-link" href="#summary">
+   Summary
+  </a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<article class="bd-article" role="main">
+<section class="tex2jax_ignore mathjax_ignore" id="day-2-open-tools-and-resources">
+<h1>Day 2: Open Tools and Resources<a class="headerlink" href="#day-2-open-tools-and-resources" title="Permalink to this heading">#</a></h1>
+<p><strong>By Neuromatch Academy &amp; NASA</strong></p>
+<p><strong>Content creators:</strong> <a class="reference external" href="https://github.com/nasa/Transform-to-Open-Science">NASA TOPS Team</a>, Leanna Kalinowski, Hlib Solodzhuk, Ohad Zivan</p>
+<p><strong>Content reviewers:</strong> Leanna Kalinowski, Hlib Solodzhuk, Ohad Zivan, Shubhrojit Misra, Viviana Greco, Courtney Dean</p>
+<p><strong>Production editors:</strong> Hlib Solodzhuk, Konstantine Tsafatinos, Ella Batty, Spiros Chavlis</p>
+<hr class="docutils"/>
+<section id="tutorial-objectives">
+<h2>Tutorial Objectives<a class="headerlink" href="#tutorial-objectives" title="Permalink to this heading">#</a></h2>
+<p><em>Estimated timing of tutorial: 2 hours</em></p>
+<p>This day is designed to help you get started on your journey to practicing open science. It offers an introductory view of the concepts and resources that are fundamental to open science. The bridge between the concepts and the practice of the concepts is something called the use, make, share framework. There are many methods and models that define how to get started with open science. The use, make, share framework was constructed to help you immediately assign purpose to the concepts and tools that are covered in this module as well as in the entire course curriculum. All of the information that you learn here will be addressed in more detail as you participate in other days but can also be applied immediately after completing this tutorial.</p>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<script type="application/vnd.jupyter.widget-view+json">{"version_major": 2, "version_minor": 0, "model_id": "e9dc40e21702475ca244247add684f22"}</script></div>
+</div>
+</section>
+<hr class="docutils"/>
+<section id="section-1-introduction-to-the-process-of-open-science">
+<h2>Section 1: Introduction to the Process of Open Science<a class="headerlink" href="#section-1-introduction-to-the-process-of-open-science" title="Permalink to this heading">#</a></h2>
+<p>In this section, you will review the definition of several common terms in the context of open science, including research products, data, software, and results. In addition, you will read examples that demonstrate how these open-science tools are used in practice. The lesson wraps up with an example of how one group openly shared their data, results, software, and paper.</p>
+<section id="definition-of-research-products">
+<h3>Definition of Research Products<a class="headerlink" href="#definition-of-research-products" title="Permalink to this heading">#</a></h3>
+<p>Scientific knowledge, or research products, take the form of:</p>
+<p>Within these research products are additional types of products, such as methodologies, algorithms, and physical artifacts.</p>
+<section id="what-is-data">
+<h4>What is Data?<a class="headerlink" href="#what-is-data" title="Permalink to this heading">#</a></h4>
+<p>In general, data are pieces of information about a subject, including <strong>theoretical truths</strong>, <strong>raw measurements</strong>, or <strong>highly processed values</strong>.</p>
+<p>There can even be <strong>data about data, called metadata</strong>. In our lessons, when we talk about data, we are referring to scientifically or technically relevant information that can be stored digitally and accessed electronically, such as:</p>
+<ul class="simple">
+<li><p>Information produced by missions and experiments, including calibrations, coefficients, and documentation.</p></li>
+<li><p>Information needed to validate scientific conclusions of peer-reviewed publications.</p></li>
+</ul>
+<p>Open data can have many characteristics, including rich and robust metadata, and be made available in a range of formats. These characteristics are detailed later in this day and even further in the day on Open Data.</p>
+</section>
+<section id="what-is-code">
+<h4>What is Code?<a class="headerlink" href="#what-is-code" title="Permalink to this heading">#</a></h4>
+<p>Many scientists write source code to produce software to <strong>analyze data</strong> or <strong>model observations</strong>. Code is a language that humans can type and understand. Software is often a collection of programs, data, and other information that a computer system uses to perform specific tasks. Scientists write and use many different types of software as part of their research.</p>
+<p><strong>General Purpose Software</strong> – Software produced for widespread use, not specialized scientific purposes. This encompasses both commercial software and open-source software.</p>
+<p><strong>Operational and Infrastructure Software</strong> – Software used by data centers and large information technology facilities to provide data services.</p>
+<p><strong>Libraries</strong> – Generic tools that implement well-known algorithms, provide statistical analysis or visualization, etc., which are incorporated into other software categories.</p>
+<p><strong>Modeling and Simulation Software</strong> – Software that either implements solutions to mathematical equations given input data and boundary conditions or infers models from data.</p>
+<p><strong>Analysis Software</strong> – Software developed to manipulate measurements or model results to visualize or gain understanding.</p>
+<p><strong>Single-use Software</strong> – Software written for use in unique instances, such as making a plot for a paper or manipulating data in a specific way.</p>
+<p>Some of the tools that you can use to develop software are introduced in Day 4. Understanding how to find and use others’ code, create your own, and share it is an important part of advancing science and is covered in the day on Open Code.</p>
+</section>
+<section id="what-are-results">
+<h4>What are Results?<a class="headerlink" href="#what-are-results" title="Permalink to this heading">#</a></h4>
+<p>Results capture the different <strong>research outputs</strong> of the scientific process. <strong>Publications are the most common type</strong> of results, but this can include a number of other types of products. Both data and software can be considered a type of result, but when we discuss results, we will focus on other types of results. Results can include the following:</p>
+<ul class="simple">
+<li><p>Peer-reviewed publications</p></li>
+<li><p>Computational notebooks</p></li>
+<li><p>Blog posts</p></li>
+<li><p>Videos and podcasts</p></li>
+<li><p>Social media posts</p></li>
+<li><p>Conference abstracts and presentations</p></li>
+<li><p>Forum discussions</p></li>
+</ul>
+<p>You may already be familiar with the research life cycle, but still unfamiliar with the types of results that can be shared openly throughout this process. When sharing results, we strive to be as open as possible, with the goal of increasing reproducibility, accessibility, and inclusion of our science. Throughout the research lifecycle, there are multiple opportunities to openly share different results that can lead to new collaborations and lines of inquiry. Additional details on the scope of open results are shared in Day 5 – Open Results.</p>
+</section>
+</section>
+<section id="using-tools-for-open-science-in-practice">
+<h3>Using Tools for Open Science in Practice<a class="headerlink" href="#using-tools-for-open-science-in-practice" title="Permalink to this heading">#</a></h3>
+<p>The following subsection explores different tools and resources available to researchers for using, making, and sharing open science. As mentioned, it is important to think about how to integrate open science principles across all stages of the research process. Here is an overview of one way the various pieces might work together.</p>
+<section id="the-components-of-open-science">
+<h4>The Components of Open Science<a class="headerlink" href="#the-components-of-open-science" title="Permalink to this heading">#</a></h4>
+<p>The four principal components of open science can be organized in a pyramid of openly-shared research products.</p>
+<p>The research paper, closely tied to the results, sits at the top of the pyramid and summarizes how you’ve combined your software and your data to produce your results.</p>
+<p>The practice of sharing these components can occur at varying degrees of completeness. For the following guidance on how to share components of open science, we simplify the range of completeness to “good”, “better”, and “best.” This range reflects one’s commitment to sharing open science at all steps in the research process and to all of its products.</p>
+</section>
+<section id="sharing-open-data">
+<h4>Sharing Open Data<a class="headerlink" href="#sharing-open-data" title="Permalink to this heading">#</a></h4>
+<p>Data can be easily shared through many different services - the best way for scientific data to be shared is often through a <strong>long-term data repository</strong> that will both preserve your data and make it discoverable. The image provides some of the considerations when sharing the data through <a class="reference external" href="https://zenodo.org/">Zenodo</a>, a generalist data repository. These considerations would be similar for other data repositories. See Day 3 - Open Data for more details on sharing open data.</p>
+<img alt="Practices for Open Data." src="https://github.com/neuromatch/nasa-open-science/blob/main/tutorials/W1D2_OpenToolsAndResources/static/image8.png?raw=true">
+</img></section>
+<section id="sharing-open-code">
+<h4>Sharing Open Code<a class="headerlink" href="#sharing-open-code" title="Permalink to this heading">#</a></h4>
+<p>When sharing open code, it is often through an <strong>online version-controlled platform</strong> that <strong>allows others to contribute</strong> to the software and provides a history of changes to the software. For example, many researchers choose to post code files on <a class="reference external" href="https://github.com/">GitHub</a> with a BSD 3-Clause license. This permits others to contribute and reuse the software. Steps to preserve code and make it discoverable are discussed in Day 4 - Open Code.</p>
+<img alt="Practices for Open Code." src="https://github.com/neuromatch/nasa-open-science/blob/main/tutorials/W1D2_OpenToolsAndResources/static/image9.png?raw=true">
+</img></section>
+<section id="sharing-an-open-paper">
+<h4>Sharing an Open Paper<a class="headerlink" href="#sharing-an-open-paper" title="Permalink to this heading">#</a></h4>
+<p>Researchers can choose to publish in a <strong>journal with an open-access license</strong>. Researchers can search for open-access journals through the Directory of Open Access Journals (DOAJ). (See Day 5 - Open Results).</p>
+</section>
+<section id="sharing-open-results">
+<h4>Sharing Open Results<a class="headerlink" href="#sharing-open-results" title="Permalink to this heading">#</a></h4>
+<p>When sharing results, include your <strong>methodology</strong> that was used to produce results (i.e. the “provenance”) <strong>directly with your software</strong>. Software tends to evolve with time, while the outputs of the software itself can retain some consistency. Therefore, sharing your methodology helps others to reproduce your aging results with newer software, even if the methodology to produce them can vary as the software evolves.</p>
+</section>
+<section id="an-open-science-project-example">
+<h4>An Open Science Project Example<a class="headerlink" href="#an-open-science-project-example" title="Permalink to this heading">#</a></h4>
+<p>Here is an example of how one group openly shared their data, results, software, and paper; all with their own unique identifiers. Note that data and software can each have multiple identifiers, enabling others to cite all versions or one unique version.</p>
+<img alt="Data, Results(Paper) and Software of Particular Study." src="https://github.com/neuromatch/nasa-open-science/blob/main/tutorials/W1D2_OpenToolsAndResources/static/image10.jpeg?raw=true">
+<p><a class="reference external" href="https://doi.org/10.5281/zenodo.3688691">Data</a>, <a class="reference external" href="https://doi.org/10.1175/JHM-D-19-0084.1">Results</a>, <a class="reference external" href="https://github.com/c-h-david/rapid">Software</a>.</p>
+</img></section>
+</section>
+<section id="key-takeaways">
+<h3>Key Takeaways<a class="headerlink" href="#key-takeaways" title="Permalink to this heading">#</a></h3>
+<p>In this section, you learned:</p>
+<ul class="simple">
+<li><p>Scientific knowledge, or research products, take the form of: data, software, and results.</p></li>
+<li><p>In general, data are pieces of information about a subject, including theoretical truths, raw measurements, or highly processed values.</p></li>
+</ul>
+</section>
+</section>
+<hr class="docutils"/>
+<section id="section-2-general-tools-for-open-science">
+<h2>Section 2: General Tools for Open Science<a class="headerlink" href="#section-2-general-tools-for-open-science" title="Permalink to this heading">#</a></h2>
+<p>This section introduces you to the commonly used tools in open science. It starts out by providing a brief introduction to open science tools and describes <strong>persistent identifiers</strong> - <strong>one of the most common open science tools</strong> in use that ensures reproducibility, accessibility, and recognition of scientific products. This is followed by descriptions of other common open science tools that are applicable regardless of your field of study. The section wraps up with a description of open science and data management plans that is a key component to sharing your science throughout the research process.</p>
+<section id="introduction-to-open-science-tools">
+<h3>Introduction to Open Science Tools<a class="headerlink" href="#introduction-to-open-science-tools" title="Permalink to this heading">#</a></h3>
+<p>The word “tools” refers to any type of resource or instrument that can be used to support your research. In this sense, tools can be a <strong>collection of useful resources</strong> that you might consult during your research, <strong>software that you could use to create</strong> and manage your data, or even <strong>human infrastructure</strong> such as a <strong>community network</strong> that you join to get more guidance and support on specific matters.</p>
+<p>In this context, open science tools are any tools that enable and facilitate openness in research, and support responsible open science practices. It is important to note that open science tools are often open source and/or free to use, but not always.</p>
+<p>Open science tools can be used for:</p>
+<ul class="simple">
+<li><p><strong>Discovery</strong> - Tools for finding content to use in your research.</p></li>
+<li><p><strong>Analysis</strong> - Tools to process your research output, e.g. tools for data analysis and visualization.</p></li>
+<li><p><strong>Writing</strong> - Tools to produce content, such as Data Management Plans, presentations, and preprints.</p></li>
+<li><p><strong>Publications</strong> - Tools to use for sharing and/or archiving research.</p></li>
+<li><p><strong>Outreach</strong> - Tools to promote your research.</p></li>
+</ul>
+</section>
+<section id="persistent-identifiers">
+<h3>Persistent Identifiers<a class="headerlink" href="#persistent-identifiers" title="Permalink to this heading">#</a></h3>
+<p>A digital persistent identifier (or “PID”) is a “long-lasting reference to a digital resource” that is machine-readable and uniquely points to a digital entity, according to <a class="reference external" href="https://support.orcid.org/hc/en-us/articles/360006971013-What-are-persistent-identifiers-PIDs-">ORCID</a>. Examples of persistent identifiers used in science are described below.</p>
+<section id="orcid">
+<h4>ORCID<a class="headerlink" href="#orcid" title="Permalink to this heading">#</a></h4>
+<a class="reference internal image-reference" href="https://github.com/neuromatch/nasa-open-science/blob/main/tutorials/W1D2_OpenToolsAndResources/static/m2orcidlogo.jpg?raw=true"><img alt="ORCID logo." src="https://github.com/neuromatch/nasa-open-science/blob/main/tutorials/W1D2_OpenToolsAndResources/static/m2orcidlogo.jpg?raw=true" style="width: 350px;"/></a>
+<p>An <strong>“Open Researcher and Contributor Identifier”</strong> (ORCID) provides valid <strong>information about a person</strong>. Following are some key details about ORCIDs.</p>
+<p>A free, nonproprietary numeric code that is:</p>
+<ul class="simple">
+<li><p>Uniquely and persistently identifies authors and contributors of scholarly communication.</p></li>
+<li><p>Used similarly to how tax ID numbers are used for tax purposes.</p></li>
+</ul>
+<p><a class="reference external" href="https://orcid.org/">ORCIDs</a> are used to link researchers to their research and research-related outputs. It is a <strong>16-digit number that uniquely identifies researchers</strong> and is integrated with certain organizations (like some publishers) that will add research products (such as a published paper) to an individual’s ORCID profile. ORCIDs are meant to last throughout one’s career and help to avoid confusion when information about a researcher changes over time (e.g., career change or name change).</p>
+<p>Many publishers, academic institutes, and government bodies support ORCID. In 2023, ORCID reported over 1,300 member organizations and over 9 million yearly live accounts. You can connect it with your professional information (affiliations, grants, publications, peer review, and more).</p>
+</section>
+<section id="digital-object-identifiers-doi">
+<h4>Digital Object Identifiers (DOI)<a class="headerlink" href="#digital-object-identifiers-doi" title="Permalink to this heading">#</a></h4>
+<a class="reference internal image-reference" href="https://github.com/neuromatch/nasa-open-science/blob/main/tutorials/W1D2_OpenToolsAndResources/static/image18.png?raw=true"><img alt="DOI logo." src="https://github.com/neuromatch/nasa-open-science/blob/main/tutorials/W1D2_OpenToolsAndResources/static/image18.png?raw=true" style="width: 350px;"/></a>
+<p>A DOI is a persistent identifier used to <strong>cite data, software, journal articles, and other types of media</strong> (including presentation slides, blog posts, videos, logos, etc.).</p>
+<p>Unlike dynamic transient URLs, <strong>DOIs are static pointers to documents on the internet</strong>. Since a DOI is static, each <strong>new version of data or software that you want to cite will need a new DOI</strong>. Some DOI providers allow for one DOI to point to “all versions” and a series of individual DOIs for each specific version. <strong>Individuals cannot typically request a DOI themselves, but rather have to go through an authorized organization that can submit the request.</strong></p>
+<p>Making a DOI for your product ensures its longevity! This means that if you cite a DOI in a research paper, you can be confident that future readers will be able to follow that citation to its source, even if websites have completely changed in the meantime.</p>
+<p>For example, the DOI: <a class="reference external" href="https://doi.org/10.5067/TERRA-AQUA/CERES/EBAF-TOA_L3B004.1">10.5067/TERRA-AQUA/CERES/EBAF-TOA_L3B004.1</a> will always resolve to a web page that explains what the CERES_EBAF-TOA_Edition4.1 data set is and how to download it. (See the screenshot below if you’re curious about what this dataset actually is!)</p>
+<p><span class="xref myst">DOIs</span> are provided and maintained by the International Organization for Standardization (<a class="reference external" href="https://www.iso.org/home.html">ISO</a>).</p>
+</section>
+<section id="citations-using-dois">
+<h4>Citations Using DOIs<a class="headerlink" href="#citations-using-dois" title="Permalink to this heading">#</a></h4>
+<a class="reference internal image-reference" href="https://github.com/neuromatch/nasa-open-science/blob/main/tutorials/W1D2_OpenToolsAndResources/static/image19.jpeg?raw=true"><img alt="DOI example." src="https://github.com/neuromatch/nasa-open-science/blob/main/tutorials/W1D2_OpenToolsAndResources/static/image19.jpeg?raw=true" style="width: 500px;"/></a>
+<p>DOIs make citing research products easier and more useful.</p>
+<p>Data repositories will typically instruct you on the exact way to cite their data, which includes the correct DOI. For example, let’s take a look at the CERES_EBAF-TOA_Edition4.1 data set mentioned above. This is an <a class="reference external" href="https://asdc.larc.nasa.gov/project/CERES/CERES_EBAF-TOA_Edition4.1/citation">example from the Atmospheric Science Data Center’s (ASDC) website</a>.</p>
+</section>
+<section id="span-style-color-green-activity-1-span-find-and-resolve-a-doi">
+<h4><span style="color: green">Activity 1:</span> Find and Resolve a DOI<a class="headerlink" href="#span-style-color-green-activity-1-span-find-and-resolve-a-doi" title="Permalink to this heading">#</a></h4>
+<p><em>Estimated time for activity: 5 minutes</em></p>
+<p>In this activity, you will search for a DOI for a data set or piece of software that you use, and you will then use the DOI website to “resolve” the DOI name. By “resolving”, this means that you will be taken to the information about the product designated by that particular DOI.</p>
+<ol class="arabic simple">
+<li><p>Find the DOI for a dataset or software you use often.</p>
+<ol class="arabic simple">
+<li><p>This should be listed either in the citation file or on the website where that data/software is published.</p></li>
+<li><p>If you can’t find a DOI, you can instead locate the DOI listed on this page: https://asdc.larc.nasa.gov/project/CERES/CERES_EBAF-TOA_Edition4.1</p></li>
+</ol>
+</li>
+<li><p>Go to https://www.doi.org/ and scroll down to the bottom of the page to “TRY
+RESOLVING A DOI NAME”.</p></li>
+<li><p>Copy and paste the DOI you found into the form called “TRY RESOLVING A DOI
+NAME”.</p></li>
+<li><p>Click Submit.</p></li>
+<li><p>The page should automatically redirect you to a page that explains and contains the cited data.</p></li>
+</ol>
+</section>
+<section id="examples-of-pids-in-action">
+<h4>Examples of PIDs in Action<a class="headerlink" href="#examples-of-pids-in-action" title="Permalink to this heading">#</a></h4>
+<a class="reference internal image-reference" href="https://github.com/neuromatch/nasa-open-science/blob/main/tutorials/W1D2_OpenToolsAndResources/static/image22.png?raw=true"><img alt="DOI and ORCID summary." src="https://github.com/neuromatch/nasa-open-science/blob/main/tutorials/W1D2_OpenToolsAndResources/static/image22.png?raw=true" style="width: 600px;"/></a>
+<ul class="simple">
+<li><p>The necessity for a persistent identifier (PID) begins when a researcher writes code. <strong>To make the code searchable, the researcher uploads their code to a repository and registers a DOI for their script.</strong> Now, others can review and use the code and cite it properly.</p></li>
+<li><p>A workshop planning committee collaboratively authors a paper that summarizes the results of a workshop. <strong>They collect the ORCIDs of everyone who participated in the workshop and include them in the paper.</strong> Finally, they publish in an academic journal that automatically assigns the paper a DOI.</p></li>
+<li><p>A community scientist attends an online conference and gives a short talk. <strong>They deposit their slides in an online repository, then create a DOI to enable easy sharing with colleagues and straightforward citation.</strong></p></li>
+</ul>
+</section>
+</section>
+<section id="useful-open-science-tools">
+<h3>Useful Open Science Tools<a class="headerlink" href="#useful-open-science-tools" title="Permalink to this heading">#</a></h3>
+<section id="metadata">
+<h4>Metadata<a class="headerlink" href="#metadata" title="Permalink to this heading">#</a></h4>
+<p>Metadata are data that describe your data, either <strong>accompanying your data as a separate file or embedded in your data file</strong>. They are often used to provide a standard set of general information about a dataset (e.g., data temporal/spatial coverage or data provider information) to <strong>enable easy use and interpretation of the data</strong>.</p>
+<p>Metadata is essential to the implementation of FAIR Principles because it makes data searchable in an archive, <strong>provides context for future use</strong>, and presents a standard vocabulary.</p>
+<p>Metadata can be more readily shared than data - it usually does not contain restricted information, and it is much smaller than the entire data set.</p>
+</section>
+<section id="purpose-of-metadata">
+<h4>Purpose of Metadata<a class="headerlink" href="#purpose-of-metadata" title="Permalink to this heading">#</a></h4>
+<p>Metadata can facilitate the assessment of dataset quality and data sharing by answering key questions, such as information about:</p>
+<ul class="simple">
+<li><p>How data were collected and processed.</p></li>
+<li><p>What variables/parameters are included in the dataset.</p></li>
+<li><p>What variables are and what variables are related to.</p></li>
+<li><p>Who collected the data (science team, organization, etc.).</p></li>
+<li><p>How and where to find the data (e.g., DOI).</p></li>
+<li><p>How to cite the data.</p></li>
+<li><p>Which spatio-temporal region/time the data covers.</p></li>
+<li><p>Any legal, guideline, or standard information about the data.</p></li>
+</ul>
+<p>Metadata enhances the searchability and findability of the data by potentially allowing other machines to read and interpret datasets.</p>
+<p>According to <a class="reference external" href="https://pitt.libguides.com/metadatadiscovery/metadata-standards">The University of Pittsburgh</a>, “A metadata standard is a high-level document which establishes a common way of structuring and understanding data, and includes principles and implementation issues for utilizing the standard.”</p>
+<p>Many standards exist for metadata fields and structures to describe general data information. It is a best practice to use a standard that is commonly used in your domain, when applicable, or that is requested by your data repository. Examples of metadata standards for different domains include:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://cfconventions.org/">CF Metadata Conventions</a></p></li>
+<li><p><a class="reference external" href="https://community.wmo.int/en/activity-areas/wis/wis2-implementation">World Meteorological Organization WIS 2.0</a></p></li>
+<li><p><a class="reference external" href="https://genelab.nasa.gov/awg/members">GeneLab Working Group</a></p></li>
+</ul>
+</section>
+<section id="types-of-metadata">
+<h4>Types of Metadata<a class="headerlink" href="#types-of-metadata" title="Permalink to this heading">#</a></h4>
+<p>There are different types/categories of metadata addressing different purposes:</p>
+<blockquote>
+<div><p>Descriptive Metadata</p>
+</div></blockquote>
+<p>Descriptive metadata can contain information about the <strong>context and content of your data</strong>, such as variable definition, data limitation, measurement/ sampling description, abstract, title, and subject keywords.</p>
+<blockquote>
+<div><p>Structural Metadata</p>
+</div></blockquote>
+<p>Structural metadata are used to describe the structure of the data (e.g., <strong>file format, the dataset hierarchy, and dimensions</strong>).</p>
+<blockquote>
+<div><p>Administrative Metadata</p>
+</div></blockquote>
+<p>Administrative metadata explains the information used to manage the data (e.g., <strong>when and how it was created, which software</strong>, and the version of the software used in data creation).</p>
+</section>
+<section id="documentation">
+<h4>Documentation<a class="headerlink" href="#documentation" title="Permalink to this heading">#</a></h4>
+<p>Documenting the production and management of your science benefits both you and those who might use your data, code, or results in the future. You are your own best collaborator. Documentation can save you from a headache should you need to reference or reuse your work in six months or attempt to recall meticulous details about your process later on. Properly documented research products increase their usability.</p>
+<p>Types of documentation include (many of which will be expanded upon later in this course):</p>
+<blockquote>
+<div><p>Data</p>
+</div></blockquote>
+<p>Summary of the data (e.g., as a README file or user guide) that answers questions such as:</p>
+<ul class="simple">
+<li><p>What are known errors for these data?</p></li>
+<li><p>How can this data be used?</p></li>
+<li><p>How were the data collected?</p></li>
+</ul>
+<p>Associated publications – how did others use these data?</p>
+<blockquote>
+<div><p>Software</p>
+</div></blockquote>
+<ul class="simple">
+<li><p>README files: Basic installation and usage instructions.</p></li>
+<li><p>Inline comments in code: Annotations on code components.</p></li>
+<li><p>Release notes: What is new in this version?</p></li>
+<li><p>Associated publications: How did others use this software?</p></li>
+</ul>
+<blockquote>
+<div><p>Results</p>
+</div></blockquote>
+<ul class="simple">
+<li><p>Associated publications: What was the research process?</p></li>
+<li><p>Packages of data and software for regenerating results.</p></li>
+</ul>
+</section>
+<section id="repositories">
+<h4>Repositories<a class="headerlink" href="#repositories" title="Permalink to this heading">#</a></h4>
+<p>Repositories are <strong>storage locations for data, results, code, and compiled software</strong>, providing the most common way to share and find each of these components. In general, you want to use a long-term repository that will independently host and store your data, making sure that it is <strong>both shared and preserved</strong>. Different kinds of repositories serve different purposes. For example, Zenodo acts as an archiving repository for individual version releases of data, software, and publications.</p>
+<p>Different types of repositories:</p>
+<ul class="simple">
+<li><p>General repositories</p></li>
+<li><p>Domain-specific repositories</p></li>
+<li><p>Institutional repositories</p></li>
+<li><p>National repositories</p></li>
+</ul>
+<p>Users should select repositories based on their needs. See the sections in the rest of this day and Days 3-5 for more details.</p>
+</section>
+<section id="pre-registration">
+<h4>Pre-registration<a class="headerlink" href="#pre-registration" title="Permalink to this heading">#</a></h4>
+<p>Pre-registration is the process by which a researcher <strong>documents their research plans in an open-access format prior to the start of a project</strong>. This provides a <strong>locked, time-stamped proof of the origin of a concept</strong>. Pre-registration is currently more widely adopted by certain disciplines, particularly the social sciences.</p>
+<p>Types of Pre-Registration Include:</p>
+<blockquote>
+<div><p>Standard Pre-registration</p>
+</div></blockquote>
+<p>An investigator documents their plans in writing and submits them to a pre-registration service. This documents the researcher’s plans prior to undertaking the research and <strong>provides investigators and reviewers with a way to distinguish a priori hypotheses from post-hoc exploratory analyses</strong>. The document may be kept private for some period of time but is usually made public upon submission of the manuscript for publication.</p>
+<blockquote>
+<div><p>Registered Reports</p>
+</div></blockquote>
+<p>An investigator writes a manuscript describing the <strong>motivation for a study and a detailed description of the methods and submits it to a journal for peer review prior to undertaking the research</strong>. The manuscript is reviewed based on the importance of the research question and the quality of the methods. <strong>If accepted, the journal agrees to publish the paper regardless of the results, assuming that there are no problems with the implementation of the methods.</strong></p>
+<blockquote>
+<div><p>Registered Replication Report</p>
+</div></blockquote>
+<p>A type of registered report in which the investigators wish to attempt to <strong>replicate a particular published finding</strong>, usually involving multiple research sites.</p>
+<blockquote>
+<div><p>Sharing Grant Proposals Registered Reports</p>
+</div></blockquote>
+<p>Another way to document and timestamp research plans and concepts is to share funded grant proposals publicly. This has the added <strong>benefit of making the funding process more transparent</strong> and providing <strong>examples of successful grant proposals for other researchers</strong>, particularly those in their early career stage.</p>
+</section>
+<section id="why-is-pre-registration-important">
+<h4>Why is Pre-Registration Important?<a class="headerlink" href="#why-is-pre-registration-important" title="Permalink to this heading">#</a></h4>
+<ul class="simple">
+<li><p>It forces the researcher to plan and think through both why and how they are pursuing their research question.</p></li>
+<li><p>It provides the researcher with a way to determine whether a hypothesis was truly held a priori, versus relying upon memory.</p></li>
+<li><p>It forces the researcher to think through their analysis plan in more detail, potentially surfacing issues that could influence the design of the study.</p></li>
+<li><p>It helps prevent unethical manipulation of data analyses and project design to yield statistically relevant results.</p></li>
+<li><p>Helps prevent selective reporting of measures.</p></li>
+</ul>
+</section>
+<section id="when-can-should-one-pre-register-their-research">
+<h4>When Can/Should One Pre-Register Their Research?<a class="headerlink" href="#when-can-should-one-pre-register-their-research" title="Permalink to this heading">#</a></h4>
+<p>A planned research activity can be pre-registered at any point, as long as the particular activity being registered has not started. However, there are several points at which registration is most common:</p>
+<ul class="simple">
+<li><p>Prior to the collection of data for a project</p></li>
+<li><p>Prior to analysis of an existing or openly available dataset</p></li>
+</ul>
+<p>Source: <a class="reference external" href="https://poldrack.github.io/psych-open-science-guide/1_preregistration.html">Registration — Stanford Psychology Guide to Doing Open Science (poldrack.github.io)</a></p>
+<p>A 2023 <a class="reference external" href="https://www.nature.com/articles/s41467-023-41111-1">Nature survey</a> on researcher attitudes towards open science practices found that about 88% of respondents favor sharing data or code online while only 58% support pre-registration. This moderate support for pre-registration among respondents suggests that awareness of its benefits and lingering concerns remain issues.</p>
+</section>
+</section>
+<section id="open-science-and-data-management-plans">
+<h3>Open Science and Data Management Plans<a class="headerlink" href="#open-science-and-data-management-plans" title="Permalink to this heading">#</a></h3>
+<p>To successfully use, make, and share science openly, we need an open science and data management plan (OSDMP).</p>
+<ul class="simple">
+<li><p>From day 1, establish a plan for management, preservation, and release of data, software, and results.</p></li>
+<li><p>This plan is your blueprint for open science - refer to your plan often to ensure you succeed in your goal of openness.</p></li>
+</ul>
+<p>We’ll discuss each component (data, software, &amp; results) when we cover each topic.</p>
+<p><strong>Note: Many funding opportunities (e.g., NASA ROSES) require an OSDMP as part of your proposal. For more information on NASA Science Mission Directorate’s (SMD’s) policies, please <a class="reference external" href="https://smd-cms.nasa.gov/wp-content/uploads/2023/07/smd-open-source-science-guidance-v2-20230407.pdf">see NASA Guidance on Management Plans</a> and <a class="reference external" href="https://smd-cms.nasa.gov/wp-content/uploads/2023/07/smd-open-source-science-guidance-v2-20230407.pdf">Open Source Science Guidance for Researchers.</a></strong></p>
+<section id="design-your-science-to-be-open">
+<h4>Design Your Science to be Open<a class="headerlink" href="#design-your-science-to-be-open" title="Permalink to this heading">#</a></h4>
+<p>Funding organizations and agencies around the world are beginning to require open science plans. In this course, we will focus on the NASA Open Science and Data Management Plan. These plans are not unique to NASA. Knowing how to write one for NASA should prepare you for almost any funding opportunity.</p>
+<p>The OSDMP describes how the scientific information that will be produced from scientific activities will be managed and made openly available. Specifically, a plan should include sections on data management, software management, and publication sharing. If your study has other types of outputs, such as physical samples, hardware, or anything else, you should include those in the plan. An OSDMP helps researchers think about the details of how they plan to share results.</p>
+<p><strong>A well-written OSDMP can help you win funding because it demonstrates your skills at doing open science!</strong></p>
+<a class="reference internal image-reference" href="https://github.com/neuromatch/nasa-open-science/blob/main/tutorials/W1D2_OpenToolsAndResources/static/image24.png?raw=true"><img alt="Research artifacts plan." src="https://github.com/neuromatch/nasa-open-science/blob/main/tutorials/W1D2_OpenToolsAndResources/static/image24.png?raw=true" style="width: 600px;"/></a>
+<p>Example sections to include in an OSDMP:</p>
+<ol class="arabic simple">
+<li><p>Data Management Plan (DMP)</p></li>
+<li><p>Software Management Plan (SMP)</p></li>
+<li><p>Publication sharing</p></li>
+<li><p>Other open science activities</p></li>
+<li><p>Roles and responsibilities</p></li>
+</ol>
+<p>The steps for each of these sections should include:</p>
+<ul class="simple">
+<li><p>What?</p>
+<ul>
+<li><p>Description of types of materials that will be
+produced</p></li>
+</ul>
+</li>
+<li><p>When?</p>
+<ul>
+<li><p>The schedule for archiving and sharing</p></li>
+</ul>
+</li>
+<li><p>Where?</p>
+<ul>
+<li><p>The repository(ies) and archives that will be
+used to share materials</p></li>
+</ul>
+</li>
+<li><p>How?</p>
+<ul>
+<li><p>The details of how to enable reuse of
+materials (e.g., licensing, documentation,
+metadata)</p></li>
+</ul>
+</li>
+<li><p>Who?</p>
+<ul>
+<li><p>Roles and responsibilities of the team members</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="data-management-plan">
+<h4>Data Management Plan<a class="headerlink" href="#data-management-plan" title="Permalink to this heading">#</a></h4>
+<p>Every major research foundation and federal government agency now requires scientists to file a data management plan (DMP) along with their proposed research plan. <strong>Data and other elements, such as code and publications, have their own lifecycle and workflow, which need to be in the plan.</strong> DMPs are a critical aspect of open science and help keep other researchers informed and on track throughout the data management lifecycle.</p>
+<p>DMPs that are successful typically include clear terminology about FAIR and CARE principles and how they will be applied.</p>
+<p>The data management lifecycle is typically circular. Research data are valuable and reusable long after the project’s financial support ends. Data reuse can extend beyond our own lifetimes. Therefore, when designing a project or supporting an existing corpus of data, we need to remain cognizant of what happens to the data after our own research interaction ends.</p>
+<p>Data management plans typically include the following:</p>
+<ul class="simple">
+<li><p><strong>Descriptions of the data expected to be produced from the proposed activities</strong>, including types of data to be produced, the approximate amount of each data type expected, the machine-readable format of the data, data file format, and any applicable standards for the data or associated metadata.</p></li>
+<li><p>The repository (or repositories) that will be used to archive data and metadata arising from the activities and the schedule for making data publicly available.</p></li>
+<li><p><strong>Description of data types that are subject to relevant laws, regulations, or policies</strong> that exclude them from data sharing requirements.</p></li>
+<li><p>Roles and responsibilities of project personnel who will ensure implementation of the data management plans.</p></li>
+</ul>
+</section>
+<section id="software-management-plan">
+<h4>Software Management Plan<a class="headerlink" href="#software-management-plan" title="Permalink to this heading">#</a></h4>
+<p>Software management plans describe how software will be managed, preserved, and released as part of the scientific process. This helps ensure transparency and reproducibility in the scientific process. Day 4 on Open Code shares more details about the importance of sharing code as part of the scientific process.</p>
+<p>General components of a software management plan:</p>
+<ul class="simple">
+<li><p>Description of the software.</p></li>
+<li><p>Repository(ies) and archive(s) in which software will be shared.</p></li>
+<li><p>Sharing guidelines.</p></li>
+<li><p>Personnel roles and responsibilities.</p></li>
+<li><p>Any community-specific information of note.</p></li>
+</ul>
+<p>At a minimum, a software management plan SMD-funded (NASA Science Mission Directorate) research should include:</p>
+<ul class="simple">
+<li><p><strong>Description of the software expected to be produced from the proposed activities</strong>, including types of software to be produced, how the software will be developed, and the addition of new features or updates to existing software. This can include the platforms used for development, project management, and community-based best practices to be included such as <strong>documentation, testing, dependencies, and versioning</strong>.</p></li>
+<li><p>The repository(ies) that will be used to archive software arising from the activities and the schedule for making the software publicly available.</p></li>
+<li><p>Description of software that are subject to relevant laws, regulations, or policies that exclude them from software sharing requirements.</p></li>
+<li><p>Roles and responsibilities of project personnel who will ensure implementation of the software management plan.</p></li>
+</ul>
+</section>
+<section id="open-science-plan">
+<h4>Open Science Plan<a class="headerlink" href="#open-science-plan" title="Permalink to this heading">#</a></h4>
+<p>The OSDMP should also describe other open processes as part of the plan. This includes the types of publications that are expected to be produced from the activities, including peer-reviewed manuscripts, technical reports, conference materials, and books. The plan should also <strong>outline the methods expected to be used to make the publications publicly accessible</strong>.</p>
+<p>This section may also include a description of additional open science activities associated with the project. This may include:</p>
+<ul class="simple">
+<li><p><strong>Holding scientific workshops and meetings openly</strong> to enable broad participation.</p></li>
+<li><p><strong>Pre-registering research plans</strong> in advance of conducting scientific activities.</p></li>
+<li><p>Providing project personnel with open science training or enablement (if not described elsewhere in a proposal).</p></li>
+<li><p>Implementing practices that support the inclusion of broad, diverse communities in the scientific process as close to the start of research activities as possible (if not described elsewhere in a proposal).</p></li>
+<li><p><strong>Integrating open science practices into citizen science activities</strong>.</p></li>
+<li><p>Contributions to or involvement in open-science communities.</p></li>
+</ul>
+</section>
+<section id="publications-plan">
+<h4>Publications Plan<a class="headerlink" href="#publications-plan" title="Permalink to this heading">#</a></h4>
+<p>A plan for publications is a crucial piece of the OSDMP. A publications plan should include the following features:</p>
+<ul class="simple">
+<li><p>Describe how results will be managed, preserved, and released - in other words, <strong>how you will communicate your findings</strong>.</p></li>
+<li><p>Includes plans for <strong>conference talks, whitepapers, peer-reviewed journal articles, books, and other such documents</strong>*.</p></li>
+<li><p>Written in compliance with any rules and regulations within your organization, as well as from your funding source.</p></li>
+<li><p>As with the data and software plans, it serves as a foundational framework for your project from start to finish.</p></li>
+</ul>
+</section>
+<section id="examples-of-requirements-for-open-science-management-plans">
+<h4>Examples of Requirements for Open Science Management Plans<a class="headerlink" href="#examples-of-requirements-for-open-science-management-plans" title="Permalink to this heading">#</a></h4>
+<p>Globally, organizations and agencies are moving towards open science and beginning to require plans as part of funding. Here are just some of them:</p>
+<blockquote>
+<div><p><strong>USA</strong></p>
+</div></blockquote>
+<ul class="simple">
+<li><p><strong>NASA</strong></p>
+<ul>
+<li><p><a class="reference external" href="https://science.nasa.gov/researchers/sara/faqs/osdmp/">Open Science and Data Management Plan</a></p></li>
+</ul>
+</li>
+<li><p><strong>NSF</strong></p>
+<ul>
+<li><p><a class="reference external" href="https://new.nsf.gov/funding/data-management-plan#%3A~%3Atext%3DThe%20two-page%20data%20management%20plan%20is%20a%20required%2Coverview%20of%20requirements%20for%20the%20data%20management%20plan">Data Management Plan</a></p></li>
+</ul>
+</li>
+<li><p><strong>NIH</strong></p>
+<ul>
+<li><p><a class="reference external" href="https://sharing.nih.gov/data-management-and-sharing-policy/planning-and-budgeting-for-data-management-and-sharing/writing-a-data-management-and-sharing-plan">Data Management and Sharing Plan</a></p></li>
+</ul>
+</li>
+<li><p><strong>NOAA</strong></p>
+<ul>
+<li><p><a class="reference external" href="https://oceanexplorer.noaa.gov/about/funding-opps/media/fy23-data-management-plan.pdf">Data and Information Sharing Plan (DISP)</a></p></li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<div><p><strong>GLOBAL INSTITUTES</strong></p>
+</div></blockquote>
+<ul class="simple">
+<li><p><strong>Australian Research Council</strong></p>
+<ul>
+<li><p><a class="reference external" href="https://www.arc.gov.au/about-arc/strategies/research-data-management">Data Management Plan</a></p></li>
+</ul>
+</li>
+<li><p><strong>EU Open Science Requirements</strong></p>
+<ul>
+<li><p><a class="reference external" href="https://openscience.eu/Open-Science-in-Horizon-Europe">Open Science in Horizon Europe</a></p></li>
+</ul>
+</li>
+<li><p><strong>UK Wellcome Trust</strong></p>
+<ul>
+<li><p><a class="reference external" href="https://wellcome.org/grant-funding/guidance/how-complete-outputs-management-plan">Output Management Plan</a></p></li>
+</ul>
+</li>
+<li><p><strong>Korea’s National Research Foundation (NRF)</strong></p>
+<ul>
+<li><p><a class="reference external" href="https://www.nrf.re.kr/cms/board/general/view?nts_no=124731&amp;menu_no=53&amp;nts_no&amp;search_type=ALL&amp;search_keyword=%EC%97%B0%EA%B5%AC%EB%8D%B0%EC%9D%B4%ED%84%B0&amp;page=90">DMP Guideline</a></p></li>
+</ul>
+</li>
+<li><p><strong>Japan Science &amp; Technology Agency (JST)</strong></p>
+<ul>
+<li><p><a class="reference external" href="https://www.jst.go.jp/EN/about/openscience/guideline_openscience_en_r4.pdf">Open Access to Research Publications and Research Data Management</a></p></li>
+</ul>
+</li>
+</ul>
+</section>
+</section>
+<section id="id1">
+<h3>Key Takeaways<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h3>
+<p>In this lesson, you learned:</p>
+<ul class="simple">
+<li><p>The definition of science tools, common examples, and which part of the scientific workflow they can support.</p></li>
+<li><p>The definition and purpose of persistent identifiers. The usefulness of ORCIDs and DOIs in the scientific process.</p></li>
+<li><p>Examples of useful and common open science tools such as metadata, documentation, repositories, and pre-registration.</p></li>
+<li><p>The steps for writing an open science and data management plan.</p></li>
+</ul>
+</section>
+</section>
+<hr class="docutils"/>
+<section id="section-3-tools-for-open-data">
+<h2>Section 3: Tools for Open Data<a class="headerlink" href="#section-3-tools-for-open-data" title="Permalink to this heading">#</a></h2>
+<p>This section discusses the concepts, considerations, and tools for making data and results. It starts with a closer look at the FAIR principles and how they apply to data. The section includes an introduction to plans, tools, data formats, and other considerations that are related to making data and sharing the results related to that data.</p>
+</section>
+<section id="introduction-to-open-data">
+<h2>Introduction to Open Data<a class="headerlink" href="#introduction-to-open-data" title="Permalink to this heading">#</a></h2>
+<p>Scientific data is any type of information that is collected, observed, or created in the context of research. It can be:</p>
+<ul class="simple">
+<li><p>Primary – Raw from measurements or instruments.</p></li>
+<li><p>Secondary – Processed from secondary analysis and interpretations.</p></li>
+<li><p>Published – Final format available for use and reuse.</p></li>
+<li><p>Metadata – Data about your data.</p></li>
+</ul>
+<p>It is everything that you need to validate or reproduce your research findings, as well as what is required for the understanding and handling of the data.</p>
+<p>The following sections discuss ways to ensure that data is fully utilized and accessible to the most amount of people. These best practices center around community frameworks and tools that help researchers manage and share open data.</p>
+</section>
+<section id="fair-principles">
+<h2>FAIR Principles<a class="headerlink" href="#fair-principles" title="Permalink to this heading">#</a></h2>
+<p>Just like driving on the road, if everyone follows agreed-upon rules, everything goes much smoother. The rules don’t need to be exactly the same for every region but share common practices based on insights about safety and efficiency.</p>
+<p>For example, maybe you drive on the left side of the road or the right side. Either is fine, those sort of details are for different communities to decide on. However, there are overarching guidelines shared by communities across the globe, such as the rule to drive on the road, not the sidewalk, use a turn signal when appropriate, adhere to lights at intersections that direct traffic, and follow speed limits. Some communities may implement stricter rules than others or practice them differently, but these guidelines help everyone move around safely through a common understanding of how to drive on roads. <strong>For scientific data, these guidelines are called the Findable, Accessible, Interoperable, Reusable, or “FAIR” principles.</strong> They do to data what their title suggests. That is, these principles make it possible for others (and yourself) to find, get, understand, and use data correctly.</p>
+<p><strong>Findable</strong>:</p>
+<p>To be <a class="reference external" href="https://www.go-fair.org/fair-principles/f1-meta-data-assigned-globally-unique-persistent-identifiers/">Findable:</a></p>
+<ul class="simple">
+<li><p>Data and results are assigned a globally unique and persistent identifier.</p></li>
+<li><p>Data are described with rich metadata.</p></li>
+<li><p>Metadata clearly and explicitly includes the identifier of the data it describes.</p></li>
+<li><p>Data and results are registered or indexed in a searchable resource.</p></li>
+</ul>
+<p>Current Enabling Tech:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://schema.datacite.org/">DataCite’s Metadata Schema</a></p></li>
+<li><p>PIDs: Persistent IDentifiers (additional details in the following sections)</p>
+<ul>
+<li><p><a class="reference external" href="https://www.doi.org/">Digital Object Identifier</a> (DOI): A top-level and mandatory field in the metadata of each record - for data, code, and publications.</p></li>
+<li><p><a class="reference external" href="https://orcid.org/">Open Research and Contributor ID</a> (ORCID) - A code that uniquely identifies authors and contributors of research products and scholarly communication.</p></li>
+</ul>
+</li>
+</ul>
+<p><strong>Accessible</strong></p>
+<p>To be <a class="reference external" href="https://www.go-fair.org/fair-principles/metadata-retrievable-identifier-standardised-communication-protocol/">Accessible:</a></p>
+<ul class="simple">
+<li><p>Data and results are retrievable by their identifiers using a standardized communication protocol.</p></li>
+<li><p>The protocol is open, free, and universally implementable.</p></li>
+<li><p>The protocol allows for an authentication and authorization procedure, where necessary. Data and results are publicly accessible and licensed under the public domain.</p>
+<ul>
+<li><p>Metadata are accessible, even when the data are no longer available. Data and metadata will be retained for the lifetime of the repository.</p></li>
+<li><p>Metadata are stored in high-availability database servers.</p></li>
+</ul>
+</li>
+</ul>
+<p>Current Enabling Tech:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://www.w3.org/Protocols/rfc959/">File Transfer Protocol (FTP)</a>, File Transfer Protocol Secure (FTPS)</p></li>
+<li><p><a class="reference external" href="https://www.w3.org/Protocols/">Hypertext Transfer Protocol (HTTP)</a>, Hypertext Transfer Protocol Secure (HTTPS)</p></li>
+</ul>
+<p>Note that Microsoft Exchange Server and Skype are examples of proprietary protocols. As always, it is necessary to balance accessibility with security concerns, which may impact the chosen protocol.</p>
+<p><strong>Interoperable</strong></p>
+<p>To be <a class="reference external" href="https://www.go-fair.org/fair-principles/i1-metadata-use-formal-accessible-shared-broadly-applicable-language-knowledge-representation/">Interoperable:</a></p>
+<ul class="simple">
+<li><p>Data uses a formal, accessible, shared, and broadly applicable language for knowledge representation.</p></li>
+<li><p>Data uses a known, standardized data format.</p></li>
+<li><p>Data use vocabularies that follow FAIR principles.</p></li>
+<li><p>Data include qualified references to other (meta)data.</p></li>
+</ul>
+<p>Current Enabling Tech:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://zenodo.org/">Zenodo</a> uses <a class="reference external" href="https://json-schema.org/">JSON Schema</a> as internal representation of metadata and offers export to other popular formats such as <a class="reference external" href="https://www.dublincore.org/">Dublin Core</a> or <a class="reference external" href="https://www.loc.gov/marc/marcxml.html">MARCXML</a>.</p></li>
+<li><p>For certain terms we refer to open, external vocabularies, e.g.: license (<a class="reference external" href="https://opendefinition.org/">Open Definition</a>), funders (<a class="reference external" href="https://www.crossref.org/services/funder-registry/">FundRef</a>) and grants (<a class="reference external" href="https://api.openaire.eu/">OpenAIRE</a>).</p></li>
+<li><p>Each referenced external piece of data is qualified by a resolvable URL.</p></li>
+</ul>
+<p><strong>Reusable</strong></p>
+<p>To be <a class="reference external" href="https://www.go-fair.org/fair-principles/r1-metadata-richly-described-plurality-accurate-relevant-attributes/">Reusable:</a></p>
+<ul class="simple">
+<li><p>Data are richly described with a plurality of accurate and relevant attributes.</p></li>
+<li><p>Data are released with a clear and accessible data usage license.</p></li>
+<li><p>Data are associated with detailed provenance.</p></li>
+<li><p>Data meet domain-relevant community standards.</p></li>
+</ul>
+<p>Current Enabling Tech:</p>
+<ul class="simple">
+<li><p>The metadata record contains a minimum of <a class="reference external" href="https://schema.datacite.org/">DataCite’s</a> mandatory terms, with optionally additional DataCite recommended terms and Zenodo’s enrichments.</p></li>
+<li><p><a class="reference external" href="https://zenodo.org/">Zenodo</a> is not a domain-specific repository, yet through compliance with DataCite’s Metadata Schema, metadata meets one of the broadest cross-domain standards available.</p></li>
+</ul>
+<p><em>Wilkinson, M. D. et al. The FAIR Guiding Principles for scientific data management and stewardship. Sci.Data 3:160018, doi: <a class="reference external" href="https://doi.org/10.1038/sdata.2016.18">10.1038/sdata.2016.18</a> (2016)</em></p>
+<p>These are high-level guidelines, and much like open science, implementation is nuanced. Sometimes, it takes a group effort and/or a long production process/funding to make data and results FAIR. For other datasets, it could be more straightforward. A well-coordinated data management plan is needed for full compliance with FAIR, and the details of this will be discussed further in Day 3 – Open Data.</p>
+<section id="tools-to-help-with-planning-for-open-data-creation">
+<h3>Tools to Help with Planning For Open Data Creation<a class="headerlink" href="#tools-to-help-with-planning-for-open-data-creation" title="Permalink to this heading">#</a></h3>
+<section id="id2">
+<h4>Data Management Plan<a class="headerlink" href="#id2" title="Permalink to this heading">#</a></h4>
+<p>The previous section describes the requirements of a data management plan (DMP). Below are two open science resources to get you started on creating a data management plan:</p>
+<blockquote>
+<div><p><strong>DMPTool</strong></p>
+</div></blockquote>
+<p>The <a class="reference external" href="https://dmptool.org/">DMPTool</a> in the US helps researchers by featuring a template that lists a funder’s requirements for specific directorate requests for proposals (RFP). The DMPTool also publishes other open DMPs from funded projects that can be referenced to improve your own. The Research Data Management Organizer (RDMO) enables German institutions as well as researchers to plan and carry out their management of research data.</p>
+<blockquote>
+<div><p><strong>ARGOS</strong></p>
+</div></blockquote>
+<p><a class="reference external" href="https://argos.openaire.eu/home">ARGOS</a> is used to plan Research Data Management activities of European and nationally funded projects (e.g. Horizon Europe, CHIST-ERA, the Portuguese Foundation for Science and Technology - FCT). ARGOS produces and publishes FAIR and machine-actionable DMPs that contain links to other outputs, e.g., publications-data-software, and minimizes the effort to create DMPs from scratch by introducing automation in the writing process. OpenAIRE provides a guide on how to create DMP.</p>
+</section>
+<section id="data-repositories">
+<h4>Data Repositories<a class="headerlink" href="#data-repositories" title="Permalink to this heading">#</a></h4>
+<p>A data repository is a digital space to house, curate, and share research outputs. Data repositories were originally used to support the needs of research communities. Examples of data repositories include:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://www.rcsb.org/"><strong>Protein Data Bank</strong></a> uses a data repository to catalog 3D structures of proteins and nucleic acids.</p></li>
+<li><p><a class="reference external" href="https://www.ncbi.nlm.nih.gov/genbank/"><strong>Genbank</strong></a> of the National Institutes of Health uses a genetic sequence database that contains annotated publicly available nucleic acid sequences.</p></li>
+<li><p><a class="reference external" href="https://idr.openmicroscopy.org/"><strong>The Image Data Resource</strong></a> is a public repository of microscopy bio-image datasets from published studies.</p></li>
+<li><p><a class="reference external" href="https://www.ebi.ac.uk/empiar/"><strong>The Electron Microscopy Public Image Archive</strong></a> is a public resource for raw cryo-EM images.</p></li>
+<li><p><a class="reference external" href="https://openneuro.org/"><strong>OpenNeuro</strong></a> is an open platform for validating and sharing brain imaging data. The tools featured in Open Neuro enable easy access, search, and analysis of annotated datasets.</p></li>
+</ul>
+<p>Open science tools such as data repositories should implement FAIR principles, especially in the case of attribution of persistent identifiers (e.g., DOI), metadata annotation, and machine-readability.</p>
+<p>Additional examples of data repositories and other open science tools include but are not limited to:</p>
+<blockquote>
+<div><p><strong>ZENODO</strong></p>
+</div></blockquote>
+<p><a class="reference external" href="https://zenodo.org/">Zenodo</a> is an example of a data repository that allows the upload of research data and creates DOIs. Its popularity among the research community is due to its simplified interface, support of community curation, and feature that enables researchers to deposit diverse types of research outputs, from datasets and reports to publications, software, and multimedia content.</p>
+<blockquote>
+<div><p><strong>DATAVERSE</strong></p>
+</div></blockquote>
+<p><a class="reference external" href="https://dataverse.org/">The Dataverse Project</a> is an open-source online application to share, preserve, cite, explore, and analyze research data, available to researchers of all disciplines worldwide for free.</p>
+<blockquote>
+<div><p><strong>DRYAD</strong></p>
+</div></blockquote>
+<p><a class="reference external" href="https://datadryad.org/">The Dryad Digital Repository</a> is a curated online resource that makes research data discoverable, freely reusable, and citable. Unlike previously mentioned tools, it operates on a membership scheme for organizations such as research institutions and publishers.</p>
+<blockquote>
+<div><p><strong>DATACITE</strong></p>
+</div></blockquote>
+<p><a class="reference external" href="https://datacite.org/">Datacite</a> is a global non-profit organization that provides DOIs for research data and other research outputs on a membership basis.</p>
+<blockquote>
+<div><p><strong>OSF</strong></p>
+</div></blockquote>
+<p><a class="reference external" href="https://osf.io/">The Open Science Framework</a> is an open-source platform for sharing, managing, and collaborating on research.</p>
+<p>Data services and resources for supporting research require robust infrastructure that relies on collaboration. An example of an initiative on the infrastructures of data services comes from the <a class="reference external" href="https://www.eudat.eu/">EUDAT Collaborative Data Infrastructure</a>, a sustained network of more than 20 European research organizations.</p>
+<p>Private companies also host and maintain online tools for sharing research data and files. For example, <a class="reference external" href="https://figshare.com/">Figshare</a> is one example of a free and open-access service operated by private companies. It provides DOIs for all types of files and recently developed a restricted publishing model to accommodate intellectual property (IP) rights requirements. It allows sharing the outputs only within a customized Figshare group (could be your research team) or with users in a specific IP range. Additional advances include integration with code repositories, such as GitHub, GitLab, and Bitbucket.</p>
+<p>Additional research data repositories can be found in the publicly available <a class="reference external" href="https://www.re3data.org/">Registry of Research Data Repositories</a>. <a class="reference external" href="https://explore.openaire.eu/search/find/dataproviders">OpenAire</a>, a hosted search engine, also provides a powerful search function for data and repositories. It features a filter for country, type, and thematic area, as well as enables the download of data.</p>
+<p>The amount of data, repositories, and different policies can be overwhelming. When in doubt about determining which repository is right for you, consult librarians, data managers, and/or data stewards in your institution, or check within your discipline-specific or other community of practice.</p>
+</section>
+<section id="span-style-color-green-activity-2-span-explore-zenodo-and-sign-up">
+<h4><span style="color:green"> Activity 2:</span> Explore Zenodo and Sign Up!<a class="headerlink" href="#span-style-color-green-activity-2-span-explore-zenodo-and-sign-up" title="Permalink to this heading">#</a></h4>
+<p><em>Estimated time for activity: 8 minutes</em></p>
+<p>The most popular repository at the moment is Zenodo. Review the following 4.5-minute video to get an overview of Zenodo and then sign up for an account. You can use your ORCID to sign up if you have one.</p>
+<p><strong><a class="reference external" href="https://www.youtube.com/watch?v=BPVSErzNtME&amp;embeds_referring_euri=https%3A%2F%2Fopenscience101.org%2F&amp;feature=emb_imp_woyt">Watch Video</a></strong></p>
+</section>
+</section>
+<section id="tools-to-help-with-using-and-making-open-data">
+<h3>Tools to Help with Using and Making Open Data<a class="headerlink" href="#tools-to-help-with-using-and-making-open-data" title="Permalink to this heading">#</a></h3>
+<section id="data-formats">
+<h4>Data Formats<a class="headerlink" href="#data-formats" title="Permalink to this heading">#</a></h4>
+<p>A useful file format can be read into memory by some software. Think of the format as a tool for making data accessible. Easy-to-use formats feature:</p>
+<ul class="simple">
+<li><p>A simple, easy-to-understand structure.</p></li>
+<li><p>A clear and open specification for the format that is ideally not tied to a specific software product.</p></li>
+<li><p>Open software libraries and APIs that can parse the format.</p></li>
+</ul>
+<p>The formats that are considered the most interoperable against the criteria above include <strong>Comma Separated Values (CSV), Extensible Markup Language (XML), and JavaScript Object Notation (JSON)</strong>. Other common formats for researchers include binary array-based formats like Network Common Data Form (NetCDF), Hierarchical Data Format (HDF), Geotiff, Flexible Image Transport System (FITS), and other formats designed for cloud storage and access like <a class="reference external" href="https://zarr.dev/">Zarr</a>, <a class="reference external" href="https://www.cogeo.org/">Cloud Optimized GeoTIFF</a>, and <a class="reference external" href="https://parquet.apache.org/">Parquet</a>. Many of these formats have tools that check datasets for compliance and readability.</p>
+</section>
+<section id="inspecting-data">
+<h4>Inspecting Data<a class="headerlink" href="#inspecting-data" title="Permalink to this heading">#</a></h4>
+<p>Modern data formats allow the storage of much more than mere data points. Once one adopts these standards (e.g. NetCDF), the discovery of the contents on each file can be aided by a variety of tools which together help map primary data and/or display the associated metadata. Several tools exist for inspecting data, too numerous for all to be mentioned here. Notable tools to start with include:</p>
+<blockquote>
+<div><p><strong>CSV, XML, JSON</strong></p>
+</div></blockquote>
+<p>These files can all be opened with the most common text editors. There are some tools that can create views of the files that are more user-friendly, such as:</p>
+<ul class="simple">
+<li><p>csv: Microsoft Excel and Google Sheets</p></li>
+<li><p>xml: Most internet browsers and with any text editor like Notepad or Microsoft Word or Google Docs</p></li>
+<li><p>json: <a class="reference external" href="http://json.parser.online.fr/">http://json.parser.online.fr/</a> and <a class="reference external" href="https://jsonformatter.org/json-pretty-print">https://jsonformatter.org/json-pretty-print</a></p></li>
+</ul>
+<blockquote>
+<div><p><strong>NetCDF, HDF, FITS</strong></p>
+</div></blockquote>
+<p>These files require special software tools to view their contents. Many of these tools will also visualize the data as well.</p>
+<ul class="simple">
+<li><p>NetCDF and HDF: Most files are easily viewed using the <a class="reference external" href="https://docs.xarray.dev/en/stable/">Xarray</a> open-source software library in Python or the <a class="reference external" href="https://cran.r-project.org/web/packages/ncdf4/index.html">ncdf4</a> library in R.</p></li>
+<li><p>FITS: There are many options; here is the <a class="reference external" href="https://fits.gsfc.nasa.gov/fits_viewer.html">provided list</a> of tools.</p></li>
+</ul>
+<blockquote>
+<div><p><strong>ZARR, COG, PARQUET</strong></p>
+</div></blockquote>
+<p>These files require special software tools to view their contents. Many of these tools will also visualize the data as well.</p>
+<ul class="simple">
+<li><p>Zarr: Files are easily viewed using the <a class="reference external" href="https://docs.xarray.dev/en/stable/">Xarray</a> open-source software library in Python or the <a class="reference external" href="https://github.com/keller-mark/pizzarr">Pizzar</a> library in R.</p></li>
+<li><p>COG: Files are viewed using the <a class="reference external" href="https://corteva.github.io/rioxarray/html/index.html">rioXarray</a> open-source software library in Python or the <a class="reference external" href="https://cran.r-project.org/web/packages/terra/index.html">terra</a> library in R.</p></li>
+<li><p>Parquet: Files are viewed using the <a class="reference external" href="https://pandas.pydata.org/">Pandas</a> open-source software library in Python or the <a class="reference external" href="https://arrow.apache.org/docs/r/reference/read_parquet.html">Arrow</a> library in R.</p></li>
+</ul>
+</section>
+<section id="fair-assessment">
+<h4>FAIR Assessment<a class="headerlink" href="#fair-assessment" title="Permalink to this heading">#</a></h4>
+<p>How ‘FAIR’ is your data? Two groups, <a class="reference external" href="https://fairsharing.org/">FAIRsharing.org</a> and the Research Data Alliance <a class="reference external" href="https://www.rd-alliance.org/">RDA</a>, have developed the <a class="reference external" href="https://www.nature.com/articles/sdata2018118">FAIR Metrics</a> and <a class="reference external" href="https://www.rd-alliance.org/group/fair-data-maturity-model-wg/outcomes/fair-data-maturity-model-specification-and-guidelines-0">FAIR Data Maturity Model</a> to help assess the ‘FAIR’-ness of a dataset. There are open-source tools that help researchers assess their data:</p>
+<blockquote>
+<div><p><strong>AUSTRALIAN RESEARCH DATA COMMONS (ARDC)</strong></p>
+</div></blockquote>
+<p>Online questionnaire (manual), best for:</p>
+<ul class="simple">
+<li><p>Triggering discussions at the initial stages of considering FAIR implementation</p></li>
+<li><p>Identifying areas for improvement</p></li>
+</ul>
+<p>Outputs include:</p>
+<ul class="simple">
+<li><p>Progress bar for each FAIR principle</p></li>
+<li><p>Aggregate bar for all</p></li>
+</ul>
+<p><strong><a class="reference external" href="https://ardc.edu.au/resource/fair-data-self-assessment-tool/">Link</a></strong></p>
+<blockquote>
+<div><p><strong>FAIR-CHECKER</strong></p>
+</div></blockquote>
+<p>Automated via website or API, best for:</p>
+<ul class="simple">
+<li><p>Scalability to many datasets</p></li>
+<li><p>Identifying areas for improvement</p></li>
+</ul>
+<p>Outputs include:</p>
+<ul class="simple">
+<li><p>A chart with scores and details</p></li>
+</ul>
+<p><strong><a class="reference external" href="https://fair-checker.france-bioinformatique.fr/">Link</a></strong></p>
+<blockquote>
+<div><p><strong>F-UJI</strong></p>
+</div></blockquote>
+<p>Automated via website or API, best for:</p>
+<ul class="simple">
+<li><p>Scalability to many datasets</p></li>
+<li><p>Detailed documentation of tool</p></li>
+</ul>
+<p>Outputs include:</p>
+<ul class="simple">
+<li><p>A report and chart with scores and details</p></li>
+</ul>
+<p><strong><a class="reference external" href="https://www.fairsfair.eu/f-uji-automated-fair-data-assessment-tool">Link</a></strong></p>
+<blockquote>
+<div><p><strong>FAIR EVALUATION SERVICES</strong></p>
+</div></blockquote>
+<p>Automated via website or API, best for:</p>
+<ul class="simple">
+<li><p>Scalability to many datasets</p></li>
+<li><p>To generate a custom assessment</p></li>
+</ul>
+<p>Outputs include:</p>
+<ul class="simple">
+<li><p>A detailed report and chart</p></li>
+</ul>
+<p><strong><a class="reference external" href="https://fairsharing.github.io/FAIR-Evaluator-FrontEnd/#!/">Link</a></strong></p>
+</section>
+</section>
+<section id="id3">
+<h3>Key Takeaways<a class="headerlink" href="#id3" title="Permalink to this heading">#</a></h3>
+<p>In this lesson, you learned:</p>
+<ul class="simple">
+<li><p>The different types of scientific data, including primary, secondary, published, and metadata.</p></li>
+<li><p>A list of open science practices to implement FAIR principles that make data and results easily accessible to a wide range of people.</p></li>
+<li><p>Digital tools to help plan for making and sharing open data.</p></li>
+</ul>
+</section>
+</section>
+<hr class="docutils"/>
+<section id="section-4-tools-for-open-code">
+<h2>Section 4: Tools for Open Code<a class="headerlink" href="#section-4-tools-for-open-code" title="Permalink to this heading">#</a></h2>
+<p>This section introduces you to some useful tools for working with open code. You will learn the various tools available to develop, store, and share open code, from version control to code editing software to containers.</p>
+<section id="introduction-to-open-code">
+<h3>Introduction to Open Code<a class="headerlink" href="#introduction-to-open-code" title="Permalink to this heading">#</a></h3>
+<p>In Section 3, we learned about useful tools for working with scientific data. Now, we will provide an overview of commonly used tools that help us write and run computer code to explore, analyze, and visualize our scientific data. Later in Day 4 – Open Code, we will discuss in greater detail what it means to make our code open and walk through the steps of how to find, create, and share open code.</p>
+<p>Understanding how to work with scientific code is essential in the modern landscape of data-driven research. The tools presented in this lesson encompass a diverse array of resources designed to <strong>streamline, enhance, and optimize the process of developing, maintaining, and collaborating on code development for scientific research</strong>. They enable the creation of robust and efficient code, often leveraging the collective wisdom of the open-source community. In the pursuit of reproducibility and transparency, these tools can also facilitate the sharing and dissemination of scientific code, fostering collaboration and ensuring that the foundations of scientific research remain open and accessible to all.</p>
+<p>The precedent for making code open is the Linux Operating System. Quick facts:</p>
+<ul class="simple">
+<li><p>Started in 1991 by Linus Torvalds.</p></li>
+<li><p>Almost immediately released for scrutiny.</p></li>
+<li><p>Many eyes → Many bugs found → Many fixes.</p></li>
+</ul>
+<p>You can read the full history <a class="reference external" href="https://en.wikipedia.org/wiki/History_of_Linux">by this link</a>.</p>
+</section>
+<section id="tools-for-version-control">
+<h3>Tools for Version Control<a class="headerlink" href="#tools-for-version-control" title="Permalink to this heading">#</a></h3>
+<section id="version-control">
+<h4>Version Control<a class="headerlink" href="#version-control" title="Permalink to this heading">#</a></h4>
+<p>Version control is the practice of <strong>tracking and managing changes made to code or other types of files</strong>. You may be familiar with “Track changes” in software like Microsoft Word. This is a form of version control, though not one well-suited to working with code. Version control is considered <strong>standard practice in the software development community</strong> and simplifies the management of code through time.</p>
+<p>The general way we use version control starts by initializing a folder on your computing platform with the version control system you are using. <strong>A version control system automatically tracks all changes made by contributors and allows you to work offline and return later with updates.</strong> You write code as you usually do in your code editor of choice. After you have written some code or made some updates to existing code, you then <strong>commit those changes to the version control system to create a sort of “checkpoint” that you can then revert back to later if necessary</strong>. Then, you add or update more code and commit changes again. Each commit requires you to add a short message which lets you briefly describe what changes were made. These messages serve as metadata that ensures collaborators, future users, and future you understand your development process at a point in time.</p>
+<p>This may sound like a simple process, and in many ways it is! So why is it so important? Especially when it comes to coding, the ability to create a snapshot in time of a piece of code can be very helpful. For instance, you may have a piece of code that yields the intended result, but then you want to add a new function. You may choose to copy that code file so you don’t lose the current state, and then work in a new file. This can become cumbersome pretty quickly when you have multiple files that are different versions of the same piece of code. Or instead of creating a new file, you may write code for the new function directly in the original file, but now the code throws errors when you try to run it, and you can’t remember which lines you added since the last time the code ran without errors. By using version control, these problems are solved because we can revert back to the checkpoint when the code ran cleanly, and thereby avoid the need to create multiple copies to save the original piece of code.</p>
+<p>There are many other features of version control systems, such as the concept of creating <strong>“branches” that allow you to work on new updates to a piece of code independently of and in parallel to the original piece of code</strong>. A branch is a deviation from the original code but can be merged back into the original code when desired. All of these concepts are even more useful when collaborating with others using version control platforms, a collaborative practice that will be discussed later in this lesson.</p>
+</section>
+<section id="types-of-software-version-control">
+<h4>Types of Software Version Control<a class="headerlink" href="#types-of-software-version-control" title="Permalink to this heading">#</a></h4>
+<p>There are two main styles of software version control systems:</p>
+<blockquote>
+<div><p><strong>Centralized</strong></p>
+</div></blockquote>
+<ul class="simple">
+<li><p>Singular “main” copy of the codebase</p></li>
+<li><p>Must interact with a specific server</p></li>
+<li><p>Example: Subversion (SVN)</p></li>
+</ul>
+<blockquote>
+<div><p><strong>Distributed</strong> (more popular)</p>
+</div></blockquote>
+<ul class="simple">
+<li><p>Each developer’s system can retain a copy of the codebase<br/></p></li>
+<li><p>Examples:</p>
+<ul>
+<li><p>Git</p></li>
+<li><p>Mercurial</p></li>
+</ul>
+</li>
+</ul>
+<p>Using a distributed version control system like Git gives you more flexibility.</p>
+</section>
+<section id="example-git">
+<h4>Example: Git<a class="headerlink" href="#example-git" title="Permalink to this heading">#</a></h4>
+<p>The most popular version control system for software development is Git. <strong>Git is open-source</strong> and is commonly used <strong>in conjunction with web-based software hosting sites like GitHub and GitLab</strong> (more on these in the next section), which allow for collaboration and sharing of code. You can also use it on your local computer when writing your own code. Git is often run at the command line, but there are other interfaces for using Git as well, including GitHub Desktop and some code editors that have Git integration included (more on this later).</p>
+<a class="reference internal image-reference" href="https://github.com/neuromatch/nasa-open-science/blob/main/tutorials/W1D2_OpenToolsAndResources/static/image33.png?raw=true"><img alt="Comic about Git." src="https://github.com/neuromatch/nasa-open-science/blob/main/tutorials/W1D2_OpenToolsAndResources/static/image33.png?raw=true" style="width: 350px;"/></a>
+<p><a class="reference external" href="https://xkcd.com/1597/">Source</a></p>
+<p>Git is very powerful and widely used (according to a Stack Overflow <a class="reference external" href="https://survey.stackoverflow.co/2022">developer survey</a>, <strong>over 87% of developers use Git</strong>), but that doesn’t mean it is straightforward to learn. There are many good resources for learning Git (Neuromatch Academy hosts workshops for Git &amp; GitHub as well). If you find Git confusing at first, know that you are not alone! (There’s even an XKCD comic about it!). For in-depth training on Git, please see the Software Carpentry lesson listed below: <a class="reference external" href="https://swcarpentry.github.io/git-novice/">Version Control with Git: Summary and Setup (swcarpentry.github.io)</a></p>
+</section>
+<section id="version-control-platforms">
+<h4>Version Control Platforms<a class="headerlink" href="#version-control-platforms" title="Permalink to this heading">#</a></h4>
+<p>Version control platforms, typically web-based software hosting platforms, expand the usefulness of version control by allowing for a <strong>centralized location to store and collaborate on code</strong>, along with many other helpful features for code development and sharing.</p>
+<p>Examples of Git-based version control and software development collaboration platforms:</p>
+<ul class="simple">
+<li><p>GitHub: a Git-based platform that allows collaboration and code history tracking. Owned by Microsoft.</p></li>
+<li><p>GitLab: a Git-based platform (and software) that offers DevOps and CI/CD functionalities, as well as the ability to self-host GitLab instances.</p></li>
+<li><p>BitBucket: a platform that can host Git and Mercurial repositories. Owned by Atlassian.</p></li>
+</ul>
+<p>GitHub is one of the most popular platforms, and so we will provide examples of how to use GitHub in the rest of this section. It is important to note that <strong>GitHub is where most open-source software packages are housed, and so if you are interested in getting more involved with the open-source software community, GitHub is an essential tool to learn how to use!</strong></p>
+</section>
+<section id="example-github">
+<h4>Example: GitHub<a class="headerlink" href="#example-github" title="Permalink to this heading">#</a></h4>
+<p>GitHub is an online, cloud-based software repository hosting site that integrates with Git and offers many other features that help with code development, collaboration, testing, and releases. Before we dive into some of these features, it’s important to understand how GitHub acts as a remote repository when using version control systems like Git.</p>
+<p>If we go back to the general idea of using version control systems, GitHub can be added to the picture as a remote repository that hosts code. After creating a “checkpoint” in Git, you can then upload a copy of the current snapshot of your code to GitHub. There are a few reasons you might want to do this, including:</p>
+<ul class="simple">
+<li><p>To serve as a backup for your work (it is now stored on a remote server that you can access even if your computer dies).</p></li>
+<li><p>To share your code with others (more on this later in this course).</p></li>
+<li><p>To collaborate with others on your code. By uploading to GitHub, your code can be made accessible to others who might want to add features.</p></li>
+</ul>
+<p>Let’s expand on some of GitHub’s collaboration tools. Some of these features include:</p>
+<blockquote>
+<div><p>Issue Tracking</p>
+</div></blockquote>
+<p>Keep track of feature requests, bugs, and other types of updates via GitHub Issues. GitHub also allows the use of labels and assigning people to tasks to help organize tasks.</p>
+<blockquote>
+<div><p>Project Discussion Forums</p>
+</div></blockquote>
+<p>GitHub allows for an online discussion forum where you can ask and answer questions and hold community discussions.</p>
+<blockquote>
+<div><p>Contribution Tracking</p>
+</div></blockquote>
+<p>GitHub has a straightforward way to keep track of suggested code contributions (called “Pull Requests”) from different people.</p>
+<blockquote>
+<div><p>Code Review Tools</p>
+</div></blockquote>
+<p>GitHub has a rich set of tools for reviewing and accepting (or denying) contributions from others (or yourself), such as in-line comments and easily viewable tracked changes to individual files.</p>
+<blockquote>
+<div><p>Tailored Permissions</p>
+</div></blockquote>
+<p>Choose who has the ability to update the code. This helps you feel confident that only those with permission can update code that you shared in GitHub, and also others feel safe to suggest updates without worrying that they might accidentally overwrite existing code.</p>
+<p>All of these features excel at enabling asynchronous collaboration across teams. <strong>Most scientific open-source packages use GitHub for their primary code development</strong> Note that there are many more GitHub features that we don’t go into here that support collaboration, as well as automated workflows and so much more. To learn more about GitHub, take a look at these references:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://www.freecodecamp.org/news/introduction-to-git-and-github/">How to Use Git and GitHub – Introduction for Beginners (freecodecamp.org)</a></p></li>
+<li><p><a class="reference external" href="https://foundations.projectpythia.org/foundations/getting-started-github.html">Getting Started with GitHub — Pythia Foundations (projectpythia.org)</a></p></li>
+</ul>
+</section>
+<section id="summary-of-benefits-of-using-version-control-and-version-control-platforms">
+<h4>Summary of Benefits of Using Version Control and Version Control Platforms<a class="headerlink" href="#summary-of-benefits-of-using-version-control-and-version-control-platforms" title="Permalink to this heading">#</a></h4>
+<ul class="simple">
+<li><p>Features the ability to rewind changes back to any committed point</p></li>
+<li><p>Eases collaboration with others</p></li>
+<li><p>Keeps a directory clean from clutter, with no need for multiple copies of files</p></li>
+<li><p>Provides a targeted backup system for your work</p></li>
+</ul>
+</section>
+</section>
+<section id="tools-for-editing-code">
+<h3>Tools for Editing Code<a class="headerlink" href="#tools-for-editing-code" title="Permalink to this heading">#</a></h3>
+<section id="integrated-development-environment-ides">
+<h4>Integrated Development Environment (IDEs)<a class="headerlink" href="#integrated-development-environment-ides" title="Permalink to this heading">#</a></h4>
+<p>An Integrated Development Environment (IDE) plays an important role in open code development by offering a comprehensive toolkit to researchers, scientists, and developers for editing code. It is a software application that streamlines the entire process of creating, testing, and managing code for scientific research and data analysis. By providing an <strong>all-in-one platform, an IDE allows researchers to write, debug, and optimize code more efficiently</strong>, fostering collaboration and reproducibility in open code science projects.</p>
+<p>In open science, where transparency and accessibility are paramount, <strong>IDEs often incorporate version control systems like Git to facilitate collaboration</strong> and ensure that a research codebase is readily available for others to use and improve. Additionally, <strong>many IDEs integrate with data analysis and visualization tools</strong>. This makes it easier for scientists to analyze and interpret their data, ultimately contributing to the advancement of open code science practices.</p>
+<p>If you were in a room with 10 developers and asked them each what their favorite code editor is, you would get many different responses. In this lesson, we will go over a few of the more popular varieties.</p>
+</section>
+<section id="source-code-editing-kernels-the-value-of-ides-and-kernels">
+<h4>Source-Code Editing &amp; Kernels – The Value of IDEs and Kernels<a class="headerlink" href="#source-code-editing-kernels-the-value-of-ides-and-kernels" title="Permalink to this heading">#</a></h4>
+<p>IDEs can bring a lot of good tools to your efforts. It’s not just about editing code anymore. Modern, robust IDEs can do most of the things listed here, if not more. One can use an IDE without executing in a kernel; one can use a kernel without having developed code in an IDE. However, they can work hand-in-hand.</p>
+<blockquote>
+<div><p>Integrated Development Environment (IDE)</p>
+</div></blockquote>
+<ul class="simple">
+<li><p>Source code editing</p></li>
+<li><p>Syntax highlighting</p></li>
+<li><p>Error/bug warnings</p></li>
+<li><p>Plugins</p></li>
+<li><p>Debuggers</p></li>
+<li><p>Memory management</p></li>
+<li><p>Version control</p></li>
+<li><p>Build automation</p></li>
+</ul>
+<blockquote>
+<div><p>Kernel</p>
+</div></blockquote>
+<ul class="simple">
+<li><p>Execution environment</p></li>
+<li><p>Like a virtual machine</p></li>
+<li><p>Isolates work area</p></li>
+<li><p>Tailor settings</p></li>
+<li><p>Easily replicable</p></li>
+</ul>
+</section>
+<section id="ide-example-visual-studio-code">
+<h4>IDE Example: Visual Studio Code<a class="headerlink" href="#ide-example-visual-studio-code" title="Permalink to this heading">#</a></h4>
+<p>The most popular IDE these days, Microsoft’s Visual Studio Code (or VS Code), is feature-rich without being clunky.</p>
+<a class="reference internal image-reference" href="https://github.com/neuromatch/nasa-open-science/blob/main/tutorials/W1D2_OpenToolsAndResources/static/image34.png?raw=true"><img alt="VS Code Interface." src="https://github.com/neuromatch/nasa-open-science/blob/main/tutorials/W1D2_OpenToolsAndResources/static/image34.png?raw=true" style="width: 600px;"/></a>
+<ul class="simple">
+<li><p>It has a “dark mode” option which is easier on the eyes for long coding sessions.</p></li>
+<li><p>It provides the basics, such as syntax highlighting and an integrated terminal window.</p></li>
+<li><p>It also has a wealth of plugins for connecting to servers, version control systems, and troubleshooting. It has several linter plugins, which can analyze your code for bugs and errors and help your team code in a consistent “style.” This eases code maintenance down the road.</p></li>
+<li><p>If your line of code has an obvious error in it, the IDE will produce a red squiggle, just as if you’ve spelled something wrong in a Word Document.</p></li>
+</ul>
+<p>Below is an example of a developer who accidentally typed an equal sign when they should have typed a colon. VS Code caught the error, and when the developer hovered over the red squiggle, VS Code explained what the error was and offered to take them to further documentation.</p>
+<a class="reference internal image-reference" href="https://github.com/neuromatch/nasa-open-science/blob/main/tutorials/W1D2_OpenToolsAndResources/static/image35.png?raw=true"><img alt="VS Code Interface While Editing File." src="https://github.com/neuromatch/nasa-open-science/blob/main/tutorials/W1D2_OpenToolsAndResources/static/image35.png?raw=true" style="width: 600px;"/></a>
+<p>Another useful feature in VS Code (as well as many other code editors) is Git Integration. Instead of using a Terminal window, you can just make a few clicks and easily integrate Git into your workflow!</p>
+<p>From VS Code, you can:</p>
+<ul class="simple">
+<li><p>Easily see modifications to your code.</p></li>
+<li><p>Create a branch.</p></li>
+<li><p>Upload your changes directly to GitHub.</p></li>
+<li><p>Download changes from other team members to your local system.</p></li>
+</ul>
+</section>
+<section id="ide-example-rstudio">
+<h4>IDE Example: RStudio<a class="headerlink" href="#ide-example-rstudio" title="Permalink to this heading">#</a></h4>
+<p>While Visual Studio Code is a more generic IDE where you can use plugins to specialize it, there are also IDEs, such as RStudio, that have specialized features for specific languages right out of the gate.</p>
+<p>Researchers conducting statistical analysis tend to use the coding languages of R and Python. RStudio has built-in tools for that very purpose, including data visualization.</p>
+<a class="reference internal image-reference" href="https://github.com/neuromatch/nasa-open-science/blob/main/tutorials/W1D2_OpenToolsAndResources/static/image36.jpeg?raw=true"><img alt="RStudio Interface." src="https://github.com/neuromatch/nasa-open-science/blob/main/tutorials/W1D2_OpenToolsAndResources/static/image36.jpeg?raw=true" style="width: 600px;"/></a>
+<p><a class="reference external" href="https://en.wikipedia.org/wiki/File:RStudio_IDE_screenshot.png">Source</a></p>
+</section>
+<section id="plain-text-editors-for-coding">
+<h4>Plain Text Editors for Coding<a class="headerlink" href="#plain-text-editors-for-coding" title="Permalink to this heading">#</a></h4>
+<p>Most laptop or desktop computers that run standard operating systems (Windows, macOS, Linux) have multiple pre-installed plain-text editors that can be used for coding. It is beneficial to know how to use at least one because it makes editing scripts and files a quick process.</p>
+<p>Pros:</p>
+<ul class="simple">
+<li><p>Lightweight</p></li>
+<li><p>Many distributed natively with OS</p></li>
+</ul>
+<p>Cons:</p>
+<ul class="simple">
+<li><p>No plugins to help find bugs, errors, etc.</p></li>
+<li><p>May not have syntax-highlighting</p></li>
+</ul>
+</section>
+<section id="computational-notebooks">
+<h4>Computational Notebooks<a class="headerlink" href="#computational-notebooks" title="Permalink to this heading">#</a></h4>
+<p>A computational notebook refers to a <strong>virtual, interactive computing environment that combines code execution, documentation, and data visualization in a single interface</strong>. These notebooks are widely used in data science and coding fields. Popular examples include Jupyter Notebooks and R Notebooks. They allow users to write and <strong>run code in a step-by-step manner</strong>, providing an efficient platform for data analysis, research, and collaborative coding, with the <strong>added benefit of integrating rich text (including equations), images, and charts</strong> for clear documentation and communication. Even this tutorial is shared via Jupyter Notebook.</p>
+</section>
+<section id="example-jupyter-notebook-and-jupyterlab">
+<h4>Example: Jupyter Notebook and JupyterLab<a class="headerlink" href="#example-jupyter-notebook-and-jupyterlab" title="Permalink to this heading">#</a></h4>
+<a class="reference internal image-reference" href="https://github.com/neuromatch/nasa-open-science/blob/main/tutorials/W1D2_OpenToolsAndResources/static/jupyterlogo.jpg?raw=true"><img alt="Jupyter Logo." src="https://github.com/neuromatch/nasa-open-science/blob/main/tutorials/W1D2_OpenToolsAndResources/static/jupyterlogo.jpg?raw=true" style="width: 300px;"/></a>
+<p>Jupyter notebooks are open-source web applications that are widely used for creating computational documents. But before we dive into Jupyter Notebooks, we want to make it clear that Jupyter Notebooks are one of many platforms in the Jupyter ecosystem:</p>
+<ul class="simple">
+<li><p>Jupyter Notebook – contained language shell for interactive programming, displaying output inline with inputs</p></li>
+<li><p>JupyterLab – an in-browser user interface showing multiple windows for notebooks, terminals, and code editing</p></li>
+<li><p>JupyterHub – middleware for running shared interactive computing environments, including JupyterLab and Jupyter Notebook, on shared computing infrastructure (such as the Cloud)</p></li>
+</ul>
+<p>We will use Jupyter Notebook as an example of a computational notebook and discuss how JupyterLab is related to Jupyter Notebook. The following section on computing platforms will discuss JupyterHub.</p>
+<p>This screenshot shows an example of a Jupyter Notebook that integrates rich text (with headers and links), equations, code, and the interactive output from those lines of code, including a plot. This screenshot makes it clear why this is called a computational notebook - it resembles a lab notebook that you may have written out by hand in school.</p>
+<a class="reference internal image-reference" href="https://github.com/neuromatch/nasa-open-science/blob/main/tutorials/W1D2_OpenToolsAndResources/static/image38.png?raw=true"><img alt="Jupyter Interface." src="https://github.com/neuromatch/nasa-open-science/blob/main/tutorials/W1D2_OpenToolsAndResources/static/image38.png?raw=true" style="width: 500px;"/></a>
+<p><a class="reference external" href="https://jupyter.org/">Source: Project Jupyter</a></p>
+<p>Many programming languages are supported by Jupyter. Fun fact: the name “Jupyter” refers to the three core languages supported by Jupyter: Julia, Python, and R.</p>
+<p>JupyterLab is a browser-based interactive development environment that supports Jupyter Notebooks and is designed in a more flexible environment that allows for many useful features. One of these features is Git integration, as we saw for other IDEs like Visual Studio Code.</p>
+<p>Since Jupyter Notebooks allow for the integration of code with visualizations and text, <strong>they can serve as a tool to carry out research projects and create easily shareable computational documents for education, collaboration, or science communication</strong>. With rich text capabilities, such as the use of headers, italics, links, and many more, you can create a readable document that contains runnable code. These are just some of the reasons why JupyterLab and Jupyter Notebooks are widely used across many disciplines, including computational research and data science.</p>
+<p>For more information on Jupyter products and its community, check out their <a class="reference external" href="https://jupyter.org/">website</a>.</p>
+<p>If you want to dive in, check out Project Pythia’s “Getting Started with Jupyter” lesson, geared toward scientists without the assumption of a programming background.</p>
+</section>
+<section id="span-style-color-green-activity-3-span-run-a-jupyter-notebook-yourself-from-the-browser">
+<h4><span style="color:green">Activity 3:</span> Run a Jupyter Notebook Yourself from the Browser<a class="headerlink" href="#span-style-color-green-activity-3-span-run-a-jupyter-notebook-yourself-from-the-browser" title="Permalink to this heading">#</a></h4>
+<p><em>Estimated time for activity: 15 minutes</em></p>
+<p>Let’s use an example from Project Pythia to showcase how computational notebooks can be used in science. Project Pythia is an education Hub for the geoscientific community. They have some great learning resources and example research notebooks that are developed and maintained by the community and are freely available.</p>
+<p>In this activity, you will run pre-written Python code in a Jupyter Notebook from your browser to make plots related to the El-Niño Southern Oscillation (or ENSO). You will use the open-source software package called Xarray to read in sea surface temperature data from a global climate model (the Community Earth System Model - CESM), and create some visualizations of ENSO events across the last 20 or so years. The goal is to recreate the plot below for the last ~20 years. This figure shows the years and magnitude of the El Niño events in red and of the La Niña events in blue.</p>
+<a class="reference internal image-reference" href="https://github.com/neuromatch/nasa-open-science/blob/main/tutorials/W1D2_OpenToolsAndResources/static/image39.jpeg?raw=true"><img alt="El Nino and La Nina plot." src="https://github.com/neuromatch/nasa-open-science/blob/main/tutorials/W1D2_OpenToolsAndResources/static/image39.jpeg?raw=true" style="width: 500px;"/></a>
+<p><a class="reference external" href="https://climatedataguide.ucar.edu/climate-data/nino-sst-indices-nino-12-3-34-4-oni-and-tni">Source</a></p>
+<p>Follow These Steps:</p>
+<ol class="arabic simple">
+<li><p>Navigate to the “<a class="reference external" href="https://foundations.projectpythia.org/core/xarray/enso-xarray.html">Calculating ENSO with Xarray</a>” lesson</p></li>
+<li><p>In the top right corner, hover your mouse over the rocket icon, and click on “Binder”. This will open the lesson as an executable Jupyter Notebook that runs on the Cloud. Note that it may take several minutes for the Notebook to get set up.</p></li>
+</ol>
+<a class="reference internal image-reference" href="https://github.com/neuromatch/nasa-open-science/blob/main/tutorials/W1D2_OpenToolsAndResources/static/calculatingenso.jpg?raw=true"><img alt="Rocket icon." src="https://github.com/neuromatch/nasa-open-science/blob/main/tutorials/W1D2_OpenToolsAndResources/static/calculatingenso.jpg?raw=true" style="width: 300px;"/></a>
+<ol class="arabic simple" start="3">
+<li><p>After the Notebook loads, you should see something like the following. Note – this actually uses the JupyterLab view!</p></li>
+</ol>
+<a class="reference internal image-reference" href="https://github.com/neuromatch/nasa-open-science/blob/main/tutorials/W1D2_OpenToolsAndResources/static/calculatingenso2.jpg?raw=true"><img alt="Expected interface." src="https://github.com/neuromatch/nasa-open-science/blob/main/tutorials/W1D2_OpenToolsAndResources/static/calculatingenso2.jpg?raw=true" style="width: 400px;"/></a>
+<ol class="arabic simple" start="4">
+<li><p>You can take a little time to breeze through the text and code in the Notebook, but keep in mind that this lesson assumes a lot of prior knowledge, so it’s ok if you don’t understand everything. You can still appreciate the nice plots you’re about to make!</p></li>
+<li><p>You are now ready to run the notebook yourself! To do that, you can go to the “Run” menu in the upper left of the JupyterLab window and choose “Run All Cells”:</p></li>
+</ol>
+<a class="reference internal image-reference" href="https://github.com/neuromatch/nasa-open-science/blob/main/tutorials/W1D2_OpenToolsAndResources/static/calculatingenso3.jpg?raw=true"><img alt="Run all Cells Command." src="https://github.com/neuromatch/nasa-open-science/blob/main/tutorials/W1D2_OpenToolsAndResources/static/calculatingenso3.jpg?raw=true" style="width: 400px;"/></a>
+<ol class="arabic simple" start="6">
+<li><p>This should only take a few seconds, and if you scroll down, you can view a couple nice visualizations that you just created:<br/><em>Use the “&lt;” and “&gt;” buttons to navigate between the images.</em></p></li>
+</ol>
+<a class="reference internal image-reference" href="https://github.com/neuromatch/nasa-open-science/blob/main/tutorials/W1D2_OpenToolsAndResources/static/calculatingenso4.jpg?raw=true"><img alt="Expected plot (part 1)." src="https://github.com/neuromatch/nasa-open-science/blob/main/tutorials/W1D2_OpenToolsAndResources/static/calculatingenso4.jpg?raw=true" style="width: 500px;"/></a>
+<a class="reference internal image-reference" href="https://github.com/neuromatch/nasa-open-science/blob/main/tutorials/W1D2_OpenToolsAndResources/static/image44.jpeg?raw=true"><img alt="Expected plot (part 2)." src="https://github.com/neuromatch/nasa-open-science/blob/main/tutorials/W1D2_OpenToolsAndResources/static/image44.jpeg?raw=true" style="width: 500px;"/></a>
+<ol class="arabic simple" start="7">
+<li><p>Take some time to look through the Notebook a bit more closely. You will see that there is text (including headers, links, and even a table right at the start!), code, and figures integrated together. This is just one example of how scientists use computational notebooks for their research.</p></li>
+</ol>
+<p>You can peruse more of the Project Pythia Python learning resources via their <a class="reference external" href="https://foundations.projectpythia.org/landing-page.html">Foundations Book</a>, and you can view more advanced example research workflows in the geosciences that use computational notebooks (which they call “<a class="reference external" href="https://cookbooks.projectpythia.org/">Cookbooks</a>”) to see more examples of how notebooks are used in science. If you are interested in the geosciences, you can even contribute your own notebook if you have a notebook you’d like to share!</p>
+</section>
+<section id="computing-platforms">
+<h4>Computing Platforms<a class="headerlink" href="#computing-platforms" title="Permalink to this heading">#</a></h4>
+<p>We use the term “computing platform” to refer to the computational machine used to run code. There are many different computing platforms that you can choose from, each having its own pros and cons. Here is an overview of three computing options:</p>
+<blockquote>
+<div><p>Personal Computer (e.g. a laptop)</p>
+</div></blockquote>
+<p>Pros:</p>
+<ul class="simple">
+<li><p>Convenient - Can run computations when and where you choose</p></li>
+<li><p>Can tailor the software environment to be exactly what you need</p></li>
+<li><p>Don’t have to share your computing resources</p></li>
+</ul>
+<p>Cons:</p>
+<ul class="simple">
+<li><p>Has limited computational power</p></li>
+<li><p>Requires downloading data and software</p></li>
+</ul>
+<blockquote>
+<div><p>High-Performance Computing (HPC)</p>
+</div></blockquote>
+<p>Pros:</p>
+<ul class="simple">
+<li><p>High computational power</p></li>
+</ul>
+<p>Cons:</p>
+<ul class="simple">
+<li><p>Typically owned and run by a particular institution - may need to be affiliated with that institution to gain access to their HPC</p></li>
+<li><p>May have to wait significant amounts of time to run your code since they are typically shared across many people and groups</p></li>
+<li><p>Need significant funds to build an HPC</p></li>
+</ul>
+<blockquote>
+<div><p>Cloud Computing</p>
+</div></blockquote>
+<p>Pros:</p>
+<ul class="simple">
+<li><p>High computational power</p></li>
+<li><p>Minimal wait times to run code</p></li>
+<li><p>Typically accessible to anyone with an internet connection</p></li>
+<li><p>On-demand pricing options - You only have to pay for what you use</p></li>
+</ul>
+<p>Cons:</p>
+<ul class="simple">
+<li><p>High cost per computation</p></li>
+<li><p>Lack of transparency in costs - E.g. data usage can cost a significant amount from different Cloud regions, but it may not always be clear which region your data and compute are in</p></li>
+<li><p>May require some extra knowledge in how Cloud computing works</p></li>
+</ul>
+<p>Examples of Cloud providers:</p>
+<ul class="simple">
+<li><p>Amazon Web Services (AWS)</p></li>
+<li><p>Google Cloud</p></li>
+<li><p>Microsoft Azure</p></li>
+</ul>
+<p>Many data providers, especially of large datasets, are migrating their data to the Cloud to increase accessibility and to make use of the large storage capacity that the Cloud provides. For instance, NASA Earthdata (which houses all NASA Earth science data) is now using AWS to store the majority of its data. Many Cloud providers also have a number of publicly available datasets, including <a class="reference external" href="https://cloud.google.com/storage/docs/public-datasets/#%3A~%3Atext%3DAvailable%20public%20datasets%20on%20Cloud%20Storage%201%20ERA5%3A%2Cfrom%202015%20through%20the%20present.%20...%20More%20items">Google Cloud</a> and <a class="reference external" href="https://registry.opendata.aws/">AWS</a><a class="reference external" href="https://cloud.google.com/storage/docs/public-datasets/#%3A~%3Atext%3DAvailable%20public%20datasets%20on%20Cloud%20Storage%201%20ERA5%3A%2Cfrom%202015%20through%20the%20present.%20...%20More%20items">.</a></p>
+<p>When choosing a computing platform, it is important to consider where your datasets are saved and how big the datasets are. For instance, <strong>when working with small datasets, it is often preferable to use a personal computer</strong> since data download will take minimal time and large computing resources likely aren’t needed. When working with large datasets, however, it is best to minimize the amount of downloading and uploading data that is needed, as this can take significant amounts of time and internet bandwidth. If your large datasets are stored on the Cloud already, it is typically best to use Cloud resources for the computation as well, and likewise for HPC use.</p>
+</section>
+</section>
+<section id="additional-tools">
+<h3>Additional Tools<a class="headerlink" href="#additional-tools" title="Permalink to this heading">#</a></h3>
+<section id="software-repository-vs-archive">
+<h4>Software Repository vs Archive<a class="headerlink" href="#software-repository-vs-archive" title="Permalink to this heading">#</a></h4>
+<p>Software repositories and archives provide centralized locations to store and share software, but there are some important key differences between them that we will discuss in this section.</p>
+<p>A <strong>software repository is a dynamic and collaborative space where developers work on the latest code</strong>, making it the heart of ongoing software development and version control. It houses actively maintained codebases, which encourages collaboration and continuous, often community-driven, improvement.</p>
+<p>Conversely, a <strong>software archive is a static storage</strong> where stable and thoroughly tested software releases are kept. Users access these archives to obtain reliable versions of software, ensuring stability and reliability in their applications. Furthermore, package managers facilitate the installation of specialized software archives within an application or an operating system. Understanding the difference between these two is crucial for effective software development and distribution.</p>
+<a class="reference internal image-reference" href="https://github.com/neuromatch/nasa-open-science/blob/main/tutorials/W1D2_OpenToolsAndResources/static/image45.png?raw=true"><img alt="Storage and version control." src="https://github.com/neuromatch/nasa-open-science/blob/main/tutorials/W1D2_OpenToolsAndResources/static/image45.png?raw=true" style="width: 350px;"/></a>
+<p>Git/GitHub and Bitbucket are popular choices for software repositories.</p>
+<blockquote>
+<div><p>Repository</p>
+</div></blockquote>
+<ul class="simple">
+<li><p>Is a location for sharing code.</p></li>
+<li><p>Often use version control systems like Git, Mercurial, and Subversion to track changes</p></li>
+<li><p>Typically contains the latest development version (sometimes called the “master” or “trunk”) of a software project, which can be actively worked on by developers.</p></li>
+<li><p>Used for collaborative software development and code sharing among a team or a community of developers.</p></li>
+</ul>
+<p><strong>Important note:</strong> A repository is nothing more than a place for hosting code. These days, a version control system and a repository are often one and the same thing. It is important to understand the distinction. However, some websites are purely dropboxes for code executables or zip files of source code.</p>
+<blockquote>
+<div><p>Archive</p>
+</div></blockquote>
+<ul class="simple">
+<li><p>Often used for distribution and long-term preservation of software.</p></li>
+<li><p>A storage system that contains specific, stable releases or versions of software, compiled binary packages, or source code releases.</p></li>
+<li><p>Users typically download software from an archive to install and use it on their systems.</p></li>
+</ul>
+</section>
+<section id="containers">
+<h4>Containers<a class="headerlink" href="#containers" title="Permalink to this heading">#</a></h4>
+<p>A software container is a <strong>standalone and executable package that includes everything needed to run a piece of software, including the code, runtime, system tools, environment settings, and libraries</strong>. Containers are isolated environments that hold the application as well as anything needed to run the application, ensuring consistency and portability across different computing environments. A container is a helpful tool that can provide efficiency, scalability, and ease of deployment. Some examples of widely utilized container tools are Kubernetes, Docker, and Apache Mesos.</p>
+</section>
+</section>
+<section id="id4">
+<h3>Key Takeaways<a class="headerlink" href="#id4" title="Permalink to this heading">#</a></h3>
+<p>In this lesson, you learned:</p>
+<ul class="simple">
+<li><p>The usefulness of digital tools that manage foster collaboration, and house open code.</p></li>
+<li><p>How version control systems like Git and platforms like GitHub can increase collaboration and management of code.</p></li>
+<li><p>Some common tools for editing open code, including integrated development environments (IDEs) like Visual Studio Code and Jupyter Notebooks.</p></li>
+<li><p>The difference between software repositories and archives, and also how software containers can help with the sharing and reproducibility of code.</p></li>
+</ul>
+</section>
+</section>
+<hr class="docutils"/>
+<section id="section-5-planning-for-open-science-from-theory-to-practice">
+<h2>Section 5: Planning for Open Science: From Theory to Practice<a class="headerlink" href="#section-5-planning-for-open-science-from-theory-to-practice" title="Permalink to this heading">#</a></h2>
+<p>This section focuses on the tools available for sharing research products. It begins with a discussion of the tools for management of research projects. Then, it introduced the tools for open publications and how to find them. Next, this section discusses the tools for open results. Lastly, this section discusses the concept of reproducibility. Journals are a tool for sharing your results, and these are discussed in more detail on Day 5 - Open Results.</p>
+<section id="tools-for-open-publications">
+<h3>Tools for Open Publications<a class="headerlink" href="#tools-for-open-publications" title="Permalink to this heading">#</a></h3>
+<section id="pre-prints">
+<h4>Pre-Prints<a class="headerlink" href="#pre-prints" title="Permalink to this heading">#</a></h4>
+<p>Open science tools can be used for writing, as tools to produce content, such as data management plans, presentations, and pre-prints. <strong>Pre-prints are early versions of research papers that are shared publicly before they are published in scientific journals.</strong> In some fields, they are shared prior to peer review while in other fields, it may only be after peer review and prior to publication. They are a vital component of open science content creation, as they <strong>promote transparency, rapid dissemination of knowledge, and collaboration among researchers.</strong></p>
+<p>By sharing pre-prints, <strong>scientists can receive feedback from the global research community, refine their work, and rapidly communicate their findings.</strong> This accelerates the pace of scientific discovery and ensures that valuable research is accessible to a broader audience, which aligns with the principles of open science.</p>
+<p><strong>Pre-prints have gained particular significance during the COVID-19 pandemic</strong>, where they played a crucial role in rapidly sharing information about the virus and its effects, emphasizing their importance in advancing science and public health. Fundamentally, pre-prints are important to open science. Consider the following highlights:</p>
+<ol class="arabic simple">
+<li><p><strong>Rapid Dissemination:</strong> Pre-prints enable researchers to swiftly share their findings with the scientific community and the public, sometimes within days of completing their research. This swift dissemination is particularly beneficial when dealing with urgent or rapidly evolving topics.</p></li>
+<li><p><strong>Peer Review:</strong> While pre-prints are not peer-reviewed, they often undergo a form of community review. Researchers and experts can provide feedback and constructive criticism, helping authors improve their work before formal journal publication.</p></li>
+<li><p><strong>Variety of Fields:</strong> Pre-prints are not limited to any specific scientific discipline. They are used in fields ranging from medicine and biology to physics and social sciences, making them a versatile tool for disseminating research.</p></li>
+<li><p><strong>Versions and Citations:</strong> Pre-prints can have different versions, and the final peer-reviewed paper may differ. Researchers are encouraged to cite pre-prints when discussing ongoing research, allowing for transparency in the academic discourse.</p></li>
+<li><p><strong>Free Access:</strong> Pre-prints are typically freely accessible to anyone with an internet connection. This open access promotes equality and inclusivity in science, enabling researchers from various backgrounds and institutions to engage with the latest research.</p></li>
+<li><p><strong>Not a Replacement for Peer Review:</strong> Although pre-prints are valuable tools for early sharing and collaboration, they are not a substitute for a formal peer-reviewed publication. Researchers and readers should examine pre-prints with the understanding that they have not undergone the rigorous peer review process that journals provide.</p></li>
+</ol>
+<p>Pre-prints are typically hosted on dedicated pre-print servers for different scientific fields. Examples include: <a class="reference external" href="https://arxiv.org/">arXiv</a> (physics, mathematics), <a class="reference external" href="https://www.biorxiv.org/">bioRxiv</a> (biology), <a class="reference external" href="https://www.medrxiv.org/">medRxiv</a> (medicine), and <a class="reference external" href="https://en.wikipedia.org/wiki/List_of_preprint_repositories">many others</a>. These platforms help organize and facilitate pre-print sharing. The OSF provides a <a class="reference external" href="https://osf.io/preprints/#!">service</a> for searching over multiple preprint servers.</p>
+<p>Remember, pre-prints play a significant role in open science by promoting rapid, transparent sharing of research findings across various scientific domains. They offer a valuable platform for researchers to disseminate their work and gather feedback, ultimately advancing scientific knowledge.</p>
+</section>
+<section id="discover-an-open-access-journal-to-share-your-results">
+<h4>Discover an Open Access Journal to Share Your Results<a class="headerlink" href="#discover-an-open-access-journal-to-share-your-results" title="Permalink to this heading">#</a></h4>
+<p><strong>A common way to share a paper is to pick a journal that is already fully open-access and adopt its license.</strong> One way to discover open journals is by using the Directory of Open Access Journals (DOAJ).</p>
+<p>To identify the best open-access journal, you can use the <a class="reference external" href="https://doaj.org/">Directory of Open Access Journals</a> (DOAJ), which provides a searchable index of all known open-access journals and articles. The DOAJ and its synergetic webpage, Sherpa Romeo, serve as useful tools in the early stages of research planning to help a researcher determine what journals to consider when the time comes to publish their results.</p>
+<a class="reference internal image-reference" href="https://github.com/neuromatch/nasa-open-science/blob/main/tutorials/W1D2_OpenToolsAndResources/static/image51.jpeg?raw=true"><img alt="DOAJ Interface." src="https://github.com/neuromatch/nasa-open-science/blob/main/tutorials/W1D2_OpenToolsAndResources/static/image51.jpeg?raw=true" style="width: 500px;"/></a>
+</section>
+<section id="span-style-color-green-activity-4-span-identify-an-open-access-journal">
+<h4><span style="color: green">Activity 4:</span> Identify an Open-Access Journal<a class="headerlink" href="#span-style-color-green-activity-4-span-identify-an-open-access-journal" title="Permalink to this heading">#</a></h4>
+<p><em>Estimated time for activity: 7 minutes</em></p>
+<p>To become more familiar with the <a class="reference external" href="https://doaj.org/">DOAJ</a>, visit <a class="reference external" href="https://doaj.org/">https://doaj.org/</a> and search for <em>Frontiers in Computational Neuroscience</em> published by the American Astronomical Society. Once you select the journal, you can see costs to publish, details about licensing, author retention rights, time to publication, and other details.</p>
+<p>Once you have found the journal, answer the following questions:</p>
+<ol class="arabic simple">
+<li><p>When did it begin publishing as open access?</p></li>
+<li><p>What license is used for the publications?</p></li>
+<li><p>What rights do the authors retain in their publications?</p></li>
+</ol>
+<p><strong>Note:</strong> If journals do not have any open access, the journal will not appear in the search results. Also, because DOAJ has strict criteria for being listed in its directory, it is not likely you will find predatory publishers listed here, either.</p>
+</section>
+</section>
+<section id="tools-for-reproducibility">
+<h3>Tools for Reproducibility<a class="headerlink" href="#tools-for-reproducibility" title="Permalink to this heading">#</a></h3>
+<p>The <a class="reference external" href="https://www.nationalacademies.org/our-work/reproducibility-and-replicability-in-science">National Academies Report 2019</a> defined reproducibility as:</p>
+<ul class="simple">
+<li><p>Reproducibility means <strong>obtaining consistent computational results using the same input data, computational steps, methods, code, and conditions of analysis</strong>.</p></li>
+<li><p>Replicability means <strong>obtaining consistent results across studies aimed at answering the same scientific question</strong>, each of which has obtained its own data.</p></li>
+</ul>
+<p>The pursuit of reproducibility aims to ensure researchers reach the same result when using the same steps, as well as to enable researchers to copy an environment and build upon a result by editing the environment in order to apply it to a similar problem. This additional feature gives others the ability to directly build upon previous work and get more science out of the same amount of funding.</p>
+<p>Tools to support reproducibility in research outputs:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://jupyter.org/">Jupyter Notebooks</a> - A web application for creating and sharing computational documents. It offers a simple, streamlined, document-centric experience.</p></li>
+<li><p><a class="reference external" href="https://jupyterbook.org/en/stable/intro.html">Jupyter Books</a> - Build beautiful, publication-quality books and documents from computational content.</p></li>
+<li><p><a class="reference external" href="https://rmarkdown.rstudio.com/">R Markdown</a> - Produces documents that are fully reproducible. Use a productive notebook interface to weave together narrative text and code to produce elegantly formatted output.</p></li>
+<li><p><a class="reference external" href="https://mybinder.org/">Binder</a> - Create custom computing environments that can be shared and used by many remote users.</p></li>
+<li><p><a class="reference external" href="https://quarto.org/">Quarto</a> - Combine Jupyter notebooks with flexible options to produce production quality output in a wide variety of formats.</p></li>
+</ul>
+<p><strong>Note:</strong> As you might have noticed, a lot of open science tools require intermediate to advanced skills in data and information literacy and coding, especially if handling coding-intensive research projects. One of the best ways to learn these skills is through engaging with the respective communities, which often provide training and mentoring.</p>
+</section>
+<section id="additional-tools-for-open-results">
+<h3>Additional Tools for Open Results<a class="headerlink" href="#additional-tools-for-open-results" title="Permalink to this heading">#</a></h3>
+<section id="tools-for-open-project-management">
+<h4>Tools for Open Project Management<a class="headerlink" href="#tools-for-open-project-management" title="Permalink to this heading">#</a></h4>
+<p>Advancements over the past few decades to tools that manage research projects and laboratories have helped to meet the ever-increasing demand for speed, innovation, and transparency in science. Such tools are developed to support collaboration, ensure data integrity, automate processes, create workflows, and increase productivity.</p>
+<p>Research groups can now use project management tools for highly specialized efforts. They use existing platforms or develop their own software to share materials within the group and manage projects or tasks. Platforms and tools, which are finely tuned to meet researchers’ needs (and frustrations), are available. They are often founded by scientists, for scientists. To explore a few examples, let’s turn to experimental science.</p>
+<p>A commonly used term and research output is protocol. Protocol can be defined as “A predefined written procedural method in the design and implementation of experiments. <strong>Protocols are written whenever it is desirable to standardize a laboratory method to ensure successful replication of results by others in the same laboratory or by other laboratories.</strong>” according to the University of Delaware (USA) Research Guide for Biological Sciences.</p>
+<p>In a broader sense, protocol comprises <strong>documented computational workflows, operational procedures with step-by-step instructions, or even safety checklists</strong>.</p>
+<p><a class="reference external" href="https://www.protocols.io/">Protocols.io</a> is an online and secure platform for scientists affiliated with academia, industry and non-profit organizations, and agencies. It allows users to create, manage, exchange, improve, and share research methods and protocols across different disciplines. This resource can improve collaboration and recordkeeping, leading to an increase in team productivity and facilitating teaching, especially in the life sciences. In its free version, protocols.io supports publicly shared protocols, while paid plans enable private sharing, e.g., for the industry.</p>
+<p>Some of the tools are specifically designed for open science with an open-by-design concept from ideation on. These tools aim to support the research lifecycle at all stages and allow for integration with other open science tools.</p>
+<p>As an example, the <a class="reference external" href="https://osf.io/">Open Science Framework</a> (OSF), developed by the Center for Open Science, is a free and open-source project management tool. The OSF supports researchers throughout their entire project lifecycle through open, centralized workflows. It captures different aspects and products of the research lifecycle, including developing a research idea, designing a study, storing and analyzing collected data, and writing and publishing reports or papers.</p>
+<p>The OSF is designed to be a collaborative platform where users can share research objects from several phases of a project. It supports a broad and diverse audience, including researchers who might not have been able to access certain resources due to historic socioeconomic disadvantages. The OSF also contains other tools in its own platform. For example, Neuromatch Academy uses OSF for staring data for the courses.</p>
+<p>“While there are many features built into the OSF, the platform also allows third-party add-ons or integrations that strengthen the functionality and collaborative nature of the OSF. These add-ons fall into two categories: citation management integrations and storage integrations. Mendeley and Zotero can be integrated to support citation management, while Amazon S3, Box, Dataverse, Dropbox, Figshare, GitHub, and OneCloud can be integrated to support storage. The OSF provides unlimited storage for projects, but individual files are limited to 5 gigabytes (GB) each.”</p>
+<p><strong><a class="reference external" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5370619/">Center for Open Science</a></strong></p>
+</section>
+<section id="best-practices-for-a-project-registry">
+<h4>Best Practices for a Project Registry<a class="headerlink" href="#best-practices-for-a-project-registry" title="Permalink to this heading">#</a></h4>
+<p>It is common for different types of outputs to be preserved in different places to optimize discovery and reuse. <strong>An up-to-date Project Registry provides a quick overview of all the outputs</strong>. Best practices for managing a Project Registry include:</p>
+<ul class="simple">
+<li><p>Create and update a Project Registry in conjunction with preserving outputs (as described above) in the form of a spreadsheet or other type of list. This can be one registry for the entire project that is updated, or a new registry for each milestone.</p></li>
+<li><p>Include in each registry entry a description of the object, preferred citation, and the persistent identifier (e.g., DOI), and any other useful information supporting the project. For outputs that do not have a persistent identifier, provide a URL and description.</p></li>
+<li><p>Preserve the Project Registry as a project component. Many funders require in their yearly reports a list of both peer-reviewed publications and all project outputs. The Project Registry can be provided to the funder during the reporting process, or used as a tracking tool to assist with completing the report.</p></li>
+</ul>
+</section>
+<section id="managing-citations-using-reference-management-software">
+<h4>Managing Citations Using Reference Management Software<a class="headerlink" href="#managing-citations-using-reference-management-software" title="Permalink to this heading">#</a></h4>
+<p>Keeping track of every paper you reference, every dataset you use, and every software library you build off of is critical. A single paper might cite dozens of references, and each new thing you produce only adds to that list. Reference Management Software can be employed to help you manage these references and automatically create a list of citations in whatever format you need (BibTeX, Word, Google Docs, etc.).</p>
+<p>While you are writing up results, keeping track of references and creating a correctly formatted bibliography can be overwhelming. Management software can keep track of references and can be shared with colleagues who are also working on the document.</p>
+<p>Some of the common capabilities of reference management software are:</p>
+<ul class="simple">
+<li><p>Keep a database of article metadata</p></li>
+<li><p>Import article metadata from PDFs</p></li>
+<li><p>Track datasets and software versions and DOIs</p></li>
+<li><p>Create formatted references and bibliography for many different journal styles</p></li>
+</ul>
+<p>Examples of reference management software include:</p>
+<ul class="simple">
+<li><p>Mendeley</p></li>
+<li><p>EndNote</p></li>
+<li><p>Zotero</p></li>
+</ul>
+</section>
+<section id="open-highlight-zotero">
+<h4>Open Highlight: Zotero<a class="headerlink" href="#open-highlight-zotero" title="Permalink to this heading">#</a></h4>
+<p>Zotero helps manage software, data, publication metadata, and citations through a drag-and-drop interface. Researchers can use the tool to automatically generate citation files (for example, in BibTeX format).</p>
+<p>Pros:</p>
+<ul class="simple">
+<li><p>Open Source</p></li>
+<li><p>Drag and Drop PDFs to import metadata</p></li>
+<li><p>Word + Browser plugins</p></li>
+<li><p>Export citations to BibTeX</p></li>
+</ul>
+<a class="reference internal image-reference" href="https://github.com/neuromatch/nasa-open-science/blob/main/tutorials/W1D2_OpenToolsAndResources/static/image53.jpeg?raw=true"><img alt="Zotero Interface." src="https://github.com/neuromatch/nasa-open-science/blob/main/tutorials/W1D2_OpenToolsAndResources/static/image53.jpeg?raw=true" style="width: 500px;"/></a>
+</section>
+</section>
+<section id="id5">
+<h3>Key Takeaways<a class="headerlink" href="#id5" title="Permalink to this heading">#</a></h3>
+<p>In this section, you learned:</p>
+<ul class="simple">
+<li><p>Benefits of preprints and resources for open-access journals.</p></li>
+<li><p>Tools for reproducibility and replication of your studies.</p></li>
+<li><p>Additional tools that are available to help manage open results including project management and reference management.</p></li>
+</ul>
+</section>
+</section>
+</section>
+<hr class="docutils"/>
+<section class="tex2jax_ignore mathjax_ignore" id="summary">
+<h1>Summary<a class="headerlink" href="#summary" title="Permalink to this heading">#</a></h1>
+<p>Throughout this day, you learned about some of the concepts and tools that support the discovery and use of open research, that can be used to make data and software, and that can be used to share your results. These included:</p>
+<ul class="simple">
+<li><p>The foundational elements of open science, which include research products such as data, code, and results.</p></li>
+<li><p>Resources used to discover and assess research products for reuse, including repositories, search portals, publications, documentation, metadata, and licensing.</p></li>
+<li><p>Making and sharing data that employs the FAIR principles by incorporating a data management plan, using persistent identifiers and citations, and utilizing the appropriate data formats and tools for making data and sharing results.</p></li>
+<li><p>The use of the tools needed for the development of software, including source code, kernels, programming languages, third-party software, and version control.</p></li>
+<li><p>The tools and documentation types used for publishing and curating open software.</p></li>
+<li><p>Resources for sharing research products, including preprints, open-access publications, reference management systems, and resources to support reproducibility.</p></li>
+</ul>
+</section>
+<script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./tutorials/W1D2_OpenToolsAndResources/student"
+        },
+        predefinedOutput: true
+    }
+    </script>
+<script>kernelName = 'python3'</script>
+</article>
+<footer class="bd-footer-article">
+<!-- Previous / next buttons -->
+<div class="prev-next-area">
+<a class="left-prev" href="../chapter_title.html" id="prev-link" title="previous page">
+<i class="fa-solid fa-angle-left"></i>
+<div class="prev-next-info">
+<p class="prev-next-subtitle">previous</p>
+<p class="prev-next-title">Open Tools And Resources</p>
+</div>
+</a>
+<a class="right-next" href="../further_reading.html" id="next-link" title="next page">
+<div class="prev-next-info">
+<p class="prev-next-subtitle">next</p>
+<p class="prev-next-title">Key terms</p>
+</div>
+<i class="fa-solid fa-angle-right"></i>
+</a>
+</div>
+</footer>
+</div>
+<div class="bd-sidebar-secondary bd-toc">
+<div class="toc-item">
+<div class="tocsection onthispage">
+<i class="fa-solid fa-list"></i> On this page
+</div>
+<nav class="page-toc" id="bd-toc-nav">
+<ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry">
+<a class="reference internal nav-link" href="#">
+   Day 2: Open Tools and Resources
+  </a>
+<ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry">
+<a class="reference internal nav-link" href="#tutorial-objectives">
+     Tutorial Objectives
+    </a>
+</li>
+<li class="toc-h2 nav-item toc-entry">
+<a class="reference internal nav-link" href="#section-1-introduction-to-the-process-of-open-science">
+     Section 1: Introduction to the Process of Open Science
+    </a>
+<ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry">
+<a class="reference internal nav-link" href="#definition-of-research-products">
+       Definition of Research Products
+      </a>
+<ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry">
+<a class="reference internal nav-link" href="#what-is-data">
+         What is Data?
+        </a>
+</li>
+<li class="toc-h4 nav-item toc-entry">
+<a class="reference internal nav-link" href="#what-is-code">
+         What is Code?
+        </a>
+</li>
+<li class="toc-h4 nav-item toc-entry">
+<a class="reference internal nav-link" href="#what-are-results">
+         What are Results?
+        </a>
+</li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry">
+<a class="reference internal nav-link" href="#using-tools-for-open-science-in-practice">
+       Using Tools for Open Science in Practice
+      </a>
+<ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry">
+<a class="reference internal nav-link" href="#the-components-of-open-science">
+         The Components of Open Science
+        </a>
+</li>
+<li class="toc-h4 nav-item toc-entry">
+<a class="reference internal nav-link" href="#sharing-open-data">
+         Sharing Open Data
+        </a>
+</li>
+<li class="toc-h4 nav-item toc-entry">
+<a class="reference internal nav-link" href="#sharing-open-code">
+         Sharing Open Code
+        </a>
+</li>
+<li class="toc-h4 nav-item toc-entry">
+<a class="reference internal nav-link" href="#sharing-an-open-paper">
+         Sharing an Open Paper
+        </a>
+</li>
+<li class="toc-h4 nav-item toc-entry">
+<a class="reference internal nav-link" href="#sharing-open-results">
+         Sharing Open Results
+        </a>
+</li>
+<li class="toc-h4 nav-item toc-entry">
+<a class="reference internal nav-link" href="#an-open-science-project-example">
+         An Open Science Project Example
+        </a>
+</li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry">
+<a class="reference internal nav-link" href="#key-takeaways">
+       Key Takeaways
+      </a>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry">
+<a class="reference internal nav-link" href="#section-2-general-tools-for-open-science">
+     Section 2: General Tools for Open Science
+    </a>
+<ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry">
+<a class="reference internal nav-link" href="#introduction-to-open-science-tools">
+       Introduction to Open Science Tools
+      </a>
+</li>
+<li class="toc-h3 nav-item toc-entry">
+<a class="reference internal nav-link" href="#persistent-identifiers">
+       Persistent Identifiers
+      </a>
+<ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry">
+<a class="reference internal nav-link" href="#orcid">
+         ORCID
+        </a>
+</li>
+<li class="toc-h4 nav-item toc-entry">
+<a class="reference internal nav-link" href="#digital-object-identifiers-doi">
+         Digital Object Identifiers (DOI)
+        </a>
+</li>
+<li class="toc-h4 nav-item toc-entry">
+<a class="reference internal nav-link" href="#citations-using-dois">
+         Citations Using DOIs
+        </a>
+</li>
+<li class="toc-h4 nav-item toc-entry">
+<a class="reference internal nav-link" href="#span-style-color-green-activity-1-span-find-and-resolve-a-doi">
+<span style="color: green">
+          Activity 1:
+         </span>
+         Find and Resolve a DOI
+        </a>
+</li>
+<li class="toc-h4 nav-item toc-entry">
+<a class="reference internal nav-link" href="#examples-of-pids-in-action">
+         Examples of PIDs in Action
+        </a>
+</li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry">
+<a class="reference internal nav-link" href="#useful-open-science-tools">
+       Useful Open Science Tools
+      </a>
+<ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry">
+<a class="reference internal nav-link" href="#metadata">
+         Metadata
+        </a>
+</li>
+<li class="toc-h4 nav-item toc-entry">
+<a class="reference internal nav-link" href="#purpose-of-metadata">
+         Purpose of Metadata
+        </a>
+</li>
+<li class="toc-h4 nav-item toc-entry">
+<a class="reference internal nav-link" href="#types-of-metadata">
+         Types of Metadata
+        </a>
+</li>
+<li class="toc-h4 nav-item toc-entry">
+<a class="reference internal nav-link" href="#documentation">
+         Documentation
+        </a>
+</li>
+<li class="toc-h4 nav-item toc-entry">
+<a class="reference internal nav-link" href="#repositories">
+         Repositories
+        </a>
+</li>
+<li class="toc-h4 nav-item toc-entry">
+<a class="reference internal nav-link" href="#pre-registration">
+         Pre-registration
+        </a>
+</li>
+<li class="toc-h4 nav-item toc-entry">
+<a class="reference internal nav-link" href="#why-is-pre-registration-important">
+         Why is Pre-Registration Important?
+        </a>
+</li>
+<li class="toc-h4 nav-item toc-entry">
+<a class="reference internal nav-link" href="#when-can-should-one-pre-register-their-research">
+         When Can/Should One Pre-Register Their Research?
+        </a>
+</li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry">
+<a class="reference internal nav-link" href="#open-science-and-data-management-plans">
+       Open Science and Data Management Plans
+      </a>
+<ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry">
+<a class="reference internal nav-link" href="#design-your-science-to-be-open">
+         Design Your Science to be Open
+        </a>
+</li>
+<li class="toc-h4 nav-item toc-entry">
+<a class="reference internal nav-link" href="#data-management-plan">
+         Data Management Plan
+        </a>
+</li>
+<li class="toc-h4 nav-item toc-entry">
+<a class="reference internal nav-link" href="#software-management-plan">
+         Software Management Plan
+        </a>
+</li>
+<li class="toc-h4 nav-item toc-entry">
+<a class="reference internal nav-link" href="#open-science-plan">
+         Open Science Plan
+        </a>
+</li>
+<li class="toc-h4 nav-item toc-entry">
+<a class="reference internal nav-link" href="#publications-plan">
+         Publications Plan
+        </a>
+</li>
+<li class="toc-h4 nav-item toc-entry">
+<a class="reference internal nav-link" href="#examples-of-requirements-for-open-science-management-plans">
+         Examples of Requirements for Open Science Management Plans
+        </a>
+</li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry">
+<a class="reference internal nav-link" href="#id1">
+       Key Takeaways
+      </a>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry">
+<a class="reference internal nav-link" href="#section-3-tools-for-open-data">
+     Section 3: Tools for Open Data
+    </a>
+</li>
+<li class="toc-h2 nav-item toc-entry">
+<a class="reference internal nav-link" href="#introduction-to-open-data">
+     Introduction to Open Data
+    </a>
+</li>
+<li class="toc-h2 nav-item toc-entry">
+<a class="reference internal nav-link" href="#fair-principles">
+     FAIR Principles
+    </a>
+<ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry">
+<a class="reference internal nav-link" href="#tools-to-help-with-planning-for-open-data-creation">
+       Tools to Help with Planning For Open Data Creation
+      </a>
+<ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry">
+<a class="reference internal nav-link" href="#id2">
+         Data Management Plan
+        </a>
+</li>
+<li class="toc-h4 nav-item toc-entry">
+<a class="reference internal nav-link" href="#data-repositories">
+         Data Repositories
+        </a>
+</li>
+<li class="toc-h4 nav-item toc-entry">
+<a class="reference internal nav-link" href="#span-style-color-green-activity-2-span-explore-zenodo-and-sign-up">
+<span style="color:green">
+          Activity 2:
+         </span>
+         Explore Zenodo and Sign Up!
+        </a>
+</li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry">
+<a class="reference internal nav-link" href="#tools-to-help-with-using-and-making-open-data">
+       Tools to Help with Using and Making Open Data
+      </a>
+<ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry">
+<a class="reference internal nav-link" href="#data-formats">
+         Data Formats
+        </a>
+</li>
+<li class="toc-h4 nav-item toc-entry">
+<a class="reference internal nav-link" href="#inspecting-data">
+         Inspecting Data
+        </a>
+</li>
+<li class="toc-h4 nav-item toc-entry">
+<a class="reference internal nav-link" href="#fair-assessment">
+         FAIR Assessment
+        </a>
+</li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry">
+<a class="reference internal nav-link" href="#id3">
+       Key Takeaways
+      </a>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry">
+<a class="reference internal nav-link" href="#section-4-tools-for-open-code">
+     Section 4: Tools for Open Code
+    </a>
+<ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry">
+<a class="reference internal nav-link" href="#introduction-to-open-code">
+       Introduction to Open Code
+      </a>
+</li>
+<li class="toc-h3 nav-item toc-entry">
+<a class="reference internal nav-link" href="#tools-for-version-control">
+       Tools for Version Control
+      </a>
+<ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry">
+<a class="reference internal nav-link" href="#version-control">
+         Version Control
+        </a>
+</li>
+<li class="toc-h4 nav-item toc-entry">
+<a class="reference internal nav-link" href="#types-of-software-version-control">
+         Types of Software Version Control
+        </a>
+</li>
+<li class="toc-h4 nav-item toc-entry">
+<a class="reference internal nav-link" href="#example-git">
+         Example: Git
+        </a>
+</li>
+<li class="toc-h4 nav-item toc-entry">
+<a class="reference internal nav-link" href="#version-control-platforms">
+         Version Control Platforms
+        </a>
+</li>
+<li class="toc-h4 nav-item toc-entry">
+<a class="reference internal nav-link" href="#example-github">
+         Example: GitHub
+        </a>
+</li>
+<li class="toc-h4 nav-item toc-entry">
+<a class="reference internal nav-link" href="#summary-of-benefits-of-using-version-control-and-version-control-platforms">
+         Summary of Benefits of Using Version Control and Version Control Platforms
+        </a>
+</li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry">
+<a class="reference internal nav-link" href="#tools-for-editing-code">
+       Tools for Editing Code
+      </a>
+<ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry">
+<a class="reference internal nav-link" href="#integrated-development-environment-ides">
+         Integrated Development Environment (IDEs)
+        </a>
+</li>
+<li class="toc-h4 nav-item toc-entry">
+<a class="reference internal nav-link" href="#source-code-editing-kernels-the-value-of-ides-and-kernels">
+         Source-Code Editing &amp; Kernels – The Value of IDEs and Kernels
+        </a>
+</li>
+<li class="toc-h4 nav-item toc-entry">
+<a class="reference internal nav-link" href="#ide-example-visual-studio-code">
+         IDE Example: Visual Studio Code
+        </a>
+</li>
+<li class="toc-h4 nav-item toc-entry">
+<a class="reference internal nav-link" href="#ide-example-rstudio">
+         IDE Example: RStudio
+        </a>
+</li>
+<li class="toc-h4 nav-item toc-entry">
+<a class="reference internal nav-link" href="#plain-text-editors-for-coding">
+         Plain Text Editors for Coding
+        </a>
+</li>
+<li class="toc-h4 nav-item toc-entry">
+<a class="reference internal nav-link" href="#computational-notebooks">
+         Computational Notebooks
+        </a>
+</li>
+<li class="toc-h4 nav-item toc-entry">
+<a class="reference internal nav-link" href="#example-jupyter-notebook-and-jupyterlab">
+         Example: Jupyter Notebook and JupyterLab
+        </a>
+</li>
+<li class="toc-h4 nav-item toc-entry">
+<a class="reference internal nav-link" href="#span-style-color-green-activity-3-span-run-a-jupyter-notebook-yourself-from-the-browser">
+<span style="color:green">
+          Activity 3:
+         </span>
+         Run a Jupyter Notebook Yourself from the Browser
+        </a>
+</li>
+<li class="toc-h4 nav-item toc-entry">
+<a class="reference internal nav-link" href="#computing-platforms">
+         Computing Platforms
+        </a>
+</li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry">
+<a class="reference internal nav-link" href="#additional-tools">
+       Additional Tools
+      </a>
+<ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry">
+<a class="reference internal nav-link" href="#software-repository-vs-archive">
+         Software Repository vs Archive
+        </a>
+</li>
+<li class="toc-h4 nav-item toc-entry">
+<a class="reference internal nav-link" href="#containers">
+         Containers
+        </a>
+</li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry">
+<a class="reference internal nav-link" href="#id4">
+       Key Takeaways
+      </a>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry">
+<a class="reference internal nav-link" href="#section-5-planning-for-open-science-from-theory-to-practice">
+     Section 5: Planning for Open Science: From Theory to Practice
+    </a>
+<ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry">
+<a class="reference internal nav-link" href="#tools-for-open-publications">
+       Tools for Open Publications
+      </a>
+<ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry">
+<a class="reference internal nav-link" href="#pre-prints">
+         Pre-Prints
+        </a>
+</li>
+<li class="toc-h4 nav-item toc-entry">
+<a class="reference internal nav-link" href="#discover-an-open-access-journal-to-share-your-results">
+         Discover an Open Access Journal to Share Your Results
+        </a>
+</li>
+<li class="toc-h4 nav-item toc-entry">
+<a class="reference internal nav-link" href="#span-style-color-green-activity-4-span-identify-an-open-access-journal">
+<span style="color: green">
+          Activity 4:
+         </span>
+         Identify an Open-Access Journal
+        </a>
+</li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry">
+<a class="reference internal nav-link" href="#tools-for-reproducibility">
+       Tools for Reproducibility
+      </a>
+</li>
+<li class="toc-h3 nav-item toc-entry">
+<a class="reference internal nav-link" href="#additional-tools-for-open-results">
+       Additional Tools for Open Results
+      </a>
+<ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry">
+<a class="reference internal nav-link" href="#tools-for-open-project-management">
+         Tools for Open Project Management
+        </a>
+</li>
+<li class="toc-h4 nav-item toc-entry">
+<a class="reference internal nav-link" href="#best-practices-for-a-project-registry">
+         Best Practices for a Project Registry
+        </a>
+</li>
+<li class="toc-h4 nav-item toc-entry">
+<a class="reference internal nav-link" href="#managing-citations-using-reference-management-software">
+         Managing Citations Using Reference Management Software
+        </a>
+</li>
+<li class="toc-h4 nav-item toc-entry">
+<a class="reference internal nav-link" href="#open-highlight-zotero">
+         Open Highlight: Zotero
+        </a>
+</li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry">
+<a class="reference internal nav-link" href="#id5">
+       Key Takeaways
+      </a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry">
+<a class="reference internal nav-link" href="#summary">
+   Summary
+  </a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<footer class="bd-footer-content">
+<div class="bd-footer-content__inner">
+<div class="bd-footer-content__inner container">
+<div class="footer-item">
+<p class="component-author">
+By Neuromatch
+</p>
+</div>
+<div class="footer-item">
+</div>
+<div class="footer-item">
+<p class="last-updated">
+Last updated on None.<br/>
+</p>
+</div>
+<div class="footer-item">
+<div class="extra_footer">
+<div>
+<a href="http://creativecommons.org/licenses/by/4.0/"><img src="https://i.creativecommons.org/l/by/4.0/88x31.png"/></a>
+<a href="https://opensource.org/licenses/BSD-3-Clause"><img src="https://camo.githubusercontent.com/9b9ea65d95c9ef878afa1987df65731d47681336/68747470733a2f2f696d672e736869656c64732e696f2f707970692f6c2f736561626f726e2e737667"/></a>
+The contents of this repository are shared under the <a href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
+Software elements are additionally licensed under the <a href="https://opensource.org/licenses/BSD-3-Clause">BSD (3-Clause) License</a>.
+</div>
+</div>
+</div>
+</div>
+</div>
+</footer>
+</main>
+</div>
+</div>
+<!-- Scripts loaded after <body> so the DOM is not blocked -->
+<script src="../../../_static/scripts/bootstrap.js?digest=796348d33e8b1d947c94"></script>
+<script src="../../../_static/scripts/pydata-sphinx-theme.js?digest=796348d33e8b1d947c94"></script>
+</body>
+</html>
