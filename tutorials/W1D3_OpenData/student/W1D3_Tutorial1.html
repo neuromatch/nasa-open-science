@@ -1,0 +1,2315 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="Docutils 0.18.1: http://docutils.sourceforge.net/" name="generator"/>
+<title>Day 3: Open Data — Open Science Course</title>
+<script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+<!-- Loaded before other Sphinx assets -->
+<link href="../../../_static/styles/theme.css?digest=796348d33e8b1d947c94" rel="stylesheet"/>
+<link href="../../../_static/styles/bootstrap.css?digest=796348d33e8b1d947c94" rel="stylesheet"/>
+<link href="../../../_static/styles/pydata-sphinx-theme.css?digest=796348d33e8b1d947c94" rel="stylesheet"/>
+<link href="../../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=796348d33e8b1d947c94" rel="stylesheet"/>
+<link as="font" crossorigin="" href="../../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" rel="preload" type="font/woff2"/>
+<link as="font" crossorigin="" href="../../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" rel="preload" type="font/woff2"/>
+<link as="font" crossorigin="" href="../../../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" rel="preload" type="font/woff2"/>
+<link href="../../../_static/pygments.css" rel="stylesheet" type="text/css">
+<link href="../../../_static/styles/sphinx-book-theme.css?digest=4ec06e9971c5264fbd345897d5258098f11cc577" rel="stylesheet" type="text/css">
+<link href="../../../_static/togglebutton.css" rel="stylesheet" type="text/css">
+<link href="../../../_static/copybutton.css" rel="stylesheet" type="text/css">
+<link href="../../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" rel="stylesheet" type="text/css">
+<link href="../../../_static/sphinx-thebe.css" rel="stylesheet" type="text/css">
+<link href="../../../_static/custom.css" rel="stylesheet" type="text/css">
+<link href="../../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" rel="stylesheet" type="text/css"/>
+<!-- Pre-loaded scripts that we'll load fully later -->
+<link as="script" href="../../../_static/scripts/bootstrap.js?digest=796348d33e8b1d947c94" rel="preload"/>
+<link as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=796348d33e8b1d947c94" rel="preload"/>
+<script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+<script src="../../../_static/jquery.js"></script>
+<script src="../../../_static/underscore.js"></script>
+<script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+<script src="../../../_static/doctools.js"></script>
+<script src="../../../_static/clipboard.min.js"></script>
+<script src="../../../_static/copybutton.js"></script>
+<script src="../../../_static/scripts/sphinx-book-theme.js?digest=8bf782fb4ee92b3d3646425e50f299c4e1fd152d"></script>
+<script>let toggleHintShow = 'Click to show';</script>
+<script>let toggleHintHide = 'Click to hide';</script>
+<script>let toggleOpenOnPrint = 'true';</script>
+<script src="../../../_static/togglebutton.js"></script>
+<script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+<script src="../../../_static/design-tabs.js"></script>
+<script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+<script async="async" src="../../../_static/sphinx-thebe.js"></script>
+<script type="application/vnd.jupyter.widget-state+json">{"state": {"66fbf736689a417ea0b734580b799352": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "2.0.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "2.0.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "2.0.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border_bottom": null, "border_left": null, "border_right": null, "border_top": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "48370e119c504fc59cf5076f3755c484": {"model_name": "OutputModel", "model_module": "@jupyter-widgets/output", "model_module_version": "1.0.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/output", "_model_module_version": "1.0.0", "_model_name": "OutputModel", "_view_count": null, "_view_module": "@jupyter-widgets/output", "_view_module_version": "1.0.0", "_view_name": "OutputView", "layout": "IPY_MODEL_66fbf736689a417ea0b734580b799352", "msg_id": "", "outputs": [{"output_type": "stream", "name": "stdout", "text": "If you want to download the slides: https://osf.io/download//\n"}, {"output_type": "display_data", "metadata": {}, "data": {"text/plain": "<IPython.lib.display.IFrame at 0x7f1dfce58a90>", "text/html": "\n        <iframe\n            width=\"730\"\n            height=\"410\"\n            src=\"https://mfr.ca-1.osf.io/render?url=https://osf.io//?direct%26mode=render%26action=download%26mode=render\"\n            frameborder=\"0\"\n            allowfullscreen\n            \n        ></iframe>\n        "}}], "tabbable": null, "tooltip": null}}}, "version_major": 2, "version_minor": 0}</script>
+<script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+<script crossorigin="anonymous" data-jupyter-widgets-cdn="https://cdn.jsdelivr.net/npm/" src="https://cdn.jsdelivr.net/npm/@jupyter-widgets/html-manager@1.0.6/dist/embed-amd.js"></script>
+<script>DOCUMENTATION_OPTIONS.pagename = 'tutorials/W1D3_OpenData/student/W1D3_Tutorial1';</script>
+<link href="../../../_static/nma-logo-square-4xp.png" rel="shortcut icon">
+<link href="../../../genindex.html" rel="index" title="Index">
+<link href="../../../search.html" rel="search" title="Search"/>
+<link href="../further_reading.html" rel="next" title="Key terms"/>
+<link href="../chapter_title.html" rel="prev" title="Open Data"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="en" name="docsearch:language"/>
+</link></link></link></link></link></link></link></link></link></head>
+<body data-default-mode="" data-offset="180" data-spy="scroll" data-target="#bd-toc-nav">
+<a class="skip-link" href="#main-content">Skip to main content</a>
+<input class="sidebar-toggle" id="__primary" name="__primary" type="checkbox"/>
+<label class="overlay overlay-primary" for="__primary"></label>
+<input class="sidebar-toggle" id="__secondary" name="__secondary" type="checkbox"/>
+<label class="overlay overlay-secondary" for="__secondary"></label>
+<div class="search-button__wrapper">
+<div class="search-button__overlay"></div>
+<div class="search-button__search-container">
+<form action="../../../search.html" class="bd-search d-flex align-items-center" method="get">
+<i class="fa-solid fa-magnifying-glass"></i>
+<input aria-label="Search this book..." autocapitalize="off" autocomplete="off" autocorrect="off" class="form-control" id="search-input" name="q" placeholder="Search this book..." spellcheck="false" type="search"/>
+<span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+</div>
+</div>
+<nav class="bd-header navbar navbar-expand-lg bd-navbar" id="navbar-main"><div class="bd-header__inner bd-page-width">
+<label class="sidebar-toggle primary-toggle" for="__primary">
+<span class="fa-solid fa-bars"></span>
+</label>
+<div id="navbar-start">
+<a class="navbar-brand logo" href="../../intro.html">
+<img alt="Logo image" class="logo__image only-light" src="../../../_static/tops.png"/>
+<img alt="Logo image" class="logo__image only-dark" src="../../../_static/tops.png"/>
+</a>
+</div>
+<div class="col-lg-9 navbar-header-items">
+<div class="mr-auto" id="navbar-center">
+<div class="navbar-center-item">
+<nav class="navbar-nav">
+<p aria-label="Site Navigation" aria-level="1" class="sidebar-header-items__title" role="heading">
+        Site Navigation
+    </p>
+<ul class="navbar-nav" id="navbar-main-elements">
+<li class="nav-item">
+<a class="nav-link nav-internal" href="../../Schedule/schedule_intro.html">
+                        Schedule
+                      </a>
+</li>
+<li class="nav-item">
+<a class="nav-link nav-internal" href="../../TechnicalHelp/tech_intro.html">
+                        Technical Help
+                      </a>
+</li>
+<li class="nav-item">
+<a class="nav-link nav-internal" href="../../TechnicalHelp/Links_Policy.html">
+                        Quick links and policies
+                      </a>
+</li>
+<li class="nav-item">
+<a class="nav-link nav-internal" href="../../W1D1_TheEthosOfOpenScience/chapter_title.html">
+                        The Ethos Of Open Science (W1D1)
+                      </a>
+</li>
+<li class="nav-item">
+<a class="nav-link nav-internal" href="../../W1D2_OpenToolsAndResources/chapter_title.html">
+                        Open Tools And Resources (W1D2)
+                      </a>
+</li>
+<div class="nav-item dropdown">
+<button aria-expanded="false" aria-haspopup="true" class="btn dropdown-toggle nav-item" data-toggle="dropdown" type="button">
+                    More
+                </button>
+<div class="dropdown-menu">
+<li class="nav-item current active">
+<a class="nav-link nav-internal" href="../chapter_title.html">
+                        Open Data (W1D3)
+                      </a>
+</li>
+<li class="nav-item">
+<a class="nav-link nav-internal" href="../../../projects/README.html">
+                        Introduction
+                      </a>
+</li>
+<li class="nav-item">
+<a class="nav-link nav-internal" href="../../../projects/professional_development/mentorship_program.html">
+                        Mentorship Program
+                      </a>
+</li>
+</div>
+</div>
+</ul>
+</nav>
+</div>
+</div>
+<div id="navbar-end">
+<div class="navbar-end-item navbar-persistent--container">
+<button aria-label="Search" class="btn btn-sm navbar-btn search-button search-button__button" data-toggle="tooltip" title="Search">
+<i class="fa-solid fa-magnifying-glass"></i>
+</button>
+</div>
+<div class="navbar-end-item">
+<button aria-label="light/dark" class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" data-toggle="tooltip" title="light/dark">
+<span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+<span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+<span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+</button>
+</div>
+<div class="navbar-end-item">
+<ul aria-label="Icon Links" class="navbar-nav" id="navbar-icon-links">
+</ul>
+</div>
+</div>
+</div>
+<div class="navbar-persistent--mobile">
+<button aria-label="Search" class="btn btn-sm navbar-btn search-button search-button__button" data-toggle="tooltip" title="Search">
+<i class="fa-solid fa-magnifying-glass"></i>
+</button>
+</div>
+<label class="sidebar-toggle secondary-toggle" for="__secondary">
+<span class="fa-solid fa-outdent"></span>
+</label>
+</div>
+</nav>
+<div class="bd-container">
+<div class="bd-container__inner bd-page-width">
+<div class="bd-sidebar-primary bd-sidebar">
+<div class="sidebar-header-items sidebar-primary__section">
+<div class="sidebar-header-items__center">
+<div class="navbar-center-item">
+<nav class="navbar-nav">
+<p aria-label="Site Navigation" aria-level="1" class="sidebar-header-items__title" role="heading">
+        Site Navigation
+    </p>
+<ul class="navbar-nav" id="navbar-main-elements">
+<li class="nav-item">
+<a class="nav-link nav-internal" href="../../Schedule/schedule_intro.html">
+                        Schedule
+                      </a>
+</li>
+<li class="nav-item">
+<a class="nav-link nav-internal" href="../../TechnicalHelp/tech_intro.html">
+                        Technical Help
+                      </a>
+</li>
+<li class="nav-item">
+<a class="nav-link nav-internal" href="../../TechnicalHelp/Links_Policy.html">
+                        Quick links and policies
+                      </a>
+</li>
+<li class="nav-item">
+<a class="nav-link nav-internal" href="../../W1D1_TheEthosOfOpenScience/chapter_title.html">
+                        The Ethos Of Open Science (W1D1)
+                      </a>
+</li>
+<li class="nav-item">
+<a class="nav-link nav-internal" href="../../W1D2_OpenToolsAndResources/chapter_title.html">
+                        Open Tools And Resources (W1D2)
+                      </a>
+</li>
+<div class="nav-item dropdown">
+<button aria-expanded="false" aria-haspopup="true" class="btn dropdown-toggle nav-item" data-toggle="dropdown" type="button">
+                    More
+                </button>
+<div class="dropdown-menu">
+<li class="nav-item current active">
+<a class="nav-link nav-internal" href="../chapter_title.html">
+                        Open Data (W1D3)
+                      </a>
+</li>
+<li class="nav-item">
+<a class="nav-link nav-internal" href="../../../projects/README.html">
+                        Introduction
+                      </a>
+</li>
+<li class="nav-item">
+<a class="nav-link nav-internal" href="../../../projects/professional_development/mentorship_program.html">
+                        Mentorship Program
+                      </a>
+</li>
+</div>
+</div>
+</ul>
+</nav>
+</div>
+</div>
+<div class="sidebar-header-items__end">
+<div class="navbar-end-item">
+<button aria-label="light/dark" class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" data-toggle="tooltip" title="light/dark">
+<span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+<span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+<span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+</button>
+</div>
+<div class="navbar-end-item">
+<ul aria-label="Icon Links" class="navbar-nav" id="navbar-icon-links">
+</ul>
+</div>
+</div>
+</div>
+<div class="sidebar-start-items sidebar-primary__section">
+<div class="sidebar-start-items__item">
+<a class="navbar-brand logo" href="../../intro.html">
+<img alt="Logo image" class="logo__image only-light" src="../../../_static/tops.png"/>
+<img alt="Logo image" class="logo__image only-dark" src="../../../_static/tops.png"/>
+</a>
+</div>
+<div class="sidebar-start-items__item">
+<form action="../../../search.html" class="bd-search d-flex align-items-center" method="get">
+<i class="fa-solid fa-magnifying-glass"></i>
+<input aria-label="Search this book..." autocapitalize="off" autocomplete="off" autocorrect="off" class="form-control" id="search-input" name="q" placeholder="Search this book..." spellcheck="false" type="search"/>
+<span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+</div>
+<div class="sidebar-start-items__item"><nav aria-label="Main" class="bd-links" id="bd-docs-nav">
+<div class="bd-toc-item navbar-nav active">
+<ul class="nav bd-sidenav bd-sidenav__home-link">
+<li class="toctree-l1">
+<a class="reference internal" href="../../intro.html">
+                    Introduction
+                </a>
+</li>
+</ul>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Schedule/schedule_intro.html">Schedule</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../Schedule/daily_schedules.html">General schedule</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Schedule/shared_calendars.html">Shared calendars</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Schedule/timezone_widget.html">Timezone widget</a></li>
+</ul>
+</input></li>
+</ul>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../TechnicalHelp/tech_intro.html">Technical Help</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../TechnicalHelp/Jupyterbook.html">Using jupyterbook</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../TechnicalHelp/Tutorial_colab.html">Using Google Colab</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../TechnicalHelp/Tutorial_kaggle.html">Using Kaggle</a></li>
+</ul>
+</input></li>
+<li class="toctree-l2"><a class="reference internal" href="../../TechnicalHelp/Discord.html">Using discord</a></li>
+</ul>
+</input></li>
+</ul>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../TechnicalHelp/Links_Policy.html">Quick links and policies</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Open Science</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../W1D1_TheEthosOfOpenScience/chapter_title.html">The Ethos Of Open Science (W1D1)</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../W1D1_TheEthosOfOpenScience/student/W1D1_Tutorial1.html">Day 1: The Ethos of Open Science</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../W1D1_TheEthosOfOpenScience/further_reading.html">Key terms</a></li>
+</ul>
+</input></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../W1D2_OpenToolsAndResources/chapter_title.html">Open Tools And Resources (W1D2)</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../W1D2_OpenToolsAndResources/student/W1D2_Tutorial1.html">Day 2: Open Tools and Resources</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../W1D2_OpenToolsAndResources/further_reading.html">Key terms</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="../chapter_title.html">Open Data (W1D3)</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Day 3: Open Data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../further_reading.html">Key terms</a></li>
+</ul>
+</li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Project Booklet</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../../projects/README.html">Introduction</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Professional Development</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../../projects/professional_development/mentorship_program.html">Mentorship Program</a></li>
+</ul>
+</div>
+</nav>
+</div>
+</div>
+<div class="sidebar-end-items sidebar-primary__section">
+<div class="sidebar-end-items__item">
+</div>
+</div>
+<div id="rtd-footer-container"></div>
+</div>
+<main class="bd-main" id="main-content">
+<div class="sbt-scroll-pixel-helper"></div>
+<div class="bd-content">
+<div class="bd-article-container">
+<div class="bd-header-article">
+<div class="col py-1 d-flex header-article-main">
+<div class="header-article__left">
+<label class="sidebar-toggle primary-toggle btn btn-sm" data-placement="right" data-toggle="tooltip" for="__primary" title="Toggle primary sidebar">
+<span class="fa-solid fa-bars"></span>
+</label>
+</div>
+<div class="header-article__right">
+<div class="dropdown dropdown-launch-buttons">
+<button aria-expanded="false" aria-label="Launch interactive content" class="btn dropdown-toggle" data-bs-toggle="dropdown" type="button">
+<i class="fas fa-rocket"></i>
+</button>
+<ul class="dropdown-menu">
+</ul>
+</div>
+<button class="btn btn-sm" data-placement="bottom" data-toggle="tooltip" onclick="toggleFullScreen()" title="Fullscreen mode">
+<span class="btn__icon-container">
+<i class="fas fa-expand"></i>
+</span>
+</button>
+<div class="dropdown dropdown-repository-buttons">
+<button aria-expanded="false" aria-label="Source repositories" class="btn dropdown-toggle" data-bs-toggle="dropdown" type="button">
+<i class="fab fa-github"></i>
+</button>
+<ul class="dropdown-menu">
+<li><a class="btn btn-sm dropdown-item" data-placement="left" data-toggle="tooltip" href="https://github.com/neuromatch/nasa-open-science" target="_blank" title="Source repository">
+<span class="btn__icon-container">
+<i class="fab fa-github"></i>
+</span>
+<span class="btn__text-container">repository</span>
+</a>
+
+<li><a class="btn btn-sm dropdown-item" data-placement="left" data-toggle="tooltip" href="https://github.com/neuromatch/nasa-open-science/issues/new?title=Issue%20on%20page%20%2Ftutorials/W1D3_OpenData/student/W1D3_Tutorial1.html&amp;body=Your%20issue%20content%20here." target="_blank" title="Open an issue">
+<span class="btn__icon-container">
+<i class="fas fa-lightbulb"></i>
+</span>
+<span class="btn__text-container">open issue</span>
+</a>
+
+</li></li></ul>
+</div>
+<div class="dropdown dropdown-download-buttons">
+<button aria-expanded="false" aria-label="Download this page" class="btn dropdown-toggle" data-bs-toggle="dropdown" type="button">
+<i class="fas fa-download"></i>
+</button>
+<ul class="dropdown-menu">
+<li><a class="btn btn-sm dropdown-item" data-placement="left" data-toggle="tooltip" href="../../../_sources/tutorials/W1D3_OpenData/student/W1D3_Tutorial1.ipynb" target="_blank" title="Download source file">
+<span class="btn__icon-container">
+<i class="fas fa-file"></i>
+</span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+
+<li>
+<button class="btn btn-sm dropdown-item" data-placement="left" data-toggle="tooltip" onclick="printPdf(this)" title="Print to PDF">
+<span class="btn__icon-container">
+<i class="fas fa-file-pdf"></i>
+</span>
+<span class="btn__text-container">.pdf</span>
+</button>
+
+</li></li></ul>
+</div>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" data-placement="left" data-toggle="tooltip" for="__secondary" title="Toggle secondary sidebar">
+<span class="fa-solid fa-list"></span>
+</label>
+</div>
+</div>
+</div>
+<div class="onlyprint" id="jb-print-docs-body">
+<h1>Day 3: Open Data</h1>
+<!-- Table of contents -->
+<div id="print-main-content">
+<div id="jb-print-toc">
+<div>
+<h2> Contents </h2>
+</div>
+<nav aria-label="Page">
+<ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry">
+<a class="reference internal nav-link" href="#">
+   Day 3: Open Data
+  </a>
+<ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry">
+<a class="reference internal nav-link" href="#tutorial-objectives">
+     Tutorial Objectives
+    </a>
+</li>
+<li class="toc-h2 nav-item toc-entry">
+<a class="reference internal nav-link" href="#section-1-introduction-to-open-data">
+     Section 1:  Introduction to Open Data
+    </a>
+<ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry">
+<a class="reference internal nav-link" href="#introduction">
+       Introduction
+      </a>
+</li>
+<li class="toc-h3 nav-item toc-entry">
+<a class="reference internal nav-link" href="#definition-and-considerations-of-open-data">
+       Definition and Considerations of Open Data
+      </a>
+</li>
+<li class="toc-h3 nav-item toc-entry">
+<a class="reference internal nav-link" href="#benefits-of-open-data">
+       Benefits of Open Data
+      </a>
+</li>
+<li class="toc-h3 nav-item toc-entry">
+<a class="reference internal nav-link" href="#benefits-to-you">
+       Benefits to You
+      </a>
+</li>
+<li class="toc-h3 nav-item toc-entry">
+<a class="reference internal nav-link" href="#challenges-of-open-data">
+       Challenges of Open Data
+      </a>
+<ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry">
+<a class="reference internal nav-link" href="#restrictions-on-sharing-data">
+         Restrictions on Sharing Data
+        </a>
+</li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry">
+<a class="reference internal nav-link" href="#applying-fair-principles">
+       Applying FAIR Principles
+      </a>
+<ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry">
+<a class="reference internal nav-link" href="#metadata-s-central-role-in-applying-fair">
+         Metadata’s Central Role in Applying FAIR
+        </a>
+</li>
+<li class="toc-h4 nav-item toc-entry">
+<a class="reference internal nav-link" href="#licensing-data">
+         Licensing Data
+        </a>
+</li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry">
+<a class="reference internal nav-link" href="#planning-for-openness-using-the-use-make-share-framework-for-open-data">
+       Planning for Openness: Using the Use, Make, Share Framework for Open Data
+      </a>
+<ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry">
+<a class="reference internal nav-link" href="#open-science-and-data-management-plans">
+         Open Science and Data Management Plans
+        </a>
+</li>
+<li class="toc-h4 nav-item toc-entry">
+<a class="reference internal nav-link" href="#scientific-workflow">
+         Scientiﬁc Workﬂow
+        </a>
+</li>
+<li class="toc-h4 nav-item toc-entry">
+<a class="reference internal nav-link" href="#roles-in-use-make-share">
+         Roles in Use, Make, Share
+        </a>
+</li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry">
+<a class="reference internal nav-link" href="#key-takeaways">
+       Key Takeaways
+      </a>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry">
+<a class="reference internal nav-link" href="#section-2-using-open-data">
+     Section 2: Using Open Data
+    </a>
+<ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry">
+<a class="reference internal nav-link" href="#discovering-open-data">
+       Discovering Open Data
+      </a>
+<ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry">
+<a class="reference internal nav-link" href="#where-to-start-your-search">
+         Where to Start Your Search
+        </a>
+</li>
+<li class="toc-h4 nav-item toc-entry">
+<a class="reference internal nav-link" href="#people-you-know-online-or-in-person">
+         People You Know (Online or In-person!)
+        </a>
+</li>
+<li class="toc-h4 nav-item toc-entry">
+<a class="reference internal nav-link" href="#publications">
+         Publications
+        </a>
+</li>
+<li class="toc-h4 nav-item toc-entry">
+<a class="reference internal nav-link" href="#data-search-portals">
+         Data Search Portals
+        </a>
+</li>
+<li class="toc-h4 nav-item toc-entry">
+<a class="reference internal nav-link" href="#repositories">
+         Repositories
+        </a>
+</li>
+<li class="toc-h4 nav-item toc-entry">
+<a class="reference internal nav-link" href="#challenges-with-data-repositories">
+         Challenges with Data Repositories
+        </a>
+</li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry">
+<a class="reference internal nav-link" href="#assessing-open-data">
+       Assessing Open Data
+      </a>
+</li>
+<li class="toc-h3 nav-item toc-entry">
+<a class="reference internal nav-link" href="#using-open-data">
+       Using Open Data
+      </a>
+<ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry">
+<a class="reference internal nav-link" href="#review-citing-guidelines">
+         Review Citing Guidelines
+        </a>
+</li>
+<li class="toc-h4 nav-item toc-entry">
+<a class="reference internal nav-link" href="#span-style-color-orange-case-study-span-citing-open-data">
+<span style="color: orange">
+          Case Study:
+         </span>
+         Citing Open Data
+        </a>
+</li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry">
+<a class="reference internal nav-link" href="#id1">
+       Key Takeaways
+      </a>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry">
+<a class="reference internal nav-link" href="#section-3-making-open-data">
+     Section 3: Making Open Data
+    </a>
+<ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry">
+<a class="reference internal nav-link" href="#selecting-data-formats-and-tools-for-interoperability">
+       Selecting Data Formats and Tools for Interoperability
+      </a>
+<ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry">
+<a class="reference internal nav-link" href="#data-format-considerations">
+         Data Format Considerations
+        </a>
+</li>
+<li class="toc-h4 nav-item toc-entry">
+<a class="reference internal nav-link" href="#non-open-data-formats">
+         Non-Open Data Formats
+        </a>
+</li>
+<li class="toc-h4 nav-item toc-entry">
+<a class="reference internal nav-link" href="#open-data-format-examples">
+         Open Data Format Examples
+        </a>
+</li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry">
+<a class="reference internal nav-link" href="#making-the-data-reusable-through-documentation">
+       Making the Data Reusable Through Documentation
+      </a>
+<ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry">
+<a class="reference internal nav-link" href="#adding-documentation-and-metadata-for-reusability">
+         Adding Documentation and Metadata for Reusability
+        </a>
+</li>
+<li class="toc-h4 nav-item toc-entry">
+<a class="reference internal nav-link" href="#metadata-for-humans-and-machines">
+         Metadata: for Humans and Machines
+        </a>
+</li>
+<li class="toc-h4 nav-item toc-entry">
+<a class="reference internal nav-link" href="#why-add-metadata">
+         Why Add Metadata?
+        </a>
+</li>
+<li class="toc-h4 nav-item toc-entry">
+<a class="reference internal nav-link" href="#metadata-tagging-best-practices">
+         Metadata Tagging Best Practices
+        </a>
+</li>
+<li class="toc-h4 nav-item toc-entry">
+<a class="reference internal nav-link" href="#accompanying-documentation">
+         Accompanying Documentation
+        </a>
+</li>
+<li class="toc-h4 nav-item toc-entry">
+<a class="reference internal nav-link" href="#data-versioning-guidelines">
+         Data Versioning Guidelines
+        </a>
+</li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry">
+<a class="reference internal nav-link" href="#making-the-data-reusable-through-licensing">
+       Making the Data Reusable Through Licensing
+      </a>
+<ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry">
+<a class="reference internal nav-link" href="#span-style-color-orange-case-study-span-data-licenses-and-reuse">
+<span style="color:orange">
+          Case Study:
+         </span>
+         Data Licenses and Reuse
+        </a>
+</li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry">
+<a class="reference internal nav-link" href="#id2">
+       Key Takeaways
+      </a>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry">
+<a class="reference internal nav-link" href="#section-4-sharing-open-data">
+     Section 4: Sharing Open Data
+    </a>
+<ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry">
+<a class="reference internal nav-link" href="#data-sharing-process-overview">
+       Data Sharing Process Overview
+      </a>
+</li>
+<li class="toc-h3 nav-item toc-entry">
+<a class="reference internal nav-link" href="#when-and-if-to-share-data">
+       When and If to Share Data
+      </a>
+<ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry">
+<a class="reference internal nav-link" href="#when-to-share-data">
+         When to Share Data?
+        </a>
+</li>
+<li class="toc-h4 nav-item toc-entry">
+<a class="reference internal nav-link" href="#should-the-data-be-shared">
+         Should the Data be Shared?
+        </a>
+</li>
+<li class="toc-h4 nav-item toc-entry">
+<a class="reference internal nav-link" href="#verify-your-data-is-sharable">
+         Verify Your Data is Sharable
+        </a>
+</li>
+<li class="toc-h4 nav-item toc-entry">
+<a class="reference internal nav-link" href="#export-and-security-considerations">
+         Export and Security Considerations
+        </a>
+</li>
+<li class="toc-h4 nav-item toc-entry">
+<a class="reference internal nav-link" href="#controlled-information-considerations">
+         Controlled Information Considerations
+        </a>
+</li>
+<li class="toc-h4 nav-item toc-entry">
+<a class="reference internal nav-link" href="#intellectual-property-considerations">
+         Intellectual Property Considerations
+        </a>
+</li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry">
+<a class="reference internal nav-link" href="#where-to-share-data">
+       Where to Share Data
+      </a>
+<ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry">
+<a class="reference internal nav-link" href="#selecting-a-data-repository">
+         Selecting a Data Repository
+        </a>
+</li>
+<li class="toc-h4 nav-item toc-entry">
+<a class="reference internal nav-link" href="#ensuring-accessibility">
+         Ensuring Accessibility
+        </a>
+</li>
+<li class="toc-h4 nav-item toc-entry">
+<a class="reference internal nav-link" href="#working-with-a-repository">
+         Working with a Repository
+        </a>
+</li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry">
+<a class="reference internal nav-link" href="#how-to-enable-reuse-of-data">
+       How to Enable Reuse of Data
+      </a>
+<ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry">
+<a class="reference internal nav-link" href="#obtaining-a-doi">
+         Obtaining a DOI
+        </a>
+</li>
+<li class="toc-h4 nav-item toc-entry">
+<a class="reference internal nav-link" href="#ensuring-findability">
+         Ensuring Findability
+        </a>
+</li>
+<li class="toc-h4 nav-item toc-entry">
+<a class="reference internal nav-link" href="#making-it-easy-to-cite-your-data">
+         Making it Easy to Cite Your Data
+        </a>
+</li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry">
+<a class="reference internal nav-link" href="#who-is-responsible-for-sharing-data">
+       Who is Responsible for Sharing Data
+      </a>
+</li>
+<li class="toc-h3 nav-item toc-entry">
+<a class="reference internal nav-link" href="#id3">
+       Key Takeaways
+      </a>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry">
+<a class="reference internal nav-link" href="#section-5-from-theory-to-practice">
+     Section 5: From Theory to Practice
+    </a>
+<ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry">
+<a class="reference internal nav-link" href="#writing-an-open-science-and-data-management-plan">
+       Writing an Open Science and Data Management Plan
+      </a>
+</li>
+<li class="toc-h3 nav-item toc-entry">
+<a class="reference internal nav-link" href="#span-style-color-green-activity-1-span-review-a-data-management-plan">
+<span style="color:green">
+        Activity 1:
+       </span>
+       Review a data management plan
+      </a>
+</li>
+<li class="toc-h3 nav-item toc-entry">
+<a class="reference internal nav-link" href="#open-data-communities-and-you">
+       Open Data Communities and You
+      </a>
+<ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry">
+<a class="reference internal nav-link" href="#getting-involved-with-open-data-communities">
+         Getting Involved with Open Data Communities
+        </a>
+</li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry">
+<a class="reference internal nav-link" href="#additional-resources">
+       Additional Resources
+      </a>
+<ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry">
+<a class="reference internal nav-link" href="#resources-for-more-information">
+         Resources for More Information
+        </a>
+</li>
+<li class="toc-h4 nav-item toc-entry">
+<a class="reference internal nav-link" href="#opportunities-for-more-training-about-open-data">
+         Opportunities for More Training About Open Data
+        </a>
+</li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry">
+<a class="reference internal nav-link" href="#id4">
+       Key Takeaways
+      </a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry">
+<a class="reference internal nav-link" href="#summary">
+   Summary
+  </a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<article class="bd-article" role="main">
+<section class="tex2jax_ignore mathjax_ignore" id="day-3-open-data">
+<h1>Day 3: Open Data<a class="headerlink" href="#day-3-open-data" title="Permalink to this heading">#</a></h1>
+<p><strong>By Neuromatch Academy &amp; NASA</strong></p>
+<p><strong>Content creators:</strong> <a class="reference external" href="https://github.com/nasa/Transform-to-Open-Science">NASA TOPS Team</a>, Leanna Kalinowski, Hlib Solodzhuk, Ohad Zivan</p>
+<p><strong>Content reviewers:</strong> Leanna Kalinowski, Hlib Solodzhuk, Ohad Zivan, Shubhrojit Misra, Viviana Greco, Courtney Dean</p>
+<p><strong>Production editors:</strong> Hlib Solodzhuk, Konstantine Tsafatinos, Ella Batty, Spiros Chavlis</p>
+<hr class="docutils"/>
+<section id="tutorial-objectives">
+<h2>Tutorial Objectives<a class="headerlink" href="#tutorial-objectives" title="Permalink to this heading">#</a></h2>
+<p><em>Estimated timing of tutorial: 2 hours</em></p>
+<p>This day focuses on the practice and application of open science for data. It provides a ‘how to’ process for finding and assessing open data for use, for making open data, and for sharing open data. The step-by-step flows are easy to follow and can be used as checklists after you complete the day. Some of the key topics discussed include: data management plans, the process for assessing data for reuse, creating a plan for making data, including choosing open formats and adding documentation, and the considerations for sharing data and making your data citable.</p>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<script type="application/vnd.jupyter.widget-view+json">{"version_major": 2, "version_minor": 0, "model_id": "48370e119c504fc59cf5076f3755c484"}</script></div>
+</div>
+</section>
+<hr class="docutils"/>
+<section id="section-1-introduction-to-open-data">
+<h2>Section 1:  Introduction to Open Data<a class="headerlink" href="#section-1-introduction-to-open-data" title="Permalink to this heading">#</a></h2>
+<p>This section defines open data, its benefits, and the practices that enable data to be open. In addition, the section takes a closer look at how FAIR applies to open data as well as at the critical role of metadata. It wraps up with a brief discussion on how to plan for open data in the scientific workflow and tasks guided by the use, make, share framework.</p>
+<section id="introduction">
+<h3>Introduction<a class="headerlink" href="#introduction" title="Permalink to this heading">#</a></h3>
+<p><strong>Data drives science forward.</strong> Data are stored electronically to enable further analysis and research. Digital technologies integrated into every aspect of modern scientific research have led to the production of large amounts of data.</p>
+<p>Open data is an essential pillar of open science. In many ways, open data is a natural expansion of open science beyond scholarly publications to include digital research outputs. It has since become an integral part of the open science movement as open data allows anyone to see, use, and verify published results. <strong>Open data makes science more accessible, inclusive, and reproducible.</strong> In order to support this, data needs to be made available in formats that others can use, include metadata that describes the data, and provide helpful documentation. When made available, open data enables new discoveries and unforeseen uses.</p>
+</section>
+<section id="definition-and-considerations-of-open-data">
+<h3>Definition and Considerations of Open Data<a class="headerlink" href="#definition-and-considerations-of-open-data" title="Permalink to this heading">#</a></h3>
+<p>Data are <strong>any type of information that is collected, observed, or created in the context of research</strong>. Today, data are increasingly stored electronically in a digital format.</p>
+<p>Data includes:</p>
+<p><strong>Primary (raw) data</strong> – Primary data refers to data that are <strong>directly collected or created by researchers</strong>. Research questions guide the collection of the data. Typically, a researcher will formulate a question, develop a methodology and start collecting the data. Some examples of primary data include:</p>
+<ul class="simple">
+<li><p>Responses to interviews, questionnaires, and surveys.</p></li>
+<li><p>Data acquired from recorded measurements, including remote sensing data.</p></li>
+<li><p>Data acquired from physical samples and specimens form the base of many studies.</p></li>
+<li><p>Data generated from models and simulations.</p></li>
+</ul>
+<p><strong>Secondary &amp; Processed data</strong> – Secondary data typically refers to data that <strong>is used by someone different from who collected or generated the data</strong>. Often, this may include data that has been processed from its raw state to be more readily usable by others.</p>
+<p><strong>Published data</strong> – Published data are the data shared to address a particular scientific study and/or for general use. While published data can overlap with primary and secondary data types, we have “published data” as its own category to emphasize that such datasets are ideally well-documented and easy to use.</p>
+<p><strong>Metadata</strong> – Metadata is a special type of data that <strong>describes other data or objects</strong> (e.g., samples). They are often used to provide a standard set of information about a dataset to enable easy use and interpretation of the data.</p>
+<p>The term open data is defined in the open data handbook from the Open Knowledge Foundation:</p>
+<blockquote>
+<div><p>“Open data are data that can be freely used, reused and redistributed by anyone – subject only, at most, to the requirement to attribute and share alike.”</p>
+</div></blockquote>
+<p><strong>Open Data Handbook from the Open Knowledge Foundation</strong></p>
+<p>When talking about data in the context of this day, we focus on the data that you are preparing to share, such as data affiliated with a scientific publication, regardless of what type that is. While you could share (and many do) laboratory notebooks, preliminary analyses, intermediate data products, drafts of scientific papers, plans for future research, and similar items, these aren’t usually required by funding agencies or institutions and thus won’t be in focus for this day.</p>
+<p>To quote from a <a class="reference external" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9542848/">published paper about data reuse</a>, researchers are mostly looking for data that is “<strong>comprehensive, easy to obtain, easy to manipulate, and believable.</strong>” For these criteria to be fulfilled, the data should:</p>
+<ul class="simple">
+<li><p>Be sufficiently described with appropriate metadata, which greatly affects open data reusability. There is no one-size-fits-all for metadata, as its collection is guided by your data.</p></li>
+<li><p>Have the appropriate license, copyright, and citation information.</p></li>
+<li><p>Have appropriate access to information.</p></li>
+<li><p>Be findable in an accredited or trustworthy resource.</p></li>
+<li><p>Be accompanied by a history of changes and versioning.</p></li>
+<li><p>Include details of all processing steps.</p></li>
+</ul>
+<p>Not all data may be shared or shared with all this information. There are different reasons why it might not be possible. However, the more information shared about data helps increase the reliability and reusability of the information.</p>
+</section>
+<section id="benefits-of-open-data">
+<h3>Benefits of Open Data<a class="headerlink" href="#benefits-of-open-data" title="Permalink to this heading">#</a></h3>
+<p>Data underpins almost all of science. Openly sharing data with others enables reproducibility, transparency, validation, reuse, and collaboration. The impacts of open data include facilitating:</p>
+<blockquote>
+<div><p><strong>Greater Good</strong></p>
+</div></blockquote>
+<p>Data plays a significant role in our day-to-day lives. Open data, in particular, has played a key role. If you pause and think about it, you may realize that open data are not only common in our society, but you might have benefited from and used open data yourself.</p>
+<p>Each country or territory often provides open access to a variety of socioeconomic information about the population, community, and business in its jurisdiction. These data are often called <strong>census survey data, which may include the aggregated statistics of gender, race, ethnicity, education, income, and health data of a community</strong>. These data are often used to understand the composition of a local neighborhood and are critical to inform decisions on resource allocation to ensure the quality of life for the community.</p>
+<p><b><span style="color: orange">Case Study:</span> Open Data Helps Provide Life-Saving Information in the Face of Climate Change</b></p>
+<p>The changing climate poses a significant risk to our daily lives and has been responsible for intensifying drought, increasing flooding, and devastating fire incidents worldwide. Open data are therefore critical in providing life-saving information to adapt to the changing climate and help assess the climate risks where we live. Government agencies have been providing public access to long-term weather and climate information for decades (e.g., National Oceanic Atmospheric Administration in the U.S., UK Met Office, European Centre for Medium-Range Weather Forecasts). A more recent initiative stems from organizations developing value-added open-data products to advise society on the risk of a changing climate. One recent example is the flood and fire risk in the United States developed by a non-profit organization <a class="reference external" href="https://firststreet.org/">First Street Foundation.</a></p>
+<blockquote>
+<div><p><strong>Policy Change</strong></p>
+</div></blockquote>
+<p><b><span style="color: orange">Case Study:</span> Predicting Climate Change Effects in Arctic Communities</b></p>
+<p>Open data can lead to policy change that directly impacts the lives of communities, such as those destined to suffer first from the slow changes to the Arctic. A <a class="reference external" href="https://www.nature.com/articles/s41467-018-07557-4">study</a> in Nature employed <a class="reference external" href="https://www.openstreetmap.org/about">OpenStreetMap</a> data to help produce maps of projected environmental changes in the Arctic. These maps helped emphasize the need for adaptation-based policies at community and regional levels to avoid stagnation of change in light of a sudden and dramatically worsening situation fueled by climate change.</p>
+<blockquote>
+<div><p><strong>Global Emergency Response</strong></p>
+</div></blockquote>
+<p><b><span style="color: orange">Case Study:</span> COVID-19</b></p>
+<p>The COVID-19 pandemic demonstrated to the world, in real time, how the collective movement of researchers sharing their data (such as <a class="reference external" href="https://www.nature.com/articles/d41586-021-00305-7#:~:text=Other%20researchers%20say%20that%20restrictions,while%20protecting%20data%20providers">sharing of
+coronavirus genome data</a>) can lead to an unprecedented number of discoveries in a relatively short amount of time. This directly impacted radical vaccine development efforts and the timely control of the COVID-19 infection. These insights will continue to pay off, with this research spurring future developments.</p>
+<p>Data sharing has many benefits and can aid access to knowledge. However, it is important to consider where the data has come from, who should have a say in its interpretation and use, and how the data can be shared responsibly.</p>
+<blockquote>
+<div><p><strong>Citizen Science</strong></p>
+</div></blockquote>
+<p><b><span style="color: orange">Case Study:</span> Water Quality Testing in Beirut</b></p>
+<p><strong>A citizen scientist is a citizen or amateur scientist who collaborates with professional researchers to help gather or interpret data on a broader spatial and temporal scale than the researchers might be able to achieve on their own.</strong> This outsourcing of responsibility helps members of the public engage in scientific pursuits that ultimately benefit them and allow research to be conducted on a grander scale than that might be possible with only professional researchers. Citizen science is gaining popularity and recognition as a valuable contribution to scientific advancements.</p>
+<p>For example, volunteer citizen scientists in Beirut were recruited from 50 villages to help test water quality (source: <a class="reference external" href="https://idrc-crdi.ca/en/book/contextualizing-openness-situating-open-science">“Contextualizing
+Openness: Situating Open Science”</a>). These volunteers were trained to be able to conduct the tests, and in turn, not only was the data collected to inform the scientific advancements, but the citizen scientists had the opportunity to learn to better manage their water resources and were able to improve conditions, creating a mutually beneficial interaction.</p>
+<blockquote>
+<div><p><strong>Open Data and Equitable Sharing of Knowledge</strong></p>
+</div></blockquote>
+<p>Free distribution of knowledge increases participation in science. Open data are central to fostering science that is inclusive and diverse, with direct and relevant benefits to impacted individuals and communities. This integration with communities is particularly important in the mission towards the equitable sharing of knowledge.</p>
+<p>In a research ecosystem where knowledge is a commodity, with the main currency in the form of published papers and hoarded datasets, exclusion from research can limit scientific progress and negatively impact community outcomes. Those excluded from traditional science resources are often from low and lower-middle-income countries. Opening our data in an inclusive and easily reusable way is one step toward the purposeful inclusion of underrepresented groups in science.</p>
+<p><b><span style="color: orange">Case Study:</span> Recognition and Compensation for the Work of African Ebola Researchers</b></p>
+<p>During the West African Ebola outbreak from 2014-2016, West African researchers actively worked to collect blood sample data to better understand the Ebola virus and to help put a stop to the rapid spread of the virus. However, most of the blood samples were sent overseas to the US and Europe, where researchers used those data samples to author papers about Ebola. According to the paper <a class="reference external" href="https://www.nature.com/articles/d41586-019-02258-4">“Science under fire: Ebola researchers fight to test drugs and vaccines in a war zone”</a>, “This frustrated researchers in the countries ravaged by the virus, who had hoped that studying aspects of the epidemic would strengthen their ability to respond to future infectious- disease outbreaks.”</p>
+<p>By fostering a global research culture of transparency and validation, where the work of underrepresented groups is celebrated and compensated, we will create a sustainable model that ensures under-represented communities (such as women, under-represented communities, indigenous scholars, non-Anglophone scholars) a voice in how the global and nuanced narrative of science is developed.</p>
+<p>Open data, that are purposefully inclusive and open to scrutiny, benefit scientific innovation by allowing for a <strong>more diverse and robust scientific process that draws from multiple perspectives</strong>. This openness also allows for the <strong>early identification of mistaken insights</strong> as well as <strong>early intervention for unforeseen harm to impacted communities</strong>.</p>
+<p>Open data allows non-traditional researchers to contribute to scientific development and bring their unique insights to the table. With these benefits in mind, we should always bear in mind that Open Data requires careful consideration of its potential downsides that result from failure to provide due credit and consultation with potentially vulnerable and/or marginalized communities. The next section “Using Open Data” discusses important considerations for the responsible management, collection, and use of open data by all stakeholders.</p>
+</section>
+<section id="benefits-to-you">
+<h3>Benefits to You<a class="headerlink" href="#benefits-to-you" title="Permalink to this heading">#</a></h3>
+<p>Open data also benefits your research and career. For starters, you are your own future collaborator!</p>
+<p>Doing open science not only lets other people understand and reproduce your results, but lets you do so as well! Implementing open science principles like good documentation and version control helps you, potential collaborators, and everyone else to understand your results. <strong>In 2 hours, 2 weeks, or 2 years, you will still be able to understand what you did.</strong></p>
+<p>Specific benefits of opening data for you as an individual:</p>
+<ul class="simple">
+<li><p>You will never lose access to your previous work, no matter what institute you are affiliated with. Many researchers move around institutions and organizations and by having your data publicly accessible in repositories, you will always have access to them.</p></li>
+<li><p>Your data can be cited and you will get credit.</p></li>
+<li><p><strong>Publications that include links to data are cited more</strong>, according to a 2020 <a class="reference external" href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0230416">study.</a></p></li>
+</ul>
+<p>Implementing best practices for open science can strengthen your funding proposals. Funding agencies are realizing that openly sharing research provides more return on their investment. Well-documented research products also demonstrate the quality of your work, which helps with public communication and can also attract quality collaborators. Everybody prefers to work with people who are reliable and do a good job.</p>
+</section>
+<section id="challenges-of-open-data">
+<h3>Challenges of Open Data<a class="headerlink" href="#challenges-of-open-data" title="Permalink to this heading">#</a></h3>
+<p>While open data has many benefits, there can also be challenges to its creation and use. Throughout this day, we discuss many of these challenges and possible solutions. In this section, we discuss a few of the most common concerns along with actions to mitigate them.</p>
+<p><b><span style="color: orange">Case Study:</span> Are There Any Harms to Open Data?</b></p>
+<p>Open data has been demonstrated to further marginalize or exploit small-scale and community-driven initiatives, such as in <a class="reference external" href="https://thebulletin.org/2022/05/how-a-dispute-over-sharing-coronavirus-genomes-is-threatening-a-vital-tool-for-tracking-variants/">the case</a> of African researchers neither receiving due credit nor compensation for their genome sequencing during the COVID-19 pandemic. This is further explored in the next section as we introduce ways of mitigating harms that could happen via unthoughtful and irresponsible sharing of data.</p>
+<section id="restrictions-on-sharing-data">
+<h4>Restrictions on Sharing Data<a class="headerlink" href="#restrictions-on-sharing-data" title="Permalink to this heading">#</a></h4>
+<p>Some data should only be shared very carefully or not at all. Reasons not to share can include:</p>
+<ul class="simple">
+<li><p>Data includes a country’s military secrets or violations of national interests.</p></li>
+<li><p>Data includes private medical information or an individual’s personally identifiable data.</p></li>
+<li><p>Indigenous/cultural/conservation concerns.</p></li>
+<li><p>Data includes intellectual property.</p></li>
+</ul>
+<p>It is important to be familiar with the policies around the sharing of your data and policies from your funding agency, institution, or laws around data protection. These are further discussed in later days.</p>
+</section>
+</section>
+<section id="applying-fair-principles">
+<h3>Applying FAIR Principles<a class="headerlink" href="#applying-fair-principles" title="Permalink to this heading">#</a></h3>
+<a class="reference internal image-reference" href="https://github.com/neuromatch/nasa-open-science/blob/main/tutorials/W1D3_OpenData/static/image9.png?raw=true"><img alt="FAIR Principles Illustration." src="https://github.com/neuromatch/nasa-open-science/blob/main/tutorials/W1D3_OpenData/static/image9.png?raw=true" style="width: 600px;"/></a>
+<p><em>Image by Patrick Hochstenbach, CC0 1.0; image illustrates each FAIR principle</em></p>
+<p>The vast majority of data today is shared online. Although FAIR has been introduced in Day 2, Section 3, some additional details are provided below. FAIR principles help researchers make better use of, and engage with a broader audience with, their scientific data than outdated techniques would allow. <strong>FAIR data are more valuable for science because they are easier to use.</strong> Data can be FAIR regardless of whether it is openly shared or not. If data are openly shared, being FAIR helps with reuse and expands the scientific impact of the data.</p>
+<p>FAIR principles don’t encompass comprehensive implementation instructions for every type of data but offer general insights to improve shareability and reusability. Sometimes, it takes a group effort and/or a long production process to make data and results FAIR. The process starts in the planning stage of a research project. A well-coordinated open science and data management plan is often needed for full compliance with FAIR, depending on the size and type of project the data are used for.</p>
+<p>Up-to-date information about FAIR Principles can be found at the <a class="reference external" href="https://www.go-fair.org/">GO FAIR Initiative website</a>.</p>
+<section id="metadata-s-central-role-in-applying-fair">
+<h4>Metadata’s Central Role in Applying FAIR<a class="headerlink" href="#metadata-s-central-role-in-applying-fair" title="Permalink to this heading">#</a></h4>
+<p>Metadata is <strong>important for search engines to find data</strong> and for people to be able to easily compare what is returned.</p>
+<ul class="simple">
+<li><p>Metadata is essential to the implementation of FAIR Principles and enables the data to be used by machines in an automated fashion.</p></li>
+<li><p>The richer and more self-describing metadata are, the better they will be handled by anyone who is interested in your data.</p></li>
+</ul>
+</section>
+<section id="licensing-data">
+<h4>Licensing Data<a class="headerlink" href="#licensing-data" title="Permalink to this heading">#</a></h4>
+<p>A license is a legal document that tells users how they can use a particular dataset. <strong>If you don’t license your dataset, others can’t/shouldn’t re-use it - even if you want them to!</strong> It is imperative to understand the licensing conditions of a dataset before data reuse. Without a good understanding of what a license allows, data users may run into copyright infringement or other intellectual property issues.</p>
+<p>To ensure open reuse of your data, you can use an open license. An open license has language that describes the user’s ability to access, reuse, and redistribute the dataset. There are many types of data licenses that are open to varying degrees, and these will be discussed further in the section “Making Open Data”.</p>
+</section>
+</section>
+<section id="planning-for-openness-using-the-use-make-share-framework-for-open-data">
+<h3>Planning for Openness: Using the Use, Make, Share Framework for Open Data<a class="headerlink" href="#planning-for-openness-using-the-use-make-share-framework-for-open-data" title="Permalink to this heading">#</a></h3>
+<section id="open-science-and-data-management-plans">
+<h4>Open Science and Data Management Plans<a class="headerlink" href="#open-science-and-data-management-plans" title="Permalink to this heading">#</a></h4>
+<p>A best practice when beginning your open data journey is to create a Data Management Plan, or DMP which goes within the OSDMP. This describes how you will manage, preserve, and release data, during and after a research project. Common elements of DMPs relevant to open data include a description of the following:</p>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p></p></th>
+<th class="head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>What?</p></td>
+<td><p>Data types, volume, formats, and (where relevant) standards.</p></td>
+</tr>
+<tr class="row-odd"><td><p>When?</p></td>
+<td><p>The schedule for data archiving and sharing.</p></td>
+</tr>
+<tr class="row-even"><td><p>Where?</p></td>
+<td><p>The intended repositories for archived data.</p></td>
+</tr>
+<tr class="row-odd"><td><p>How?</p></td>
+<td><p>How the plan enables long- term preservation of the data.</p></td>
+</tr>
+<tr class="row-even"><td><p>Who?</p></td>
+<td><p>Roles and responsibilities of the team members in implementing the DMP.</p></td>
+</tr>
+</tbody>
+</table>
+<p>Investigate if your home institution or funding source has guidance, standards, or templates for DMPs. Other organizations have DMP guidelines and examples as well:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://www.usgs.gov/data-management/data-management-plans">USGS</a></p></li>
+<li><p><a class="reference external" href="https://marinedebris.noaa.gov/sites/default/files/DataManagementPlanGuidance%26Sample.pdf">NOAA</a></p></li>
+<li><p><a class="reference external" href="https://new.nsf.gov/funding/data-management-plan">NSF</a></p></li>
+</ul>
+<p>More details about how to create these plans will be provided in the section “From Theory to Practice”.</p>
+</section>
+<section id="scientific-workflow">
+<h4>Scientiﬁc Workﬂow<a class="headerlink" href="#scientific-workflow" title="Permalink to this heading">#</a></h4>
+<p>There are a variety of scientific workflow models that explain open science. Data plays a central role in the scientific workflow, where users can propose to create new data, collect and package their data during their project, then archive it for long-term storage/use/reuse.</p>
+<p>For this curriculum, we use the workflow model from <a class="reference external" href="https://opensciency.github.io/sprint-content/open-results/lesson1-research-process-and-results.html#what-research-objects-are-commonly-associated-with-research-stages">Opensciency</a>. It is used to illustrate that regardless of the workflow model you use, the adoption of open data is performed throughout the entire workflow and production of associated deliverables.</p>
+<p>If your project is already in progress, it is a good idea to update future data releases to adhere to open data principles as much as possible. <strong>For new projects, your proposals should include creating open data from the start of your project.</strong></p>
+<a class="reference internal image-reference" href="https://github.com/neuromatch/nasa-open-science/blob/main/tutorials/W1D3_OpenData/static/image10.jpeg?raw=true"><img alt="Scientific workflow." src="https://github.com/neuromatch/nasa-open-science/blob/main/tutorials/W1D3_OpenData/static/image10.jpeg?raw=true" style="width: 600px;"/></a>
+<p>In this curriculum, content is organized by how you might use it, make it, and share it. Part of doing open science is building on others’ materials (using), creating materials yourself (making), and sharing those so others can use those results (sharing). The tutorials are all organized around these steps in the scientific workflow.</p>
+<p>The “Use, Make, Share” framework categorizes the tasks commonly used in the practice of open science.</p>
+<a class="reference internal image-reference" href="https://github.com/neuromatch/nasa-open-science/blob/main/tutorials/W1D3_OpenData/static/image11.png?raw=true"><img alt="Use, Make, Share for Data." src="https://github.com/neuromatch/nasa-open-science/blob/main/tutorials/W1D3_OpenData/static/image11.png?raw=true" style="width: 600px;"/></a>
+</section>
+<section id="roles-in-use-make-share">
+<h4>Roles in Use, Make, Share<a class="headerlink" href="#roles-in-use-make-share" title="Permalink to this heading">#</a></h4>
+<p>Individuals interacting with data at various points in the scientific workflow can take on different roles. It is possible that these roles can overlap depending on project requirements, the size of your team, and even funding. All should be using open data principles to perform their tasks. Generally, roles include:</p>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p></p></th>
+<th class="head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Data Users</p></td>
+<td><p>Data users primarily discover, assess, and utilize data in research projects.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Data Makers (Data Providers)</p></td>
+<td><p>Data makers often process data collected by a project/activity and package it according to open science principles.</p></td>
+</tr>
+<tr class="row-even"><td><p>Data Shares (Data Publishers)</p></td>
+<td><p>Data sharers bear the responsibility of disseminating and building awareness of the data to the public.</p></td>
+</tr>
+</tbody>
+</table>
+<p>Making data open (and FAIR) is a group effort – everybody in the data pipeline has a role to play.</p>
+</section>
+</section>
+<section id="key-takeaways">
+<h3>Key Takeaways<a class="headerlink" href="#key-takeaways" title="Permalink to this heading">#</a></h3>
+<p>In this section, you learned:</p>
+<ul class="simple">
+<li><p>Open data is an essential pillar of open science. Openly sharing data with others enables reproducibility, transparency, validation, reuse, and collaborations.</p></li>
+<li><p>Several challenges to creating open data exist, but most have straightforward mitigation measures.</p></li>
+<li><p>FAIR principles can be applied to data to make them more open.</p></li>
+<li><p>Open-data principles and tasks are used throughout the entire scientific workflow.</p></li>
+</ul>
+</section>
+</section>
+<hr class="docutils"/>
+<section id="section-2-using-open-data">
+<h2>Section 2: Using Open Data<a class="headerlink" href="#section-2-using-open-data" title="Permalink to this heading">#</a></h2>
+<p>In this section, you will learn how to discover, assess, and cite an open data set. You start by exploring repositories and learning about the issues and considerations for searching datasets. You then learn how to determine if the dataset is suitable for your use by <strong>learning what to review in documentation, licenses, and file formats</strong>. The section wraps up with a discussion about the importance of citing the datasets and how to read and follow citation instructions.</p>
+<p>Open data isn’t always simple to use in your research. Sometimes, there are multiple versions of the same dataset, so learning how to discover and assess and then use open data will help you save time.</p>
+<p>As an example, look at the monthly average carbon dioxide data from Mauna Loa Observatory in Hawaii. This is a foundational dataset for climate change. Not only is it one of the first observational datasets that clearly showed anthropogenic impacts on the Earth’s atmosphere, it constitutes the longest record of direct measurements of carbon dioxide in the atmosphere. These observations were started by C. David Keeling of the Scripps Institution of Oceanography in March 1958 at a facility of the National Oceanic and Atmospheric Administration [Keeling, 1976].</p>
+<a class="reference internal image-reference" href="https://github.com/neuromatch/nasa-open-science/blob/main/tutorials/W1D3_OpenData/static/image19.jpeg?raw=true"><img alt="Mauna Loa carbon dioxide data." src="https://github.com/neuromatch/nasa-open-science/blob/main/tutorials/W1D3_OpenData/static/image19.jpeg?raw=true" style="width: 600px;"/></a>
+<p>If you want to make this figure yourself, or use the data for some other purpose, first you will want to find the data. If you search for this dataset, or any data, chances are that you will find a number of different sources. How do you decide which data to use?</p>
+<p>If you start with Google and search for “Mauna Loa carbon dioxide data,” you will find a lot of results. Here are just some of them:</p>
+<a class="reference internal image-reference" href="https://github.com/neuromatch/nasa-open-science/blob/main/tutorials/W1D3_OpenData/static/image20.png?raw=true"><img alt="Websites containing Mauna Loa carbon dioxide data." src="https://github.com/neuromatch/nasa-open-science/blob/main/tutorials/W1D3_OpenData/static/image20.png?raw=true" style="width: 600px;"/></a>
+<p>How do you decide which one to use? In this section, we will cover how to find, assess relevance, and use open data.</p>
+<section id="discovering-open-data">
+<h3>Discovering Open Data<a class="headerlink" href="#discovering-open-data" title="Permalink to this heading">#</a></h3>
+<p>Open data can be discovered by accessing <strong>data repositories, search portals, and publications</strong>. A wide variety of these resources are available. A key step is identifying the appropriate search terms for your application. Learning community-specific nomenclature and standards can accelerate your search.</p>
+<section id="where-to-start-your-search">
+<h4>Where to Start Your Search<a class="headerlink" href="#where-to-start-your-search" title="Permalink to this heading">#</a></h4>
+<p>There are multiple pathways to find research data, and you should be practiced in all of them.</p>
+<a class="reference internal image-reference" href="https://github.com/neuromatch/nasa-open-science/blob/main/tutorials/W1D3_OpenData/static/image21.png?raw=true"><img alt="Data sources." src="https://github.com/neuromatch/nasa-open-science/blob/main/tutorials/W1D3_OpenData/static/image21.png?raw=true" style="width: 600px;"/></a>
+</section>
+<section id="people-you-know-online-or-in-person">
+<h4>People You Know (Online or In-person!)<a class="headerlink" href="#people-you-know-online-or-in-person" title="Permalink to this heading">#</a></h4>
+<p>What is the first and best way to find research data? <strong>Ask your community, including your research advisor, colleagues, team members, and people online.</strong> Knowing where to find reliable, good data is as much a skill and art as any lab technique. You learn this skill set by working with professionals in your field. There is no one source, no one method.</p>
+</section>
+<section id="publications">
+<h4>Publications<a class="headerlink" href="#publications" title="Permalink to this heading">#</a></h4>
+<p>Datasets are often <strong>attached to scholarly publications in the form of supplementary material</strong>. Publication search engines can enable the discovery of relevant publications that you can then use to find data from a particular publication.</p>
+</section>
+<section id="data-search-portals">
+<h4>Data Search Portals<a class="headerlink" href="#data-search-portals" title="Permalink to this heading">#</a></h4>
+<p>Data can also be found utilizing a wide variety of search portals, including:</p>
+<blockquote>
+<div><p><strong>Generic data search portals</strong></p>
+</div></blockquote>
+<p>Generic data search portals enable discovery of a wide variety of data. Not built for specific disciplines, they serve a broader audience. This type of search portal collects and makes data findable. <strong>They are not sources of scientific data. These are aggregation services that emphasize quantity, not necessarily quality.</strong> This is where citizen scientists often go to find data, and it’s <strong>a great way for non-professionals to get involved in science</strong>.</p>
+<p>Examples include:</p>
+<ul>
+<li><a href="https://datasetsearch.research.google.com/">Google</a></li>
+<li><a href="https://www.kaggle.com/datasets">Kaggle</a></li>
+<li><a href="https://www.wikidata.org/wiki/Wikidata:Main_Page">Wikidata</a></li>
+<li><a href="https://www.opendatanetwork.com/">Open Data Network</a></li>
+<li><a href="https://github.com/awesomedata/awesome-public-datasets#readme">Awesome Public Datasets</a></li>
+</ul>
+<blockquote>
+<div><p><strong>Discipline-specific data search portals</strong></p>
+</div></blockquote>
+<p>Discipline-specific data search portals enable the discovery of <b>specific types of data</b>. They generally are tailored to meet their community’s needs.</p>
+<p>Examples include:</p>
+<ul>
+<li><a href="https://www.earthdata.nasa.gov/">NASA Earthdata</a></li>
+<li><a href="https://opendata.cern.ch/">CERN</a></li>
+<li><a href="https://www.ncbi.nlm.nih.gov/">NCBI National Center for Biotechnology Information</a></li>
+<li><a href="https://www.ebi.ac.uk/">EMBL's European Bioinformatics Institute</a></li>
+<li><a href="https://www.icpsr.umich.edu/web/pages">ISPCR</a></li>
+<li><a href="https://www.ncdc.noaa.gov/cdo-web/datasets">NOAA Climate Data Online</a></li>
+<li><a href="https://earthexplorer.usgs.gov/">USGS EarthExplorer</a></li>
+<li><a href="https://www.opensciencedatacloud.org/">Open Science Data Cloud (OSDC)</a></li>
+</ul>
+<blockquote>
+<div><p><strong>National and international data search portals</strong></p>
+</div></blockquote>
+<p>National and international data search portals enable discovery of <b>data produced by or funded by national and international organizations.</b></p>
+<p>Examples include:</p>
+<ul>
+<li><a href="https://data.gov/">US Federal data</a></li>
+<li><a href="https://data.europa.eu/en">EU Data Portal</a></li>
+<li><a href="https://apps.who.int/gho/data/node.home">WHO</a></li>
+<li><a href="https://data.worldbank.org/">The World Bank</a></li>
+<li><a href="https://www.data.gov.uk/">data.gov.uk</a></li>
+<li><a href="https://data.unicef.org/">UNICEF</a></li>
+<li><a href="https://www.data.gouv.fr/en/">Open Platform for French Public Data</a></li>
+</ul>
+</section>
+<section id="repositories">
+<h4>Repositories<a class="headerlink" href="#repositories" title="Permalink to this heading">#</a></h4>
+<p>A common way to share and find open data is through data repositories. Many repositories host open data with persistent identifiers, clear licenses and citation guidelines, and standard metadata.</p>
+<p>Note that some of our example search portals are also repositories, but not always. Some of the search portals are simply catalogs of information about the data rather than storage locations for the data themselves.</p>
+<blockquote>
+<div><p><strong>General repositories</strong></p>
+</div></blockquote>
+<p>General repositories are not designed for a specific community and are accessible to everyone.</p>
+<p>Examples include:</p>
+<ul>
+<li><a href="https://zenodo.org/">Zenodo</a></li>
+<li><a href="https://data.mendeley.com/">Mendeley Data</a></li>
+<li><a href="https://figshare.com/">Figshare</a></li>
+<li><a href="https://datadryad.org/stash">Dryad</a></li>
+</ul>
+<p>See the <a href="https://fairsharing.org/collection/GeneralRepositoryComparison">Generalist Repository Comparison Chart</a> – a tool for additional repositories and guidance. Dataverse has also published a <a href="https://dataverse.org/blog/comparative-review-various-data-repositories">comparative review</a> of eight data repositories.</p>
+<blockquote>
+<div><p><strong>Domain-specific repositories</strong></p>
+</div></blockquote>
+<p>Specialized repositories (typically for specific data subject matter) provide support and information on required standards for metadata and more.</p>
+<p>Some examples are:</p>
+<ul>
+<li><a href="https://openneuro.org/">OpenNeuro: Open access platform for validating and sharing BIDS-compliant MRI, PET, MEG, EEG, and iEEG data</a></li>
+<li><a href="https://fcon_1000.projects.nitrc.org/">FCP/INDI: Functional Connectomes Project / International Neuroimaging Data-sharing Initiative</a></li>
+<li><a href="https://nda.nih.gov/abcd">ABCD Study: Adolescent Brain Cognitive Development Study Data Repository</a></li> </ul>
+<blockquote>
+<div><p><strong>Institutional repositories</strong></p>
+</div></blockquote>
+<p>Many universities and organizations support research data and software management with repositories, known as institutional repositories, to aid their researchers with compliance requirements.</p>
+<blockquote>
+<div><p><strong>National repositories</strong></p>
+</div></blockquote>
+<p>National repositories aggregate data and make it available to the public. Data stored in these repositories are often produced by the government.</p>
+<p>Examples include:</p>
+<ul>
+<li><a href="https://snd.se/en">Sweden</a></li>
+<li><a href="https://data.europa.eu/en">European Union</a></li>
+<li><a href="https://www.naa.gov.au">Australia</a></li>
+</ul>
+</section>
+<section id="challenges-with-data-repositories">
+<h4>Challenges with Data Repositories<a class="headerlink" href="#challenges-with-data-repositories" title="Permalink to this heading">#</a></h4>
+<ul class="simple">
+<li><p>Any single repository, search engine or publication search will not have access to all available open data.</p></li>
+<li><p>Search terms may not be consistent across sources or fields of science.</p></li>
+<li><p>It is essential to become familiar with the standard nomenclatures and appropriate metadata terms for your application.</p></li>
+<li><p>There is no sure-fire recipe. You may have to try numerous terms and data sources before finding relevant data.</p></li>
+</ul>
+</section>
+</section>
+<section id="assessing-open-data">
+<h3>Assessing Open Data<a class="headerlink" href="#assessing-open-data" title="Permalink to this heading">#</a></h3>
+<a class="reference internal image-reference" href="https://github.com/neuromatch/nasa-open-science/blob/main/tutorials/W1D3_OpenData/static/image24.png?raw=true"><img alt="Questions for evaluating open data." src="https://github.com/neuromatch/nasa-open-science/blob/main/tutorials/W1D3_OpenData/static/image24.png?raw=true" style="width: 600px;"/></a>
+<p>Using open data for your project is contingent on a number of factors including quality of data, access and reuse conditions, data findability, and more. A few essential elements that enable you to assess the relevance and usability of datasets include (adapted from the <a class="reference external" href="https://aims.gitbook.io/open-data-mooc/unit-3-using-open-data/lesson-2.2-quality-and-provenance">GODAN Action Open Data course</a>):</p>
+<p><strong>Practical Questions</strong></p>
+<ul class="simple">
+<li><p>Is the data well described?</p></li>
+<li><p>Is the reason the data is collected clear? Is the publisher’s use for the data clear?</p></li>
+<li><p>Are any other existing uses of the data outlined?</p></li>
+<li><p>Is the data accessible?</p></li>
+<li><p>Is the data timestamped or up to date?</p></li>
+<li><p>Will the data be available for at least a year?</p></li>
+<li><p>Will the data be updated regularly?</p></li>
+<li><p>Is there a quality control process?</p></li>
+</ul>
+<p><strong>Technical Questions</strong></p>
+<ul class="simple">
+<li><p>Is the data available in a format appropriate for the content?</p></li>
+<li><p>Is the data available from a consistent location?</p></li>
+<li><p>Is the data well-structured and machine-readable?</p></li>
+<li><p>Are complex terms and acronyms in the data defined?</p></li>
+<li><p>Does the data use a schema or data standard?</p></li>
+<li><p>Is there an API available for accessing the data?</p></li>
+<li><p>What tools or software are needed to use this data?</p></li>
+</ul>
+<p><strong>Social Questions</strong></p>
+<ul class="simple">
+<li><p>Is there an existing community of users of the data?</p></li>
+<li><p>Is the data already relied upon by large numbers of people?</p></li>
+<li><p>Is the data officially supported?</p></li>
+<li><p>Are service level agreements available for the data?</p></li>
+<li><p>It is clear who maintains and can be contacted about the data?</p></li>
+</ul>
+<p>Many of these questions may be answered by viewing a dataset’s documentation and metadata, as well as a data’s format and license, all of which will be discussed further in the next section “Making Data Open”.</p>
+</section>
+<section id="using-open-data">
+<h3>Using Open Data<a class="headerlink" href="#using-open-data" title="Permalink to this heading">#</a></h3>
+<section id="review-citing-guidelines">
+<h4>Review Citing Guidelines<a class="headerlink" href="#review-citing-guidelines" title="Permalink to this heading">#</a></h4>
+<p>Many datasets and repositories explain how they’d prefer to be cited. The citation information often includes:</p>
+<ul class="simple">
+<li><p>Authors and their institutions</p></li>
+<li><p>Title</p></li>
+<li><p>ORCID</p></li>
+<li><p>DOI</p></li>
+<li><p>Version</p></li>
+<li><p>URL</p></li>
+<li><p>Creation date</p></li>
+<li><p>Additional fields may also be specified</p></li>
+</ul>
+<a class="reference internal image-reference" href="https://github.com/neuromatch/nasa-open-science/blob/main/tutorials/W1D3_OpenData/static/image25.jpeg?raw=true"><img alt="Example of data citation." src="https://github.com/neuromatch/nasa-open-science/blob/main/tutorials/W1D3_OpenData/static/image25.jpeg?raw=true" style="width: 300px;"/></a>
+<p><em>This is an example of a simple CITATION.cff file. Source: <a class="reference external" href="https://github.com/">GitHub</a></em></p>
+<p>Most datasets require (at a minimum) that you list the data’s producers, name of the archive hosting the data, dataset name, dataset date, and DOI when citing data.</p>
+</section>
+<section id="span-style-color-orange-case-study-span-citing-open-data">
+<h4><span style="color: orange">Case Study:</span> Citing Open Data<a class="headerlink" href="#span-style-color-orange-case-study-span-citing-open-data" title="Permalink to this heading">#</a></h4>
+<p><strong>Example from Global Carbon Budget 2019</strong></p>
+<p>Global Carbon Project. (2019). Supplemental data of Global Carbon Budget 2019 (Version 1.0) [Data set]. Global Carbon Project. https://doi.org/10.18160/gcp-2019</p>
+<p><strong>Example from CRCNS - Collaborative Research in Computational
+Neuroscience</strong></p>
+<p>Ranulfo Romo, Carlos D. Brody, Adrián Hernández, and Luis Lemus. (2016). Single-neuron spike train recordings from macaque prefrontal cortex during a somatosensory working memory task. CRCNS.org. http://dx.doi.org/10.6080/K0V40S4D</p>
+</section>
+</section>
+<section id="id1">
+<h3>Key Takeaways<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h3>
+<p>The following are the key takeaways from this section:</p>
+<ul class="simple">
+<li><p>Relevant data may be found in a variety of locations and may require some trial and error to find.</p></li>
+<li><p>Carefully assess data before using it for your project.</p></li>
+<li><p>Data citation is important when using data.</p></li>
+</ul>
+</section>
+</section>
+<hr class="docutils"/>
+<section id="section-3-making-open-data">
+<h2>Section 3: Making Open Data<a class="headerlink" href="#section-3-making-open-data" title="Permalink to this heading">#</a></h2>
+<p>In this section, you learn the criteria and tasks needed to ensure that the datasets you make are open and reusable. The section starts with topics on selecting open data formats and how to include metadata, README files, and version control for your data. It wraps up with a discussion on open licenses for data.</p>
+<section id="selecting-data-formats-and-tools-for-interoperability">
+<h3>Selecting Data Formats and Tools for Interoperability<a class="headerlink" href="#selecting-data-formats-and-tools-for-interoperability" title="Permalink to this heading">#</a></h3>
+<section id="data-format-considerations">
+<h4>Data Format Considerations<a class="headerlink" href="#data-format-considerations" title="Permalink to this heading">#</a></h4>
+<p>Preferred data formats are <strong>community supported, machine-readable, non-proprietary, modifiable, and open</strong>. It might seem like there are as many data formats as there are different types of data. When you think about selecting a data format, consider the following:</p>
+<ul class="simple">
+<li><p>Is the format compatible with your data type, shape, and size?</p></li>
+<li><p>Does the data format have adequate metadata support?</p></li>
+<li><p>Are there tools readily available or any specialized tools are required for reading the data format?</p></li>
+<li><p>Is the data format routinely used in your field? Community standards ensure compatibility, interoperability, and ease of use when exchanging or sharing data among researchers or organizations of the same community.</p></li>
+</ul>
+<a class="reference internal image-reference" href="https://github.com/neuromatch/nasa-open-science/blob/main/tutorials/W1D3_OpenData/static/image31.png?raw=true"><img alt="Data format considerations." src="https://github.com/neuromatch/nasa-open-science/blob/main/tutorials/W1D3_OpenData/static/image31.png?raw=true" style="width: 500px;"/></a>
+<p>Investigate if your funding agency, institutions, and/or data repository has additional requirements for or guidance on data formats.</p>
+</section>
+<section id="non-open-data-formats">
+<h4>Non-Open Data Formats<a class="headerlink" href="#non-open-data-formats" title="Permalink to this heading">#</a></h4>
+<p>A non-open (unsupported and closed/proprietary) data format refers to a file format that is not freely accessible, standardized, or widely supported by different software applications. Here are some examples of closed/proprietary data formats:</p>
+<ul class="simple">
+<li><p><strong>Adobe Photoshop (.psd):</strong> The default proprietary file format for Adobe Photoshop, a popular image editing software.</p></li>
+<li><p><strong>AutoCAD Drawing (.dwg):</strong> A proprietary data format used for computer-aided design (CAD).</p></li>
+</ul>
+<p>Software applications that can read but not create DOC, PSD, or DWG formatted data usually do not fully support all the features, layers, specifications, and inner workings of the original file.</p>
+<p>Some challenges of using data in non-open formats include:</p>
+<ul class="simple">
+<li><p>Trouble opening the file due to compatibility issues.</p></li>
+<li><p>The need to install additional software or converters, leading to frustration and inconvenience.</p></li>
+<li><p>Initial setback dampens the enthusiasm for using your data.</p></li>
+<li><p>Converting the data to a universal format can lead to unique formatting or features that do not translate well, making the data lose part of its value.</p></li>
+<li><p>New open-data policies can limit the sharing of proprietary data as it is often non-compatible with the concept of easy distribution.</p></li>
+</ul>
+</section>
+<section id="open-data-format-examples">
+<h4>Open Data Format Examples<a class="headerlink" href="#open-data-format-examples" title="Permalink to this heading">#</a></h4>
+<p>Some examples of open data formats include:</p>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p></p></th>
+<th class="head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Comma Separated Values (CSV)</p></td>
+<td><p>For simplicity, readability, compatibility, easy data exchange.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Hierarchical Data Format (HDF)</p></td>
+<td><p>For efficient storing and retrieving data, compression, multi-dimensional support.</p></td>
+</tr>
+<tr class="row-even"><td><p>Network Common Data Form (NetCDF)</p></td>
+<td><p>For self-describing and portability, efficient data subsetting (extract specific portions of large datasets), standardization and interoperability.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Investigation-Study- Assay (ISA) model for life science studies</p></td>
+<td><p>For structured data organization, data integration and interoperability among experiments, reproducibility and transparency.</p></td>
+</tr>
+<tr class="row-even"><td><p>Flexible Image Transport System (FITS)</p></td>
+<td><p>As a standard for astronomical data, flexible and extensible metadata and image headers, efficient data compression and archiving of large datasets.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Common Data Format (CDF)</p></td>
+<td><p>For self-describing format readable across multiple operating systems, programming languages, and software environments, multidimensional data, and metadata inclusion.</p></td>
+</tr>
+<tr class="row-even"><td><p>Microsoft Word (.doc/.docx)</p></td>
+<td><p>A proprietary file format used to store word processing data.</p></td>
+</tr>
+</tbody>
+</table>
+<p>By embracing open standards, authors can avoid unnecessary barriers and maximize their chances of making data useful to their communities.</p>
+</section>
+</section>
+<section id="making-the-data-reusable-through-documentation">
+<h3>Making the Data Reusable Through Documentation<a class="headerlink" href="#making-the-data-reusable-through-documentation" title="Permalink to this heading">#</a></h3>
+<section id="adding-documentation-and-metadata-for-reusability">
+<h4>Adding Documentation and Metadata for Reusability<a class="headerlink" href="#adding-documentation-and-metadata-for-reusability" title="Permalink to this heading">#</a></h4>
+<p>Metadata and data documentation describe data so that we and others can use and better understand data. While metadata and documentation are related, there is an important distinction. <strong>Metadata are structured, standardized, and machine-readable. Documentation is unstructured and can be any format (often a text file that accompanies the data).</strong></p>
+<p>To better understand documentation and metadata, let’s take an example of an online recipe. Many online recipes start with a long description and history of the recipe, and perhaps cooking or baking tips for the dish, before listing ingredients and step-by-step cooking instructions.</p>
+<ul class="simple">
+<li><p>The ingredients and instructions are like metadata. They can be indexed and searched via Google and other search engines.</p></li>
+<li><p>The descriptive text that includes background and context for the recipe are like documentation. They are more free-form, and not standardized.</p></li>
+</ul>
+<p>We already discussed metadata earlier in this module, but it’s important enough that we will repeat ourselves a little bit! We will also discuss other types of documentation, like README files.</p>
+</section>
+<section id="metadata-for-humans-and-machines">
+<h4>Metadata: for Humans and Machines<a class="headerlink" href="#metadata-for-humans-and-machines" title="Permalink to this heading">#</a></h4>
+<p>Metadata can facilitate the assessment of dataset quality and data sharing by answering key questions. It is also the primary way users will find information about your dataset. It includes key information on topics, such as:</p>
+<ul class="simple">
+<li><p>How data were collected and processed</p></li>
+<li><p>What variables/parameters are included in the dataset</p></li>
+<li><p>What variables are included and what variables are related to</p></li>
+<li><p>Who collected the data (science team, organization, etc.)</p></li>
+<li><p>How and where to find the data (e.g., DOI)</p></li>
+<li><p>How to cite the data</p></li>
+<li><p>Which spatio-temporal region/time the data covers</p></li>
+<li><p>Any legal, guideline, or standard information about the data</p></li>
+</ul>
+</section>
+<section id="why-add-metadata">
+<h4>Why Add Metadata?<a class="headerlink" href="#why-add-metadata" title="Permalink to this heading">#</a></h4>
+<p>Metadata enhances searchability and findability of the data by potentially allowing both humans and machines to read and interpret datasets. Benefits to creating metadata about your data include:</p>
+<ul class="simple">
+<li><p>Helps users understand what the data are and if/how they can use/cite it.</p></li>
+<li><p>Helps users find the data, particularly when metadata is machine-readable and standardized.</p></li>
+<li><p>Can make analysis easier with software tools that interpret standardized metadata (e.g. Xarray).</p></li>
+</ul>
+<p>To be machine-readable, the metadata needs to be standardized. See an example of a community-accepted standard for labeling climate datasets with the <a class="reference external" href="http://cfconventions.org/">CF Conventions</a>.</p>
+<p>There are also software packages that can read metadata and enhance the user experience significantly as a result. For instance, <a class="reference external" href="https://docs.xarray.dev/en/stable/index.html">Xarray</a> is an open-source, community developed software package that is widely used in the climate and biomedical fields, among many others. According to their website, “Xarray makes working with labeled multi-dimensional arrays in Python simple, efficient, and fun!”. It’s the “labeled” part where standardized metadata comes in! Xarray can interpret variable and dimension names without user input, making the workflow easier and less prone to making mistakes (e.g. users don’t have to remember which axis is “time” - they just need to call the axis with the label “time”).</p>
+<p>Many standards exist for metadata fields and structure to describe general data information. Use a standard from your domain when applicable, or one that is requested by your data repository.</p>
+</section>
+<section id="metadata-tagging-best-practices">
+<h4>Metadata Tagging Best Practices<a class="headerlink" href="#metadata-tagging-best-practices" title="Permalink to this heading">#</a></h4>
+<p>Useful and informative metadata:</p>
+<ul class="simple">
+<li><p>Uses standards that are commonly used in your field.</p></li>
+<li><p>Complies with FAIR Principles.</p></li>
+<li><p>Is as descriptive as possible.</p></li>
+<li><p>Is self-describing.</p></li>
+</ul>
+<p>Remember, the more metadata you add, the easier it will be for users of your data to use it effectively. When in doubt:</p>
+<ul class="simple">
+<li><p>Seek and comply with repository/community standards.</p></li>
+<li><p>Investigate open science online resources for metadata, e.g., <a class="reference external" href="https://the-turing-way.netlify.app/reproducible-research/rdm/rdm-metadata.html">Turing Way.</a></p></li>
+</ul>
+</section>
+<section id="accompanying-documentation">
+<h4>Accompanying Documentation<a class="headerlink" href="#accompanying-documentation" title="Permalink to this heading">#</a></h4>
+<p>When creating your data, in addition to adding metadata, it is a best practice to create a document that users can refer to. The document can be done as a README file, a user guide, or even a quick start (or all three).</p>
+<p>README and other documentation files can include information such as:</p>
+<ul class="simple">
+<li><p>Contact information</p></li>
+<li><p>Information about variables</p></li>
+<li><p>Information about uncertainty</p></li>
+<li><p>Data collection methods</p></li>
+<li><p>Versioning and license references</p></li>
+<li><p>Information about the structure and file naming of the data</p></li>
+<li><p>References to publications that describe the dataset and/or it’s processing</p></li>
+</ul>
+<p>The intent is to help users quickly understand how they might use the data and to answer any commonly asked questions about your data. You can read more information and view a README template along with an example (particularly relevant for the medical sciences) at <a class="reference external" href="https://datamanagement.hms.harvard.edu/collect-analyze/documentation-metadata/readme-files">this Harvard Medical School website.</a></p>
+</section>
+<section id="data-versioning-guidelines">
+<h4>Data Versioning Guidelines<a class="headerlink" href="#data-versioning-guidelines" title="Permalink to this heading">#</a></h4>
+<p>Establish a versioning schema for your data. This is a method for keeping track of iterations of data that features track changes and the ability to revert to a previous revision.</p>
+<p>Proper versioning generates a changed copy of a data object that is uniquely labeled with a version number. This enables users to track changes and correct errors.</p>
+<p>Proper versioning preserves data quality and provenance (the origin, history, and processing steps that lead to the dataset) by:</p>
+<ul class="simple">
+<li><p>Providing a record of traceability from the data’s source through all aspects of its transmission, storage, and processing to its final form.</p></li>
+<li><p>Saving data files at key steps along the way.</p></li>
+<li><p>Aiming for downstream verification/validation of original findings.</p></li>
+</ul>
+</section>
+</section>
+<section id="making-the-data-reusable-through-licensing">
+<h3>Making the Data Reusable Through Licensing<a class="headerlink" href="#making-the-data-reusable-through-licensing" title="Permalink to this heading">#</a></h3>
+<a class="reference internal image-reference" href="https://github.com/neuromatch/nasa-open-science/blob/main/tutorials/W1D3_OpenData/static/image32.jpeg?raw=true"><img alt="Comics about licensing." src="https://github.com/neuromatch/nasa-open-science/blob/main/tutorials/W1D3_OpenData/static/image32.jpeg?raw=true" style="width: 400px;"/></a>
+<p><em>Image source: <a class="reference external" href="https://www.explainxkcd.com/wiki/index.php/File:copyright.jpg">xkcd.com</a></em></p>
+<p><strong>Data is the intellectual property of the researcher(s), or possibly of their funder(s) or supporting institution(s). Data is intellectual property, but that does not mean it cannot be used by other researchers (with appropriate attribution).</strong></p>
+<blockquote>
+<div><p>“By applying a license to your work, you make clear what others can do with the things you’re sharing, and also the conditions under which you’re providing them (like cite you). You can also require others who copy your work to do things in return.”</p>
+</div></blockquote>
+<p><strong><a class="reference external" href="https://www.cos.io/">Open Science Knowledge Base</a></strong></p>
+<p>If you don’t license your work, others can’t/shouldn’t re-use it - even if you want them to. As mentioned previously in this module, a license is a legal document that tells users how they can use the dataset. It is important to understand the licensing conditions of a dataset before data reuse to avoid any copyright infringement or other intellectual property issues.</p>
+<p><strong>A dataset without a license does not necessarily mean that the data is open.</strong> Using a license-less dataset may pose an ethical dilemma. Contacting the data creator and getting explicit permission while suggesting they apply for a license is the best path forward.</p>
+<p>Understanding when and where the license applies is crucial. For example, data created using US Government public research funds is, by default, in the public domain. However, that only applies to the jurisdiction of the United States. In order for this to apply internationally, data creators need to select an open license.</p>
+<a class="reference internal image-reference" href="https://github.com/neuromatch/nasa-open-science/blob/main/tutorials/W1D3_OpenData/static/image34.jpeg?raw=true"><img alt="License types." src="https://github.com/neuromatch/nasa-open-science/blob/main/tutorials/W1D3_OpenData/static/image34.jpeg?raw=true" style="width: 600px;"/></a>
+<p>There are several different types of licenses that build on each other. <strong>Creative Commons (CC) licenses are often used for datasets.</strong> CC0 (also known as “public domain”) is the license that allows for the most reuse because it has the least restrictions on what users can do with it. <strong>Although the CC0 license does not explicitly require citation, you should still follow community best practices and cite the data source.</strong> CC-BY is another common license used for scientific data that requires citation. From there, you can add restrictions around commercial use, the ability to adapt or modify the data, or requirements to share with the same license. These other flavors all reduce usability by adding restrictions, such that other scientists may be unable to use the data because of institutional or legal restrictions. Funding agencies may require the use of a specific license. For public agencies, this is often CC-0 or CC-BY, to maximize their return on investment and ensure the widest possible re-use.</p>
+<section id="span-style-color-orange-case-study-span-data-licenses-and-reuse">
+<h4><span style="color:orange">Case Study:</span> Data Licenses and Reuse<a class="headerlink" href="#span-style-color-orange-case-study-span-data-licenses-and-reuse" title="Permalink to this heading">#</a></h4>
+<p>Here is an example of how a data license can affect reuse. Coupled Model Intercomparison Project Phase 6 (CMIP6) consists of the “runs” from around 100 distinct climate models being produced across 49 different modeling groups. This is the data that is used to understand what our future climate might look like. You have probably seen images that use this data in articles about Earth’s changing climate and how it may impact our lives. Previous versions of these data were licensed CC-BY-NC-SA (cite-noncommercial-sharealike).</p>
+<a class="reference internal image-reference" href="https://github.com/neuromatch/nasa-open-science/blob/main/tutorials/W1D3_OpenData/static/image35.jpeg?raw=true"><img alt="License types." src="https://github.com/neuromatch/nasa-open-science/blob/main/tutorials/W1D3_OpenData/static/image35.jpeg?raw=true" style="width: 600px;"/></a>
+<p><em>Figure citation: IPCC “<a class="reference external" href="https://www.researchgate.net/publication/369301788_Framing_and_Context_in_In_Global_warming_of_15C_An_IPCC_Special_Report?_tp=eyJjb250ZXh0Ijp7ImZpcnN0UGFnZSI6Il9kaXJlY3QiLCJwYWdlIjoiX2RpcmVjdCJ9fQ">Framing and Context in : In: Global warming of 1.5°C. An IPCC Special Report</a>” 2020</em></p>
+<p>This meant that any commercial use was restricted. <strong>Insurance companies, global corporations, and any type of organization that wanted to use them for commercial use - were having to do their own modeling or just decided not to develop resources related to climate projections (such as fire risk, flooding risk, and how that may affect transportation, commerce, and where we live).</strong> This directly impacted the reuse of this data and created additional work. The <a class="reference external" href="https://pcmdi.llnl.gov/CMIP6/TermsOfUse/TermsOfUse6-2.html">latest version of CMIP data is moving to CC-BY</a> because of the negative impacts from the -NC-SA restrictions.</p>
+</section>
+</section>
+<section id="id2">
+<h3>Key Takeaways<a class="headerlink" href="#id2" title="Permalink to this heading">#</a></h3>
+<p>Following are the key takeaways from this section:</p>
+<ul class="simple">
+<li><p>It is best practice to create an open data management plan that includes open-related topics.</p></li>
+<li><p>A critical step to making open data is evaluating and selecting open data formats.</p></li>
+<li><p>Always add documentation that enables other researchers to assess the relevance and reusability of your product. This includes metadata, README files, and version control details.</p></li>
+<li><p>It is important to assign an open license to your data to enable reuse.</p></li>
+</ul>
+</section>
+</section>
+<hr class="docutils"/>
+<section id="section-4-sharing-open-data">
+<h2>Section 4: Sharing Open Data<a class="headerlink" href="#section-4-sharing-open-data" title="Permalink to this heading">#</a></h2>
+<p>In this section, you will learn about the practice of sharing your data. The discussion starts with a review of the sharing process and how to evaluate if your data are sharable. Next, you take a look at ensuring your data is accessible with a closer look at repositories and the lifecycle of data accessibility, from selecting a repository to maintaining and archiving your data. The section then discusses some steps to make the data as reusable as possible and concludes with a section about considering who will help with the data-sharing process.</p>
+<section id="data-sharing-process-overview">
+<h3>Data Sharing Process Overview<a class="headerlink" href="#data-sharing-process-overview" title="Permalink to this heading">#</a></h3>
+<p>Sharing data is a critical part of increasing the reproducibility of results. Whether it’s new data we collect ourselves or data that we process in order to do our analysis, we end up sharing some form of data. We need to think about what data we will share and how to best ensure that it will be open and usable by others.</p>
+<p>Data sharing should typically be done through a long-term data center or repository, which will be responsible for ingesting, curating, and distributing/publishing your open data. You are responsible for providing information/metadata to help make your data be readily discoverable, accessible, and citable. The cost of archiving and publishing data should also be considered.</p>
+<p>In general, sharing your open data requires the following steps:</p>
+<ol class="arabic simple">
+<li><p>Make sure your data <strong>can be shared</strong></p></li>
+<li><p>Select or <strong>identify a repository</strong> to host your data</p></li>
+<li><p><strong>Work with your repository</strong> to follow their process and meet their requirements</p></li>
+<li><p>Make sure your <strong>data is findable and accessible</strong> through the repository and is maintained and archived</p></li>
+<li><p><strong>Request a DOI</strong> for your data set so that it is easily citable</p></li>
+<li><p>Choose a <strong>data license</strong></p></li>
+</ol>
+<p>Sometimes, you may be able to work with a well-staffed repository that will handle many of these steps for you (for instance, if you are working with NASA mission data). Otherwise, it is your responsibility to follow the above steps to share your data openly.</p>
+</section>
+<section id="when-and-if-to-share-data">
+<h3>When and If to Share Data<a class="headerlink" href="#when-and-if-to-share-data" title="Permalink to this heading">#</a></h3>
+<section id="when-to-share-data">
+<h4>When to Share Data?<a class="headerlink" href="#when-to-share-data" title="Permalink to this heading">#</a></h4>
+<p>The decision of when to share should be discussed with everyone on the team and documented in the data management plan. Funding agencies and organizations may have specific requirements about when data must be shared, but here, we encourage you to think about whether it is feasible or possible to share even earlier than required by your funder. There are different times when data could be shared:</p>
+<ul class="simple">
+<li><p>Advanced Sharing: Sharing at the time of collection or soon after. Some funding agencies require this or allow for a short ‘embargo’ period, but a reason (quality checks, calibrations, etc.) is usually required. This maximizes data reuse and impact and can result in increased collaborations.</p></li>
+<li><p>Intermediate Sharing: At the time of publication. Many publications (and some funding agencies) require sharing data that is needed to reproduce results at the time of publication.</p></li>
+<li><p>Minimum Sharing: End of grant. All scientifically useful data should be shared by the end of the research grant.</p></li>
+<li><p>No Sharing: There are many reasons data should either be restricted or not shared at all.</p></li>
+</ul>
+<p>As discussed previously in this curriculum, there are many benefits to sharing as early as possible. Early (advanced) sharing can lead to new and unexpected discoveries and expand your collaboration network. <strong>Remember that even when you share data, you are still the world expert on that data! So often, when people want to work with the data, they will reach out to you to collaborate.</strong></p>
+</section>
+<section id="should-the-data-be-shared">
+<h4>Should the Data be Shared?<a class="headerlink" href="#should-the-data-be-shared" title="Permalink to this heading">#</a></h4>
+<p>Before datasets are shared, it’s important to consider any restrictions to your permission to share and ensure that your contributors – including sample and data donors – approve its release.</p>
+<p>Data should be as open as possible and as closed as necessary. Opening our data is a powerful way to enable discovery, transparency, and scientific progress. However, you may want to consider a couple of points before data is shared:</p>
+<ul class="simple">
+<li><p>Some data are subject to laws, regulations, and policies which limit the release of the data.</p></li>
+<li><p>Your local institution may have additional policies and resources – investigate them early and often.</p></li>
+</ul>
+</section>
+<section id="verify-your-data-is-sharable">
+<h4>Verify Your Data is Sharable<a class="headerlink" href="#verify-your-data-is-sharable" title="Permalink to this heading">#</a></h4>
+<p>Before you decide where to share your data, you must make sure you can share your data.</p>
+<p>Data needs to be as open as possible and as closed as necessary…</p>
+<ul class="simple">
+<li><p>Open data is a powerful way to enable discovery, transparency, and scientific progress</p></li>
+<li><p>But, some data are subject to laws, regulations, and policies that limit the release of the data</p></li>
+<li><p>Your local institution may have additional policies and resources – investigate them early and often</p></li>
+</ul>
+<p>Specific considerations that might prevent the sharing of your data include:</p>
+<ul class="simple">
+<li><p>A country’s military secrets or violations of national interests</p></li>
+<li><p>Private medical information or an individual’s personal data</p></li>
+<li><p>Indigenous/cultural/conservation concerns</p></li>
+<li><p>Intellectual Property, Patented</p></li>
+<li><p>Other - please think about what you are sharing and the implications of sharing it (for example - do you have permission from everyone involved?)</p></li>
+</ul>
+<p>In the first module of this curriculum, we listed several reasons why certain research products should not be shared. We will review some of these reasons and go into more detail on a few that are particularly relevant to data.</p>
+</section>
+<section id="export-and-security-considerations">
+<h4>Export and Security Considerations<a class="headerlink" href="#export-and-security-considerations" title="Permalink to this heading">#</a></h4>
+<p>Relevant laws and regulations that may prevent the release of data include but are not limited to:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://www.pmddtc.state.gov/?id=ddtc_public_portal_itar_landing">International Traffic in Arms Regulation</a> (ITAR), which regulates the manufacture, sale, distribution, and export of defense-related articles and services.</p></li>
+<li><p><a class="reference external" href="https://www.bis.gov/regulations/ear-overview">Export Administration Regulations</a> (EAR), which regulates the manufacture, sale, distribution, and export of commercial and dual-use items, technology, and information not already covered by ITAR.</p></li>
+</ul>
+</section>
+<section id="controlled-information-considerations">
+<h4>Controlled Information Considerations<a class="headerlink" href="#controlled-information-considerations" title="Permalink to this heading">#</a></h4>
+<p>Some regulations and policies that may prevent the sharing of data include but are not limited to:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://www.hhs.gov/hipaa/index.html">Health Insurance Portability and Accountability Act</a> (HIPAA), which established standards to protect sensitive patient health information from disclosure.</p></li>
+<li><p><a class="reference external" href="https://www.archives.gov/cui">Controlled Unclassified Information</a> provides standards for handling unclassified information that requires safeguarding or dissemination controls consistent with laws, federal regulations, and policies.</p></li>
+<li><p>Federal laws and regulations governing <a class="reference external" href="https://www.archives.gov/isoo/faqs">classified information</a> or security requirements.</p></li>
+</ul>
+</section>
+<section id="intellectual-property-considerations">
+<h4>Intellectual Property Considerations<a class="headerlink" href="#intellectual-property-considerations" title="Permalink to this heading">#</a></h4>
+<p>Data may be subject to intellectual property, copyright, and licensing concerns. A few of the relevant regulations and policies include patent or intellectual property laws, including the <a class="reference external" href="https://www.govinfo.gov/content/pkg/USCODE-2011-title35/html/USCODE-2011-title35-partII-chap18.htm">Bayh-Dole Act</a>, which enables universities, nonprofit research institutions, and small businesses to own, patent, and commercialize inventions developed under federally funded research programs.</p>
+<p><strong>Many research institutions have resident experts in intellectual property, copyright, and patent law. They can be a great resource if you have any questions or concerns.</strong></p>
+</section>
+</section>
+<section id="where-to-share-data">
+<h3>Where to Share Data<a class="headerlink" href="#where-to-share-data" title="Permalink to this heading">#</a></h3>
+<p>Data can be shared in a variety of locations. While sharing data via email or websites is popular, they are not recommended as they do not meet the requirements for findability or long-term archival support. Sharing data as part of the supplemental material of a peer-reviewed publication, especially for small data sets, is acceptable in some fields. <strong>A long-term repository that provides a permanent identifier is the best option for sharing data.</strong></p>
+<section id="selecting-a-data-repository">
+<h4>Selecting a Data Repository<a class="headerlink" href="#selecting-a-data-repository" title="Permalink to this heading">#</a></h4>
+<p>If you do not already have a data repository in mind, consider the following to narrow down your options:</p>
+<ul class="simple">
+<li><p>Does your funding sponsor require a specific data repository?</p></li>
+<li><p>Does your organization/institution recommend a specific data repository?</p></li>
+<li><p>Is there a domain-specific repository that is widely used in your research field?</p></li>
+<li><p>Does the repository provide open data access?</p></li>
+<li><p>Do you think the tools offered by the repository for data discovery and distribution are suitable for your data and FAIR?</p></li>
+<li><p>Does the repository require funding from your project, does it fit within your budget, and does it require sustained support beyond the project life cycle?</p></li>
+</ul>
+<p>Find and compare the services, benefits, and limitations of the repositories you are considering. Each repository will have its own processes and requirements for accepting and hosting your data depending on their level of funding, purpose, and user base.</p>
+<p>Similarly, each repository will provide a different set of functionality and services depending on their level of funding, purpose, and user base.</p>
+<p>Data with privacy concerns may have additional anonymization or approval processes or restrictions on who can access the data.</p>
+<p>A good overview of desirable characteristics presented by the White House is <a class="reference external" href="https://www.whitehouse.gov/wp-content/uploads/2022/05/05-2022-Desirable-Characteristics-of-Data-Repositories.pdf">given here.</a></p>
+</section>
+<section id="ensuring-accessibility">
+<h4>Ensuring Accessibility<a class="headerlink" href="#ensuring-accessibility" title="Permalink to this heading">#</a></h4>
+<p>Good repositories will share (or offer) your open data through standard protocols, like HTTPS or SFTP. Common ways to do this are:</p>
+<ul class="simple">
+<li><p>Allowing users the ability to see a list of files that they can click and download via an intuitive interface.</p></li>
+<li><p>Creating a documented API for users to generate a list of file links that meet search criteria that they can download in an automated fashion (i.e., machine-to-machine data access).</p></li>
+</ul>
+<p>Additionally, repositories can require authorization and authentication (e.g., logins with usernames/passwords) to access data. While this is allowed under FAIR principles, it may violate Open Science principles if not everyone is able to obtain a login.</p>
+</section>
+<section id="working-with-a-repository">
+<h4>Working with a Repository<a class="headerlink" href="#working-with-a-repository" title="Permalink to this heading">#</a></h4>
+<blockquote>
+<div><p><strong>Start working with a repository</strong></p>
+</div></blockquote>
+<p>Repository requirements can vary widely. Always review a repository’s requirements to see what actions you need to take once you’re ready to start working with them. Also note that some repositories have staff that will help with the process of sharing data, while others rely on the user to know how to share their own data.</p>
+<p>If you use a repository that has staff to help you with the process, they may want to review and comment on your data management plan.</p>
+<p>The repository may request that you produce some test of sample data in order to assess:</p>
+<ul>
+<li>That the data format you intend to use is supported.</li>
+<li>That data variables are named as expected.</li>
+<li>That metadata vocabulary is correct.</li>
+<li>That repository-specific requirements are met.</li>
+</ul>
+<p>This conformity check can identify misunderstandings early and result in a smooth final submission of your data to the repository.</p>
+<blockquote>
+<div><p><strong>Maintaining data at a repository</strong></p>
+</div></blockquote>
+<p>As you progress through your project lifecycle, utilize your repository's update, revision, and resubmission processes to keep the archived data products up to date. Any new versions of the data you want to share through the repository will need to go through a similar process as your initial data set.</p>
+<p>Any new versions of the data you want to share through the repository should go through the same DMP review, compliance check, and upload procedure as your initial data set.</p>
+<blockquote>
+<div><p><strong>Archiving data at a repository</strong></p>
+</div></blockquote>
+<p>When your project ends, ensure you’ve updated and uploaded any companion documentation (discussed in the previous section, "Making Open Data") with your final version (even if only a single version of the data was made).</p>
+<p>Make sure the repository will keep your data (or at least your metadata) online for a reasonable period of time after your project ends.</p>
+<p>If any data issues are found after the conclusion of your project, make sure the repository will still accept data revisions if they are needed.</p></section>
+</section>
+<section id="how-to-enable-reuse-of-data">
+<h3>How to Enable Reuse of Data<a class="headerlink" href="#how-to-enable-reuse-of-data" title="Permalink to this heading">#</a></h3>
+<section id="obtaining-a-doi">
+<h4>Obtaining a DOI<a class="headerlink" href="#obtaining-a-doi" title="Permalink to this heading">#</a></h4>
+<p>Individuals cannot typically request a DOI (digital object identifier) themselves but rather have to go through an authorized organization that can submit the request, such as:</p>
+<ul class="simple">
+<li><p>The data repository</p></li>
+<li><p>Your organization</p></li>
+<li><p>The publisher (if the data set is part of a publication)</p></li>
+</ul>
+<p>Data makers should provide summary information for DOI landing page(s) if required. Data sharers should accommodate data providers’ suggestions, comply with DOI guidelines, and create landing page(s). If possible, reserve a DOI for you ahead of creating your data.</p>
+</section>
+<section id="ensuring-findability">
+<h4>Ensuring Findability<a class="headerlink" href="#ensuring-findability" title="Permalink to this heading">#</a></h4>
+<p>Repositories handle the sharing, distribution, and curation of data. Additional services they may provide include:</p>
+<ul class="simple">
+<li><p>The assignment of a persistent identifier (like a DOI) to your data set.</p></li>
+<li><p>The indexing and/or registration of your data and metadata in various services so that they can be searched and found online (i.e., through search engines).</p></li>
+<li><p>The provision of feedback to data makers to help them optimize their metadata for findability.</p></li>
+<li><p>Coordinating with data makers to ensure metadata refers to the DOI.</p></li>
+<li><p>Ensuring the DOI is associated with a landing page with information about your data.</p></li>
+</ul>
+</section>
+<section id="making-it-easy-to-cite-your-data">
+<h4>Making it Easy to Cite Your Data<a class="headerlink" href="#making-it-easy-to-cite-your-data" title="Permalink to this heading">#</a></h4>
+<p>The goal is to make it easy to cite your data. Best practices include:</p>
+<ul class="simple">
+<li><p><strong>Include a citation statement that includes your DOI.</strong></p></li>
+<li><p>Different repositories and journals have different standards for how to cite data. If your repository encourages it, include a .CFF file with your data that explains how to cite your data.</p></li>
+<li><p>Clearly identify the data creators and/or their institution in your citation.</p>
+<ul>
+<li><p>This allows users to follow up with the creators if they have questions or discover issues.</p></li>
+<li><p>Include ORCID of data authors where possible in the citation.</p></li>
+</ul>
+</li>
+</ul>
+<p>Now that your data are at a repository and have a citation statement and DOI, publicize it to your users and remind them to cite your data in their work!</p>
+</section>
+</section>
+<section id="who-is-responsible-for-sharing-data">
+<h3>Who is Responsible for Sharing Data<a class="headerlink" href="#who-is-responsible-for-sharing-data" title="Permalink to this heading">#</a></h3>
+<p>Sharing data openly is a team effort. An important part of planning for open data is planning and agreeing to roles and responsibilities of who will ensure implementation of the plan.</p>
+<p>So what needs to be done? Documenting these roles and responsibilities in your Data Management Plan will help your team stay organized and do science faster! A well-written, detailed plan should include:</p>
+<blockquote>
+<div><p><strong>Who Will Move Data to a Repository</strong></p>
+</div></blockquote>
+<p>Once you are ready to send your data to your repository, find the repository’s recommendations for uploading data. Determine who will work with your repository to accomplish the following types of activities:</p>
+<ul class="simple">
+<li><p>Provide information on data volume, number of files, and nature (e.g., revised files).</p></li>
+<li><p>Check that the file name follows best practices.</p></li>
+<li><p>How will the data be moved? (especially when files are large).</p></li>
+<li><p>Check the data! Verify the integrity of the data, metadata, and documentation transfer.</p></li>
+</ul>
+<blockquote>
+<div><p><strong>Who Will Develop the Data Documentation and Metadata</strong></p>
+</div></blockquote>
+<p>Determine who will work with your repository and inventory the transferred data, metadata, and documentation. This role might include the task of populating any required metadata in databases to make the data findable.</p>
+<p>You may be able to accomplish some of these tasks through a repository’s interface. However, some types of repositories may require you to interact with their administration teams. For this role, determine who will:</p>
+<ul class="simple">
+<li><p>Provide suggestions to organize data content and logistics.</p></li>
+<li><p>Develop the metadata.</p></li>
+<li><p>Develop the documentation (e.g., README file or report).</p></li>
+<li><p>Extract metadata from data files, metadata files (if applicable), and documentation to populate the metadata database and request additional metadata as necessary.</p></li>
+</ul>
+<blockquote>
+<div><p><strong>Who Will Help With Data Reuse</strong></p>
+</div></blockquote>
+<p>Once the repository has made your data available, someone from your team must test access to the data (its accessibility) and distribution methods (its findability). If possible, identify who will work with your repository to optimize/modify tools for intuitive human access and standardize machine access. This role requires someone who to:</p>
+<ul class="simple">
+<li><p>Clearly communicate the open protocols needed for the data/metadata.</p></li>
+<li><p>Provide actual data use cases to data publishers to optimize/modify data distribution tools based on available metadata.</p></li>
+<li><p>Understand the access protocol(s) and evaluate implications to targeted communities and user communities at large in terms of accessibility.</p></li>
+</ul>
+<blockquote>
+<div><p><strong>Who Will Develop Guidance on Privacy and Cultural Sensitivity of Data</strong></p>
+</div></blockquote>
+<p>Sharing data should be respectful of the communities that may be involved. This means thinking about privacy issues and cultural sensitivities. Who on your team will identify and develop guidance on:</p>
+<ul class="simple">
+<li><p>Privacy concerns and approval processes for release - is the data appropriately anonymized?</p></li>
+<li><p>How to engage with communities that data may be about.</p></li>
+<li><p>How data can be correctly interpreted.</p></li>
+<li><p>Are there any data restrictions that may be necessary to ensure the sharing is respectful of the community the data involves, e.g., collective and individual rights to free, prior, and informed consent in the collection and use of such data, including the development of data policies and protocols for collection?</p></li>
+</ul>
+</section>
+<section id="id3">
+<h3>Key Takeaways<a class="headerlink" href="#id3" title="Permalink to this heading">#</a></h3>
+<p>The following are the key takeaways from this section:</p>
+<ul class="simple">
+<li><p>When and if to share data? Determine at what point in a project it makes the most sense to share our data. Remember, not all data can or should be shared.</p></li>
+<li><p>Where to share data? Sharing in a public data repository is recommended, and there are many types of repositories to choose from.</p></li>
+<li><p>How to enable reuse? Ensure appropriate, community-accepted metadata, assign a DOI, and develop a citation statement to make sure it can be easily found and cited.</p></li>
+<li><p>Who helps share data? There are many steps in making and sharing data, and it’s important to think about who will be responsible for each step.</p></li>
+</ul>
+</section>
+</section>
+<hr class="docutils"/>
+<section id="section-5-from-theory-to-practice">
+<h2>Section 5: From Theory to Practice<a class="headerlink" href="#section-5-from-theory-to-practice" title="Permalink to this heading">#</a></h2>
+<p>In this section, you will get some practice writing a data management plan. You will then learn how you can get involved in open data communities. You will also learn about resources you can start to use and training you can take to start your journey with open data.</p>
+<section id="writing-an-open-science-and-data-management-plan">
+<h3>Writing an Open Science and Data Management Plan<a class="headerlink" href="#writing-an-open-science-and-data-management-plan" title="Permalink to this heading">#</a></h3>
+<p>The process, responsibilities, and factors to consider when creating an open science and data management plan have been presented throughout this module. Let us remind the common elements of DMPs relevant to open data:</p>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p></p></th>
+<th class="head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>What?</p></td>
+<td><p>Data formats and (where relevant) standards</p></td>
+</tr>
+<tr class="row-odd"><td><p>When?</p></td>
+<td><p>When and if to share data</p></td>
+</tr>
+<tr class="row-even"><td><p>Where?</p></td>
+<td><p>The intended repositories for archived data</p></td>
+</tr>
+<tr class="row-odd"><td><p>How?</p></td>
+<td><p>How the plan enables reuse of the data</p></td>
+</tr>
+<tr class="row-even"><td><p>Who?</p></td>
+<td><p>Roles and responsibilities of the team members in implementing the DMP</p></td>
+</tr>
+</tbody>
+</table>
+<p>Two great places to start are <a class="reference external" href="https://dmptool.org/">DMPTool</a> and <a class="reference external" href="https://dmponline.dcc.ac.uk/">DMPonline</a>. You will need to create a free login to use these tools, but both websites walk researchers through the steps of writing a DMP. There are even some existing DMP templates stored within DMP Tool, such as the NASA Planetary Sciences Division’s <a class="reference external" href="https://science.nasa.gov/researchers/templates-planetary-science-division-appendix-c-roses-proposals/">DMP template</a>.</p>
+<p>There are also public examples of data management plans at <a class="reference external" href="https://dmptool.org/public_plans">DMPTool public plans</a> and <a class="reference external" href="https://dmponline.dcc.ac.uk/public_plans">DMPonline public plans</a>.</p>
+<p>If you are applying for funding, it is almost guaranteed that there will be specific requirements detailed in the funding opportunity. For example, the funder may require a certain license or use of a specific repository. Make sure to cross-reference your plan with these requirements!</p>
+</section>
+<section id="span-style-color-green-activity-1-span-review-a-data-management-plan">
+<h3><span style="color:green">Activity 1:</span> Review a data management plan<a class="headerlink" href="#span-style-color-green-activity-1-span-review-a-data-management-plan" title="Permalink to this heading">#</a></h3>
+<p>Take a look at the examples of a public data management plan from <a class="reference external" href="https://dmptool.org/plans/102783/export.pdf?export%5Bpub%5D=true&amp;export%5Bquestion_headings%5D=true">New Jersey Institute of Technology</a> and from <a class="reference external" href="https://library.ucsd.edu/research-and-collections/research-data/_files/dmpsample/DMP-Example-Psych.doc">University of California San Diego</a>.</p>
+<p>Answer the following questions regarding these DMPs in a group:</p>
+<ol class="arabic simple">
+<li><p>What: Data formats and (where relevant) standards.</p></li>
+<li><p>When: When and if to share data.</p></li>
+<li><p>Where: The intended repositories for archived data.</p></li>
+<li><p>How: How the plan enables reuse of the data.</p></li>
+<li><p>Who: Roles and responsibilities of the team members in implementing the DMP.</p></li>
+</ol>
+<p>Which of the DMPs you like more? Why?</p>
+</section>
+<section id="open-data-communities-and-you">
+<h3>Open Data Communities and You<a class="headerlink" href="#open-data-communities-and-you" title="Permalink to this heading">#</a></h3>
+<section id="getting-involved-with-open-data-communities">
+<h4>Getting Involved with Open Data Communities<a class="headerlink" href="#getting-involved-with-open-data-communities" title="Permalink to this heading">#</a></h4>
+<p>There are numerous ways to get involved with and support open data communities, including starting your own community.</p>
+<blockquote>
+<div><p><strong>Repositories</strong></p>
+</div></blockquote>
+<ul>
+<li>Contribute to open data repositories</li>
+<li>Many repositories have user committees to provide them with advice and feedback (and are often looking for volunteers to serve)</li>
+<li>Subscribe to repository mailing lists and social media accounts</li>
+</ul>
+<blockquote>
+<div><p><strong>Standards committees</strong></p>
+</div></blockquote>
+<ul>
+<li>Volunteer to serve on a standards committee</li>
+<li>Provide input to the standards committee</li>
+<li>Subscribe to the mailing lists focused on standards</li>
+</ul>
+<blockquote>
+<div><p><strong>Conferences, workshops, and special sessions</strong></p>
+</div></blockquote>
+<ul>
+<li>Organize a gathering around open data</li>
+<li>Participate in a gathering around open data</li>
+</ul>
+</section>
+</section>
+<section id="additional-resources">
+<h3>Additional Resources<a class="headerlink" href="#additional-resources" title="Permalink to this heading">#</a></h3>
+<section id="resources-for-more-information">
+<h4>Resources for More Information<a class="headerlink" href="#resources-for-more-information" title="Permalink to this heading">#</a></h4>
+<p>In addition to the resources listed elsewhere in this training, the community resources below are excellent sources of information about Open Data.</p>
+<p>References and Guides:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="http://science.nasa.gov/oss-guidance">NASA Science Mission Directorate’s Open-Source Science Guidance for researchers</a></p></li>
+<li><p><a class="reference external" href="https://github.com/opensciency/sprint-content/tree/main/open-data">Open Data Module from OpenSciency</a></p></li>
+<li><p><a class="reference external" href="https://resources.data.gov/">Resources for open data through the US federal government</a></p></li>
+<li><p><a class="reference external" href="https://fairsharing.org/FAIRsharing.WWI10U">The FAIR Principles from FAIRsharing.org</a></p></li>
+<li><p><a class="reference external" href="http://opendatahandbook.org/guide/en/">The Open Data Handbook</a></p></li>
+<li><p><a class="reference external" href="https://github.com/Open-Science-Training-Handbook/Open-Science-Training-Handbook_EN/blob/master/02OpenScienceBasics/04ReproducibleResearchAndDataAnalysis.md">Reproducible Research and Data Analysis from FOSTER Open Science</a></p></li>
+<li><p><a class="reference external" href="https://www.cessda.eu/Training/Training-Resources/Library/Data-Management-Expert-Guide/6.-Archive-Publish/Data-publishing-routes">Data publishing guidelines from the Data Management Expert Guide</a></p></li>
+<li><p><a class="reference external" href="https://privacytools.seas.harvard.edu/datatags">DataTags: A Harvard University Privacy Tools project to help researchers use and share sensitive data</a></p></li>
+<li><p><a class="reference external" href="https://ui.adsabs.harvard.edu/link_gateway/2022ApJS2605C/doi:10.3847/1538-4365/ac6268">Best Practices for Data Publication in the Astronomical Literature by Chen et al.</a></p></li>
+</ul>
+</section>
+<section id="opportunities-for-more-training-about-open-data">
+<h4>Opportunities for More Training About Open Data<a class="headerlink" href="#opportunities-for-more-training-about-open-data" title="Permalink to this heading">#</a></h4>
+<p>In addition to the resources listed elsewhere in this training, the community resources listed below provide excellent information on Open Data.</p>
+<p>Additional training:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://aims.gitbook.io/open-data-mooc/">GODAN MOOC about how to use, make, and share open data</a></p></li>
+<li><p><a class="reference external" href="https://datacarpentry.org/lessons/">Data literacy lessons for an array of disciplines from the Carpentries</a></p></li>
+<li><p><a class="reference external" href="https://aims.gitbook.io/farm-data-mooc/">MOOC on Data Management, Sharing and Services for Agriculture Development</a></p></li>
+</ul>
+</section>
+</section>
+<section id="id4">
+<h3>Key Takeaways<a class="headerlink" href="#id4" title="Permalink to this heading">#</a></h3>
+<p>Now that you have completed the section, you should be able to start your journey with open data:</p>
+<ul class="simple">
+<li><p>You now know the steps and have practice writing a sample data management plan.</p></li>
+<li><p>There are a variety of ways to get involved in the open data community.</p></li>
+<li><p>There are numerous resources available to get more information and take more training about open data.</p></li>
+</ul>
+</section>
+</section>
+</section>
+<hr class="docutils"/>
+<section class="tex2jax_ignore mathjax_ignore" id="summary">
+<h1>Summary<a class="headerlink" href="#summary" title="Permalink to this heading">#</a></h1>
+<p>After completing this day, you should be able to:</p>
+<ul class="simple">
+<li><p>Describe the meaning and purpose of open data, its benefits, and how FAIR principles are used.</p></li>
+<li><p>Recall methods to assess the reusability of data based on its documentation and cite the data as instructed.</p></li>
+<li><p>Implement an open data management plan, select open data formats, and add the needed documentation, including metadata, README files, and version control, to make the data reusable and findable.</p></li>
+<li><p>Evaluate whether your data should and can be shared.</p></li>
+<li><p>Recall practices to make data more accessible, including registering an affiliated DOI and including citation instructions in the documentation.</p></li>
+</ul>
+</section>
+<script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./tutorials/W1D3_OpenData/student"
+        },
+        predefinedOutput: true
+    }
+    </script>
+<script>kernelName = 'python3'</script>
+</article>
+<footer class="bd-footer-article">
+<!-- Previous / next buttons -->
+<div class="prev-next-area">
+<a class="left-prev" href="../chapter_title.html" id="prev-link" title="previous page">
+<i class="fa-solid fa-angle-left"></i>
+<div class="prev-next-info">
+<p class="prev-next-subtitle">previous</p>
+<p class="prev-next-title">Open Data</p>
+</div>
+</a>
+<a class="right-next" href="../further_reading.html" id="next-link" title="next page">
+<div class="prev-next-info">
+<p class="prev-next-subtitle">next</p>
+<p class="prev-next-title">Key terms</p>
+</div>
+<i class="fa-solid fa-angle-right"></i>
+</a>
+</div>
+</footer>
+</div>
+<div class="bd-sidebar-secondary bd-toc">
+<div class="toc-item">
+<div class="tocsection onthispage">
+<i class="fa-solid fa-list"></i> On this page
+</div>
+<nav class="page-toc" id="bd-toc-nav">
+<ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry">
+<a class="reference internal nav-link" href="#">
+   Day 3: Open Data
+  </a>
+<ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry">
+<a class="reference internal nav-link" href="#tutorial-objectives">
+     Tutorial Objectives
+    </a>
+</li>
+<li class="toc-h2 nav-item toc-entry">
+<a class="reference internal nav-link" href="#section-1-introduction-to-open-data">
+     Section 1:  Introduction to Open Data
+    </a>
+<ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry">
+<a class="reference internal nav-link" href="#introduction">
+       Introduction
+      </a>
+</li>
+<li class="toc-h3 nav-item toc-entry">
+<a class="reference internal nav-link" href="#definition-and-considerations-of-open-data">
+       Definition and Considerations of Open Data
+      </a>
+</li>
+<li class="toc-h3 nav-item toc-entry">
+<a class="reference internal nav-link" href="#benefits-of-open-data">
+       Benefits of Open Data
+      </a>
+</li>
+<li class="toc-h3 nav-item toc-entry">
+<a class="reference internal nav-link" href="#benefits-to-you">
+       Benefits to You
+      </a>
+</li>
+<li class="toc-h3 nav-item toc-entry">
+<a class="reference internal nav-link" href="#challenges-of-open-data">
+       Challenges of Open Data
+      </a>
+<ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry">
+<a class="reference internal nav-link" href="#restrictions-on-sharing-data">
+         Restrictions on Sharing Data
+        </a>
+</li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry">
+<a class="reference internal nav-link" href="#applying-fair-principles">
+       Applying FAIR Principles
+      </a>
+<ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry">
+<a class="reference internal nav-link" href="#metadata-s-central-role-in-applying-fair">
+         Metadata’s Central Role in Applying FAIR
+        </a>
+</li>
+<li class="toc-h4 nav-item toc-entry">
+<a class="reference internal nav-link" href="#licensing-data">
+         Licensing Data
+        </a>
+</li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry">
+<a class="reference internal nav-link" href="#planning-for-openness-using-the-use-make-share-framework-for-open-data">
+       Planning for Openness: Using the Use, Make, Share Framework for Open Data
+      </a>
+<ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry">
+<a class="reference internal nav-link" href="#open-science-and-data-management-plans">
+         Open Science and Data Management Plans
+        </a>
+</li>
+<li class="toc-h4 nav-item toc-entry">
+<a class="reference internal nav-link" href="#scientific-workflow">
+         Scientiﬁc Workﬂow
+        </a>
+</li>
+<li class="toc-h4 nav-item toc-entry">
+<a class="reference internal nav-link" href="#roles-in-use-make-share">
+         Roles in Use, Make, Share
+        </a>
+</li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry">
+<a class="reference internal nav-link" href="#key-takeaways">
+       Key Takeaways
+      </a>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry">
+<a class="reference internal nav-link" href="#section-2-using-open-data">
+     Section 2: Using Open Data
+    </a>
+<ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry">
+<a class="reference internal nav-link" href="#discovering-open-data">
+       Discovering Open Data
+      </a>
+<ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry">
+<a class="reference internal nav-link" href="#where-to-start-your-search">
+         Where to Start Your Search
+        </a>
+</li>
+<li class="toc-h4 nav-item toc-entry">
+<a class="reference internal nav-link" href="#people-you-know-online-or-in-person">
+         People You Know (Online or In-person!)
+        </a>
+</li>
+<li class="toc-h4 nav-item toc-entry">
+<a class="reference internal nav-link" href="#publications">
+         Publications
+        </a>
+</li>
+<li class="toc-h4 nav-item toc-entry">
+<a class="reference internal nav-link" href="#data-search-portals">
+         Data Search Portals
+        </a>
+</li>
+<li class="toc-h4 nav-item toc-entry">
+<a class="reference internal nav-link" href="#repositories">
+         Repositories
+        </a>
+</li>
+<li class="toc-h4 nav-item toc-entry">
+<a class="reference internal nav-link" href="#challenges-with-data-repositories">
+         Challenges with Data Repositories
+        </a>
+</li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry">
+<a class="reference internal nav-link" href="#assessing-open-data">
+       Assessing Open Data
+      </a>
+</li>
+<li class="toc-h3 nav-item toc-entry">
+<a class="reference internal nav-link" href="#using-open-data">
+       Using Open Data
+      </a>
+<ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry">
+<a class="reference internal nav-link" href="#review-citing-guidelines">
+         Review Citing Guidelines
+        </a>
+</li>
+<li class="toc-h4 nav-item toc-entry">
+<a class="reference internal nav-link" href="#span-style-color-orange-case-study-span-citing-open-data">
+<span style="color: orange">
+          Case Study:
+         </span>
+         Citing Open Data
+        </a>
+</li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry">
+<a class="reference internal nav-link" href="#id1">
+       Key Takeaways
+      </a>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry">
+<a class="reference internal nav-link" href="#section-3-making-open-data">
+     Section 3: Making Open Data
+    </a>
+<ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry">
+<a class="reference internal nav-link" href="#selecting-data-formats-and-tools-for-interoperability">
+       Selecting Data Formats and Tools for Interoperability
+      </a>
+<ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry">
+<a class="reference internal nav-link" href="#data-format-considerations">
+         Data Format Considerations
+        </a>
+</li>
+<li class="toc-h4 nav-item toc-entry">
+<a class="reference internal nav-link" href="#non-open-data-formats">
+         Non-Open Data Formats
+        </a>
+</li>
+<li class="toc-h4 nav-item toc-entry">
+<a class="reference internal nav-link" href="#open-data-format-examples">
+         Open Data Format Examples
+        </a>
+</li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry">
+<a class="reference internal nav-link" href="#making-the-data-reusable-through-documentation">
+       Making the Data Reusable Through Documentation
+      </a>
+<ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry">
+<a class="reference internal nav-link" href="#adding-documentation-and-metadata-for-reusability">
+         Adding Documentation and Metadata for Reusability
+        </a>
+</li>
+<li class="toc-h4 nav-item toc-entry">
+<a class="reference internal nav-link" href="#metadata-for-humans-and-machines">
+         Metadata: for Humans and Machines
+        </a>
+</li>
+<li class="toc-h4 nav-item toc-entry">
+<a class="reference internal nav-link" href="#why-add-metadata">
+         Why Add Metadata?
+        </a>
+</li>
+<li class="toc-h4 nav-item toc-entry">
+<a class="reference internal nav-link" href="#metadata-tagging-best-practices">
+         Metadata Tagging Best Practices
+        </a>
+</li>
+<li class="toc-h4 nav-item toc-entry">
+<a class="reference internal nav-link" href="#accompanying-documentation">
+         Accompanying Documentation
+        </a>
+</li>
+<li class="toc-h4 nav-item toc-entry">
+<a class="reference internal nav-link" href="#data-versioning-guidelines">
+         Data Versioning Guidelines
+        </a>
+</li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry">
+<a class="reference internal nav-link" href="#making-the-data-reusable-through-licensing">
+       Making the Data Reusable Through Licensing
+      </a>
+<ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry">
+<a class="reference internal nav-link" href="#span-style-color-orange-case-study-span-data-licenses-and-reuse">
+<span style="color:orange">
+          Case Study:
+         </span>
+         Data Licenses and Reuse
+        </a>
+</li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry">
+<a class="reference internal nav-link" href="#id2">
+       Key Takeaways
+      </a>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry">
+<a class="reference internal nav-link" href="#section-4-sharing-open-data">
+     Section 4: Sharing Open Data
+    </a>
+<ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry">
+<a class="reference internal nav-link" href="#data-sharing-process-overview">
+       Data Sharing Process Overview
+      </a>
+</li>
+<li class="toc-h3 nav-item toc-entry">
+<a class="reference internal nav-link" href="#when-and-if-to-share-data">
+       When and If to Share Data
+      </a>
+<ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry">
+<a class="reference internal nav-link" href="#when-to-share-data">
+         When to Share Data?
+        </a>
+</li>
+<li class="toc-h4 nav-item toc-entry">
+<a class="reference internal nav-link" href="#should-the-data-be-shared">
+         Should the Data be Shared?
+        </a>
+</li>
+<li class="toc-h4 nav-item toc-entry">
+<a class="reference internal nav-link" href="#verify-your-data-is-sharable">
+         Verify Your Data is Sharable
+        </a>
+</li>
+<li class="toc-h4 nav-item toc-entry">
+<a class="reference internal nav-link" href="#export-and-security-considerations">
+         Export and Security Considerations
+        </a>
+</li>
+<li class="toc-h4 nav-item toc-entry">
+<a class="reference internal nav-link" href="#controlled-information-considerations">
+         Controlled Information Considerations
+        </a>
+</li>
+<li class="toc-h4 nav-item toc-entry">
+<a class="reference internal nav-link" href="#intellectual-property-considerations">
+         Intellectual Property Considerations
+        </a>
+</li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry">
+<a class="reference internal nav-link" href="#where-to-share-data">
+       Where to Share Data
+      </a>
+<ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry">
+<a class="reference internal nav-link" href="#selecting-a-data-repository">
+         Selecting a Data Repository
+        </a>
+</li>
+<li class="toc-h4 nav-item toc-entry">
+<a class="reference internal nav-link" href="#ensuring-accessibility">
+         Ensuring Accessibility
+        </a>
+</li>
+<li class="toc-h4 nav-item toc-entry">
+<a class="reference internal nav-link" href="#working-with-a-repository">
+         Working with a Repository
+        </a>
+</li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry">
+<a class="reference internal nav-link" href="#how-to-enable-reuse-of-data">
+       How to Enable Reuse of Data
+      </a>
+<ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry">
+<a class="reference internal nav-link" href="#obtaining-a-doi">
+         Obtaining a DOI
+        </a>
+</li>
+<li class="toc-h4 nav-item toc-entry">
+<a class="reference internal nav-link" href="#ensuring-findability">
+         Ensuring Findability
+        </a>
+</li>
+<li class="toc-h4 nav-item toc-entry">
+<a class="reference internal nav-link" href="#making-it-easy-to-cite-your-data">
+         Making it Easy to Cite Your Data
+        </a>
+</li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry">
+<a class="reference internal nav-link" href="#who-is-responsible-for-sharing-data">
+       Who is Responsible for Sharing Data
+      </a>
+</li>
+<li class="toc-h3 nav-item toc-entry">
+<a class="reference internal nav-link" href="#id3">
+       Key Takeaways
+      </a>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry">
+<a class="reference internal nav-link" href="#section-5-from-theory-to-practice">
+     Section 5: From Theory to Practice
+    </a>
+<ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry">
+<a class="reference internal nav-link" href="#writing-an-open-science-and-data-management-plan">
+       Writing an Open Science and Data Management Plan
+      </a>
+</li>
+<li class="toc-h3 nav-item toc-entry">
+<a class="reference internal nav-link" href="#span-style-color-green-activity-1-span-review-a-data-management-plan">
+<span style="color:green">
+        Activity 1:
+       </span>
+       Review a data management plan
+      </a>
+</li>
+<li class="toc-h3 nav-item toc-entry">
+<a class="reference internal nav-link" href="#open-data-communities-and-you">
+       Open Data Communities and You
+      </a>
+<ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry">
+<a class="reference internal nav-link" href="#getting-involved-with-open-data-communities">
+         Getting Involved with Open Data Communities
+        </a>
+</li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry">
+<a class="reference internal nav-link" href="#additional-resources">
+       Additional Resources
+      </a>
+<ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry">
+<a class="reference internal nav-link" href="#resources-for-more-information">
+         Resources for More Information
+        </a>
+</li>
+<li class="toc-h4 nav-item toc-entry">
+<a class="reference internal nav-link" href="#opportunities-for-more-training-about-open-data">
+         Opportunities for More Training About Open Data
+        </a>
+</li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry">
+<a class="reference internal nav-link" href="#id4">
+       Key Takeaways
+      </a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry">
+<a class="reference internal nav-link" href="#summary">
+   Summary
+  </a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<footer class="bd-footer-content">
+<div class="bd-footer-content__inner">
+<div class="bd-footer-content__inner container">
+<div class="footer-item">
+<p class="component-author">
+By Neuromatch
+</p>
+</div>
+<div class="footer-item">
+</div>
+<div class="footer-item">
+<p class="last-updated">
+Last updated on None.<br/>
+</p>
+</div>
+<div class="footer-item">
+<div class="extra_footer">
+<div>
+<a href="http://creativecommons.org/licenses/by/4.0/"><img src="https://i.creativecommons.org/l/by/4.0/88x31.png"/></a>
+<a href="https://opensource.org/licenses/BSD-3-Clause"><img src="https://camo.githubusercontent.com/9b9ea65d95c9ef878afa1987df65731d47681336/68747470733a2f2f696d672e736869656c64732e696f2f707970692f6c2f736561626f726e2e737667"/></a>
+The contents of this repository are shared under the <a href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
+Software elements are additionally licensed under the <a href="https://opensource.org/licenses/BSD-3-Clause">BSD (3-Clause) License</a>.
+</div>
+</div>
+</div>
+</div>
+</div>
+</footer>
+</main>
+</div>
+</div>
+<!-- Scripts loaded after <body> so the DOM is not blocked -->
+<script src="../../../_static/scripts/bootstrap.js?digest=796348d33e8b1d947c94"></script>
+<script src="../../../_static/scripts/pydata-sphinx-theme.js?digest=796348d33e8b1d947c94"></script>
+</body>
+</html>
