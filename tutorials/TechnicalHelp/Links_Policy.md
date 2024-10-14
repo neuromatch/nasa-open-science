@@ -2,7 +2,7 @@
 
 ## Quick links
 
-Course materials: [https://neuroai.neuromatch.io/](https://neuroai.neuromatch.io/)
+Course materials: [https://https://openscience.neuromatch.io/](https://https://openscience.neuromatch.io/)
 
 Portal: [https://portal.neuromatchacademy.org/](https://portal.neuromatchacademy.org/)
 
@@ -10,18 +10,15 @@ Website: [https://neuromatch.io/](https://neuromatch.io/)
 
 Code of Conduct and Code of Conduct Violations Form: [https://github.com/NeuromatchAcademy/precourse/blob/main/CODE_OF_CONDUCT.md](https://github.com/NeuromatchAcademy/precourse/blob/main/CODE_OF_CONDUCT.md)
 
-Project Exemption Form: [https://airtable.com/shrubhlgsWJ8DuA7E](https://airtable.com/shrubhlgsWJ8DuA7E)
 
+## Policy
 
+This course has a unique class attendance policy compared to other Neuromatch Academy courses.
 
-## Policies
+To successfully complete the course, all participants must:
 
-### Coursework attendance policy
+- Attend and actively participate in all five live class sessions – you will not receive the certificate if you miss any of the sessions.
+- Complete five short daily quizzes to assess their understanding of the material.
+- Submit a post-course evaluation survey.
 
-Students who participate in this course will gain a certificate of completion for the coursework. Students are allowed to miss two days if necessary and if they communicate that with their teaching assistant. If there are exceptional circumstances that force a student to miss class for reasons completely beyond their control, such as severe illness, electricity blackouts, etc, they can request to get the certificate despite missing more than two days by filling out the Attendance Waiver ([https://airtable.com/appQ20RmRMNxUVUTd/shrKlQX3PHW8OcTtg](https://airtable.com/appQ20RmRMNxUVUTd/shrKlQX3PHW8OcTtg)) **at least two days prior to the end of course**. Please note these requests may not be granted.
-
-### Projects attendance policy
-
-Projects are an integral part of the Neuromatch Academy experience. Students who participate in projects and miss no more than two days of projects work will gain a certificate of completion for the projects. 
-
-If the student participates in projects but misses more than two days due to exceptional circumstances, they can request to get the projects certificate anyway by filling out the Attendance Waiver ([https://airtable.com/appQ20RmRMNxUVUTd/shrKlQX3PHW8OcTtg](https://airtable.com/appQ20RmRMNxUVUTd/shrKlQX3PHW8OcTtg)) **at least two days prior to the end of course**. Please note these requests may not be granted.
+Participants who meet these requirements will receive an Open Science Certification from NASA, recognizing their proficiency in open science practices. This certification can be displayed on resumes, CVs, LinkedIn profiles, and more.
