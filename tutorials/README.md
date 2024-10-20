@@ -9,7 +9,7 @@
 ## W1D1 - The Ethos Of Open Science
 
 
-Slides: [Materials](https://mfr.ca-1.osf.io/render?url=https://osf.io/79523/?direct%26mode=render%26action=download%26mode=render)
+Slides: [Materials](https://mfr.ca-1.osf.io/render?url=https://osf.io/hjxv5/?direct%26mode=render%26action=download%26mode=render)
 
 |   | Run | Run | View |
 | - | --- | --- | ---- |
@@ -24,7 +24,7 @@ Slides: [Materials](https://mfr.ca-1.osf.io/render?url=https://osf.io/79523/?dir
 ## W1D2 - Open Tools And Resources
 
 
-Slides: [Materials](https://mfr.ca-1.osf.io/render?url=https://osf.io/79523/?direct%26mode=render%26action=download%26mode=render)
+Slides: [Materials](https://mfr.ca-1.osf.io/render?url=https://osf.io/gy3fp/?direct%26mode=render%26action=download%26mode=render)
 
 |   | Run | Run | View |
 | - | --- | --- | ---- |
@@ -39,7 +39,7 @@ Slides: [Materials](https://mfr.ca-1.osf.io/render?url=https://osf.io/79523/?dir
 ## W1D3 - Open Data
 
 
-Slides: [Materials](https://mfr.ca-1.osf.io/render?url=https://osf.io/79523/?direct%26mode=render%26action=download%26mode=render)
+Slides: [Materials](https://mfr.ca-1.osf.io/render?url=https://osf.io/d7ftz/?direct%26mode=render%26action=download%26mode=render)
 
 |   | Run | Run | View |
 | - | --- | --- | ---- |
@@ -54,7 +54,7 @@ Slides: [Materials](https://mfr.ca-1.osf.io/render?url=https://osf.io/79523/?dir
 ## W1D4 - Open Code
 
 
-Slides: [Materials](https://mfr.ca-1.osf.io/render?url=https://osf.io/79523/?direct%26mode=render%26action=download%26mode=render)
+Slides: [Materials](https://mfr.ca-1.osf.io/render?url=https://osf.io/9dw5c/?direct%26mode=render%26action=download%26mode=render)
 
 |   | Run | Run | View |
 | - | --- | --- | ---- |
@@ -69,7 +69,7 @@ Slides: [Materials](https://mfr.ca-1.osf.io/render?url=https://osf.io/79523/?dir
 ## W1D5 - Open Results
 
 
-Slides: [Materials](https://mfr.ca-1.osf.io/render?url=https://osf.io/79523/?direct%26mode=render%26action=download%26mode=render)
+Slides: [Materials](https://mfr.ca-1.osf.io/render?url=https://osf.io/dyq78/?direct%26mode=render%26action=download%26mode=render)
 
 |   | Run | Run | View |
 | - | --- | --- | ---- |
