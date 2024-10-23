@@ -39,7 +39,7 @@ Slides: [Materials](https://mfr.ca-1.osf.io/render?url=https://osf.io/gy3fp/?dir
 ## W1D3 - Open Data
 
 
-Slides: [Materials](https://mfr.ca-1.osf.io/render?url=https://osf.io/d7ftz/?direct%26mode=render%26action=download%26mode=render)
+Slides: [Materials](https://mfr.ca-1.osf.io/render?url=https://osf.io/aq3u7/?direct%26mode=render%26action=download%26mode=render)
 
 |   | Run | Run | View |
 | - | --- | --- | ---- |
