@@ -14,8 +14,6 @@ To see upcoming course dates, check our [website](https://neuromatch.io/courses/
 
 Developed by NASA, the guidance provided by the Open Science curriculum will promote the transformation of the research landscape and the accompanying advancement of scientific discovery. The Open Science curriculum aims to introduce learners to a nuanced understanding of open science, enabling participants to better understand an open science workflow from end to end. The focus of the curriculum will be on providing learners with a basic understanding of open science, its ethos and benefits, and how to actively participate in open science communities. The course consists of 5 modules (each for 1 day of the course) being organized as a scientific workflow.
 
-<img src="https://github.com/neuromatch/nasa-open-science/blob/main/tutorials/W1D1_TheEthosOfOpenScience/static/image441.png?raw=true" style="width:100%; height: auto;" alt = "All 5 modules"/>
-
 A NASA Open Science digital badge is earned by completing all five modules and passing the assessment at the end of each day.
 
 ## Licensing
