@@ -8,7 +8,7 @@
 title                       : "Open Science Course"  # The title of the book. Will be placed in the left navbar.
 author                      : Neuromatch  # The author of the book
 copyright                   : ""  # Copyright year to be placed in the footer
-logo                        : tutorials/static/nasa-logo-web-rgb.png  # A path to the book logo
+logo                        : tutorials/static/nasa-logo-web-rgb.webp  # A path to the book logo
 only_build_toc_files        : true
 
 
