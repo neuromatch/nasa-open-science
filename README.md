@@ -4,17 +4,15 @@
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 
-*October 21-25 (Asia/Oceania) & November 11-15 (Europe/Africa) & December 2-6 (America), 2024*
+To see upcoming course dates, check our [website](https://neuromatch.io/courses/).
 
-**The content should primarily be accessed from our ebook: https://openscience.neuromatch.io/ [under continuous development]**
+**The content should primarily be accessed from our ebook: [https://openscience.neuromatch.io/](https://openscience.neuromatch.io/)**
 
 ---
 
 ## Curriculum Overview 
 
-Transform to Open Science (TOPS) is a NASA initiative designed to rapidly transform agencies, organizations, and communities to an inclusive culture of open science. Developed by the TOPS initiative, the guidance provided by the Open Science curriculum will promote the transformation of the research landscape and the accompanying advancement of scientific discovery. The Open Science curriculum aims to introduce learners to a nuanced understanding of open science, enabling participants to better understand an open science workflow from end to end. The focus of the curriculum will be on providing learners with a basic understanding of open science, its ethos and benefits, and how to actively participate in open science communities. The course consists of 5 modules (each for 1 day of the course) being organized as a scientific workflow.
-
-<img src="https://github.com/neuromatch/nasa-open-science/blob/main/tutorials/W1D1_TheEthosOfOpenScience/static/image441.png?raw=true" style="width:100%; height: auto;" alt = "All 5 modules"/>
+Developed by NASA, the guidance provided by the Open Science curriculum will promote the transformation of the research landscape and the accompanying advancement of scientific discovery. The Open Science curriculum aims to introduce learners to a nuanced understanding of open science, enabling participants to better understand an open science workflow from end to end. The focus of the curriculum will be on providing learners with a basic understanding of open science, its ethos and benefits, and how to actively participate in open science communities. The course consists of 5 modules (each for 1 day of the course) being organized as a scientific workflow.
 
 A NASA Open Science digital badge is earned by completing all five modules and passing the assessment at the end of each day.
 
